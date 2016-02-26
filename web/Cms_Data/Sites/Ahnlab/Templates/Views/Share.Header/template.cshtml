@@ -1,0 +1,14 @@
+﻿<header class="htop">
+    <div class="htopWrap">
+        <!-- logo -->
+        @Html.FrontHtml().RenderHtmlBlock("header.logo")
+        <!-- logo -->
+        <!-- etc menu -->
+        @Html.FrontHtml().RenderView("Share.NavHeader")
+        <!-- //etc menu -->
+        <!-- menu -->
+        @Html.FrontHtml().RenderView("Share.MainNav")
+        <!-- //menu -->
+        @Html.FrontHtml().RenderView("Share.TopSearch")
+    </div>
+</header>

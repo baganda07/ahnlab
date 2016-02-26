@@ -1,0 +1,402 @@
+﻿<div class="cUWrap">
+    <div class="cULeft">
+        <h2 class="cTit">WORLDSTAR INTERNATIONAL JSC Location </h2>
+        <div class="wwLoca">
+            <div class="map">
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL2Bf8zHrCYz7a8nqUeVRjz32p2uudowI"></script>
+                <script type="text/javascript">
+            jQuery(window).load(function () {
+                setTimeout(function () {
+                    jQuery('.map').animate({
+                        'height': '288'
+                    }, 400);
+                }, 400);
+            });
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(21.0034643, 105.7915639);
+                var mapOptions = {
+                    zoom: 18,
+                    scrollwheel: true,
+                    draggable: true,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    disableDefaultUI: false,
+                };
+                var map = new google.maps.Map(document.getElementById('ahnMap'), mapOptions);
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<b>WORLDSTAR INTERNATIONAL JSC</b><br/>1103 F.11, Viglacera Tower<br/>No.1 Thang Long Highway',
+                    maxWidth: 350,
+                    maxHeight: 500,
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: '',
+                    icon: '@Url.FrontUrl().ThemeFileUrl("image/Maps-and-Geolocation-Marker-icon.png")',
+                    shadow: ''
+                });
+                //google.maps.event.addListener(marker, 'click', function() {
+
+                if (infowindow.content != '') {
+                    infowindow.open(map, marker);
+                    map.panBy(1, -60);
+                    google.maps.event.addListener(marker, 'click', function (event) {
+                        infowindow.open(map, marker);
+                    });
+                }
+                //});
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+                <div id="ahnMap" style="position:relative;width:493px;height:288px;"></div>
+            </div>
+            <dl class="wwCont">
+                <dt class="vn">WORLDSTAR INTERNATIONAL JSC</dt>
+                <dd>
+                    @Html.FrontHtml().RenderHtmlBlock("contact.info")
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <form id="myForm" name="myForm">
+        <div class="cURight">
+            <div class="contTit">
+                <div class="cTit">Contact Form</div>
+                <p class="lRequ">required fields</p>
+            </div>
+            <p>Please fill out the contact form, and you will receive an e-mail response shortly.</p>
+            <ul class="mt15">
+                <li>
+                    <label for="firstName" class="requ"><span class="blind">[required fields]</span>First Name</label>
+                    <div class="fInpt">
+                        <input type="text" id="firstName" name="firstName" class="txtBox" value="" style="width:248px;" maxlength="30" />
+                    </div>
+                </li>
+                <li>
+                    <label for="lastName" class="requ"><span class="blind">[required fields]</span>Last Name</label>
+                    <div class="fInpt">
+                        <input type="text" id="lastName" name="lastName" class="txtBox" value="" style="width:248px;" maxlength="30" />
+                    </div>
+                </li>
+                <li>
+                    <label for="email" class="requ"><span class="blind">[required fields]</span>Email</label>
+                    <div class="fInpt">
+                        <input type="text" id="email" name="email" class="txtBox" value="" style="width:248px;" maxlength="30" />
+                    </div>
+                </li>
+                <li>
+                    <label for="phoneNum" class="requ"><span class="blind">[required fields]</span>Phone Number</label>
+                    <div class="fInpt">
+                        <input type="text" id="phoneNum" name="phoneNum" class="txtBox" value="" style="width:248px;" numberonly="true" maxlength="30" />
+                    </div>
+                </li>
+                <li>
+                    <label for="job" class="requ"><span class="blind">[required fields]</span>Job Title</label>
+                    <div class="fInpt">
+                        <input type="text" id="job" name="job" class="txtBox" value="" style="width:248px;" maxlength="30" />
+                    </div>
+                </li>
+                <li>
+                    <label for="slctContry" class="requ"><span class="blind">[required fields]</span>Country</label>
+
+                    <div class="fInpt">
+                        <span class="select">
+                            <select id="country" name="country" style="width:248px;">
+                                <option value="">Select Country</option>
+                                <option value="001">Afghanistan</option>
+                                <option value="002">Albania</option>
+                                <option value="003">Algeria</option>
+                                <option value="004">Andorra</option>
+                                <option value="005">Angola</option>
+                                <option value="006">Antigua and Barbuda</option>
+                                <option value="007">Argentina</option>
+                                <option value="008">Armenia</option>
+                                <option value="009">Australia</option>
+                                <option value="010">Austria</option>
+                                <option value="011">Azerbaijan</option>
+                                <option value="012">TheBahamas</option>
+                                <option value="013">Bahrain</option>
+                                <option value="014">Bangladesh</option>
+                                <option value="015">Barbados</option>
+                                <option value="016">Belarus</option>
+                                <option value="017">Belgium</option>
+                                <option value="018">Belize</option>
+                                <option value="019">Benin</option>
+                                <option value="020">Bhutan</option>
+                                <option value="021">Bolivia</option>
+                                <option value="022">Bosnia and Herzegovina</option>
+                                <option value="023">Botswana</option>
+                                <option value="024">Brazil</option>
+                                <option value="025">Brunei</option>
+                                <option value="026">Bulgaria</option>
+                                <option value="027">Burkina Faso</option>
+                                <option value="028">Burma</option>
+                                <option value="029">Burundi</option>
+                                <option value="030">Cambodia</option>
+                                <option value="031">Cameroon</option>
+                                <option value="032">Canada</option>
+                                <option value="033">Cape Verde</option>
+                                <option value="034">Central African Republic</option>
+                                <option value="035">Chad</option>
+                                <option value="036">Chile</option>
+                                <option value="037">China</option>
+                                <option value="038">Colombia</option>
+                                <option value="039">Comoros</option>
+                                <option value="040">Democratic Republic of the Congo</option>
+                                <option value="041">Republic of the Congo</option>
+                                <option value="042">Costa Rica</option>
+                                <option value="043">Cote dIvoire</option>
+                                <option value="044">Croatia</option>
+                                <option value="045">Cuba</option>
+                                <option value="046">Cyprus</option>
+                                <option value="047">Czech Republic</option>
+                                <option value="048">Denmark</option>
+                                <option value="049">Djibouti</option>
+                                <option value="050">Dominica</option>
+                                <option value="051">Dominican Republic</option>
+                                <option value="052">East Timor (see Timor-Leste)</option>
+                                <option value="053">Ecuador</option>
+                                <option value="054">Egypt</option>
+                                <option value="055">El Salvador</option>
+                                <option value="056">Equatorial Guinea</option>
+                                <option value="057">Eritrea</option>
+                                <option value="058">Estonia</option>
+                                <option value="059">Ethiopia</option>
+                                <option value="060">Fiji</option>
+                                <option value="061">Finland</option>
+                                <option value="062">France</option>
+                                <option value="063">Gabon</option>
+                                <option value="064">The Gambia</option>
+                                <option value="065">Georgia</option>
+                                <option value="066">Germany</option>
+                                <option value="067">Ghana</option>
+                                <option value="068">Greece</option>
+                                <option value="069">Grenada</option>
+                                <option value="070">Guatemala</option>
+                                <option value="071">Guinea</option>
+                                <option value="072">Guinea-Bissau</option>
+                                <option value="073">Guyana</option>
+                                <option value="074">Haiti</option>
+                                <option value="075">Holy See</option>
+                                <option value="076">Honduras</option>
+                                <option value="077">Hong Kong</option>
+                                <option value="078">Hungary</option>
+                                <option value="079">Iceland</option>
+                                <option value="080">India</option>
+                                <option value="081">Indonesia</option>
+                                <option value="082">Iran</option>
+                                <option value="083">Iraq</option>
+                                <option value="084">Ireland</option>
+                                <option value="085">Israel</option>
+                                <option value="086">Italy</option>
+                                <option value="087">Jamaica</option>
+                                <option value="088">Japan</option>
+                                <option value="089">Jordan</option>
+                                <option value="090">Kazakhstan</option>
+                                <option value="091">Kenya</option>
+                                <option value="092">Kiribati</option>
+                                <option value="093">Kosovo</option>
+                                <option value="094">Kuwait</option>
+                                <option value="095">Kyrgyzstan</option>
+                                <option value="096">Laos</option>
+                                <option value="097">Latvia</option>
+                                <option value="098">Lebanon</option>
+                                <option value="099">Lesotho</option>
+                                <option value="100">Liberia</option>
+                                <option value="101">Libya</option>
+                                <option value="102">Liechtenstein</option>
+                                <option value="103">Lithuania</option>
+                                <option value="104">Luxembourg</option>
+                                <option value="105">Macau</option>
+                                <option value="106">Macedonia</option>
+                                <option value="107">Madagascar</option>
+                                <option value="108">Malawi</option>
+                                <option value="109">Malaysia</option>
+                                <option value="110">Maldives</option>
+                                <option value="111">Mali</option>
+                                <option value="112">Malta</option>
+                                <option value="113">Marshall Islands</option>
+                                <option value="114">Mauritania</option>
+                                <option value="115">Mauritius</option>
+                                <option value="116">Mexico</option>
+                                <option value="117">Micronesia</option>
+                                <option value="118">Moldova</option>
+                                <option value="119">Monaco</option>
+                                <option value="120">Mongolia</option>
+                                <option value="121">Montenegro</option>
+                                <option value="122">Morocco</option>
+                                <option value="123">Mozambique</option>
+                                <option value="124">Namibia</option>
+                                <option value="125">Nauru</option>
+                                <option value="126">Nepal</option>
+                                <option value="127">Netherlands</option>
+                                <option value="128">Netherlands Antilles</option>
+                                <option value="129">New Zealand</option>
+                                <option value="130">Nicaragua</option>
+                                <option value="131">Niger</option>
+                                <option value="132">Nigeria</option>
+                                <option value="133">North Korea</option>
+                                <option value="134">Norway</option>
+                                <option value="135">Oman</option>
+                                <option value="136">Pakistan</option>
+                                <option value="137">Palau</option>
+                                <option value="138">Palestinian Territories</option>
+                                <option value="139">Panama</option>
+                                <option value="140">Papua New Guinea</option>
+                                <option value="141">Paraguay</option>
+                                <option value="142">Peru</option>
+                                <option value="143">Philippines</option>
+                                <option value="144">Poland</option>
+                                <option value="145">Portugal</option>
+                                <option value="146">Qatar</option>
+                                <option value="147">Romania</option>
+                                <option value="148">Russia</option>
+                                <option value="149">Rwanda</option>
+                                <option value="150">Saint Kitts and Nevis</option>
+                                <option value="151">Saint Lucia</option>
+                                <option value="152">Saint Vincent and the Grenadines</option>
+                                <option value="153">Samoa</option>
+                                <option value="154">San Marino</option>
+                                <option value="155">Sao Tome and Principe</option>
+                                <option value="156">Saudi Arabia</option>
+                                <option value="157">Senegal</option>
+                                <option value="158">Serbia</option>
+                                <option value="159">Seychelles</option>
+                                <option value="160">Sierra Leone</option>
+                                <option value="161">Singapore</option>
+                                <option value="162">Slovakia</option>
+                                <option value="163">Slovenia</option>
+                                <option value="164">Solomon Islands</option>
+                                <option value="165">Somalia</option>
+                                <option value="166">South Africa</option>
+                                <option value="167">South Korea</option>
+                                <option value="168">South Sudan</option>
+                                <option value="169">Spain</option>
+                                <option value="170">Sri Lanka</option>
+                                <option value="171">Sudan</option>
+                                <option value="172">Suriname</option>
+                                <option value="173">Swaziland</option>
+                                <option value="174">Sweden</option>
+                                <option value="175">Switzerland</option>
+                                <option value="176">Syria</option>
+                                <option value="177">Taiwan</option>
+                                <option value="178">Tajikistan</option>
+                                <option value="179">Tanzania</option>
+                                <option value="180">Thailand</option>
+                                <option value="181">Timor-Leste</option>
+                                <option value="182">Togo</option>
+                                <option value="183">Tonga</option>
+                                <option value="184">Trinidad and Tobago</option>
+                                <option value="185">Tunisia</option>
+                                <option value="186">Turkey</option>
+                                <option value="187">Turkmenistan</option>
+                                <option value="188">Tuvalu</option>
+                                <option value="189">Uganda</option>
+                                <option value="190">Ukraine</option>
+                                <option value="191">United Arab Emirates</option>
+                                <option value="192">United Kingdom</option>
+                                <option value="193">Uruguay</option>
+                                <option value="194">Uzbekistan</option>
+                                <option value="195">Vanuatu</option>
+                                <option value="196">Venezuela</option>
+                                <option value="197">Vietnam</option>
+                                <option value="198">Yemen</option>
+                                <option value="199">Zambia</option>
+                                <option value="200">Zimbabwe </option>
+                                <option value="000">United States of America</option>
+                            </select>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <label for="subject" class="requ"><span class="blind">[required fields]</span>Subject</label>
+                    <div class="fInpt">
+                        <input type="text" id="subject" name="subject" class="txtBox" value="" style="width:248px;" maxlength="200" />
+                    </div>
+                </li>
+                <li>
+                    <label for="details" class="requ"><span class="blind">[required fields]</span>Comments</label>
+                    <div class="fInpt">
+                        <textarea id="details" name="details" rows="8" cols="50" placeholder="Enter Description." style="width:248px;" maxlength="1000"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnCenter mt35">
+                <a href="#" class="btnCmDb btnContactUsSubmit">Submit</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".btnContactUsSubmit").click(function () {
+
+            if (!Common.isValue($("#firstName").val())) {
+                alert('Please enter your first name.');
+                $("#firstName").focus();
+                return;
+            }
+            if (!Common.isValue($("#lastName").val())) {
+                alert('Please enter your last name.');
+                $("#lastName").focus();
+                return;
+            }
+            if (!Common.isValue($("#email").val())) {
+                alert('Please enter the correct email address.');
+                $("#email").focus();
+                return;
+            }
+
+            if (!Check.email($("#email").val())) {
+                alert("An invalid format of e-mail address entered. Please try again.");
+                $("#email").focus();
+                return;
+            }
+
+            if (!Common.isValue($("#phoneNum").val())) {
+                alert('Please enter your phone number.');
+                $("#phoneNum").focus();
+                return;
+            }
+            if (!Common.isValue($("#job").val())) {
+                alert('Please enter your Job Title.');
+                $("#job").focus();
+                return;
+            }
+            if (!Common.isValue($("#country").val())) {
+                alert('Please enter Country.');
+                $("#country").focus();
+                return;
+            }
+            if (!Common.isValue($("#subject").val())) {
+                alert('Please enter subject.');
+                $("#subject").focus();
+                return;
+            }
+            if (!Common.isValue($("#details").val())) {
+                alert('Please enter details.');
+                $("#details").focus();
+                return;
+            }
+
+            $.ajax({
+                url: '@Url.FrontUrl().SubmissionUrl("contact")',
+                dataType: 'json',
+                method: 'POST',
+                data: $("#myForm").serialize(),
+                success: function (json) {
+                    if (json.isSuccess) {
+                        alert('Saved.');
+                        location.href = "@Url.FrontUrl().PageUrl("contact-us")";
+                    } else {
+                        alert('Failed to save.');
+                    }
+                },
+                error: function (x, o, e) {
+                    alert("Network Error!");
+                }
+            });
+        });
+    });
+</script>

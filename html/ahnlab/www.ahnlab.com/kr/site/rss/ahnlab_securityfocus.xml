@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>안철수연구소 : 보안 이슈</title>
+<link>http://www.ahnlab.com</link>
+<description>안철수연구소 RSS 서비스 | 보안 이슈</description>
+<lastBuildDate>2016-01-26 20:04:01</lastBuildDate>
+<copyright>Copyright 2016 ⓒ AhnLab,Inc. All rights reserved</copyright>
+<language>ko-KO</language>
+<item>
+<title><![CDATA[MS 2016년 1월 보안 패치, 새해에도 업데이트 하세요 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24531 ]]></link>
+<description><![CDATA[  
+마이크로소프트(이하 MS)가 최근 발견된 보안 취약점을 해결하기 위해 1월 정기 보안패치를 발표했다. ?이번 정기 보안 패치는 인터넷익스플로러(I ]]></description>
+<dc:date>2016-01-20 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[디지털 네이티브의 ‘신조어’ 따라잡기 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24541 ]]></link>
+<description><![CDATA[ ? “캬~ 이 분 최소 사이다!”, 
+? “그 사람 정말 고답이”‘ 
+? “너 정말 엄마랑 빼박캔트!”, 
+? “안물안궁!”
+ 
+분명 한글인데 무슨 뜻인지 ]]></description>
+<dc:date>2016-01-20 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[알아두면 유용한 ‘지도앱’ 사용 꿀팁! ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24521 ]]></link>
+<description><![CDATA[ 이정표와 번지수만으로 길을 찾던 때가 있었다. 그때는 스마트폰 없이도 목적지에 찾아가는 게 어렵지 않았다. 하지만 요즘엔 내비게이션과 스마트폰 ]]></description>
+<dc:date>2016-01-13 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[잔혹한 랜섬웨어, 이번엔 자바스크립트다 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24519 ]]></link>
+<description><![CDATA[ 신?변종 랜섬웨어가 확산되고 있는 가운데 자바스크립트를 이용한 랜섬웨어가 등장해 사용자들의 각별한 주의가 필요하다. 초기 랜섬웨어는 스팸메 ]]></description>
+<dc:date>2016-01-13 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[MS 구버전 IE 지원 중단, 내 PC는 안전할까? ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24492 ]]></link>
+<description><![CDATA[  
+마이크로소프트(Microsoft, 이하 MS)가 오는 12일부터 구버전 인터넷 익스플로러(Internet Explorer, 이하 IE)에 대한 기술 지원 및 보안 업데이트를 중단한다 ]]></description>
+<dc:date>2016-01-06 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Q&A로 풀어본 MDS에 대한 궁금증 5가지 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24473 ]]></link>
+<description><![CDATA[ 2015년 최대 보안 이슈로 손꼽히는 ‘랜섬웨어’. 랜섬웨어에 대해 효과적인 대응 방안을 제공하는 AhnLab MDS가 알려지면서, 고객 문의도 이어지고 있다 ]]></description>
+<dc:date>2016-01-04 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[블록버스터급 사이버 공격, 그 실체와 보안 대책은? ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24472 ]]></link>
+<description><![CDATA[ 2010년 9월, 이란 핵 시설을 마비시키기 위한 미국의 스턱스넷 공격이 있었다. 이에 대한 반격으로 2013년 이란이 미국 뉴욕 인근의 댐 관리 시스템에 침 ]]></description>
+<dc:date>2016-01-04 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[“안전해서 더욱 자유로운 세상” ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24471 ]]></link>
+<description><![CDATA[    올해로 안랩은 창립 21주년을 맞이합니다. 지난 20년 동안 안랩이 해온 것은 새로운 것에 도전하고, 그것을 우리 것으로 만드는 것이었습니다. 또한 두려움과 역경을 ]]></description>
+<dc:date>2016-01-04 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[[보안 위협 2015년 결산 및 2016년 예측 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24474 ]]></link>
+<description><![CDATA[ <IMG style="VERTICAL-ALIGN: middle" src="http://image.ahnlab.com/img_upload/editor/1 ]]></description>
+<dc:date>2016-01-04 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[악성코드, ‘이렇게’ 파고든다 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24462 ]]></link>
+<description><![CDATA[  
+최근 가장 화두가 되고 있는 악성코드는 단연 ‘랜섬웨어’다. 그러나 랜섬웨어가 올해의 유일한 악성코드도 아니다. 실제로 하루 평균 수십~수백만 ]]></description>
+<dc:date>2015-12-30 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[키워드로 정리한 ‘2015년 5대 보안 위협‘ ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24463 ]]></link>
+<description><![CDATA[ 올해 보안 위협은 더욱 공격적이었고 대담했으며 많은 피해를 남겼다. 랜섬웨어는 2015년 최대 보안 이슈로 꼽힐 만큼 무섭게 퍼졌으며 악명 높은 다이 ]]></description>
+<dc:date>2015-12-30 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[직구족을 위한 안전한 해외 결제 팁 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24441 ]]></link>
+<description><![CDATA[ 해외 직구 1조8천억 원(2014년 기준) 시대, 국내 사이트에서 쇼핑을 하듯 해외 사이트에서 익숙하게 쇼핑을 하는 직구족이 늘고 있다. 직구란 해외 직접 ]]></description>
+<dc:date>2015-12-23 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA['개인 파일 유포’ 협박하는 랜섬웨어 등장! ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24435 ]]></link>
+<description><![CDATA[  
+랜섬웨어로 전세계가 몸살을 앓고 있다. 국내에서는 올해부터 본격적으로 나타나기 시작했지만 해외에서는 이미 수년 전부터 랜섬웨어가 지속적으 ]]></description>
+<dc:date>2015-12-23 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[MS 12월 보안 패치 발표, 업데이트 하고 가세요! ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24396 ]]></link>
+<description><![CDATA[  
+마이크로소프트(이하 MS)가 최근 발견된 보안 취약점을 해결하기 위해 12월 정기 보안패치를 발표했다. 이번에 MS가 배포한 보안패치는 긴급 8건, 중요 ]]></description>
+<dc:date>2015-12-16 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[지적 대화를 위한 넓고 얕은 ‘보안 이슈’ ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24413 ]]></link>
+<description><![CDATA[ 무고한 시민 130명의 목숨을 앗아간 파리 테러 사건, 이 같은 무차별적인 테러의 확산을 막기 위해 ‘사이버 감시’를 강화해야 할까? 테러리스트들이 ]]></description>
+<dc:date>2015-12-16 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[파일을 실행하지 않아도 랜섬웨어에 감염된다?  ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24381 ]]></link>
+<description><![CDATA[ 신?변종 랜섬웨어가 확산되고 있는 가운데, 최근 인터넷 스트리밍의 광고창이나 인터넷 뉴스 사이트를 통해 랜섬웨어에 감염되는 경우가 발생해 사 ]]></description>
+<dc:date>2015-12-09 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[지적 대화를 위한 넓고 얕은 ‘최신 IT 트렌드’ ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24382 ]]></link>
+<description><![CDATA[ 한 해를 마무리하는 연말을 맞아 부쩍 모임이 많아지는 시기다. 부서 회식부터 회사 송년회, 학교 동기 모임, 가족 및 친지 모임 등에서 우리는 평소보 ]]></description>
+<dc:date>2015-12-09 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[‘공유기’도 업데이트를 해야 하는 이유! ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24358 ]]></link>
+<description><![CDATA[  
+PC나 스마트폰도 아닌 집에서 사용하는 공유기를 업데이트한다? 다소 생소하게 들릴 수도 있지만 공유기도 반드시 업데이트가 필요하다. 공유기의  ]]></description>
+<dc:date>2015-12-02 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[랜섬웨어, 이렇게 감염된다  ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24357 ]]></link>
+<description><![CDATA[  
+최근 사용자 PC에 있는 문서 파일과 이미지 파일들을 암호화하고, 파일 복구의 대가로 금전을 요구하는 랜섬웨어에 의한 감염 사례가 증가하고 있다 ]]></description>
+<dc:date>2015-12-02 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[2부_이상적인 vs. 현실적인 랜섬웨어 대응 방안 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=2&seq=24337 ]]></link>
+<description><![CDATA[ 최근 국내에서 랜섬웨어로 인한 피해가 급증하고 있다. 신?변종 랜섬웨어가 지속적으로 발견되고 있으며, 기업뿐만 아니라 개인 사용자들에게까지  ]]></description>
+<dc:date>2015-11-30 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+</channel>
+</rss>

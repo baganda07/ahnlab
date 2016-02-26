@@ -1,0 +1,190 @@
+Event code: 100000
+Event message: Path '/' was not found.
+Event time: 2/22/2016 2:12:45 PM
+Event time (UTC): 2/22/2016 7:12:45 AM
+Event ID: 575697821a754f84aafce79e128494b2
+Event sequence: 5
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/6/ROOT-1-131005987205767989
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\ahnlab\web\
+    Machine name: HOANGBND-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/' was not found.
+
+Request information:
+    Request URL: /
+    Request path: /
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: HOANGBND-PC\hoangbnd
+
+Thread information:
+    Thread ID: 6
+    Thread account name: HOANGBND-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.CheckSiteExistsActionFilter.OnSiteNotExists(ActionExecutingContext filterContext) in e:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\ActionFilters\CheckSiteExistsActionFilter.cs:line 35
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.CheckSiteExistsActionFilter.OnActionExecuting(ActionExecutingContext filterContext) in e:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\ActionFilters\CheckSiteExistsActionFilter.cs:line 27
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 100000
+Event message: Path '/home' was not found.
+Event time: 2/22/2016 2:38:08 PM
+Event time (UTC): 2/22/2016 7:38:08 AM
+Event ID: 9ffbb87aa0ae487ea38550d487e93d2e
+Event sequence: 223
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/6/ROOT-1-131005987205767989
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\ahnlab\web\
+    Machine name: HOANGBND-PC
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Path '/home' was not found.
+
+Request information:
+    Request URL: /home
+    Request path: /home
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: HOANGBND-PC\hoangbnd
+
+Thread information:
+    Thread ID: 40
+    Thread account name: HOANGBND-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at Kooboo.CMS.Sites.Controllers.ActionFilters.CheckSiteExistsActionFilter.OnSiteNotExists(ActionExecutingContext filterContext) in e:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\ActionFilters\CheckSiteExistsActionFilter.cs:line 35
+   at Kooboo.CMS.Sites.Controllers.ActionFilters.CheckSiteExistsActionFilter.OnActionExecuting(ActionExecutingContext filterContext) in e:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Sites\Controllers\ActionFilters\CheckSiteExistsActionFilter.cs:line 27
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+
+
+Custom event details: 
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2/22/2016 3:56:29 PM
+Event time (UTC): 2/22/2016 8:56:29 AM
+Event ID: 42338d79b954487aa7b08015eaf60e41
+Event sequence: 5
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/6/ROOT-1-131006049842654697
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\ahnlab\web\
+    Machine name: HOANGBND-PC
+
+Process information:
+    Process ID: 5988
+    Process name: iisexpress.exe
+    Account name: HOANGBND-PC\hoangbnd
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Type 'ASP._Page_Cms_Data_Sites_Ahnlab_Templates_Views_Home_MainSlider_template_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+
+Request information:
+    Request URL: http://localhost:24396/Cms_Data/Sites/Ahnlab/Templates/Views/Home.MainSlider/template.cshtml
+    Request path: /Cms_Data/Sites/Ahnlab/Templates/Views/Home.MainSlider/template.cshtml
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: HOANGBND-PC\hoangbnd
+
+Thread information:
+    Thread ID: 7
+    Thread account name: HOANGBND-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2/22/2016 5:19:58 PM
+Event time (UTC): 2/22/2016 10:19:58 AM
+Event ID: 19c9c1cca72a4777b794d1842996a81b
+Event sequence: 29
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/6/ROOT-1-131006099790159264
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\ahnlab\web\
+    Machine name: HOANGBND-PC
+
+Process information:
+    Process ID: 9264
+    Process name: iisexpress.exe
+    Account name: HOANGBND-PC\hoangbnd
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Type 'ASP._Page_Cms_Data_Sites_Ahnlab_Templates_Views_Module_Contact_template_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+
+Request information:
+    Request URL: http://localhost:24396/Cms_Data/Sites/Ahnlab/Templates/Views/Module.Contact/template.cshtml
+    Request path: /Cms_Data/Sites/Ahnlab/Templates/Views/Module.Contact/template.cshtml
+    User host address: ::1
+    User: admin
+    Is authenticated: True
+    Authentication Type: Forms
+    Thread account name: HOANGBND-PC\hoangbnd
+
+Thread information:
+    Thread ID: 8
+    Thread account name: HOANGBND-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

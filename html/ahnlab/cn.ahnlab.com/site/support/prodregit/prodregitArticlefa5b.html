@@ -1,0 +1,1493 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Mirrored from cn.ahnlab.com/site/support/prodregit/prodregitArticle.do?menuLoc=C10 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:26:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=1280" />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="产品注册 | AhnLab"/>
+	<meta property="og:description"     content=""/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="产品注册 | AhnLab">
+	<meta name="twitter:description"    content="">
+
+    <!-- SEO -->
+    <title>产品注册 | AhnLab</title>
+
+    <link href="../../../css/cn/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	$("input, textarea").placeholder();
+
+        //이미지 에러처리
+        $("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            if($(this).parent().get(0).tagName == "A"){
+            	w = $(this).width();
+                h = $(this).height();
+            }
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//cn.ahnlab.com/image/cn/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+        });
+        
+        //dim처리된 링크에 대체 택스트 달기
+        $("a").each(function (){
+	        if($(this).hasClass("dis")){
+	            $(this).attr("title", "不提供该服务。");
+	        }
+	    });
+	        
+        //선택된 탭에 대체 택스트 달기
+        $("li.on > a").each(function (){
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">当前页面</span>" + text);
+        });
+        
+        //a링크 #처리
+        $('a[href = "#"]').click(function(){
+            return false;
+        });
+
+        //로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://cn.ahnlab.com/site/login/logout.do',
+                dataType: 'json',
+                method : 'POST',
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+        
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('/site/login/loginForm.do', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <nav id="skipNavi">skip navigation
+        <ul>
+            <li><a href="#naviMenu">menu</a></li>
+            <li><a href="#naviUtill">member</a></li>
+            <li><a href="#container">container</a></li>
+            <li><a href="#footer">footer menu</a></li>
+        </ul>
+    </nav>
+    <!-- gnb -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $('.serWrap').mouseover(function(){
+             $(this).attr("class","serWrap on");
+       });
+
+        $('.serWrap').mouseout(function(){
+            $(this).attr("class","serWrap");
+      });
+
+    });
+
+    function dqTopSearch() {
+            if ($("#topSearchText").val() == "") {
+                alert('请输入搜索关键词。');
+                $("#topSearchText").focus();
+                return;
+            }
+
+            $("#dqTopSearch").attr("target", "");
+            $("#dqTopSearch").attr("action", "../../search/searchResultAll.html");
+            $("#dqTopSearch").submit();
+        }
+
+ // 입력체크
+    function dqTopHandleEnter(event)
+    {
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+
+        if(keyCode == 13)
+        {
+                dqTopSearch();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+        </script>
+
+    <header class="htop">
+        <div class="htopWrap">
+            <!-- logo -->
+            <p class="logo"><a href="../../main.html"><img src="../../../image/cn/common/img_logo.gif" alt="AhnLab"></a></p>
+            <!-- logo -->
+            <!-- etc menu -->
+            <nav id="naviUtill">
+                <ul>
+                    <li class="locSite"><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        <a href="#" class="link" title="Change Country">中国</a>
+                        <!-- layer -->
+                        <div class="lyUtill"><div class="lyWrap">
+                            <p><a href="../../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" title="在新窗口打开">한국 (한국어)</a></p>
+                            <p class=""><a href="../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="在新窗口打开">Global (English)</a></p>
+                            <p class=""><a href="../../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="在新窗口打开">APAC (English)</a></p>
+                            <p class=""><a href="../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="在新窗口打开">日本 (日本語)</a></p>
+                            <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" class="fChina" title="在新窗口打开">中国 (简体中文)</a></p>
+                            <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="在新窗口打开">US (English)</a></p>
+                        </div></div>
+                        <!-- //layer -->
+                    </li>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    
+                    <li><a href="../../login/loginForm.do" class="link">登录</a></li>
+                    
+                    <li><a href="../../mypage/product/myProductList.do" class="link">我的页面</a></li>
+                    <li><a href="../partner/ourPartner.html" class="link">合作伙伴</a></li>
+                </ul>
+            </nav>
+            <!-- //etc menu -->
+
+            <!-- menu -->
+            <nav id="naviMenu">
+                <ul>
+                    <li class="muProd "><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        
+                        <a href="../../product/productSubDetaildb8a.html?prodSeq=30005" class="oneLink">产品与服务</a>
+                        <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                            
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetaildb8a.html?prodSeq=30005">威胁检测</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetaildb8a.html?prodSeq=30005">AhnLab MDS</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetail8169.html?prodSeq=221">端点安全</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetail8169.html?prodSeq=221">V3 Internet Security 8.0</a></li>
+                                    
+                                    <li><a href="../../product/productSubDetail7940.html?prodSeq=30007">V3 Internet Security 7.0 Platinum Enterprise</a></li>
+                                    
+                                    <li><a href="../../product/productSubDetail07ae.html?prodSeq=504">AhnLab Policy Center 4.0</a></li>
+                                    
+                                    <li><a href="../../product/productSubDetaila102.html?prodSeq=30003">引擎开发工具包</a></li>
+                                    
+                                    <li><a href="../../product/productSubDetail3cab.html?prodSeq=30004">防外挂产品</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetaila14c.html?prodSeq=30001">产业安全</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetaila14c.html?prodSeq=30001">AhnLab EPS</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetailcd49.html?prodSeq=30006">网络安全</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetailcd49.html?prodSeq=30006">AhnLab TrusGuard UTM</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetail5c0e.html?prodSeq=30008">安全咨询</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetail5c0e.html?prodSeq=30008">安全咨询</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                            
+                        </div></div></div>
+                        
+                    </li>
+                    
+                    
+                     
+                        <li class="muDown ">
+                     
+                     
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../../download/free/freeTrial.html" class="oneLink">下载中心</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../download/free/freeTrial.html">免费试用版</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../download/engine/engineList.html">引擎/补丁文件</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../download/renewal/renewalList.html">升级续费</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../download/removal/removalList.html">病毒专杀工具</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../download/documents/documentsList.html">文档中心</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                            <div class="fr">
+                                <div class="pdList">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="../../product/productSubDetaildb8a.html?prodSeq=30005">
+                                        <img src="../../../image/cn/common/img_gnb_product.jpg" class="photo" alt="">
+                                        <p class="fcBlue">AhnLab MDS</p>
+                                        <p>一个完整的防</br>御策略响应下</br>一代安全威胁</p>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                        <li class="muSup selected">
+                     
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../html/supportProgram.html" class="oneLink">客户支持</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../html/supportProgram.html">技术支持</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../html/supportProgram.html">技术支持</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../html/ahnReport.html">AhnReport</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../productfaq/productFaqList.html">常见问题解答(FAQ)</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../login/loginForm259a.html">在线问答(Q&A)</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="prodregitArticle.html">产品注册</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../notice/noticeList.html">公告</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab 全球合作伙伴计划</dt>
+                                    <dd class="part">
+                                        <p>通过 AhnLab 合作伙伴计划<br />拓展您的业务</p>
+                                        <a href="../partner/ourPartner.html" class="linkArr">查看全文</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                        <li class="muSecur ">
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../../securitycenter/html/aboutASEC.html" class="oneLink">安全中心</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/html/aboutASEC.html">关于ASEC</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/asecCn/asecReportList.html">ASEC Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/asec/asecReportList.html">AhnLab安全月刊</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/html/techReport.html">Tech Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/securityinsight/securityInsightList.html">安全透视</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/viruscenter/virusList.html">病毒中心</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../securitycenter/html/securityRiskLevel.html">安全风险等级</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                            <div class="fr">
+                                <a href="http://www.gartner.com/technology/media-products/pdfindex.jsp?g=ahnlab-1-2JFY8YE" target="_blank" class="bann mds" title="View in PDF">
+                                    <p class="fcBlue">AhnLab V3 Mobile, A Smart Choice for a Mobile-Only Era</p>
+                                    <p>AhnLab Newsletter<br>featuring Gartner research</p>
+                                </a>
+                            </div>
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                     
+                        <li class="muAL ">
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../../about/aboutAhnlab.html" class="oneLink">关于AhnLab</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/aboutAhnlab.html">公司介绍</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/securityPortfolio.html">事业领域</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/pressRoomList.html">新闻发布室</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/eventList.html">活动</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/certificates.html">认证及奖项</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../etc/contactUs.html">联系我们</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab 全球合作伙伴计划</dt>
+                                    <dd class="part">
+                                        <p>通过 AhnLab 合作伙伴计划<br />拓展您的业务</p>
+                                        <a href="../partner/ourPartner.html" class="linkArr">查看全文</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                </ul>
+            </nav>
+            <!-- //menu -->
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </header>
+
+
+    <!-- //gnb -->
+    <div id="container">
+    
+    <div class="locWrap clfix">
+    <ul>
+        <li class="locLi alt">
+<a href="../html/supportProgram.html" class="locTit ">客户支持</a>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">产品注册</a>
+            <div class="locList">
+                <p><a href="../html/supportProgram.html">技术支持</a></p>
+                <p><a href="../productfaq/productFaqList.html">常见问题解答(FAQ)</a></p>
+                <p><a href="../../login/loginForm259a.html">在线问答(Q&A)</a></p>
+                <p class="on"><a href="prodregitArticle.html">产品注册</a></p>
+                <p><a href="../notice/noticeList.html">公告</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <form method="post" name="prodregitForm" id="prodregitForm">
+        <div class="topTitWrap">
+            <h1 class="topTit">产品注册</h1>
+        </div>
+
+<!-- contents -->
+        <div class="contents">
+
+            <div class="descCopy">
+                您必须阅读、同意并接受所有本产品拷贝的使用条款和隐私条款及条件，才能成为AhnLab的会员。选中“复选框”同意。
+            </div>
+
+            <h2 class="cTit">法律声明</h2>
+
+            <div class="scrollBox">
+                <div class="terms">
+                    <dl>
+                        <dt class="mt0">AhnLab网站内容的使用</dt>
+                        <dd>非常感谢您使用AhnLab的服务。AhnLab网站的信息向所有人免费提供。但是，我们的试用版产品和共享软件只有在您提供个人信息并注册后方能使用。AhnLab网站内容的使用条件可能在任何时候发生变化。如果更新版本出现，用户将可以通过相关网页或其他方式获知相关信息。由AhnLab提供的所有文本、图表、文档及软件都适用于本条款。</dd>
+                        <dt>版权声明</dt>
+                        <dd>由AhnLab提供的所有内容、软件版权均属于AhnLab公司，所有版权受版权法保护，未事先经过AhnLab书面许可，不得以任何方式或形式来转让、分发或复制、销售本网站的任何部分。</dd>
+                        <dt>AhnLab网站信息及软件的分发</dt>
+                        <dd>
+                            <p>除非另有声明，您在引用、复制、打印、出版及分发AhnLab网站内容时，应满足下列条件</p>
+                            <p class="em">仅可用于提供信息、且非商业用途或事先获得AhnLab的书面授权</p>
+                            <p class="em">复制或部分复制任何内容时必须标明信息来源于AhnLab。</p>
+                        </dd>
+                        <dt>程序</dt>
+                        <dd>AhnLab提供免费试用版产品，其可在限定期间内适用。在没有获得AhnLab说明授权的情况下，任何个体、公司、组织均无权上传AhnLab软件之公共网络、国际因特网以及通过CD或其他介质分发AhnLab软件。</dd>
+                        <dt>链接</dt>
+                        <dd>在未事先获得AhnLab书面授权的情况下，禁止不当复制并链接至AhnLab公司网页</dd>
+                        <dt>第三方信息或产品</dt>
+                        <dd>AhnLab网站提及第三方的产品与服务以及第三方提供之信息仅供信息参考之用。 AhnLab对第三方服务与产品不做任何形式的推荐或认可。 所有权利及法律责任归属于第三方，AhnLab不承担任何相关法律责任。</dd>
+                        <dt>变更</dt>
+                        <dd>AhnLab将可能偶尔变更本声明中的相关条款。变更后，本声明末尾的“生效时间”也将随之变更。</dd>
+                    </dl>
+
+                    <div class="sup">
+                        <p>本协议自2003年1月6日期生效。
+                    </div>
+                </div>
+            </div>
+            <p class="mt10"><input type="checkbox" id="chkAgr01" name="agreeTerms" value="Y"/><label for="chkAgr01" class="fcDgray">我同意</label></p>
+
+            <h2 class="cTit mt30">个人信息保护策略</h2>
+
+            <div class="scrollBox">
+                <div class="terms">
+                    <dl>
+                        <dt>个人信息保护策略</dt>
+                        <dd>下面的文字介绍了我们涉及隐私权方面的政策，以便您可以安全地使用AhnLab的各种服务。我们致力于全面保护您的个人信息和防止任何非经双方同意披露个人信息或任何来自外部的可能损害的发生。本隐私政策可能会发生变化，这取决于相关的法律和法规。我们建议您在可能涉及隐私权方面问题时留意可能的更新。</dd>
+                        <dt>关于对您的个人信息的收集</dt>
+                        <dd>AhnLab只收集所需的最低限度的个人信息。当您下载试用版或共享软件时，可能强制性的要求输入您的个人信息，可能包括您的姓名、电子邮件地址、国籍等。我们声明，我们绝不会将以这种方式收集的个人信息用于除改善已向用户说明的各项服务之外的其他目的。</dd>
+                        <dt>关于收集个人信息的目的</dt>
+                        <dd>我们只在需要一些统计数据以改善我们提供给您的各项服务时，才会适用这些个人信息。这些统计数据只用于AhnLab内部的研究，以便了解您的使用模式及习惯。</dd>
+                        <dt>关于您个人信息的共享</dt>
+                        <dd>原则上AhnLab不会未经您的同意与其他个人、公司或组织分享您的个人信息。如果有您的事先允许，我们可能会将您的信息提供给我们挑选的商业合作伙伴， 以便将他们认为对您或您的业务至关重要的产品或服务信息传送给您。此外，如果您的某些行为违反了相关的适用协议或其他任何方式的非法侵害，或应司法机关的请求，我们保留在未经您事先同意的情况下将您的个人资料提供给有关当局的权利，以及保留追究相关法律责任的权利。然而，即使在这种情况下，我们仍将将慎重的考虑可能的对您个人隐私权利的侵犯。</dd>
+                        <dt>关于您个人信息的保存</dt>
+                        <dd>您的个人信息只可能在您使用AhnLab所提供之服务时被收集并永久保存 。这将是只用于有限的用途，如上所述。</dd>
+                        <dt>关于您个人信息的存储和删除</dt>
+                        <dd>您的个人资料储存在AhnLab的数据库系统，只有我们授权的管理人员可以使用。但是，您可能无法访问自己的个人信息。如果接到浏览或删除您的个人信息的请求，我们将采取适当的措施，并通知你结果。您的个人信息一旦被删除，将不会以任何方式恢复或使用。</dd>
+                        <dt>隐私政策的变更</dt>
+                        <dd>
+                            <p>AhnLab可能会更新本隐私权政策。如果本政策更新，底部的本隐私政策末尾的“生效日期”也将随之改变，任何改变的细节将另行公布。</p>
+                            <p>如果您对本声明有任何疑问或建议，请通过以下方式联系我们</p>
+                            <p>Email: <a href="mailto:support@ahn.com.cn" class="linkTxt">support@ahn.com.cn</a></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <p class="mt10"><input type="checkbox" id="chkAgr02" name="agreePolicy" value="Y"/><label for="chkAgr02" class="fcDgray">我同意</label></p>
+
+            <div class="btnCenter">
+                <a href="#" class="btnCm btnCancel">取消</a>
+                <a href="#" class="btnCmDb btnSubmit">下一步</a>
+            </div>
+
+        </div>
+        </form>
+    <script type="text/javascript">
+    <!--
+    $(".btnCancel").click(function(){
+//         $("#prodregitForm").attr("action", "https://cn.ahnlab.com/site/support/prodregit/prodregitArticle.do");
+//         $("#prodregitForm").attr("target", "_self");
+//         $("#prodregitForm").submit();
+    	history.back();
+    });
+    $(".btnSubmit").click(function(){
+    	if(!$("#chkAgr01").is(':checked') && !$("#chkAgr02").is(':checked')) {
+            alert("您必须同意“使用条款”和“个人信息保护策略”才可以进行下一步。");
+            return;
+        }
+
+        if(!$("#chkAgr01").is(':checked')) {
+            alert("请同意“使用条款”的内容。");
+            return;
+        }
+
+        if(!$("#chkAgr02").is(':checked')) {
+            alert("请同意“个人信息保护策略”的内容。");
+            return;
+        }       
+        
+        $("#prodregitForm").attr("action", "prodregitForm.do");
+        $("#prodregitForm").attr("target", "_self");
+        $("#prodregitForm").submit();
+    });
+    -->
+    </script>
+    </div>
+    <!-- footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="ftWrap">
+            <ul class="ftMenu">
+                <li><a href="../../etc/privacyPolicy.html">个人信息保护策略</a></li>
+                
+                <li><a href="../../etc/termsOfUse.html">法律声明</a></li>
+                <li><a href="../../etc/contactUs.html">联系我们</a></li>
+                <li><a href="../../etc/sitemap.html">网站地图</a></li>
+            </ul>
+
+            <div class="locSiteWrap globalSiteCombo">
+                <p class="locSite"><a href="#" class="comboLink2" title="Change Country">中国</a></p>
+                <!-- layer -->
+                <div class="lyUtill" id=""><div class="lyWrap">
+                    <p><a href="../../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" class="fKr" title="在新窗口打开">한국 (한국어)</a></p>
+                    <p class=""><a href="../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="在新窗口打开">Global (English)</a></p>
+                    <p class=""><a href="../../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="在新窗口打开">APAC (English)</a></p>
+                    <p class=""><a href="../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="在新窗口打开">日本 (日本語)</a></p>
+                    <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" class="fChina" title="在新窗口打开">中国 (简体中文)</a></p>
+                    <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="在新窗口打开">US (English)</a></p>
+                </div></div>
+                <!-- //layer -->
+            </div>
+
+            <p class="copyright">&copy; AhnLab, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+	/*
+	$(".globalSiteCombo").focusin(function(){
+		$(".globalSiteCombo").addClass("on");
+		$(".footer .locSite").addClass("on");
+	});
+	$(".globalSiteCombo").focusout(function(){
+		$(".globalSiteCombo").removeClass("on");
+		$(".footer .locSite").removeClass("on");
+	});
+	*/
+});
+function getCookie( cname ) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+       var c = ca[i];
+       while (c.charAt(0)==' ') c = c.substring(1);
+       if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+function closeWin(winName, expiredays) {
+   if($("input:checkbox[id='chkToday']").is(":checked") == true){
+      setCookie( winName, "done" , expiredays);
+   }
+   $("#mainLayer").hide();
+}
+
+function setCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+
+</script>
+
+
+
+	<script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-17204763-12', 'auto');
+	   ga('send', 'pageview');
+
+	 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language='javascript'>
+
+
+var _mk   = '';
+var _od   = 0 ;
+var _gd   = '';
+var _ud1 = '' ;
+var _skey = '' ;
+
+var cur_url = location.href;
+var url_index = cur_url.indexOf("event");
+
+if(url_index > -1){
+    _skey = cur_url;
+}
+
+</script>
+<!-- AceCounter END --> 
+
+
+
+
+
+
+
+
+	<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+	<script language='javascript'>
+		if(typeof _GUL == 'undefined'){
+		var _GUL = 'acounter.ahnlab.com';var _GPT='80'; var _SGPT='443';var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL+":"+_SGPT:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'https://cn.ahnlab.com/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+		document.writeln("<scr"+"ipt language='javascript' src='/js/lib/acecounter/cn/acecounter_V70.js'></scr"+"ipt>");
+	}
+	</script>
+	<noscript><img src='http://acounter.ahnlab.com/?uid=10&amp;je=n&amp;' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End -->
+
+
+
+
+    <!-- //footer -->
+</div> 
+</body>
+
+
+<!-- Mirrored from cn.ahnlab.com/site/support/prodregit/prodregitArticle.do?menuLoc=C10 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:26:07 GMT -->
+</html>

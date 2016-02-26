@@ -1,0 +1,135 @@
+﻿@functions{
+    private List<TextContent> GetChildren(string parentUUID)
+    {
+        return ((TextContent[])ViewBag.Categories).Where(t => t.ParentUUID == parentUUID).ToList();
+    }
+}
+@if (ViewBag.ParentCategories != null && ViewBag.ParentCategories.Length > 0)
+{
+    <nav id="naviMenu">
+        <ul>
+            @foreach (TextContent parent in ViewBag.ParentCategories)
+            {
+                var i = 0;
+                var children = GetChildren(parent.UUID);
+
+                <li class="@parent["CssClass"]">
+                    <!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                    <a href="#" class="oneLink">@parent["Name"]</a>
+                    @if (children != null && children.Any())
+                    {
+                        <div class="lyMu">
+                            <div class="lyMuWrap">
+                                <div class="lyMuCont">
+                                    @if (parent["CssClass"].ToString() != "muProd")
+                                    {
+                                        @Html.Raw("<div class=\"fl\">")
+                                    }
+
+                                    @foreach (var child in children)
+                                    {
+
+                                        <div class="naviWrap @(i == 0 || i % 4 == 0 ? "clear" : "")">
+                                            <p class="tit"><a href="#">@child["Name"]</a></p>
+                                            @*<ul class="thrList">
+                                                    <li><a href="product/productSubDetail5d8e.html?prodSeq=15231">AhnLab MDS</a></li>
+                                                    <li><a href="product/productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>
+                                                </ul>*@
+                                        </div>
+                                        i++;
+                                    }
+                                    @if (parent["CssClass"].ToString() != "muProd")
+                                    {
+                                        @Html.Raw(" </div>")
+                                    }
+
+                                    @if (parent["CssClass"].ToString() != "muProd")
+                                    {
+                                        <div class="fr">
+                                            <div class="pdList">
+                                                <a href="product/productSubDetail5d8e.html?prodSeq=15231">
+                                                    <img src="../image/en/common/img_gnb_product.jpg" class="photo" alt="">
+                                                    <p class="fcBlue">AhnLab MDS</p>
+                                                    <p>A Complete Defense Strategy against Next-Generation Threats.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </li>
+            }
+
+            @*<li class="muSup ">
+                    <!-- 1depth -->
+
+                    <a href="support/supportMain.html" class="oneLink">Support</a>
+
+                    <!-- menu layer -->
+                    <div class="lyMu">
+                        <div class="lyMuWrap">
+                            <div class="lyMuCont">
+                                <div class="fr">
+                                    <dl>
+                                        <dt>AhnLab Global Partner Program</dt>
+                                        <dd class="part">
+                                            <p>Expand Your Business through AhnLab Partner Program.</p>
+                                            <a href="support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //menu layer -->
+                </li>
+
+                <li class="muSecur ">
+                    <!-- 1depth -->
+
+                    <a href="securitycenter/securitycenterMain.html" class="oneLink">Security Center</a>
+
+                    <!-- menu layer -->
+                    <div class="lyMu">
+                        <div class="lyMuWrap">
+                            <div class="lyMuCont">
+                                <div class="fr">
+                                    <a href="http://www.gartner.com/technology/media-products/pdfindex.jsp?g=ahnlab-1-2JFY8YE" target="_blank" class="bann mds" title="View in PDF">
+                                        <p class="fcBlue">AhnLab V3 Mobile, A Smart Choice for a Mobile-Only Era</p>
+                                        <p>AhnLab Newsletter<br>featuring Gartner research</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //menu layer -->
+                </li>
+
+                <li class="muAL ">
+                    <!-- 1depth -->
+
+                    <a href="about/aboutAhnlab.html" class="oneLink">About AhnLab</a>
+
+                    <!-- menu layer -->
+                    <div class="lyMu">
+                        <div class="lyMuWrap">
+                            <div class="lyMuCont">
+                                <div class="fr">
+                                    <dl>
+                                        <dt>AhnLab Global Partner Program</dt>
+                                        <dd class="part">
+                                            <p>Expand Your Business through AhnLab Partner Program.</p>
+                                            <a href="support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //menu layer -->
+                </li>*@
+        </ul>
+    </nav>
+}

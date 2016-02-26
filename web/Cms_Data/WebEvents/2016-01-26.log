@@ -1,0 +1,104 @@
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 1/26/2016 12:56:07 PM
+Event time (UTC): 1/26/2016 5:56:07 AM
+Event ID: 42c731e80ef1421c9828acf5c72a97fe
+Event sequence: 4
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/10/ROOT-1-130982613564073729
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: HOANGBND-PC
+
+Process information:
+    Process ID: 8152
+    Process name: iisexpress.exe
+    Account name: hoangbnd-PC\hoangbnd
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Type 'ASP._Page_Cms_Data_Sites_Worldstar_Templates_Views_Support_Download_template_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+
+Request information:
+    Request URL: http://localhost:3810/Cms_Data/Sites/Worldstar/Templates/Views/Support.Download/template.cshtml
+    Request path: /Cms_Data/Sites/Worldstar/Templates/Views/Support.Download/template.cshtml
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: hoangbnd-PC\hoangbnd
+
+Thread information:
+    Thread ID: 8
+    Thread account name: hoangbnd-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 1/26/2016 2:18:30 PM
+Event time (UTC): 1/26/2016 7:18:30 AM
+Event ID: 2418b3b68d294d52b4cf704545fc1047
+Event sequence: 4
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/10/ROOT-1-130982662844950839
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\worldstar\web\Kooboo.CMS\Kooboo.CMS.Web\
+    Machine name: HOANGBND-PC
+
+Process information:
+    Process ID: 4520
+    Process name: iisexpress.exe
+    Account name: hoangbnd-PC\hoangbnd
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Type 'ASP._Page_Cms_Data_Sites_Worldstar_Templates_Views_Home_Slider_template_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+
+Request information:
+    Request URL: http://localhost:3810/Cms_Data/Sites/Worldstar/Templates/Views/Home.Slider/template.cshtml
+    Request path: /Cms_Data/Sites/Worldstar/Templates/Views/Home.Slider/template.cshtml
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: hoangbnd-PC\hoangbnd
+
+Thread information:
+    Thread ID: 8
+    Thread account name: hoangbnd-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

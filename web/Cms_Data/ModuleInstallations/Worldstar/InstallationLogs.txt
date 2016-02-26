@@ -1,0 +1,13 @@
+﻿[
+  {
+    "ModuleName": "Worldstar",
+    "User": "admin",
+    "UtcDatetime": "2015-05-29T18:20:17.7640995Z",
+    "VersionRange": {
+      "SourceVersion": null,
+      "TargetVersion": "4.3.0.0",
+      "InstallationType": 0
+    },
+    "InstallationFileName": "4.3.0.0-20150530012014.zip"
+  }
+]

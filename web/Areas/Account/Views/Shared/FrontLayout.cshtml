@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex,nofllow" />
+    <link rel="shortcut icon" href='@Url.Content("~/Images/favicon.ico")' />
+    <title>
+        @ViewBag.Title @(" - Worldstar".Localize())</title>
+    @Html.ExternalResources("siteStyles")
+    @Html.ExternalResources("logonScripts")
+    <script>
+        $(function () {
+            $('input:visible').first().focus();
+        });
+    </script>
+</head>
+<body class="blank">
+    <div id="body-container" class="no-sidebar">
+        <header id="header" class="clearfix">
+            <a class="logo" href="@Url.Content("~/")" title="@("Back to home page".Localize())">
+                <img src="@Html.Raw(Url.Content("~/Images/logo.png")) " alt="LOGO">
+            </a>
+        </header>
+        <div id="main-container" class="clearfix">
+            <div class="wrap">
+                <div class="block login">
+                    <div class="left" style="width: 270px;height: 1px;"> </div>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            @Html.Partial("Footer")
+        </footer>
+    </div>
+</body>
+</html>

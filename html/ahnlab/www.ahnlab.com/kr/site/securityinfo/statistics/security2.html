@@ -1,0 +1,406 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/statistics/security2.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:37:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="AhnLab :: 안전해서 더욱 자유로운 세상"/>
+	<meta property="og:description"     content=""/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="AhnLab :: 안전해서 더욱 자유로운 세상">
+	<meta name="twitter:description"    content="">
+
+    <!-- SEO -->
+    <title>AhnLab :: 안전해서 더욱 자유로운 세상</title>
+
+    <link href="../../../../css/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	//Placeholder
+    	$("input, textarea").placeholder();
+
+    	//a링크 #처리
+    	$('a[href = "#"]').click(function(){
+  			return false;
+        });
+
+    	//이미지 에러처리
+    	$("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//image.ahnlab.com/img_upload/kr/site/images2/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+    	//로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://www.ahnlab.com/kr/site/login/userLogout.do',
+                dataType: 'json',
+				type : 'post',
+                data: $("#loginForm").serialize(),
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('../../product/securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+
+        });
+
+        //보안 통계 팝업
+        $(".securityStaticsPopup").click(function() {
+            POPUP.open('security1.html', 'statisticsPopup', {
+                width : 1000,
+                height : 760,
+                scroll : true
+            });
+        });
+
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('../../../../index.html', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+    <link class="include" rel="stylesheet" type="text/css" href="../../../../css/jquery.jqplot.min.css" />
+    <script type="text/javascript" src="../../../../js/lib/jqplot/excanvas.min.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jqplot/jquery.min.html"></script>
+    <script type="text/javascript" src="../../../../js/lib/jqplot/jquery.jqplot.min.js"></script>
+</head>
+
+<!-- popup size w(1000) * h(760) -->
+<body class="pop stats">
+    <div class="popTit">
+        <h2 class="tit"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/img_logo_stats.gif" alt="AhnLab 보안통계" /></h2>
+        <p id="baseMonth"></p>
+    </div>
+    <div class="popStats">
+        <div class="statsTab">
+            <ul>
+                <li class=""><a href="security1.html" class="tab01">악성코드 추이</a></li>
+                <li class="on"><a href="security2.html" class="tab02">주요 악성코드 유형</a></li>
+                <li class=""><a href="security3.html" class="tab03">웹 통계</a></li>
+                <li class=""><a href="security4.html" class="tab04">모바일 통계</a></li>
+            </ul>
+            <p>보안통계는 최근 1개월<br/>데이터를 기준으로 합니다. </p>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="include" rel="stylesheet" type="text/css" href="../../../../css/ahnchart.css" />
+        <div class="tabCont">
+            <div class="statsTit">
+                <h1><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/txt_stats_title02.gif" alt="악성코드 유형" /></h1>
+                <div class="numWrap">
+                    <p>가장 높은 비중을 차지한 악성코드 유형(%)</p>
+                    <p class="num">PUP <strong>61.72%</strong></p>
+                </div>
+            </div>
+            <div class="graph" style="padding:0;width:800px;background:none;margin:0 0 0 -38px;">
+				<div style="width:800px;height:350px;">
+                   <div id="chart1" style="width:800px;height:350px;"></div>
+                </div>
+            </div>
+            <p class="capt"><span class="fcBlue">최근 1개월</span>의 악성코드 유형별 유포율</p>
+            <div class="tList01">
+                <table>
+                    <caption>최근 1개월의 악성코드 유형별 유포율 상세내역</caption>
+                    <colgroup>
+                        <col style="width:25%;" />
+                        <col style="width:25%;" />
+                        <col style="width:25%;" />
+                        <col style="width:25%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="first">유형</th>
+                            <th scope="col">유포 건수(백분율)</th>
+                            <th scope="col" class="bdrL">유형</th>
+                            <th scope="col">유포 건수(백분율)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    
+                    
+                        <tr >
+                            <td class="first str">PUP</td>
+                            <td class="str">61.72</td>
+                            
+                            <td class="bdrL">TROJAN</td>
+                            <td>22.28</td>
+                            
+                        </tr>
+                    
+                        <tr >
+                            <td class="first str">ADWARE</td>
+                            <td class="str">0.77</td>
+                            
+                            <td class="bdrL">WORM</td>
+                            <td>9.22</td>
+                            
+                        </tr>
+                    
+                        <tr >
+                            <td class="first str">DOWNLOADER</td>
+                            <td class="str">0.1</td>
+                            
+                            <td class="bdrL">ETC</td>
+                            <td>5.92</td>
+                            
+                        </tr>
+                    
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script type="text/javascript" src="../../../../js/lib/ahnchart/d3.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/ahnchart/ahnchart.js"></script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function(){
+
+    	$("#baseMonth").html('12<span class="mon">월 기준</span>');
+
+		var legend = [];
+		var data = [];
+
+        
+        
+        
+
+			legend.push('PUP');
+			data.push(61.72);
+
+			
+				legend.push('TROJAN');
+				data.push(22.28);
+			
+
+        
+
+			legend.push('ADWARE');
+			data.push(0.77);
+
+			
+				legend.push('WORM');
+				data.push(9.22);
+			
+
+        
+
+			legend.push('DOWNLOADER');
+			data.push(0.1);
+
+			
+				legend.push('ETC');
+				data.push(5.92);
+			
+
+        
+        
+        makeChartPie(legend, data);
+	});
+
+    function makeChartPie(legend, data){
+  		var option1 = {
+			svg:{
+				"selector":"#chart1",//axis
+				"width":700,
+				"height":400,
+			},
+			chart:{
+				"width":700,//canvas
+				"height":270,//selector
+				"legend":{
+					"x":540,
+					"y":110,
+					"align":"vertical",
+					"format" : function(legend, data, color, index){
+						return "<p style='display:inline-block;margin:0 5px 0 0;width:10px;height:10px;background-color:"+color+"'></p>"+legend+" : "+data+"%";
+					}
+				},
+				"x":100,
+				"y":5
+			 },
+		  object:[
+			{
+			  "type":"circle",//type
+			  "legend":legend,
+			  "dataset":data,
+			  "color":["#27b7c4","#bdddce","#e24d2d","#f29f1c","#11808d","#1d3247"],
+			  "inner":70,
+			  "r":160
+			}
+		  ]
+		};
+
+		AhnChart.draw(option1);
+    }
+    //-->
+    </script>
+
+     </div>
+</body>
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/statistics/security2.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:37:27 GMT -->
+</html>

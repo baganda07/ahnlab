@@ -1,0 +1,378 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.ahnlab.com/kr/site/login/popAosMain.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:38:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="해킹차단기 | AhnLab"/>
+	<meta property="og:description"     content=""/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="해킹차단기 | AhnLab">
+	<meta name="twitter:description"    content="">
+
+    <!-- SEO -->
+    <title>해킹차단기 | AhnLab</title>
+
+    <link href="../../../css/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	//Placeholder
+    	$("input, textarea").placeholder();
+
+    	//a링크 #처리
+    	$('a[href = "#"]').click(function(){
+  			return false;
+        });
+
+    	//이미지 에러처리
+    	$("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//image.ahnlab.com/img_upload/kr/site/images2/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+    	//로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://www.ahnlab.com/kr/site/login/userLogout.do',
+                dataType: 'json',
+				type : 'post',
+                data: $("#loginForm").serialize(),
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('../product/securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+
+        });
+
+        //보안 통계 팝업
+        $(".securityStaticsPopup").click(function() {
+            POPUP.open('../securityinfo/statistics/security1.html', 'statisticsPopup', {
+                width : 1000,
+                height : 760,
+                scroll : true
+            });
+        });
+
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('../../../index.html', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+
+<!-- popup size w(600) * h(446) scroll yes -->
+<body class="pop">
+  <div class="popWrap">
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- popup 타이틀 -->
+        <div class="contTitWrap">
+            <h2 class="contTit">해킹 차단기</h2>
+        </div>
+        <!-- //popup 타이틀 -->
+
+        <!-- popup Contents -->
+        <div class="popCont">
+            <p>AhnLab에서는 회원 여러분의 안전한 인터넷 사용을 위해 해킹차단기(방화벽과 키보드보안) <br />
+                를 자동으로 설치하도록 서비스합니다. 설치를 선택하시고 개인정보보호에 도움되시길  <br />
+                바랍니다.</p>
+
+            <h3 class="contSubTit mt20">서비스 소개</h3>
+            <p>AhnLab Online Security(AOS)는 AhnLab 온라인 보안 서비스입니다.</p>
+            <dl>
+                <dt class="fcBlue mt20">1. AOS Firewall(온라인 개인 방화벽)</dt>
+                <dd class="mt5">실시간 해킹툴 감지/차단뿐만 아니라 네트워크 통신 감지(TCP/IP), 공유 폴더 제어 등 개인 <br />
+                    PC에 대한 네트워크 보안을 모니터링/경고/차단</dd>
+                <dt class="fcBlue mt20">2. AOS Anti-Keylogger(키보드 보안 솔루션)</dt>
+                <dd class="mt5">키보드 입력 정보를 가로채어가는 해킹툴로부터 개인의 소중한 정보를 지켜주며, 키보드 <br />
+                    보안 및 확대 E2E 연동 지원</dd>
+            </dl>
+
+            <h3 class="contSubTit mt20">이용안내</h3>
+            <p>AhnLab Online Security(AOS)는 본 사이트에 접속하고 있는 동안 유지되며 타 사이트 이동이나 <br />
+                브라우저를 닫을 경우 종료됩니다.</p>
+        </div>
+        <!-- //popup Contents -->
+
+        <!-- popup Button -->
+        <div class="btnCenter">
+            <a href="#" class="btnCommon darkBlue"><span class="btnTxt">확인</span></a>
+        </div>
+        
+    <script type="text/javascript" src="../../../js/lib/aos/aosmgr_common.js"></script>
+    <!-- //popup Button -->
+    <script type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    $(function() {
+	    $(".btnCommon").click(function (){
+	    	self.close();
+	    });
+    });
+    
+    document.domain = "ahnlab.com"; 
+    function on_aosmgr_event( event_name, event_param1, event_param2 ) 
+    {
+        // AOS가 설치되어 있고 업데이트가 끝났음(기준은 mkd2.5)
+        if( event_name == "update_complete" ) 
+        {
+            // opener는 daum.net(js- loginui_2009.js)
+            if( opener )
+            {
+                
+                // mkd의 업데이트가 필요함 또는 mkd가 설치되지 않음
+                if( g_bInstalled == true )
+                {
+                    var chk = opener.startMK(); 
+                    
+                    // chr이 true면 해킹 차단실행 ON으로 표시됨
+                    if( chk == true )
+                    {
+                    }
+                }
+    
+                // mkd의 업데이트가 필요하지 않음
+                else
+                {
+                    var chk = opener.startMK();
+                    if( chk == true )
+                    {
+                        // 팝업창이 스스로 닫힘
+                        //self.close();
+                    }
+                }
+            }
+        }
+    }
+    </script>     
+    <script type="text/javascript">
+        //aos_set_auth_server("http://ahnlabnotice.nefficient.co.kr"); //인증서버 설정
+        aos_set_authinfo( "aosmgr_v3webhard3.html" );               // 인증파일 설정
+        aos_set_subclsid("40","59B0298B-A7B5-4045-A34E-377EDF7BCB8E");  // 키보드보안 subclass id 설정
+        aos_set_submimetype("40","application/ahnlab/asp/npmkd25aos");  // 키보드보안 mime type 설정
+        aos_set_option( "aos_event_handler", on_aosmgr_event );     // event handler 등록
+        aos_set_option( "uimode", true );               // 설정하지 않으면, ui를 보이게 함
+        aos_set_option( "asyncmode", false );               // 설정하지 않으면, async로 동작함
+    //  aos_set_option( "authrooturl", "http://ahnlabnotice.nefficient.co.kr/Authentication/SUpdatei/");
+        aos_write_object();                     // activex 등록
+        
+        // mkd2.5의 업데이트가 필요하지 않음
+        if( _aos_checkupdate("40") == 0 )
+        {
+            g_bInstalled = false;
+        }
+        // mkd2.5의 업데이트가 필요함, mkd가 설치되있지 않음
+        else
+        {
+            g_bInstalled = true;
+        }
+        
+        function aos_safe_start()
+        {
+            // OBject가 등록되면
+            if(aos_loaded() == true)
+            {  
+                var mkdrunning = aos_isrunning('40');       // mkd의 실행여부 
+                var mfrunning = aos_isrunning('e5');        // mfw의 실행여부
+                
+                // mkd와 mf가 모두 실행 중이면
+                if( mkdrunning == true && mfrunning == true)
+                {
+                    // AOS가 구동되어 있으므로 이전 페이지로 이동하거나 팝업창을 닫으시면 됩니다.
+                    on_aosmgr_event('update_complete'); //added by daum
+                    //self.close();   
+                }
+    
+                else
+                {
+                    // mkd실행X, mfw 실행
+                    if(mkdrunning == false && mfrunning == true)
+                    {
+                        aos_start('40');
+                    }
+                    
+                    // mkd 실행X, mfw 실행 X
+                    else
+                    {
+                        aos_start('40|e5'); // AOS 실행
+                    }
+                }
+            }
+            // OBject가 등록않으면
+            else
+            {
+                window.setTimeout(aos_safe_start, 100);     //잠시 타임
+            }
+        }
+    
+        aos_safe_start();
+    </script>
+
+  </div>
+</body>
+
+<!-- Mirrored from www.ahnlab.com/kr/site/login/popAosMain.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:38:28 GMT -->
+</html>

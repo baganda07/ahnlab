@@ -1,0 +1,1501 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from apac.ahnlab.com/site/securitycenter/asec/asecReportList.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 11:45:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=1280" />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="ASEC Report, ASEC" />
+    <meta name="Description" content="You can learn about the security and threat information from ASEC Monthly Report." />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="ASEC Report | AhnLab"/>
+	<meta property="og:description"     content="You can learn about the security and threat information from ASEC Monthly Report."/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="ASEC Report | AhnLab">
+	<meta name="twitter:description"    content="You can learn about the security and threat information from ASEC Monthly Report.">
+
+    <!-- SEO -->
+    <title>ASEC Report | AhnLab</title>
+
+    <link href="../../../css/sg/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	$("input, textarea").placeholder();
+
+        //이미지 에러처리
+        $("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            if($(this).parent().get(0).tagName == "A"){
+            	w = $(this).width();
+                h = $(this).height();
+            }
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//apac.ahnlab.com/image/sg/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+        });
+        
+        //dim처리된 링크에 대체 택스트 달기
+        $("a").each(function (){
+	        if($(this).hasClass("dis")){
+	            $(this).attr("title", "This service is currently not available.");
+	        }
+	    });
+	        
+        //선택된 탭에 대체 택스트 달기
+        $("li.on > a").each(function (){
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+        });
+        
+        //a링크 #처리
+        $('a[href = "#"]').click(function(){
+            return false;
+        });
+
+        //로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://apac.ahnlab.com/site/login/logout.do',
+                dataType: 'json',
+                method : 'POST',
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+        
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('/site/login/loginForm.do', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <nav id="skipNavi">skip navigation
+        <ul>
+            <li><a href="#naviMenu">menu</a></li>
+            <li><a href="#naviUtill">member</a></li>
+            <li><a href="#container">container</a></li>
+            <li><a href="#footer">footer menu</a></li>
+        </ul>
+    </nav>
+    <!-- gnb -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $('.serWrap').mouseover(function(){
+             $(this).attr("class","serWrap on");
+       });
+
+        $('.serWrap').mouseout(function(){
+            $(this).attr("class","serWrap");
+      });
+
+    });
+
+    function dqTopSearch() {
+            if ($("#topSearchText").val() == "") {
+                alert('Please enter search keyword.');
+                $("#topSearchText").focus();
+                return;
+            }
+
+            $("#dqTopSearch").attr("target", "");
+            $("#dqTopSearch").attr("action", "../../search/searchResultAll.html");
+            $("#dqTopSearch").submit();
+        }
+
+ // 입력체크
+    function dqTopHandleEnter(event)
+    {
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+
+        if(keyCode == 13)
+        {
+                dqTopSearch();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+        </script>
+
+    <header class="htop">
+        <div class="htopWrap">
+            <!-- logo -->
+            <p class="logo"><a href="../../main.html"><img src="../../../image/sg/common/img_logo.gif" alt="AhnLab"></a></p>
+            <!-- logo -->
+            <!-- etc menu -->
+            <nav id="naviUtill">
+                <ul>
+                    <li class="locSite"><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        <a href="#" class="link" title="Change Country">APAC</a>
+                        <!-- layer -->
+                        <div class="lyUtill"><div class="lyWrap">
+                            <p><a href="../../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" title="New Window">한국 (한국어)</a></p>
+                            <p class=""><a href="../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="New Window">Global (English)</a></p>
+                            <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" title="New Window">APAC (English)</a></p>
+                            <p class=""><a href="../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="New Window">日本 (日本語)</a></p>
+                            <p class=""><a href="../../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="New Window">中国 (简体中文)</a></p>
+                            <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="New Window">US (English)</a></p>
+                        </div></div>
+                        <!-- //layer -->
+                    </li>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li><a href="../../support/partner/ourPartner.html" class="link">Partner</a></li>
+                </ul>
+            </nav>
+            <!-- //etc menu -->
+
+            <!-- menu -->
+            <nav id="naviMenu">
+                <ul>
+                    <li class="muProd "><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        
+                        <a href="../../product/productSubDetailb6b5.html?prodSeq=20001" class="oneLink">Products &amp; Services</a>
+                        <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                            
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetailb6b5.html?prodSeq=20001">Advanced Threat Defense</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetailb6b5.html?prodSeq=20001">AhnLab MDS</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetail1864.html?prodSeq=20004">Endpoint Security</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetail1864.html?prodSeq=20004">V3 Mobile Security</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="../../product/productSubDetaildcdd.html?prodSeq=20002">Network Security</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="../../product/productSubDetaildcdd.html?prodSeq=20002">AhnLab DPS</a></li>
+                                    
+                                    <li><a href="../../product/productSubDetail8f01.html?prodSeq=20003">AhnLab TrusGuard</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                            
+                        </div></div></div>
+                        
+                    </li>
+                    
+                    
+                     
+                     
+                        <li class="muSup ">
+                     
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../../support/html/supportProgram.html" class="oneLink">Support</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../support/html/supportProgram.html">Technical Support</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../support/productfaq/productFaqList.html">Product FAQ</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../support/virusfaq/virusFaqList.html">Virus FAQ</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../support/notice/noticeList.html">Notice</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab Global Partner Program</dt>
+                                    <dd class="part">
+                                        <p>Expand Your Business through AhnLab Partner Program.</p>
+                                        <a href="../../support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                        <li class="muSecur selected">
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../html/aboutASEC.html" class="oneLink">Security Center</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../html/aboutASEC.html">About ASEC</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="asecReportList.html">ASEC Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../html/techReport.html">Tech Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securityinsight/securityInsightList.html">Security Insight</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../viruscenter/virusList.html">Virus Center</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../html/securityRiskLevel.html">Security Risk Level</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                            <div class="fr">
+                                <a href="http://www.gartner.com/technology/media-products/pdfindex.jsp?g=ahnlab-1-2JFY8YE" target="_blank" class="bann mds" title="View in PDF">
+                                    <p class="fcBlue">AhnLab V3 Mobile, A Smart Choice for a Mobile-Only Era</p>
+                                    <p>AhnLab Newsletter<br>featuring Gartner research</p>
+                                </a>
+                            </div>
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                     
+                        <li class="muAL ">
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../../about/aboutAhnlab.html" class="oneLink">About AhnLab</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/aboutAhnlab.html">About Us</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/securityPortfolio.html">AhnLab Solutions Portfolio</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/pressRoomList.html">Press Releases</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/eventList.html">Event</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/securityStrategy.html">Technology</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../../about/securityStrategy.html">Security Strategy</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../../about/coreTechnology.html">Core Technology</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../about/certificates.html">Certificates</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../../etc/contactUs.html">Contact Us</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab Global Partner Program</dt>
+                                    <dd class="part">
+                                        <p>Expand Your Business through AhnLab Partner Program.</p>
+                                        <a href="../../support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                </ul>
+            </nav>
+            <!-- //menu -->
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </header>
+
+
+    <!-- //gnb -->
+    <div id="container">
+    
+    <div class="locWrap clfix">
+    <ul>
+        <li class="locLi alt">
+<a href="../html/aboutASEC.html" class="locTit ">Security Center</a>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">ASEC Report</a>
+            <div class="locList">
+                <p><a href="../html/aboutASEC.html">About ASEC</a></p>
+                <p class="on"><a href="asecReportList.html">ASEC Report</a></p>
+                <p><a href="../html/techReport.html">Tech Report</a></p>
+                <p><a href="../securityinsight/securityInsightList.html">Security Insight</a></p>
+                <p><a href="../viruscenter/virusList.html">Virus Center</a></p>
+                <p><a href="../html/securityRiskLevel.html">Security Risk Level</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+		<div class="topTitWrap">
+			<h1 class="topTit">ASEC Report</h1>
+		</div>
+
+<!-- contents -->
+		<div class="contents">
+			<div class="descCopy">From major security threats to the latest technical trends, learn and obtain the information from ASEC Monthly Report</div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="repCover">
+				<div class="repTit">
+					<p class="tit">ASEC REPORT</p>
+					<span>AhnLab Security Emergency Response Center</span>
+					<p class="vol">Vol.71</p>
+				</div>
+				<div class="repCont">
+					<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.71_ENG.pdf" target="_blank" title="New Window - Security Trend of November 2015   PDF" class="link">
+                        <div class="titWrap">
+                            <span class="icoHot">HOT</span>
+                            <span class="fcBlue">SECURITY ISSUE</span>
+                            <p class="tit">Security Trend of November 2015  </p>
+                        </div>
+                        <p class="cont">A malicious app, DroidJack, invaded Europe; it disguises itself as a well-known app familiar to the user to install itself on the phone, hijacking important information and malappropriating the smart phone&#039;s functions.</p>
+                    </a>
+					<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.71_ENG.pdf" target="_blank" title="New Window - Security Trend of November 2015   PDF" class="btnSm pdf">PDF</a>
+				</div>
+			</div>
+
+
+			<h2 class="cTit mt35">Past Volumes</h2>
+			<div class="tList01 report">
+				<table>
+					<caption>ASEC report View previous edition</caption>
+					<colgroup>
+						<col style="width:150px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="first">Year</th>
+							<th scope="col" colspan="12">Articles</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+                        
+                            
+                            
+						<tr class="first">
+							<td class="first">2015</td>
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+							<td>
+								Vol.61
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC+REPORT_vol.61_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 61 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.62
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC+REPORT_vol.62_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 62 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.63
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.63_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 63 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.64
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.64_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 64 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.65
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_vol.65_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 65 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.66
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.66_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 66 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.67
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.67_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 67 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.68
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_vol.68_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 68 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.69
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.69_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 69 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.70
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.70_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 70 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.71
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC REPORT_Vol.71_ENG.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 71 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+								
+								    
+                            <td></td>
+								    
+								
+                                
+						</tr>
+                            
+						<tr >
+							<td class="first">2014</td>
+								
+                                    
+							<td>
+								Vol.55
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.55_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 55 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.56
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.56_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 56 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.57
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.57_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 57 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.57
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.57_Eng (1).pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 57 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.58
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.58_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 58 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.59
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.59_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 59 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+							<td>
+								Vol.60
+								<a href="http://apac.ahnlab.com/global/upload/download/asecreport/ASEC Report_Vol.60_Eng.pdf" class="btnPdf" target="_blank" title="New Window - View Monthly ASEC Vol. 60 in PDF">PDF</a>
+							</td>
+                                        
+	                                
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+                                    
+								
+								
+								    
+                            <td></td>
+								    
+                            <td></td>
+								    
+                            <td></td>
+								    
+                            <td></td>
+								    
+                            <td></td>
+								    
+								
+                                
+						</tr>
+                            
+                        
+                        
+					
+					</tbody>
+				</table>
+			</div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="installBox">
+				<p>ASEC Reports starting from 2010 are available for download.<br />Click the Adobe Acrobat Reader icon and download or view ASEC Report.</p>
+				<a href="http://get.adobe.com/uk/reader/" target="_blank" title="New Window" class="btnSm pdf">Install Adobe Acrobat Reader</a>
+			</div>
+
+		</div>
+<!-- //contents -->
+
+    </div>
+    <!-- footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="ftWrap">
+            <ul class="ftMenu">
+                <li><a href="../../etc/privacyPolicy.html">Privacy &amp; Security</a></li>
+                
+                <li><a href="../../etc/termsOfUse.html">Terms of Use</a></li>
+                <li><a href="../../etc/contactUs.html">Contact Us</a></li>
+                <li><a href="../../etc/sitemap.html">Sitemap</a></li>
+            </ul>
+
+            <div class="locSiteWrap globalSiteCombo">
+                <p class="locSite"><a href="#" class="comboLink2" title="Change Country">APAC</a></p>
+                <!-- layer -->
+                <div class="lyUtill" id=""><div class="lyWrap">
+                    <p><a href="../../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" class="fKr" title="New Window">한국 (한국어)</a></p>
+                    <p class=""><a href="../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="New Window">Global (English)</a></p>
+                    <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" title="New Window">APAC (English)</a></p>
+                    <p class=""><a href="../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="New Window">日本 (日本語)</a></p>
+                    <p class=""><a href="../../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="New Window">中国 (简体中文)</a></p>
+                    <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="New Window">US (English)</a></p>
+                </div></div>
+                <!-- //layer -->
+            </div>
+
+            <p class="copyright">&copy; AhnLab, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+	/*
+	$(".globalSiteCombo").focusin(function(){
+		$(".globalSiteCombo").addClass("on");
+		$(".footer .locSite").addClass("on");
+	});
+	$(".globalSiteCombo").focusout(function(){
+		$(".globalSiteCombo").removeClass("on");
+		$(".footer .locSite").removeClass("on");
+	});
+	*/
+});
+function getCookie( cname ) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+       var c = ca[i];
+       while (c.charAt(0)==' ') c = c.substring(1);
+       if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+function closeWin(winName, expiredays) {
+   if($("input:checkbox[id='chkToday']").is(":checked") == true){
+      setCookie( winName, "done" , expiredays);
+   }
+   $("#mainLayer").hide();
+}
+
+function setCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+
+</script>
+
+
+
+
+	<script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-17204763-13', 'auto');
+	   ga('send', 'pageview');
+
+	 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language='javascript'>
+
+
+var _mk   = '';
+var _od   = 0 ;
+var _gd   = '';
+var _ud1 = '' ;
+var _skey = '' ;
+
+var cur_url = location.href;
+var url_index = cur_url.indexOf("event");
+
+if(url_index > -1){
+    _skey = cur_url;
+}
+
+</script>
+<!-- AceCounter END --> 
+
+
+
+
+
+
+
+
+
+
+<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+<script language='javascript'>
+	if(typeof _GUL == 'undefined'){
+		var _GUL = 'acounter.ahnlab.com';var _GPT='80'; var _SGPT='443';var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL+":"+_SGPT:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'http://apac.ahnlab.com/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+		document.writeln("<scr"+"ipt language='javascript' src='/js/lib/acecounter/sg/acecounter_V70.js'></scr"+"ipt>");
+	}
+	</script>
+	<noscript><img src='http://acounter.ahnlab.com/?uid=7&amp;je=n&amp;' border=0 width=0 height=0></noscript>
+	<!-- AceCounter Log Gathering Script End -->
+
+
+    <!-- //footer -->
+</div> 
+</body>
+
+
+<!-- Mirrored from apac.ahnlab.com/site/securitycenter/asec/asecReportList.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 11:45:50 GMT -->
+</html>

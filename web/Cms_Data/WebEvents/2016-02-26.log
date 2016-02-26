@@ -1,0 +1,51 @@
+Event code: 3005
+Event message: An unhandled exception has occurred.
+Event time: 2/26/2016 5:29:34 PM
+Event time (UTC): 2/26/2016 10:29:34 AM
+Event ID: b2970696f7394cb2b801aaf24529f80f
+Event sequence: 8
+Event occurrence: 1
+Event detail code: 0
+
+Application information:
+    Application domain: /LM/W3SVC/6/ROOT-1-131009561633006719
+    Trust level: Full
+    Application Virtual Path: /
+    Application Path: E:\projects\other\ahnlab\web\
+    Machine name: HOANGBND-PC
+
+Process information:
+    Process ID: 8540
+    Process name: iisexpress.exe
+    Account name: HOANGBND-PC\hoangbnd
+
+Exception information:
+    Exception type: System.Web.HttpException
+    Exception message: Type 'ASP._Page_Cms_Data_Sites_Ahnlab_Templates_Views_Share_MainNav_template_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+
+Request information:
+    Request URL: http://localhost:24396/Cms_Data/Sites/Ahnlab/Templates/Views/Share.MainNav/template.cshtml
+    Request path: /Cms_Data/Sites/Ahnlab/Templates/Views/Share.MainNav/template.cshtml
+    User host address: ::1
+    User: 
+    Is authenticated: False
+    Authentication Type: 
+    Thread account name: HOANGBND-PC\hoangbnd
+
+Thread information:
+    Thread ID: 6
+    Thread account name: HOANGBND-PC\hoangbnd
+    Is impersonating: False
+    Stack trace:    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+--------------------------------------------------------------------------------------------------------

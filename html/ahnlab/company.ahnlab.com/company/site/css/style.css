@@ -1,0 +1,647 @@
+@charset "utf-8";
+
+body, html {margin:0; padding:0}
+body , table, tr, td, select, textarea  {font-size:12px; font-family:gulim, '굴림', dotum, '돋움', sans-serif; color:#777}
+textarea, td {word-break:break-all; word-wrap:break-word; line-height:16px;}
+section, footer, nav, header, aside {display:block}
+div, p, span, ol, li, ul, table, tr, td, section, footer, nav, header, aside, h1, h2, h3, h4, h5, select, form  {margin:0; padding:0}
+img {border:0;}
+table {border-collapse:collapse;}
+li, ol, ul {padding:0; margin:0; list-style-type:none;}
+a {text-decoration:none; color:#777}
+a:hover {color:#252525 !important;}
+select {height:19px; line-height:18px; vertical-align:middle;}
+textarea {border:1px solid #ddd;}
+
+.vt {vertical-align:top !important;}
+.vm {vertical-align:middle;}
+.vb {vertical-align:bottom;}
+.ac {text-align:center !important;}
+.al {text-align:left !important;}
+.ar {text-align:right !important;}
+.fl {float:left;}
+.fr {float:right;}
+.clear {clear:both;}
+
+.hidden {display:none;}
+.blind{position:absolute; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden;}
+.emRed {color:#c51c18;}
+.emBlue {color:#186dc5;}
+
+.pt5 {padding-top:5px;}
+.pt10 {padding-top:10px;}
+.pt15 {padding-top:15px;}
+.pt20 {padding-top:20px;}
+.pt25 {padding-top:25px;}
+.pt30 {padding-top:30px;}
+.pt35 {padding-top:35px;}
+.pt40 {padding-top:40px;}
+.pt100 {padding-top:100px;}
+
+.pb5 {padding-bottom:5px;}
+.pb10 {padding-bottom:10px;}
+.pb15 {padding-bottom:15px;}
+.pb20 {padding-bottom:20px;}
+.pb25 {padding-bottom:25px;}
+.pb30 {padding-bottom:30px;}
+.pb35 {padding-bottom:35px;}
+.pl15 {padding-left:15px;}
+.pr0 {padding-right:0 !important;}
+.mgt0 {margin-top:0 !important;}
+.mgt10 {margin-top:10px;}
+.mgt40 {margin-top:40px;}
+.mgt60 {margin-top:60px;}
+.mgb5 {margin-bottom:5px !important;}
+.mgb0 {margin-bottom:0 !important;}
+
+.input{height:14px; font-size:12px; line-height:14px; border:1px solid #ddd; color:#8f8f8f; padding:2px 0 2px 3px; vertical-align:middle;}
+input.check {height:14px; line-height:14px; vertical-align:middle;}
+
+.fcPr {color:#7F77B2;}
+.fc01 {color:#ef7d31;} /* orange color */
+.fc02 {color:#6493c7;} /* light blue color */
+.fc03 {color:#003399; font-weight:bold;} /* blue color */
+.fc04 {color:#006cff; text-decoration:underline;}
+.fc05 {color:#51b3bc;}
+.fc06 {color:#62bfc7;} /* mint color */
+.fc07 {color:#51ab82;} /* csm color */
+.fc08 {color:#51ac43;} /* csr color */
+.fs11 {font-size:11px;}
+.fs16 {font-size:16px;}
+
+.btnArea {text-align:center; margin:20px 0;}
+
+/*Layout*/
+aside {position:absolute; left:971px; top:358px; width:100px; height:21px; z-index:1; text-align:center;}
+header {width:930px; *zoom:1; margin:0 35px; height:140px;}
+footer  {width:930px; *zoom:1; margin:0 35px}
+.Contwrap {width:930px; *zoom:1; padding:0 35px;  position:relative;}
+.Contwrap:after {content:""; display:block; clear:both; height:0; visibility:hidden;}
+.leftMenu {position:absolute; left:35px; top:0; width:277px; background:#fff; z-index:10 }
+.leftMenu .tit {height:22px; padding:98px 0 0 45px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/ltit_bg.gif) no-repeat left top; }
+.eng .leftMenu .tit {height:22px; padding:98px 0 0 45px; background:url(../../../../image.ahnlab.com/img_upload/company/site/eng2/common/ltit_bg.gif) no-repeat left top; }
+.contents {padding-left:277px; width:653px; position:relative;}
+.contents header {width:653px; margin:0; height:120px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/top_img.jpg) no-repeat left top;text-indent:-5000px}
+.eng .contents header {width:653px; margin:0; height:120px; background:url(../../../../image.ahnlab.com/img_upload/company/site/eng2/common/top_img.jpg) no-repeat left top;text-indent:-5000px}
+
+header .globalSite {width:205px; *zoom:1; margin:0 0 0 725px; padding-bottom:30px;}
+header .globalSite:after {content:""; display:block; clear:both; height:0; visibility:hidden;}
+header .globalSite select {float:left; margin:30px 0 0 0}
+header .globalSite .lang {float:right; border-left:1px solid #d1d1d1; padding:35px 0 0 10px;}
+header .globalSite .lang img {margin:0 0 0 10px}
+header nav {*zoom:1 }
+header nav:after {content:""; display:block; clear:both; height:0; visibility:hidden;}
+header nav h1{float:left; padding:0 20px 0 0 }
+header .menu {float:left; position:relative; width:540px; padding:7px 0 0 8px; height:47px; overflow:hidden;}
+header .menu li {float:left; padding:0 30px 0 0}
+header .menu li img {vertical-align:top}
+header .menu li ul{position:absolute; top:31px; left:0; width:540px; height:21px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/tmenu_bg.gif) repeat-x left bottom; overflow:hidden;}
+header .menu li ul li {float:left; padding:1px 20px 0 0}
+.eng header .menu li ul li {float:left; padding:1px 8px 0 0}
+
+header .menu li ul li.last {padding-right:0}
+header .menu li ul#sub1{padding:1px 0 0 10px}
+header .menu li ul#sub2{padding:1px 0 0 10px;}
+header .menu li ul#sub2 li {padding:1px 8px 0 0 !important;}
+header .menu li ul#sub3{padding:1px 0 0 110px;}
+header .menu li ul#sub4{padding:1px 0 0 50px;}
+header .menu li ul#sub5{padding:1px 0 0 295px;}
+header .menu li ul#sub6{padding:1px 0 0 180px;}
+header .menu li ul#sub8{padding:1px 0 0 30px;}
+
+.eng header .menu li ul#sub2{padding:1px 0 0 10px}
+.eng header .menu li ul#sub2 li{padding:1px 5px 0 0 !important;}
+.eng header .menu li ul#sub3{padding:1px 0 0 80px;}
+.eng header .menu li ul#sub4{padding:1px 0 0 150px;}
+
+header .search {float:right;}
+
+.leftMenu ul {margin:0 30px 0 45px; border-top:2px solid #ededed; padding:7px 0 0 0}
+.leftMenu li a{display:block;  padding:6px 0 4px 10px; border-bottom:1px solid #ededed; text-decoration:none; color:#8f8f8f; *zoom:1}
+.leftMenu li a:hover {color:#000; text-decoration:none;}
+.leftMenu li.select a{color:#fff !important}
+
+#about .leftMenu li.select a{background:#6394c6; color:#fff}
+#biz .leftMenu li.select a{background:#66a7c9; color:#fff}
+#ir .leftMenu li.select a{background:#627ac5; color:#fff}
+#pr .leftMenu li.select a{background:#8077b1; color:#fff}
+#recruit .leftMenu li.select a{background:#64bec7; color:#fff}
+#csm .leftMenu li.select a{background:#7DCAA7; color:#fff}
+#csr .leftMenu li.select a{background:#91cd88; color:#fff}
+
+.contents .location {padding:0 0 30px 33px; *zoom:1;}
+.contents .location:after {content:""; display:block; clear:both; height:0; visibility:hidden;}
+.contents .location h1 {float:left;}
+.contents .location .path {float:right; padding:35px 31px 0 0}
+.contents .cont {clear:both; padding:0 31px 0 33px;  line-height:18px; position:relative; overflow:hidden;}
+
+#about .leftMenu .tit{background-position:0 0}
+#biz .leftMenu .tit{background-position:0 -120px}
+#csm .leftMenu .tit{background-position:0 -240px}
+#ir .leftMenu .tit{background-position:0 -360px}
+#pr .leftMenu .tit{background-position:0 -480px}
+#recruit .leftMenu .tit{background-position:0 -600px}
+#etc .leftMenu .tit{background-position:0 -720px}
+#csr .leftMenu .tit{background-position:0 -840px}
+
+#about .contents header {background-position:0 0}
+#biz .contents header {background-position:0 -120px}
+#csm .contents header {background-position:0 -240px}
+#ir .contents header {background-position:0 -360px}
+#pr .contents header {background-position:0 -480px}
+#recruit .contents header {background-position:0 -600px}
+#etc .contents header {background-position:0 -720px}
+#csr .contents header {background-position:0 -840px}
+
+.eng #about .leftMenu .tit{background-position:0 0}
+.eng #biz .leftMenu .tit{background-position:0 -120px}
+.eng #ir .leftMenu .tit{background-position:0 -240px}
+.eng #pr .leftMenu .tit{background-position:0 -360px}
+.eng #etc .leftMenu .tit{background-position:0 -480px}
+
+.eng #about .contents header {background-position:0 0}
+.eng #biz .contents header {background-position:0 -120px}
+.eng #ir .contents header {background-position:0 -240px}
+.eng #pr .contents header {background-position:0 -360px}
+.eng #etc .contents header {background-position:0 -480px}
+
+.footer {position:relative; width:930px; height:127px; margin-top:60px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/footer_bg.gif) left top no-repeat;}
+.footer img {vertical-align:top; border:none;}
+.footer .footerCont {padding:27px 0 0 18px;}
+.footer .footerCont ul li {display:inline; padding-right:7px;}
+.footer .footerCont p {margin-top:8px;}
+.footer .footerRt {position:absolute; right:24px; top:27px; width:350px; text-align:right;}
+.footer .footerRt select {margin:8px 5px 0 0;}
+
+/* borad Style */
+.boardBox {padding:17px 15px 16px; color:#a199bc; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/pr/bg_board_box.gif) left top repeat-y;}
+.boardBox .tit {width:100%;}
+.boardBox .tit h2 {float:left; font-size:12px; line-height:18px; color:#7f77b2; background-image:none !important;}
+.boardBox .tit .date {float:right; padding-right:20px;}
+.boardBox .cont {clear:both; padding:15px 0 0 0 !important;}
+.boardBox a {color:#a199bc;}
+.boardBox a:hover, .boardBox a:hover * {color:#252525 !important; cursor:pointer;}
+#ir .boardBox {background-color:#f2f0f8; background-image:none;}
+#ir .boardBox a {color:#777;}
+
+#about .boardTit {border:7px solid #d0e0f3;}
+#ir .boardTit {border:7px solid #c6cbe7;}
+#pr .boardTit {border:7px solid #c8c5dc;}
+#recruit .boardTit {border:7px solid #d8f0f3}
+.boardTit th, .boardTit td {vertical-align:top; padding:7px 0 6px 0;}
+.boardTit th img {height:11px; line-height:11px; margin-top:2px}
+.boardTit td.tit {color:#000;}
+
+.boardList {width:100%; margin-top:14px;  border-bottom:1px solid #eee;}
+.boardList th, .boardList td {vertical-align:top; color:#777; border-bottom:1px solid #eee;}
+.boardList th {text-align:left; padding:6px 0 6px 28px; font-weight:normal; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/pr/blt_board.gif) 15px 13px no-repeat;}
+.boardList td {text-align:center; padding:6px 5px;}
+.boardList td.date {text-align:right; padding:6px 20px 6px 0;}
+.boardList td.tit {text-align:left;}
+
+.tab {text-align:right; height:27px; margin-bottom:30px}
+#about .tab {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/about/tab_bg.gif) repeat-x left bottom;}
+#biz .tab {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/business/tab_bg.gif) repeat-x left bottom;}
+#csm .tab {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csm/tab_bg.gif) repeat-x left bottom;}
+#ir .tab {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/ir/tab_bg.gif) repeat-x left bottom;}
+#recruit .tab {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/recruit/tab_bg.gif) repeat-x left bottom;}
+
+.tab img {vertical-align:top; margin:0; padding:0}
+
+.boardCont {width:579px; padding:25px 5px 25px; border-bottom:3px solid #eee; overflow-x:auto; overflow-y:hidden;}
+.boardCont img {max-width:579px;}
+
+.boardPrevNext {margin-top:25px; border-top:1px solid #eee;}
+.boardPrevNext th, .boardPrevNext td {padding:5px 0; border-bottom:1px solid #eee;}
+.boardPrevNext th {padding:5px 0;}
+.boardPrevNext td {padding:5px;}
+.boardPrevNext td.date {text-align:right;}
+
+.paging {width:100%; text-align:center; margin:20px auto 40px;}
+.paging li {display:inline; padding:0 5px;}
+.paging li img {margin:-1px 0 1px; height:7px;}
+.paging li .selected {font-weight:bold;}
+
+.searchArea {padding:14px 15px 12px; text-align:center;}
+#pr .searchArea, #ir .searchArea {background-color:#f1f0f6;}
+#recruit .searchArea {background-color:#eaf5f9;}
+.searchArea select {width:75px; height:21px; font-size:12px; line-height:21px; color:#777; vertical-align:top;}
+.searchArea input {width:370px; height:16px; margin:0 3px; padding:2px 3px 1px; font-size:12px; line-height:16px; color:#777; border:1px solid #d1cde3;}
+.searchArea img {vertical-align:top;}
+
+.btnRt {text-align:right; margin:10px 0 0;}
+.btnRt a {margin-left:6px;}
+.btnRt.line {padding:10px 5px 0 0; border-top:1px solid #eee;}
+.btnRt02 {text-align:right; margin:0 5px 10px 0;}
+
+.btnCt {text-align:center; margin:10px 0 0;}
+
+/* Contents Common Style */
+.inputTopSearch {height:16px;  color:#777; border:1px solid #dddddd; padding:1px  0 0 0; margin:0 3px;  vertical-align:middle}
+.listListDash li {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/bl_dash_gray.gif) no-repeat left 8px; padding:0 0 5px 10px}
+.listListDash2 {margin:7px 0 14px 0}
+.listListDash2 li {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/bl_dash_gray.gif) no-repeat left 8px; padding:0 0 2px 10px}
+
+#about h2, #about dt, #etc h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/about/tab_bg.gif) left  bottom repeat-x;}
+#biz h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/business/tab_bg.gif) left bottom repeat-x;}
+#csm h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csm/tab_bg.gif) left bottom repeat-x;}
+#pr h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/pr/tab_bg.gif) left bottom repeat-x;}
+#recruit h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/recruit/tab_bg.gif) left bottom repeat-x;}
+#csr h2 {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csr/tab_bg.gif) left bottom repeat-x;}
+#etc h2{height:27px;}
+
+h3 {padding:0 0 10px 0}
+
+.contList {margin-bottom:40px;}
+.contList dt, .contList h2, #etc h2 {width:589px; height:27px; margin-bottom:10px;}
+.contList dt img, .contList h2 img, .contList .tit img, #etc h2 img {margin:5px 0 0 3px;}
+.contList dd {margin:0 0 3px 15px;}
+.contList dd .date {padding-right:10px; color:#6493c7;}
+.contList ul li {padding:4px 14px;}
+.contList ul li.bg01 {background-color:#f4f7fa;}
+.contList ul li .subTit {color:#828282; padding:5px 0; font-weight:bold;}
+
+.contList .year {margin:30px 0 10px 10px;}
+.contList .yearList {margin:0 0 0 10px; border-bottom:1px dashed #b2cbe9;}
+.contList .yearList .line {border-top:1px dashed #b2cbe9; padding:0; height:14px; line-height:14px;}
+.contList .yearList th {padding:0 0 7px 10px; text-align:left; vertical-align:top; color:#6493c7;}
+.contList .yearList td {padding:0 0 7px 0;}
+
+.contList.portal dt {background:none; height:15px; margin:0; padding:0;}
+.contList.portal dt a {padding-right:16px; color:#63a8c9; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/btn_new.gif) right top no-repeat;}
+.contList.portal dd {margin:0 0 20px 14px;}
+
+#pr .contList ul li {position:relative; clear:both; padding:0; margin:0 0 0 15px;}
+#pr .contList ul li p {display:inline-block; *display:inline; zoom:1; }
+#pr .contList ul li .cont {width:415px; padding:0 0 0 15px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/pr/blt_board.gif) left 7px no-repeat;}
+#pr .contList ul li .date {vertical-align:top; padding:0 10px 0 0;}
+#pr .contList ul li .date {width:122px; text-align:right; font-size:11px; color:#BCBCBC;}
+
+.contList02, #column {background-color:#f4f7fa;}
+.contList02 li, #column li {border-bottom:1px solid #e6ecf1; padding:3px 16px 3px;}
+
+.contList03 {width:430px; margin:0 0 40px 70px; padding:10px; border:1px solid #d1d1d1; background-color:#f2f2f2;}
+.contList03 .tit {font-weight:bold; margin-bottom:10px; text-align:center;}
+.contList03 li {padding:0 0 5px 15px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/pr/blt_board.gif) left 7px no-repeat;}
+
+.engContList {margin-bottom:15px;}
+.engContList dt {margin:10px 0; font-weight:bold; color:#7b75b5;}
+.engContList dd {margin:0 0 3px 0;}
+.engContList dd .date {display:inline-block; width:105px; color:#7b75b5;}
+
+.engContList .busiTit {font-weight:bold; color:#63aace; margin-bottom:10px;}
+.engContList .busiSub {margin:0 0 5px 10px;}
+.engContList .busiSub p {color:#63aace; margin:0 0 5px 0;}
+.busiList {margin-bottom:15px;}
+.busiList li {padding:0 0 5px 10px; background:url(../../../../image.ahnlab.com/img_upload/company/site/eng2/business/blt_consult.gif) 3px 7px no-repeat;}
+.busiList li .tit {color:#63aace;}
+.engContList li {padding:0 0 0 10px; margin-left:10px;}
+
+.contArea {margin-bottom:25px;}
+.contArea.mgn, .contArea p.mgn {margin-bottom:0 !important;}
+.contArea .date {font-weight:bold; color:#6493c7; margin:0;}
+.contArea .img, .engContList .img {margin-bottom:30px;}
+.contArea p, .engContList p {margin-bottom:20px;}
+.contArea .tit {margin-bottom:12px;}
+.contArea .rt {text-align:right; font-size:11px;}
+.contArea .cmt {margin:0; font-weight:bold; color:#7b75b5;}
+.contArea h2 img {margin-left:3px;}
+.contArea h2 {width:589px; height:27px; margin-bottom:10px;}
+#recruit h2.bgNo {background:none; margin-bottom:20px;}
+#csm .cmtList, #csr .cmtList {margin-bottom:15px;}
+#csm .cmtList li, #csr .cmtList li {padding:0 0 5px 10px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csm/blt_dot.gif) 3px 7px no-repeat;}
+#csr .cmtList li {background-image:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csr/blt_dot.gif);}
+
+.contArea02 {float:left; width:589px; margin-bottom:40px;}
+.contArea02.mgn {margin-bottom:0;}
+.contArea02 div {float:left;}
+.contArea02 .photo {width:240px;}
+.contArea02 .contTxt {width:345px; font-weight:normal; font-size:12px; line-height:16px; color:#8f8f8f;}
+
+.contArea03 {margin-bottom:30px; padding:0 3px; border-bottom:1px solid #d7eaed;}
+#recruit .contArea03 h2 {background:none; height:20px;}
+.contArea03 h2 img {margin:0;}
+.contArea03 ul {margin-bottom:22px;}
+.contArea03 ul li {padding-bottom:4px; font-weight:bold; color:#51b3bc;}
+
+/* main */
+.mainVisual {position:relative; width:930px; height:317px; z-index:0;}
+.mainSearch {position:absolute; right:19px; top:262px; z-index:10;}
+.mainSearch .input {margin:1px 5px -1px; width:170px; padding:0 3px; font-size:11px; height:18px; line-height:16px; z-index:10; border:1px solid #eee;}
+
+.mainCont, .clear {clear:both;}
+.contLt {float:left; width:253px;}
+.contCt {float:left; width:382px;}
+.contRt {float:left; width:295px;}
+
+.contLt iframe {width:220px; height:145px;}
+.contCt .mainTab {clear:both; position:relative; width:349px; height:24px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/main/news_tab_bg.gif) left bottom repeat-x;}
+.contCt .mainTab li {float:left;}
+.contCt .mainTab li img {vertical-align:top; cursor:pointer;}
+.contCt .mainTab li .rssImg {position:absolute; right:1px; top:4px;}
+.contCt .mainList {clear:both; width:349px; font-size:11px; line-height:16px; color:#9b9b9b;}
+.contCt .mainList * {font-size:11px; color:#9b9b9b;}
+.contCt .mainList li {float:left; padding:4px 0 3px 16px; border-bottom:1px solid #e0e0e0; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/main/blt_news.gif) 7px 10px no-repeat;}
+.contCt .mainList li .cont {float:left; width:298px;}
+.contCt .mainList li .date {float:right; width:35px; text-align:center;}
+.contCt .notice {width:349px; height:35px; margin-top:14px; font-size:11px; line-height:16px; color:#929EAC; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/main/notice.gif) left top no-repeat; }
+.contCt .notice .cont {float:left; width:245px; padding:9px 0 0 69px;}
+.contCt .notice .cont a {font-size:11px;color:#929EAC;}
+.contCt .notice .date {float:right; width:35px; padding-top:9px;}
+
+.contRt img {vertical-align:top;}
+.contRt .ban {margin-bottom:12px;}
+
+/* about */
+.tblStyle01 th {vertical-align:top; padding:0 10px 20px 0;}
+.tblStyle01 td {text-align:left; padding-bottom:20px;}
+
+.contact {margin-top:20px;}
+.contact img {margin-bottom:10px;}
+.contact ul {margin-bottom:20px;}
+.contact ul li {padding:0 0 0 10px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/blt_sitemap.gif) no-repeat left 4px;}
+.contact ul li div, .contact ul li p {margin-top:5px;}
+.contactList li {margin-bottom:20px;}
+
+.columnCont {margin:0 0 40px 93px; padding:0 7px; border-left:1px solid #e0e0e0;}
+
+.gallery td {width:148px; height:160px; border-bottom:1px solid #efefef; vertical-align:top;}
+.gallery img {width:136px; height:101px; margin:20px 10px 0 0;}
+.gallery p {width:136px; margin:12px 10px 0 0; text-align:center;}
+
+.partners h2 {color:#6493C7; font-size:12px; padding-bottom:4px} /* only English */
+.partners dt {position:relative;}
+.partners dt {background:none !important; font-weight:bold; padding:15px 0 10px 0}
+.partners dt img {position:absolute; right:10px; top:15px; }
+.partners dd {padding: 0 0 25px 0; margin:0; border-bottom:1px solid #eee}
+.partners dd.last {border-bottom:none}
+.partners dd a {color:#6493C7}
+.infoList {margin-bottom:15px;}
+.infoList li {padding:0 0 3px 12px; background:url(../../../../image.ahnlab.com/img_upload/company/site/eng2/about/blt_dot.gif) 4px 7px no-repeat;}
+.infoList li ul li {background:none; padding-left:0 !important;}
+
+.ciDown {float:left; padding:0 0 45px 182px;}
+.ciDown div {float:left; width:194px;}
+.ciDown div p {margin-bottom:5px !important;}
+.ciDown div.ciKor {padding-right:19px;}
+.ciDown div a.ai img {margin-right:3px;}
+
+.ciDowmBtn {padding:0 0 40px 192px;}
+.ciDowmBtn a img {margin-right:3px;}
+
+#about  h3 {padding:25px 0 10px 0; font-size:12px;line-height:18px;color:#186dc5;}
+#about  h4 {padding:0 0 7px 0}
+
+.tblStyle03 {border-left:1px solid #b2cbe9; border-top:1px solid #b2cbe9;}
+.tblStyle03 th {vertical-align:top; padding:6px 10px 6px 10px; color:#6191c5; border-right:1px solid #b2cbe9; border-bottom:1px solid #b2cbe9; background:#f3f6f9}
+.tblStyle03 td {text-align:center; padding:6px 10px 6px 10px;  border-right:1px solid #b2cbe9; border-bottom:1px solid #b2cbe9;}
+.tblStyle03 td.al {text-align:left}
+
+.liListDetail {margin:15px 0 0 0}
+.liListDetail li{ position:relative; border-bottom:1px dotted #ccc; padding:7px 0}
+.liListDetail li .detail{position:absolute; right:0; top:9px; background:#fff; padding:0 0 10px 12px}
+
+.cop{padding-left:30px;font-weight:bold;background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/about/ico_cop.gif) 0 0 no-repeat;}
+.cop.ap{background-position:0 0;}
+.cop.us{background-position:0 -25px;}
+.cop.jp{background-position:0 -50px;}
+.cop.cn{background-position:0 -76px;}
+.copList {margin:2px 0 26px 0;}
+.copList li span{display:inline-block;min-width:115px;}
+
+.bus{margin-left:5px;padding:2px 0 0 15px;background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/about/ico_bus.gif) 0 0 no-repeat;}
+
+/* csm */
+.vision {height:217px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csm/vision_01.jpg) right top no-repeat;}
+.vision p {width:330px;}
+.tblStyle04 {border-left:1px solid #e0e0e0; border-top:1px solid #e0e0e0;}
+.tblStyle04 th {text-align:left; vertical-align:top; padding:6px 10px 6px 10px;  border-right:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; background:#f7f7f7}
+.tblStyle04 td {padding:6px 10px 6px 10px;  border-right:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0;}
+.tblStyle04 td.ac {text-align:center}
+#csm .notice {font-size:11px; padding:7px 0 0 0}
+#csm .notice span {font-size:12px;}
+#csm .notice p {text-align:right; font-weight:bold; padding:5px 0 0 0}
+
+/* csr */
+#csr p, #csr .contTxt {line-height:20px;}
+.secu {margin-top:20px; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csr/security_01.gif) 380px 8px no-repeat;}
+.secu p {padding-right:240px;}
+
+.globalV3, .globalSecu {margin-top:20px; padding:0 222px 10px 0; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csr/global_01.jpg) 398px 5px no-repeat;}
+.globalSecu {padding:0 222px 0 0; background-image:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/csr/global_02.gif);}
+
+/* ir */
+.tblIr {width:100%; border-top:2px solid #d6daed;}
+.tblIr th {padding:7px 0 4px 0; border-bottom:1px solid #d6daed; background-color:#f1f1f3; color:#6e7aa8; font-size:11px}
+.eng .tblIr th {padding:7px 0;}
+.tblIr td {text-align:center; padding:7px 5px 4px 5px; border-bottom:1px solid #eee;}
+.tblIr td.bg01, .tblIr .sum td {background-color:#f7f7f9;}
+.tblIr td.tit, .tblIr td.hTit {text-align:left; background-color:#f7f7f9;}
+.tblIr td.tit {padding:7px 20px 4px 20px;}
+.tblIr td.hTit {padding:7px 12px 4px 12px;}
+.num {text-align:right !importnt; padding-right:35px;}
+
+.tblStyle05 {border-left:1px solid #bac5e7; border-top:1px solid #bac5e7;}
+.tblStyle05 th {vertical-align:top; padding:6px 10px 6px 10px;  border-right:1px solid #bac5e7; border-bottom:1px solid #bac5e7; background:#f1f3f8; color:#627ac5; font-size:11px}
+.tblStyle05 td {padding:6px 10px 6px 10px;  border-right:1px solid #bac5e7; border-bottom:1px solid #bac5e7;text-align:center}
+
+/* pr */
+.rssCont {margin:0 0 50px 0; padding:0;}
+.rssCont.mgn {margin:0 !important;}
+.rssCont dt {margin:0 0 20px 0; padding:0;}
+.rssCont dd {margin:0 0 20px 20px; padding:0;}
+.rssCont dd ul li a {color:#7F77B2;}
+
+.photoView {text-align:center;}
+.photoView img {max-width:579px;}
+.photoViewList {width:100%; text-align:center; margin:20px auto; padding:10px 0; border-top:3px solid #eee; border-bottom:3px solid #eee;}
+.photoViewList img {vertical-align:top;}
+
+.boardPhoto {border-bottom:2px solid #eee;}
+.boardPhoto td {padding:20px 5px 10px;border-bottom:1px solid #eee;}
+.boardPhoto tr.first td {padding:0 5px 10px;}
+.boardPhoto td p {width:134px; padding-left:2px; word-break:break-all; word-wrap:break-word;}
+.boardPhoto td p.img {width:136px; height:90px; margin-bottom:5px; padding:0; overflow:hidden;}
+
+/*Recruit*/
+#recruit .boardTit .classTit {padding:6px 22px; height:18px}
+.recruitClassCont {border-bottom:3px solid #eee; padding:20px  15px 20px 15px; margin-bottom:10px}
+.recruitClassList th {font-weight:normal; text-align:left; padding:8px 20px}
+.recruitClassList td {text-align:left; padding:8px 20px}
+.recruitClassList tr.bg th, .recruitClassList tr.bg td {background:#f5f5f5}
+.fileAdd {text-align:right; padding:10px 20px}
+.recruitArea, .recruitAreaCmt {border:6px solid #d8f0f3;}
+.recruitAreaCmt {text-align:center; padding:20px; background:#f3f9fa;}
+.recruitAreaCmt.mgn {margin-top:20px;}
+.recruitArea tr.bg th, .recruitArea tr.bg td {background:#f3f9fa}
+.recruitArea th {font-weight:normal; color:#62bfc7; text-align:right; padding:9px 25px 6px 0; vertical-align:top}
+.recruitArea td {padding:9px 0 6px 0; vertical-align:top}
+.recruitArea .input {width:160px;}
+.recruitArea .errMsgArea {background:#f3f9fa; padding:20px;}
+.recruitArea .errMsg {padding:20px 25px; border:1px solid #bcdde3; background:#e6f1f3}
+.recruitArea .errMsg strong {color:#309eb0}
+.recruitArea .errMsg .userchk {padding:20px 0 0 170px; position:relative;}
+.recruitArea .errMsg .userchk img {border:1px solid #d1d1d1; position:absolute; left:0; top:10px;}
+
+#recruit h3 {position:relative;}
+#recruit h3 img {vertical-align:middle;}
+#recruit h3 p{position:absolute; right:0; text-align:right; color:#ff0000; font-size:11px; font-weight:normal; top:5px}
+#recruit h3 p strong {font-size:12px}
+#recruit .em {color:#ff0000; font-weight:bold;}
+#stepWrapSchol h3 { color:#ff0000; font-size:11px; font-weight:normal;}
+.pt30 h3 {color:#ff0000; font-size:11px; font-weight:normal;}
+
+.recruitBox {border:6px solid #eee; margin-bottom:20px; padding:10px; *zoom:1;}
+.recruitBox:after {content:""; display:block; clear:both; height:0; visibility:hidden;}
+.recruitBox .photo {float:left; width:100px; text-align:center;}
+.recruitBox .photo div {border:6px solid #eee; width:85px; height:113px; overflow:hidden; margin:0 auto;}
+.recruitBox .photo p {padding:7px 0 0 0;}
+.recruitBox .photo p img {vertical-align:middle}
+.recruitBox .photo .photoImg img {width:85px !important;}
+.recruitBox .recruitTbl {float:right; width:445px;}
+
+.recruitTit {position:relative; width:100%; height:30px;}
+.recruitTit .add {position:absolute; right:66px; top:0;}
+.recruitTit .del {position:absolute; right:6px; top:0;}
+
+.stepWrap {padding:30px 0 0 0;}
+.recruitForm {border:1px solid #ddd;}
+.recruitForm.mt20 {margin-top:20px;}
+.recruitBox .recruitForm, .recruitForm.line {border:0; border-top:1px solid #ddd !important;}
+.recruitForm th {border-bottom:1px solid #ddd; background:#f6f6f6; padding:5px; font-weight:normal;}
+.recruitForm td {border-bottom:1px solid #ddd; padding:7px 5px 5px 5px;}
+.recruitForm td img {vertical-align:middle;}
+.recruitForm td.ac {text-align:center;}
+.recruitForm input, .recruitForm select {margin-bottom:2px}
+.recruitForm .input {width:50px;}
+.recruitFormBtn {border-top:3px solid #ddd; margin:20px 0 0 0; padding:15px 0 0 0; text-align:center;}
+.recruitFormBtn a {margin:0 15px;}
+.delArea {text-align:right; margin:10px 7px 0 0;}
+
+.recruiteFaqList li {border-bottom:1px solid  #eee; background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/recruit/faq_tab_q.gif) no-repeat 10px 5px; padding:3px 0 5px 30px; margin:0 0 5px 0}
+.recruiteFaqList li div {background:#f6f6f6 url(../../../../image.ahnlab.com/img_upload/company/site/kor2/recruit/faq_tab_a.gif) no-repeat 10px 11px;  padding:9px 20px 10px 30px; margin: 5px 0 0 -30px}
+
+.tblStyle02, .tblTrack {width:589px;}
+.tblStyle02 th, .tblStyle02 td {vertical-align:middle; padding:15px 20px 15px 0; border-bottom:1px solid #d7eaed;}
+.tblStyle02 td p {margin-bottom:15px; padding:0 !important;}
+.tblStyle02.mgn th, .tblStyle02.mgn td {vertical-align:top; padding:25px 10px 25px 5px;}
+
+#csm .tblStyle02 th, #csm .tblStyle02 td {vertical-align:top; padding:25px 0; border-bottom:1px solid #c3e7d6;}
+#csm .tblStyle02 .first th, #csm .tblStyle02 .first td {padding-top:0;}
+
+
+.tblTrack th {color:#fff; padding:4px 0 3px 0; border-right:1px solid #55a9b1; background:#62bfc7;}
+.tblTrack th.end {border-right:0;}
+.tblTrack td {text-align:center; padding:4px 0 3px 0; border-left:1px solid #d4d4d4; border-bottom:1px solid #d4d4d4;}
+.tblTrack td.bg01 {height:44px; padding:0 !important; background:#f0f7f7;}
+.tblTrack td.end {border-right:1px solid #d4d4d4;}
+
+.recruitInfo li p {margin:15px 0 3px 0 !important; padding:0; font-weight:bold;}
+.recruitInfo li {margin:0 5px 10px 0 !important; padding:0 !important;}
+
+ /* Sitemap */
+.sitemap ul {width:190px; float:left;}
+.sitemap li.tit {background:none !important; padding:0 0 4px 0}
+.sitemap li {background:url(../../../../image.ahnlab.com/img_upload/company/site/kor2/common/blt_sitemap.gif) no-repeat left 5px; padding:0 0 1px 12px}
+.row {height:190px; border-bottom:1px solid #eee; margin-bottom:20px}
+
+/* Search */
+.searchBox {background:#f8f8f8; padding:15px; text-align:center; margin-bottom:20px;}
+.searchResult {border-bottom:2px solid #ddd; padding:0 0 7px; margin:0 0 25px}
+.searchResult strong {color:#0099cc;}
+.searchCat {font-weight:bold; text-align:left; border-bottom:1px solid #eee}
+
+/* popup */
+.popup img {vertical-align:middle;}
+.popup h1 {padding:6px 20px 5px; font-weight:bold; font-size:13px; line-height:18px; color:#fff; background-color:#7F77B2;}
+#recruit.popup h1 {background-color:#63c3ce;}
+#recruit.popup .notice {background:#f9f9f9; padding:10px; color:#444}
+#recruit.popup .agreeBox {margin:5px 0 0 0; height:130px; overflow-y:auto; border:1px solid #d1d1d1; padding:0 10px;}
+#recruit.popup .agreeBox .clausal {margin:7px 0}
+#recruit.popup .agreeBox .clausal dt {margin:10px 0 0 0}
+#recruit.popup .agreeCheck {padding:5px 0 0 0}
+#recruit.popup .agreeBox a {color:#32919b}
+
+.popCont {padding:30px 30px 20px; min-height:70px; _height:70px; line-height:16px;}
+.popCont .cmt {margin:0 0 15px;}
+.popup .btnRt {padding:10px 10px 0 0; border-top:1px solid #ddd;}
+
+#csm.popup h1 {background-color:#69c299;}
+#csm.popup h2 {font-size:12px; color:#5a90cb; background-image:none;}
+#csm .popCont {margin:10px; padding:10px; width:610px; height:400px; overflow-y:scroll; border:1px solid #eee;}
+
+.popup .clausal {margin:0 0 40px 0; padding:0; line-height:18px;}
+.popup .clausal.mgn {margin:0;}
+.popup .clausal dt {margin:20px 0 0 0; padding:0; font-weight:bold; color:#000;}
+.popup .clausal dd {margin:0; padding:0; color:#555;}
+.popup .clausal ul {padding:5px 0 10px 10px !important;}
+.popSchWrap {width:290px; height:80px; margin-top:5px; overflow-y:scroll; border:1px solid #ddd;}
+.pollWrap h2 {margin:20px 0 10px 0; padding:0 10px 10px 5px; font-size:12px; color:#32919b;}
+.pollWrap h3 {margin:20px 0 10px 12px; padding:0; font-size:12px; color:#555;}
+.pollWrap h3.mgn {margin-top:0 !important;}
+.pollWrap h4 {font-weight:normal; margin:0 0 0 10px; padding:6px 0 5px 10px; border-top:1px solid #ddd; background:#f6f6f6;}
+
+.pollWrap table.recruitForm th {text-align:left;}
+.pollWrap table td.line {border-right:1px solid #ddd;}
+.pollWrap table .input {width:20px;}
+.pollWrap .pollList {border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+.pollWrap .pollList li {display:inline-block; *display:inline; zoom:1; width:16%; padding:5px 8px 5px 10px;}
+.pollWrap .careerList  {border-top:1px solid #ddd; border-bottom:1px solid #ddd; margin:0 0 30px 10px; *zoom:1;}
+.pollWrap .careerList.mgn  {border-bottom:0 !important;}
+.pollWrap .careerList.col02 li {width:50% !important;}
+.pollWrap .careerList:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.pollWrap .careerList li {border-bottom:1px solid #ddd; padding:8px 0 5px 0; float:left; width:176px; line-height:19px;}
+.pollWrap .careerList li.etc {width:528px !important; border-top:1px solid #ddd;}
+.pollWrap .careerList li.full {width:528px !important;}
+
+.pollWrap .careerList li.etc, .pollWrap .careerList li.noLine {border-bottom:0;}
+.pollWrap .careerList .input {width:18px; margin:-2px 0 2px 10px;}
+.pollWrap .careerList .etcInput {width:250px; padding:0 5px; color:#777; vertical-align:middle; border:0;}
+
+.pollWrap .careerList li ul.dep {float:left; margin:5px 0 0 10px; padding:10px 10px 10px 0; width:487px; border:1px solid #ddd;}
+.pollWrap .careerList li .dep li {border:0; width:25%;}
+.pollWrap .careerList li .dep li span {display:inline-block; *display:inline; zoom:1; width:108px; padding-left:10px;}
+.pollWrap .careerList li .dep.mgn li .input  {margin:-2px 0 2px 5px;}
+
+
+.pollTbl {padding:10px; border:6px solid #d8f0f3; background:#f3f9fa;}
+.pollTbl th, .pollTbl td {padding:8px 20px 7px 20px; font-weight:normal; border-bottom:1px solid #b3d8dd; border-right:1px solid #b3d8dd;}
+.pollTbl th.end, .pollTbl td.end {border-right:0 !important;}
+.pollTbl tr.end th, .pollTbl tr.end td {border-bottom:0 !important;}
+
+
+/***************************아래 추가함********************************/
+
+table.updatePasswd td p.comm{padding:3px 0 0 0;color:#888888;font-size:10.5px;word-spacing:-0.07em;}
+table.updatePasswd td span.warning{padding-left:5px;font-size:11px;}
+table.updatePasswd td.small{padding:0px;}
+table.updatePasswd .fbox {overflow:visible !important; #padding-top:2px;}
+table.updatePasswd .fbox input{float:left; width:130px; margin:0 5px 0 0;}
+
+.inputLong {width:13%; height:auto; border:1px solid #ddd; padding: 2px 0 2px 3px }
+
+
+/* green */
+.greenTbl {float:left; width:285px;}
+.greenTbl.w100, .greenTbl.noLine {float:none; width:100%;}
+.greenTbl .tblStyle04 {margin-top:5px; border-left:1px solid #a1d2ba; border-top:1px solid #a1d2ba;}
+.greenTbl .tblStyle04 th {text-align:center; padding:6px 10px 6px 10px; color:#51ab82; border-right:1px solid #a1d2ba; border-bottom:1px solid #a1d2ba; background:#f4f9f7}
+.greenTbl .tblStyle04 td {text-align:center; padding:6px 10px 6px 10px; border-right:1px solid #a1d2ba; border-bottom:1px solid #a1d2ba;}
+.greenTbl .tblStyle04 .sum td, .greenTbl .tblStyle04 td.sum {font-weight:bold; color:#51ab82; border-top:1px solid #a1d2ba; background:#edf5f2;}
+.tblStyle02 .greenTbl .tblStyle04 th, .tblStyle02 .greenTbl .tblStyle04 td {padding:6px 4px 6px 4px !important;}
+.tblStyle02 .greenTbl p {margin:0 !important;}
+.greenTbl.noLine .tblStyle04 {border-left:0; border-top:2px solid #a1d2ba;}
+.greenTbl.noLine .tblStyle04 th {text-align:left;}
+.greenTbl.noLine .tblStyle04 td {text-align:left; border-right:0;}
+
+#etc .policy .date{text-align:right;margin:11px 0 28px 0;}
+#etc .policyCont .tit{font-weight:bold;margin:20px 0 5px 0;}
+#etc .policyCont .sTit{font-weight:bold;margin-top:10px;}
+#etc .liList{margin:5px 0 10px 0;}
+#etc .liList li{padding:0 0 0 14px;background:url("../../../../image.ahnlab.com/img_upload/company/site/kor2/etc/bl_etc.gif") no-repeat 4px 6px;}
+#etc .liList .bgNo{background:none;}
+#etc table{width:100%;margin:10px 0;}
+#etc table th, #etc table td{border:1px solid #959595;border-right:none;padding:4px 8px 1px 8px;}
+#etc table th{background-color:#d2ecfb;padding:3px 8px 0 8px;}
+#etc table td{text-align:center;vertical-align:top;}
+#etc table .first{border-left:none;}

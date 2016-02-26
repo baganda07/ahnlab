@@ -1,0 +1,4117 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/asecView.do?groupCode=VNI001&seq=24450 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:57:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=1280" />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="ASEC 리포트, 보안위협 보안 기술의 최신동향, 보안 전문정보" />
+    <meta name="Description" content="매달 제공되는 ASEC 리포트에서 보안위협과 이에 대응하는 보안 기술의 최신동향, 전문정보를 확인하실 수 있습니다." />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="ASEC 리포트 | AhnLab"/>
+	<meta property="og:description"     content="매달 제공되는 ASEC 리포트에서 보안위협과 이에 대응하는 보안 기술의 최신동향, 전문정보를 확인하실 수 있습니다."/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="ASEC 리포트 | AhnLab">
+	<meta name="twitter:description"    content="매달 제공되는 ASEC 리포트에서 보안위협과 이에 대응하는 보안 기술의 최신동향, 전문정보를 확인하실 수 있습니다.">
+
+    <!-- SEO -->
+    <title>ASEC 리포트 | AhnLab</title>
+
+    <link href="../../../../css/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	//Placeholder
+    	$("input, textarea").placeholder();
+
+    	//a링크 #처리
+    	$('a[href = "#"]').click(function(){
+  			return false;
+        });
+
+    	//이미지 에러처리
+    	$("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//image.ahnlab.com/img_upload/kr/site/images2/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+    	//로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://www.ahnlab.com/kr/site/login/userLogout.do',
+                dataType: 'json',
+				type : 'post',
+                data: $("#loginForm").serialize(),
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('../../product/securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+
+        });
+
+        //보안 통계 팝업
+        $(".securityStaticsPopup").click(function() {
+            POPUP.open('../statistics/security1.html', 'statisticsPopup', {
+                width : 1000,
+                height : 760,
+                scroll : true
+            });
+        });
+
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('../../../../index.html', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+
+</head>
+<body>
+<div class="wrap">
+    <nav id="skipNavi">skip navigation
+        <ul>
+            <li><a href="#naviMenu">메뉴</a></li>
+            <li><a href="#naviUtill">회원메뉴</a></li>
+            <li><a href="#container">본문</a></li>
+            <li><a href="#footer">하단 정보(링크)</a></li>
+        </ul>
+    </nav>
+    <!-- gnb -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="htop">
+        <div class="htopWrap">
+            <!-- logo -->
+            <p class="logo"><a href="../../main.html"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/common/img_logo.gif" alt="AhnLab"></a></p>
+            <!-- logo -->
+
+            <!-- etc menu -->
+            <nav id="naviUtill">
+                <ul>
+                    <li class="locSite">
+                        <a href="#" class="link" title="국가별 사이트 목록 보기"><span class="bl"></span>한국</a>
+                        <!-- layer -->
+                        <div class="lyUtill"><div class="lyWrap">
+                            <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" title="새창. 한국 사이트로 바로가기">한국 (한국어)</a></p>
+                            <p><a href="../../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. Global 사이트로 바로가기">Global (English)</a></p>
+                            <p><a href="../../../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. APAC 사이트로 바로가기">APAC (English)</a></p>
+                            <p><a href="../../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="새창. 日本 사이트로 바로가기">日本 (日本語)</a></p>
+                            <p><a href="../../../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="새창. 中国 사이트로 바로가기">中国 (简体中文)</a></p>
+                            <p><a href="http://us.ahnlab.com/index.jsp" target="_blank" rel="nofollow" title="새창. United States 사이트로 바로가기">US (English)</a></p>
+                        </div></div>
+                        <!-- //layer -->
+                    </li>
+                    
+                    
+                    <li><a href="../../login/loginForm.html" class="link">로그인</a></li>
+                    
+                    <li><a href="../../login/loginFormede2.html" class="link">MY보안센터</a></li>
+                    <li><a href="../../product/partnerMain.html" class="link">파트너</a></li>
+                    <li class="familySite">
+                        <a href="#" class="link comboLink" title="패밀리 사이트 목록 보기">패밀리 사이트<span class="bl"></span></a>
+                        <!-- layer -->
+                        <div class="lyUtill"><div class="lyWrap">
+                            <p><a href="../../../../../v3clinic.ahnlab.com/v3clinic/site/main/main.html" target="_blank" rel="nofollow" title="새창. V3 365 클리닉 사이트로 바로가기">V3 365 클리닉</a></p>
+                            <p><a href="http://shop.ahnlab.com/jump/jsp/fp/main.jsp" target="_blank" rel="nofollow" title="새창. AhnLab mall 사이트로 바로가기">AhnLab mall</a></p>
+                            <p><a href="http://v3mss.ahnlab.com/front/mss_main.do" target="_blank" rel="nofollow" title="새창. V3 MSS 사이트로 바로가기">V3 MSS</a></p>
+                            <p><a href="../../product/purchase/eLicense.html" rel="nofollow" title="E-License Service 사이트로 바로가기">E-License Service</a></p>
+                            <!-- <p><a href="http://www.ahnlab.com/kr/site/privacylab/main.do" target="_blank" rel="nofollow" title="새창. Privacy Lab 사이트로 바로가기">Privacy Lab</a></p> -->
+                        </div></div>
+                        <!-- //layer -->
+                    </li>
+                </ul>
+            </nav>
+            <!-- //etc menu -->
+            <!-- menu -->
+            <nav id="naviMenu">
+                <ul>
+                     <li class="muProd ">
+                     <!-- 1depth -->
+                     <a href="../../product/productList.html" class="oneLink">제품</a>
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                        
+                        
+                        <dl class="indiWrap">
+                            <dt>개인</dt>
+                            <dd>
+                                <ul class="thrList ls0">
+                                
+                                
+                                    <li><a href="../../product/productViewfac2.html?prodSeq=15">V3 365 클리닉</a></li>
+                                
+                                    <li><a href="../../product/productView49a3.html?prodSeq=17">PC주치의</a></li>
+                                
+                                    <li><a href="../../product/productView3a25.html?prodSeq=107">자녀PC보호</a></li>
+                                
+                                    <li><a href="../../product/productView69f7.html?prodSeq=108">명의도용차단</a></li>
+                                
+                                    <li><a href="../../product/productViewd67f.html?prodSeq=112">PC복구 Plus</a></li>
+                                
+                                    <li><a href="../../product/productView7722.html?prodSeq=8">V3 Lite</a></li>
+                                
+                                    <li><a href="../../product/productViewde70.html?prodSeq=66">Mobile Security</a></li>
+                                
+                                    <li><a href="../../product/productView3edc.html?prodSeq=60">V3 Zip 2.0</a></li>
+                                
+                                
+                                </ul>
+                            </dd>
+                        </dl>
+                        
+                        
+                        
+                    
+                        
+                        
+                        
+                            <dl class="corpWrap">
+                                <dt>기업</dt>
+                                <dd>
+                                    
+                                    
+	                                   
+                                       
+
+                                           
+                                           
+                                                   <!-- 2depth -->
+
+                                                   
+                                                   <!-- 3depth -->
+                                                   
+                                                       
+                                                        
+                                                       
+                                               <div class="naviWrap">
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       <p class="tit"><a href="../../product/productView1895.html?prodSeq=13">엔드포인트 보안</a></p>
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView1895.html?prodSeq=13">V3 Internet Security 9.0</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewf542.html?prodSeq=81">V3 Endpoint Security 9.0</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView2106.html?prodSeq=26">V3 Net for Windows Server 9.0</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewe467.html?prodSeq=58">V3 Net for Unix/Linux Server</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewf3aa.html?prodSeq=23">V3 MSS</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView61d7.html?prodSeq=75">기업용 PC주치의</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewb613.html?prodSeq=86">AhnLab 내PC지키미</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView51af.html?prodSeq=103">AhnLab Policy Center 4.6</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView4808.html?prodSeq=73">AhnLab Patch Management</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewdbbc.html?prodSeq=88">AhnLab Privacy Management Suite</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView28fa.html?prodSeq=78">AhnLab Privacy Management</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView6aa8.html?prodSeq=105">EMS</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewe897.html?prodSeq=104">ERS</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewcfe7.html?prodSeq=57">TrusLine</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+	                                                       
+	                                                       
+                                                       
+
+                                                       
+                                                       
+                                               </div>
+                                               
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                               <div class="naviWrap">
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView2dde.html?prodSeq=110">EPS</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView4556.html?prodSeq=65">TrusZone</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView52ed.html?prodSeq=79">TS Engine Suite</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView3950.html?prodSeq=29">AhnLab Policy Center 4.6 for Windows</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView5428.html?prodSeq=59">AhnLab Policy Center Appliance</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView5e6d.html?prodSeq=109">AhnLab Safe Transaction</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewa8fb.html?prodSeq=34">AhnLab Online Security 2.0</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView8925.html?prodSeq=77">PrivacyCare PCscan</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+	                                                       
+	                                                       
+                                                       
+
+                                                       
+                                                       
+                                               </div>
+                                               
+                                                       
+
+                                                   
+                                                   
+                                           
+
+                                           
+                                           
+                                       
+
+                                           
+                                           
+                                                   <!-- 2depth -->
+
+                                                   
+                                                   <!-- 3depth -->
+                                                   
+                                                       
+                                                        
+                                                       
+                                               <div class="naviWrap">
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       <p class="tit"><a href="../../product/productView688c.html?prodSeq=10">네트워크 보안</a></p>
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView688c.html?prodSeq=10">TrusGuard</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewbae8.html?prodSeq=54">TrusGuard DPX</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productViewcfa0.html?prodSeq=87">TrusGuard IPX</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView788d.html?prodSeq=101">TSM</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView613f.html?prodSeq=9">TrusGuard Manager</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView947d.html?prodSeq=76">TrusAnalyzer</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                   
+                                           
+
+                                           
+                                           
+                                       
+
+                                           
+                                           
+                                                   <!-- 2depth -->
+
+                                                   
+                                                   <!-- 3depth -->
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       <p class="tit"><a href="../../product/productView600f.html?prodSeq=68">차세대 APT 보안</a></p>
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView600f.html?prodSeq=68">MDS</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                   
+                                           
+
+                                           
+                                           
+                                       
+
+                                           
+                                           
+                                                   <!-- 2depth -->
+
+                                                   
+                                                   <!-- 3depth -->
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       <p class="tit"><a href="../../product/productViewec8c.html?prodSeq=111">모바일 보안</a></p>
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productViewec8c.html?prodSeq=111">간편인증</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView7491.html?prodSeq=64">V3 Mobile Plus</a></li>
+                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+
+                                                       <li><a href="../../product/productView0fab.html?prodSeq=67">V3 Mobile 2.0</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+                                                       
+
+                                                       
+                                                       
+                                               </div>
+                                               
+                                                       
+
+                                                   
+                                                       
+                                                        
+                                                       
+                                               <div class="naviWrap">
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView46bd.html?prodSeq=102">V3 Mobile Enterprise</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                   
+                                           
+
+                                           
+                                           
+                                       
+
+                                           
+                                           
+                                                   <!-- 2depth -->
+
+                                                   
+                                                   <!-- 3depth -->
+                                                   
+                                                       
+                                                        
+                                                       
+                                                        
+                                                       
+                                                       
+                                                       <p class="tit"><a href="../../product/productView68e5.html?prodSeq=61">유틸리티</a></p>
+                                                       
+                                                       
+                                                       
+                                                       <ul class="thrList ls0">
+                                                       
+
+                                                       <li><a href="../../product/productView68e5.html?prodSeq=61">V3 Zip 2.0</a></li>
+                                                       
+                                                       
+                                                       </ul>
+                                                           
+	                                                       
+                                                       
+
+                                                       
+                                                       
+
+                                                   
+                                                   
+                                           
+
+                                           
+                                           
+                                       
+
+                                           
+                                           
+
+                                           
+                                           
+
+                                               
+
+                                               
+                                               
+                                                   <p class="tit"><a href="../../product/globalPartnerList.html">글로벌 파트너 제품</a></p>
+                                                   <ul class="thrList ls0">
+                                                   <li><a href="../../product/globalPartnerList.html">제품 개요</a></li>
+                                               
+                                               <li><a href="../../product/productView0cdd.html?prodSeq=90">통합 보안 관리</a></li>
+                                               
+                                           
+                                       
+
+                                           
+                                           
+
+                                           
+                                           
+
+                                               
+
+                                               
+                                               <li><a href="../../product/productViewdbc5.html?prodSeq=92">네트워크 인프라 보안</a></li>
+                                               
+                                           
+                                       
+
+                                           
+                                           
+
+                                           
+                                           
+
+                                               
+
+                                               
+                                               <li><a href="../../product/productViewf911.html?prodSeq=96">웹/데이터 보안</a></li>
+                                               
+                                           
+                                       
+
+                                           
+                                           
+
+                                           
+                                           
+
+                                               
+
+                                               
+                                               <li><a href="../../product/productView1c26.html?prodSeq=99">전력 관리</a></li>
+                                               
+                                                   </ul>
+                                               
+                                           
+                                       
+                                       </div>
+		                           
+                                </dd>
+                            </dl>
+                        
+                        
+                    
+                        <div class="posAbs"><a href="../../product/productList.html" title="" class="btnSmall darkBlue"><span class="icoAllProd"></span>전체 제품 보기</a></div>
+                        </div></div></div>
+                        <!-- //menu layer -->
+                    </li>
+                    
+                    
+                     
+                        <li class="muSecurity ">
+                     
+                     
+                     
+                     
+                     
+
+                     <!-- 1depth -->
+                     
+                         
+	                     
+	                     
+	                     
+	                     <a href="../../product/consultInfo.html" class="oneLink">서비스</a>
+	                     
+	                     
+                     
+                     
+
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="flLeft">
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/consultInfo.html">정보보호컨설팅</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/consultInfo.html">소개 및 특장점</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/consultType1.html">종류</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/controlInfo.html">보안관제</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/controlInfo.html">소개 및 특장점</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/controlType1.html">종류</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/controlPartner1.html">파트너</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/secuInfo.html">보안 SI</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/secuInfo.html">소개 및 특장점</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/careInfo.html">T-Care Service</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/careInfo.html">소개 및 특장점</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/careType1.html">종류</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/aFirst.html">A-FIRST</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/securityDiagnosis.html">개인정보 수탁업체 보안진단</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                            
+                         </div>
+                     
+                        
+                            <div class="flRight">
+                             <ul>
+                                 <li>
+                                     <span class="icon security01"></span>
+                                     <p>개인정보보호 진단과 해결방안을 확인하세요.</p>
+                                     <!-- button -->
+                                     <a href="../../product/checklist/checkList.html" class="linkText"><span class="btnTxt">개인정보보호 체크리스트</span><span class="btnIcon"></span></a>
+                                 </li>
+                                 <li>
+                                     <span class="icon security02"></span>
+                                     <p>AhnLab 보안 제품과 서비스 구성을 한 눈에<br/> 확인하세요</p>
+                                     <!-- button -->
+                                     <a href="#" class="linkText clickSecurityMapGnb"><span class="btnTxt">Security Map</span><span class="btnIcon"></span></a>
+                                 </li>
+                             </ul>
+                         </div>
+                        
+                        
+
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                        <li class="muPurchase ">
+                     
+                     
+                     
+                     
+
+                     <!-- 1depth -->
+                     
+                         
+	                     
+	                     
+	                     
+	                     <a href="../../product/purchase/purchaseInfo.html" class="oneLink">제품구매</a>
+	                     
+	                     
+                     
+                     
+
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="flLeft">
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/purchaseInfo.html">구매정보</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/purchaseLicense.html">라이선싱</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/purchaseLicenseProgram.html">라이선스 프로그램</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/eLicense.html">e-Licensing Service</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/purchaseAhnlab.html">구매처 안내</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/purchase/purchaseAhnlab.html">안랩</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../product/purchase/purchasePartner1.html">총판 및 파트너</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../product/purchase/estimate.html">견적 및 도입 문의</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../support/customer/exchangePers.html">재계약 안내</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                            
+                         </div>
+                     
+                        
+                        
+                            <div class="flRight">
+                             <ul>
+                                 <li>
+                                     <span class="icon purchase01"></span>
+                                     <p>AhnLab의 보안 제품을 한 눈에 확인하세요.</p>
+                                     <!-- button -->
+                                     <a href="../../product/productList.html" class="linkText"><span class="btnTxt">전체 제품 보기</span><span class="btnIcon"></span></a>
+                                 </li>
+                                 <li>
+                                     <span class="icon purchase02"></span>
+                                     <p>구매하신 제품의 사용증서를 확인하세요</p>
+                                     <!-- button -->
+                                     <a href="../../login/loginFormc6a4.html" class="linkText"><span class="btnTxt">제품 확인 및 증서 출력</span><span class="btnIcon"></span></a>
+                                 </li>
+                             </ul>
+                         </div>
+                        
+
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                        <li class="muDown ">
+                     
+                     
+                     
+
+                     <!-- 1depth -->
+                     
+                         
+	                     
+	                     
+	                     <a href="../../download/product/productInstallList.html" class="oneLink">다운로드</a>
+	                     
+	                     
+	                     
+                     
+                     
+
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="flLeft">
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productInstallList.html">설치파일</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productEngineList.html">엔진파일</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productPatchList.html">패치파일</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productManualList.html">설명서</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productVaccineList.html">전용백신</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/product/productFreeList.html">무료 다운로드</a></p>
+                                     
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                            
+                         </div>
+                     
+                        
+                        
+
+                        
+                            <div class="flRight">
+                             <ul>
+                                 <li>
+                                     <span class="icon down01"></span>
+                                     <p>제품관련 파일을 한눈에 확인하세요.</p>
+                                     <!-- button -->
+                                     <a href="../../download/product/productAllList.html" class="linkText"><span class="btnTxt">다운로드 전체보기</span><span class="btnIcon"></span></a>
+                                 </li>
+                                 <li>
+                                     <span class="icon down02"></span>
+                                     <p>로그인 후 내가 구매한 제품을 다운로드 하세요.</p>
+                                     <!-- button -->
+                                     
+                                     
+                                     <a href="#" onclick='if(confirm("로그인 후 다운로드 가능합니다. \n로그인 페이지로 이동하시겠습니까?")){Common.login("../../../../index.html","../../login/loginForm1a0c.html");}' class="linkText"><span class="btnTxt">내가 구매한 제품</span><span class="btnIcon"></span></a>
+                                     
+                                 </li>
+                             </ul>
+                         </div>
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                     
+                        <li class="muSupport ">
+                     
+                     
+
+                     <!-- 1depth -->
+                     
+                         
+	                     
+	                     
+	                     
+	                     <a href="../../support/supportMain.html" class="oneLink">고객지원</a>
+	                     
+	                     
+                     
+                     
+
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="flLeft">
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     <p class="tit"><a href="http://erms.ahnlab.com/ahnlab_ee/faq/FaqMain.do">온라인 고객지원</a></p>
+                                     
+                                     
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            <li><a href="http://erms.ahnlab.com/ahnlab_ee/faq/FaqMain.do">FAQ</a></li>
+                                            
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            <li><a href="https://erms.ahnlab.com/ahnlab_ee/mail/MailQuestion.do">1:1상담</a></li>
+                                            
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../support/customer/remote.html">원격지원</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            <li><a href="https://erms.ahnlab.com/ahnlab_ee/mail/MailVoice.do">고객의 소리</a></li>
+                                            
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../support/customer/telinfo.html">전화상담 안내</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../support/virus/virus.html">바이러스 신고센터</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../support/virus/virus.html">신고센터 이용안내</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            <li><a href="../../login/loginFormd15e.html?tab=1">바이러스 신고</a></li>
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            <li><a href="../../login/loginFormd0a2.html?tab=error">오진 신고</a></li>
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            <li><a href="../../login/loginForm5653.html?tab=fake">가짜 백신 신고</a></li>
+                                            
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../support/b2b/techEdu.html">교육 및 이벤트</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../support/b2b/techEdu.html">기업 기술 교육</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../seminar/seminarList.html">세미나</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../../event/event/eventList.html">이벤트</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../support/notice/noticeList.html">공지사항</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../support/closed/product.html">판매종료 제품</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../../download/info/windows.html">Windows 버전별 지원 현황</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                            
+                         </div>
+                     
+                        
+                        
+
+                        
+                        
+                            <div class="flRight">
+                                <div class="csPhone">
+                                 <p><span>구매문의</span>1588-3096</p>
+                                 <p><span>개인고객 기술지원</span>1577-9880</p>
+                                 <p><span>기업고객 기술지원</span>1577-9431</p>
+
+                                 <div class="button">
+                                     <a href="../../support/customer/telinfo.html" class="linkText"><span class="btnTxt">전화상담안내 자세히보기</span><span class="btnIcon"></span></a>
+                                 </div>
+                             </div>
+                         </div>
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                     
+                     
+                        <li class="muInfo selected">
+                     
+
+                     <!-- 1depth -->
+                     
+                         
+	                     
+	                     
+	                     
+	                     <a href="../securityinfoMain.html" class="oneLink">보안정보</a>
+	                     
+	                     
+                     
+                     
+
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="flLeft">
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../secunews/secuNewsList3a0d.html?menu_dist=1">보안, 뉴스와 이슈</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../secunews/secuNewsList3a0d.html?menu_dist=1">최신 보안 뉴스</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../secunews/secuNewsList93eb.html?menu_dist=2">보안 이슈</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../secunews/secuNewsListe224.html?menu_dist=3">전문가 칼럼</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../newsletter/newsLetter.html">보안 매거진</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="../newsletter/newsLetter.html">시큐리티 레터</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                           
+                                           
+                                           
+                                           
+                                           <li><a href="../newsletter/magazine.html">월간 &#039;安&#039;</a></li>
+                                           
+                                           
+                                       </ul>
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="asecIntro.html">ASEC 분석정보</a></p>
+                                     
+                                     
+                                     
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="asecIntro.html">ASEC 소개</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="asecCodeList.html">악성코드 정보</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="asecAdviceListc8f4.html?groupCode=VNI002">ASEC 보안권고문</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!-- 3depth -->
+                                       <ul class="thrList">
+                                            
+                                            
+                                            
+                                            
+                                            <li><a href="asecReportView21f7.html?groupCode=VNI001">ASEC 리포트</a></li>
+                                            
+                                            
+                                       </ul>
+                                       
+                                       
+                                       
+                                       
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap ">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../secunews/secuNewsList3876.html?menu_dist=4">보안과 PC상식</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                                <div class="naviWrap clear">
+                                     <!-- 2depth -->
+                                     
+                                     
+                                     
+                                     
+                                     <p class="tit"><a href="../dictionary/dictionaryList.html">보안 용어사전</a></p>
+                                     
+                                     
+                                     
+                                 </div>
+                            
+                            
+                                <div class="naviWrap">
+                                    <p class="tit"><a href="#" class="securityStaticsPopup">보안 통계</a></p>
+                                </div>
+                            
+                         </div>
+                     
+                        
+                        
+
+                        
+                        
+                        
+                            <div class="flRight">
+                             <ul>
+                                 <li>
+                                     <span class="icon info01"></span>
+                                     <p>제품 및 이슈를 동영상으로 확인하세요</p>
+                                     <!-- button -->
+                                     <a href="../../../tv/index.html" target="_blank" class="linkText"><span class="btnTxt">안랩 TV</span><span class="btnIcon"></span></a>
+                                 </li>
+                                 <li>
+                                     <span class="icon info03"></span>
+                                     <p>랜섬웨어 동향 및 피해 예방 가이드 </p>
+                                     <!-- button -->
+                                     <a href="../ransomware/index.html" class="linkText"><span class="btnTxt">안랩 랜섬웨어 보안센터</span><span class="btnIcon"></span></a><br/>
+                                 </li>
+                             </ul>
+                         </div>
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                </ul>
+            </nav>
+            <!-- //menu -->
+
+            <!-- 상단 검색 -->
+            <form method="post" name="dqTopSearch" id="dqTopSearch">
+            <div class="topSerch">
+                <div class="serWrap"><!-- mouseover, focus 일 경우 on 클래스 추가 -->
+                    <input type="text" id="topSearchTerm" name="searchTerm" maxlength="100" title="검색어를 입력하세요" onkeypress="return dqTopHandleEnter(event);" onfocus="return incTop_setTextBox(0, event);" onmousedown="incTop_setTextBox(1, event);" onkeydown="incTop_setTextBox(1, event);" />
+					<a href="#" class="close removeSearchTerm" style="display:none;"><span class="hide">검색내용지우기</span></a>
+                    <a href="#" onclick="javascript:dqTopSearch2(); return false;" class="sr"><span class="hide">검색</span></a>
+                    <input type="hidden" name="colTarget" id="colTargetTop" value="" />
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	var incTop_keystatus = 1;
+	var incTop_engFlag = 0;
+	var incTop_browserType = incTop_getNavigatorType();
+	var totalNum = 0;
+	var keywordNum = 0;
+	var tagFlag = 0;
+	var imageRoot = "";
+
+	function dqTopSearch()
+	{
+		$("#colTargetTop").val("TOTAL");
+		$("#dqTopSearch").attr("target", "");
+
+		if($("#topSearchTerm").val() != "")
+		{
+			$("#dqTopSearch").attr("action", "../../search/totalSearch.html");
+			$("#dqTopSearch").submit();
+		}
+		else
+		{
+			alert("검색어를 입력하세요");
+			$("#topSearchTerm").focus();
+			return ;
+		}
+	}
+
+	function dqTopSearch_main()
+	{
+		$("#dqTopSearch").attr("target", "");
+
+		if($("#topSearchTerm").val() != "")
+		{
+			$("#dqTopSearch").attr("action", "../../search/totalSearch0a08.html?svccode=aa1001&amp;contentscode=259");
+			$("#dqTopSearch").submit();
+		}
+		else
+		{
+			alert("검색어를 입력하세요");
+			$("#topSearchTerm").focus();
+			return ;
+		}
+	}
+
+	// 입력체크
+	function dqTopHandleEnter(event)
+	{
+		var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+
+		if(keyCode == 13)
+		{
+			if(incTop_a_now <= keywordNum)
+			{
+				if(incTop_a_now != 0 && keywordNum != 0)
+					$("#topSearchTerm").val(document.getElementById("incTop_acqHidden" + incTop_a_now).value);
+
+				dqTopSearch();
+			}
+			else
+			{
+				dqTopGoLink(document.getElementById("incTop_acqHidden" + incTop_a_now).value);
+			}
+
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+	function dqTopGoLink(link)
+	{
+		location.href=link;
+	}
+
+	function dqTopSearchKeyword(keyword)
+	{
+		location.href="http://www.ahnlab.com/kr/site/search/totalSearch.do?searchTerm=" + keyword + "&colTarget=TOTAL";
+	}
+
+	function incTop_setTextBox(flag, ev)
+	{
+		var _event;
+
+		switch(incTop_getNavigatorType())
+		{
+			case 1 : // IE
+				_event = window.event;
+				nodeName = _event.srcElement.nodeName;
+				key = _event.keyCode;
+				break;
+			case 2 : // Netscape
+				key = ev.which;
+				break;
+			default :
+				nodeName = "None";
+				key = _event.keyCode;
+				break;
+		}
+
+		if(incTop_keystatus == 1 && flag && key != 13)
+		{
+			incTop_keystatus = 2;
+		}
+
+		if ($("#topSearchTerm").val() != "") {
+			$(".removeSearchTerm").show();
+		} else {
+			$(".removeSearchTerm").hide();
+		}
+	}
+
+	function incTop_getNavigatorType()
+	{
+		if(navigator.appName == "Microsoft Internet Explorer")
+			return 1;
+		else if(navigator.appName == "Netscape")
+			return 2;
+		else
+			return 0;
+	}
+
+ 	function incTop_get_nav()
+ 	{
+		var ver = navigator.appVersion;
+
+	 	if(navigator.appName.indexOf("Microsoft")!=-1 && ver.indexOf("MSIE 4")==-1 && ver.indexOf("MSIE 3")==-1)
+			return 1;
+		else if(navigator.appName.indexOf("Netscape")!=-1)
+			return 1;
+		else
+			return 0;
+	}
+
+	function incTop_chk_rt(t)
+	{
+		if(t!=1)
+			return 0;
+		try
+		{
+			var Td = document;
+			var Ip = document.dqTopSearch.searchTerm;
+		}
+		catch(e)
+		{
+			return 0;
+		}
+
+		return 1;
+	}
+
+ 	var incTop_t = incTop_get_nav();
+ 	var incTop_c = incTop_chk_rt(incTop_t);
+
+ 	var incTop_Td = document;
+ 	var incTop_Ip = document.dqTopSearch;
+	var incTop_m_on=0, incTop_m_now=0, incTop_s_now=0, incTop_shl=0, incTop_a_now=0, incTop_a_on=0, incTop_arr_on=0, incTop_frm_on=0;
+    var incTop_cn_use = "use_ac";
+ 	var incTop_wi_int = 500;
+ 	var incTop_B="block",incTop_I="inline",incTop_N="none",incTop_UD="undefined";
+ 	var incTop_bak="",incTop_old="" ;
+ 	var incTop_qs_ac_list="",incTop_qs_ac_id="",incTop_qs_q="",incTop_qs_m=0,incTop_qs_ac_len=0 ;
+ 	incTop_bak=incTop_old=$("#topSearchTerm").val() ;
+ 	var incTop_acuse=1;
+ 	var incTop_cc= new Object();
+
+ 	if(incTop_t==1 && incTop_c==1)
+	{
+		function incTop_wd()
+		{
+			if (incTop_acuse==1)
+				incTop_Ip.autocomplete = "off";
+			else if(incTop_acuse==0)
+				incTop_Ip.autocomplete = "on";
+
+			incTop_Ip.onclick = incTop_req_ipc;
+			incTop_Ip.onblur = incTop_dis_p;
+			incTop_Td.body.onclick = incTop_dis_p;
+
+		}
+
+		var incTop_dnc = 0;
+
+		function incTop_req_ipc()
+		{
+			if(tagFlag != 1)
+			{
+				incTop_dnc=1;
+				incTop_frm_on=0;
+				incTop_req_ac2(1);
+			}
+
+			tagFlag = 0;
+		}
+
+		function incTop_dis_p()
+		{
+			if(incTop_dnc)
+			{
+				incTop_dnc = 0;
+				return ;
+			}
+
+			if(incTop_arr_on)
+			{
+				return;
+			}
+
+			if(incTop_frm_on)
+			{
+				return;
+			}
+
+			alw = 0;
+			incTop_ac_hide();
+		}
+
+	 	function incTop_req_ac2(me)
+	 	{
+			if($("#topSearchTerm").val() == "" || incTop_acuse == 0)
+				return ;
+
+			if(incTop_a_on && incTop_dnc)
+			{
+				incTop_ac_hide() ;
+				return ;
+			}
+
+			var o = incTop_get_cc(me);
+
+			if (o && o[1][0] != "")
+				incTop_ac_show(o[0], o[1], o[2], me);
+		 	else
+			 	incTop_reqAC(me);
+		}
+
+		var incTop__req = null;
+
+		function incTop_get_req()
+		{
+			if(incTop__req && incTop__req.readyState != 0)
+			{
+				incTop__req.abort();
+			}
+
+			try
+			{
+				incTop__req = new ActiveXObject("Msxml2.XMLHTTP");
+			}
+			catch(e)
+			{
+				try
+				{
+					incTop__req = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch(e)
+				{
+					incTop__req = false ;
+				}
+			}
+
+			if(!incTop__req && typeof XMLHttpRequest != incTop_UD)
+				incTop__req = new XMLHttpRequest();
+
+			return incTop__req;
+		}
+
+		function incTop_showAC()
+		{
+			if(incTop_acuse == 1)
+		 	{
+				if(incTop__req.readyState == 4 && incTop__req.responseText && incTop__req.status == 200)
+				{
+					eval(incTop__req.responseText);
+					incTop_set_cc(qs_q, qs_ac_list, qs_ac_id, qs_m) ;
+					incTop_ac_show(qs_q, qs_ac_list, qs_ac_id, qs_m) ;
+				}
+		 	}
+			else
+			{
+				incTop_popup_ac(2);
+			}
+		}
+
+    	function incTop_reqAC(me)
+ 		{
+			var sv;
+			var ke=incTop_trim_space($("#topSearchTerm").val(), me);
+			ke = ke.replace(/ /g, "%20");
+
+			while(ke.indexOf("\\") != -1){
+				ke = ke.replace(/ /g, "%20").replace("\\", "");
+			}
+
+			while(ke.indexOf("\'") != -1){
+				ke = ke.replace(/ /g, "%20").replace("\'", "");
+			}
+
+			if(ke == "")
+			{
+	 			incTop_ac_hide();
+				return;
+			}
+
+			sv = "http://www.ahnlab.com/kr/site/search/getAuto.do?searchTerm=" + encodeURIComponent(ke) + "&p=1&colTarget=TOTAL";
+
+	 		incTop_req = incTop_get_req();
+
+	 		if(incTop_req)
+	 		{
+				incTop_req.open("GET.html", sv, true);
+				incTop_req.onreadystatechange = incTop_showAC;
+			}
+
+			try
+			{
+				incTop_req.send(null);
+			}
+			catch(e)
+			{
+				return 0;
+			}
+		}
+
+    	function incTop_ac_off()
+ 		{
+ 			if(document.dqTopSearch.searchTerm.value == "")
+ 			{
+ 				incTop_popup_ac(0);
+ 			}
+ 			else
+ 			{
+ 				incTop_ac_hide();
+ 			}
+
+ 			incTop_acuse = 0;
+ 	 	}
+
+
+		function incTop_ac_on()
+		{
+			incTop_acuse = 1;
+
+			if(document.dqTopSearch.searchTerm.value != "")
+			{
+				incTop_popup_ac(1);
+				incTop_wd();
+			}
+			else
+			{
+				incTop_popup_ac(3);
+			}
+
+			if(document.dqTopSearch.searchTerm.value != "")
+
+
+			setTimeout("incTop_wi()", incTop_wi_int);
+			document.dqTopSearch.searchTerm.focus();
+		}
+
+
+		function incTop_popup_ac(type)
+	 	{
+	 		var incTop_ac_body = document.getElementById("incTop_ac_body");
+
+			if(type==0)
+			{
+				incTop_ac_body.style.display = "none";
+			}
+			else if(type==1)
+			{
+				incTop_ac_body.style.display = "block";
+			}
+			else if(type==2)
+			{
+				incTop_ac_body.style.display = "none";
+			}
+			else if(type==3)
+			{
+				incTop_ac_body.style.display = "none";
+			}
+	 	}
+
+		function incTop_ac_show(aq, al, ai, am)
+		{
+			var incTop_ac_body = document.getElementById("incTop_ac_body");
+	 		var scrol_Top = document.getElementById("incTop_ac_body");
+
+			if(aq != incTop_trim_space($("#topSearchTerm").val(), am))
+	 		{
+				incTop_engFlag = 1;
+	 		}
+	 		else
+	 		{
+				if(aq && aq!="" && aq!=incTop_trim_space($("#topSearchTerm").val(), am))
+					return ;
+			}
+
+		 	incTop_qs_q = aq;
+		 	incTop_qs_m = am;
+		 	incTop_qs_ac_list = al;
+		 	incTop_qs_ac_id = ai;
+		 	incTop_qs_ac_len = incTop_qs_ac_list.length;
+		 	var h = (incTop_qs_ac_len > 6) ? 6 : incTop_qs_ac_len;
+		 	h = h * 19 ;
+
+		 	incTop_print_ac();
+
+		 	if(incTop_qs_ac_list[0] == "" && (incTop_qs_m==1 || incTop_qs_m==2))
+			{
+				incTop_qs_ac_len=1;
+			 	h=22;
+
+			 	if(incTop_qs_ac_list[0] == "")
+				 	h = h + 19;
+		 	}
+
+		 	if(incTop_qs_ac_len)
+			{
+			 	h;
+			 	incTop_a_on = 1;
+		 	}
+		 	else
+			{
+				incTop_a_on = 0;
+		 	}
+
+		 	incTop_popup_ac(1);
+
+		 	if(incTop_a_on)
+		 	{
+		 		incTop_set_acpos(0);
+
+				if(incTop_browserType == 1)
+				{
+					incTop_Ip.onkeydown = incTop_ackhl;
+				}
+				else if(incTop_browserType == 2)
+				{
+					incTop_Ip.onkeydown = incTop_ackhl_ff;
+				}
+			}
+
+		}
+
+		function incTop_set_acpos(v)
+		{
+			incTop_a_now = v;
+			setTimeout('incTop_set_ahl();', 10);
+		}
+
+		function incTop_set_ahl()
+		{
+			if(!incTop_a_on)
+				return;
+
+			var o1, o2;
+
+		 	for(i=0;i<incTop_qs_ac_len-1; i++)
+			{
+				o1 = document.getElementById('incTop_ac' + (i+1));
+
+				if((i+1) == incTop_a_now)
+				{
+					o1.style.backgroundColor = '#E3E3E3';
+				}
+				else
+					o1.style.backgroundColor = '';
+			}
+		}
+
+		var incTop_max_row=4;
+
+		function incTop_ackhl()
+		{
+			var e = window.event;
+			var o1, o2;
+
+			if(e.keyCode==39)
+			{
+				incTop_req_ac2(1);
+			}
+
+		 	if(e.keyCode==40 || (e.keyCode==9 && !e.shiftKey))
+			{
+				if(incTop_m_on)
+					return;
+
+				if(!incTop_a_on)
+				{
+					incTop_req_ac2(1) ;
+					return;
+				}
+
+				if(incTop_a_now < incTop_qs_ac_len-1)
+				{
+					if(incTop_a_now == 0)
+						incTop_bak = $("#topSearchTerm").val();
+
+					incTop_a_now++;
+
+					o1 = eval('incTop_ac' + incTop_a_now);
+					o2 = eval('incTop_acq' + incTop_a_now);
+					incTop_old = o2.outerText;
+					incTop_keystatus = 1;
+					incTop_set_ahl();
+					e.returnValue = false;
+				}
+			}
+
+			if(incTop_a_on && (e.keyCode==38 || (e.keyCode==9 && e.shiftKey)))
+			{
+				if(!incTop_a_on)
+					return;
+
+				if(incTop_a_now <= 1)
+				{
+					incTop_ac_hide();
+					incTop_old = incTop_bak;
+					$("#topSearchTerm").val(incTop_old);
+				}
+				else
+				{
+					incTop_a_now-- ;
+
+					o1 = eval('incTop_ac'+ incTop_a_now);
+					o2 = eval('incTop_acq' + incTop_a_now);
+				 	incTop_old = o2.outerText;
+				 	incTop_keystatus = 1;
+				 	incTop_set_ahl();
+				 	e.returnValue = false;
+				}
+			}
+		}
+
+		function incTop_ackhl_ff(fireFoxEvent)
+		{
+
+			var o1, o2;
+			var scrol_Top = document.getElementById("incTop_ac_body");
+
+
+		 	if(fireFoxEvent.keyCode==39)
+		 	{
+				incTop_req_ac2(1) ;
+			}
+
+		 	if(fireFoxEvent.keyCode==40 || fireFoxEvent.keyCode==9)
+		 	{
+				if(incTop_m_on)
+					return;
+
+			 	if(!incTop_a_on)
+			 	{
+					incTop_req_ac2(1);
+				 	return;
+				}
+
+				if(incTop_a_now < incTop_qs_ac_len)
+				{
+					if(incTop_a_now == 0)
+						incTop_bak = $("#topSearchTerm").val();
+
+					incTop_a_now++;
+
+				 	o1 = document.getElementById('incTop_ac' + incTop_a_now);
+				 	o2 = document.getElementById('incTop_acqHidden' + incTop_a_now);
+
+				 	incTop_old = o2.value;
+				 	incTop_keystatus = 1;
+				 	incTop_Ip.focus();
+				 	incTop_set_ahl();
+				 	fireFoxEvent.preventDefault();
+			 	}
+		 	}
+
+		 	if(incTop_a_on && (fireFoxEvent.keyCode==38 || fireFoxEvent.keyCode==9))
+		 	{
+				if(!incTop_a_on)
+					return;
+
+			 	if(incTop_a_now <= 1)
+			 	{
+					incTop_ac_hide();
+				 	incTop_old = incTop_bak;
+
+				 	$("#topSearchTerm").val(incTop_old);
+			 	}
+			 	else
+			 	{
+					incTop_a_now--;
+
+				 	o1 = document.getElementById('incTop_ac' + incTop_a_now);
+				 	o2 = document.getElementById('incTop_acqHidden' + incTop_a_now);
+				 	incTop_keystatus = 1;
+				 	incTop_old = o2.value;
+				 	incTop_Ip.focus() ;
+				 	incTop_set_ahl() ;
+				 	fireFoxEvent.preventDefault();
+				}
+			}
+		}
+
+		function incTop_print_ac()
+		{
+			var scrol_Top = document.getElementById("incTop_ac_body");
+
+			if(incTop_qs_ac_list[0] == "")
+			{
+				scrol_Top.innerHTML = incTop_get_aclist();
+			}
+			else
+			{
+				scrol_Top.innerHTML = incTop_get_aclist();
+			}
+
+			incTop_popup_ac(1);
+			scrol_Top.style.display = "";
+		 	setTimeout('incTop_set_ahl();', 10);
+	 	}
+
+		function incTop_get_aclist()
+		{
+			var d="",ds="",l=0,s="", cnt=0, pos=0, qlen=0;
+
+			var title = "";
+			var title2 = "";
+			var contents = "";
+			var urlPath = "";
+			var imagePath = "";
+
+			var totalSize = incTop_qs_ac_list[0].split("|");
+
+			totalNum = totalSize[0] + totalSize[1] + totalSize[2] + totalSize[3];
+			keywordNum = totalSize[0];
+
+			s += "<ul>" ;
+
+			if(totalSize[0] > 0)
+			{
+			 	for(i=1;i<=totalSize[0];i++)
+			 	{
+					var query = incTop_qs_ac_list[i];
+
+					ds = d = query;
+
+					pos = d.indexOf($("#topSearchTerm").val());
+
+					if(pos == -1)
+						pos = d.toUpperCase().indexOf($("#topSearchTerm").val().toUpperCase());
+
+					if(pos == -1)
+						pos = d.toLowerCase().indexOf($("#topSearchTerm").val().toLowerCase());
+
+					if(pos >= 0)
+					{
+						if (pos == 0)
+							ds = incTop_js_highlight (ds, $("#topSearchTerm").val(),  0);
+						else if (pos == d.length - 1)
+							ds = incTop_js_highlight (ds, $("#topSearchTerm").val(),  -1);
+						else
+							ds = incTop_js_highlight (ds, $("#topSearchTerm").val(),  pos);
+					}
+
+				 	s += "<li id='incTop_ac" + (i) + "' onclick=\"javascript:dqTopSearchKeyword('" + d + "');\" onkeypress=\"incTop_set_acinput('" + d + "');\" onmouseover=\"incTop_set_acpos('" + (i) + "')\" onFocus=\"incTop_set_acpos('" + (i) + "');\" onmouseout=\"incTop_set_acpos(0);\"  onBlur=\"incTop_set_acpos(0);\" style=\"this.style.backgroundColor=''\">";
+				 	s += "<a href=\"javascript:void(0);\">" + ds + "</a><input type=\"hidden\" id=\"incTop_acqHidden" + (i) + "\" value=\"" + d + "\"/>";
+				 	s += "<span id='incTop_acq" + (i) + "' style='display:none'>" + d + "</span></li>";
+			 	}
+			}
+
+			s += "</ul>";
+
+			if(totalSize[1] > 0)
+			{
+				s += "<dl class=\"prod\">";
+				s += "<dt>제품 및 솔루션</dt>";
+				s += "<dd>" ;
+				s += "<ul>" ;
+
+			 	for(i=(1*1)+(totalSize[0]*1);i<=(totalSize[0]*1)+(totalSize[1]*1);i++)
+			 	{
+					var query = incTop_qs_ac_list[i].split("|");
+
+					title = query[0];
+					title2 = query[0];
+					contents = query[1];
+					urlPath = query[2];
+					imagePath = query[3];
+
+					pos = title.indexOf($("#topSearchTerm").val());
+
+				 	if(incTop_js_strlen(title) > 30)
+				 		title = incTop_js_substring(title, 0, 30) + "..";
+
+				 	if(incTop_js_strlen(contents) > 40)
+				 		contents = incTop_js_substring(contents, 0, 30) + "..";
+
+				 	if(pos == -1)
+						pos = title.toUpperCase().indexOf($("#topSearchTerm").val().toUpperCase());
+
+					if(pos == -1)
+						pos = title.toLowerCase().indexOf($("#topSearchTerm").val().toLowerCase());
+
+					if(pos >= 0)
+					{
+						if (pos == 0)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  0);
+						else if (pos == d.length - 1)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  -1);
+						else
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  pos);
+					}
+
+				 	s += "<li id='incTop_ac" + (i) + "' onclick=\"javascript:dqTopGoLink('" + urlPath + "');\" onkeypress=\"javascript:dqTopGoLink('" + urlPath + "');\" onmouseover=\"incTop_set_acpos('" + (i) + "')\" onFocus=\"incTop_set_acpos('" + (i) + "');\" onmouseout=\"incTop_set_acpos(0);\"  onBlur=\"incTop_set_acpos(0);\" style=\"this.style.backgroundColor=''\">";
+				 	s += "<a href=\"javascript:void(0);\">";
+				 	s += "<img src=\"" + imagePath + "\" class=\"photo\" alt=\"" + title2 + " 관련 사진\" />";
+				 	s += "<p class=\"tit\">" + title + "</p>";
+				 	s += "<p>" + contents + "</p>";
+				 	s += "</a>";
+				 	s += "<input type=\"hidden\" id=\"incTop_acqHidden" + (i) + "\" value=\"" + urlPath + "\"/>";
+				 	s += "<span id='incTop_acq" + (i) + "' style='display:none'>" + title + "</span>";
+				 	s += "</li>";
+			 	}
+
+			 	s += "</ul>";
+			 	s += "</dd>";
+			 	s += "</dl>";
+			}
+
+			if(totalSize[2] > 0)
+			{
+				s += "<dl>";
+				s += "<dt>악성코드 정보</dt>";
+				s += "<dd>";
+				s += "<ul>";
+
+			 	for(i=(1*1)+(totalSize[0]*1)+(totalSize[1]*1);i<=(totalSize[0]*1)+(totalSize[1]*1)+(totalSize[2]*1);i++)
+			 	{
+					var query = incTop_qs_ac_list[i].split("|");
+
+					title = query[0];
+					urlPath = query[1];
+
+				 	if(incTop_js_strlen(title) > 30)
+				 		title = incTop_js_substring(title, 0, 30) + "..";
+
+					pos = title.indexOf($("#topSearchTerm").val());
+
+				 	if(pos == -1)
+						pos = title.toUpperCase().indexOf($("#topSearchTerm").val().toUpperCase());
+
+					if(pos == -1)
+						pos = title.toLowerCase().indexOf($("#topSearchTerm").val().toLowerCase());
+
+					if(pos >= 0)
+					{
+						if (pos == 0)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  0);
+						else if (pos == d.length - 1)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  -1);
+						else
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  pos);
+					}
+
+				 	s += "<li id='incTop_ac" + (i) + "' onclick=\"javascript:dqTopGoLink('" + urlPath + "');\" onmouseover=\"incTop_set_acpos('" + (i) + "')\" onFocus=\"incTop_set_acpos('" + (i) + "');\" onmouseout=\"incTop_set_acpos(0);\"  onBlur=\"incTop_set_acpos(0);\" style=\"this.style.backgroundColor=''\">";
+				 	s += "<a href=\"javascript:void(0);\">" + title + "</a>";
+				 	s += "<input type=\"hidden\" id=\"incTop_acqHidden" + (i) + "\" value=\"" + urlPath + "\"/>";
+				 	s += "<span id='incTop_acq" + (i) + "' style='display:none'>" + title + "</span>";
+				 	s += "</li>";
+			 	}
+
+			 	s += "</ul>";
+			 	s += "</dd>";
+			 	s += "</dl>";
+
+
+			}
+
+			if(totalSize[3]> 0)
+			{
+				s += "<dl>";
+				s += "<dt>보안정보</dt>";
+				s += "<dd>" ;
+				s += "<ul>" ;
+
+			 	for(i=(1*1)+(totalSize[0]*1)+(totalSize[1]*1)+(totalSize[2]*1);i<=(totalSize[0]*1)+(totalSize[1]*1)+(totalSize[2]*1)+(totalSize[3]*1);i++)
+			 	{
+					var query = incTop_qs_ac_list[i].split("|");
+
+					title = query[0];
+					urlPath = query[1];
+					imagePath = query[2];
+
+				 	if(incTop_js_strlen(title) > 30)
+				 		title = incTop_js_substring(title, 0, 30) + "..";
+
+					pos = title.indexOf($("#topSearchTerm").val());
+
+				 	if(pos == -1)
+						pos = title.toUpperCase().indexOf($("#topSearchTerm").val().toUpperCase());
+
+					if(pos == -1)
+						pos = title.toLowerCase().indexOf($("#topSearchTerm").val().toLowerCase());
+
+					if(pos >= 0)
+					{
+						if (pos == 0)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  0);
+						else if (pos == d.length - 1)
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  -1);
+						else
+							title = incTop_js_highlight (title, $("#topSearchTerm").val(),  pos);
+					}
+
+				 	s += "<li id='incTop_ac" + (i) + "' onclick=\"javascript:dqTopGoLink('" + urlPath + "');\"  onmouseover=\"incTop_set_acpos('" + (i) + "')\" onFocus=\"incTop_set_acpos('" + (i) + "');\" onmouseout=\"incTop_set_acpos(0);\"  onBlur=\"incTop_set_acpos(0);\" style=\"this.style.backgroundColor=''\">";
+				 	s += "<a href=\"javascript:void(0);\">" + title + "</a>";
+				 	s += "<input type=\"hidden\" id=\"incTop_acqHidden" + (i) + "\" value=\"" + urlPath + "\"/>";
+				 	s += "<span id='incTop_acq" + (i) + "' style='display:none'>" + title + "</span>";
+				 	s += "</li>";
+			 	}
+
+			 	s += "</ul>";
+			 	s += "</dd>";
+			 	s += "</dl>";
+			}
+
+			if((totalNum - keywordNum) == 0 )
+			{
+				s += "<p class=\"noTxt\">추천 검색어가 없습니다.</p>";
+			}
+
+			return s ;
+		}
+
+	 	function incTop_js_makehigh_pre(s, t)
+	 	{
+			var d="";
+			var s1=s.replace(/ /g, "");
+			var t1=t.replace(/ /g, "");
+			s1=s1.toLowerCase();
+			t1=t1.toLowerCase();
+
+			if(t1==s1.substring(0, t1.length))
+			{
+				d="<strong>";
+
+				for(var i=0,j=0;j<t1.length; i++)
+				{
+					if (s.substring(i, i+1)!=" ")
+						j++;
+					d+=s.substring(i, i+1);
+			 	}
+
+			 	d+="</strong>"+s.substring(i, s.length);
+
+		 	}
+			return d;
+	 	}
+
+
+		function incTop_js_makehigh_suf(s, t)
+	 	{
+			var d="";
+			var s1=s.replace(/ /g, "");
+		 	var t1=t.replace(/ /g, "");
+		 	s1=s1.toLowerCase();
+			t1=t1.toLowerCase();
+
+		 	if(t1==s1.substring(s1.length-t1.length))
+		 	{
+
+				for(var i=0,j=0;j<s1.length-t1.length;i++)
+				{
+					if(s.substring(i, i+1)!=" ")
+						j++;
+					d+=s.substring(i, i+1);
+			 	}
+
+				d+="<strong>";
+
+			 	for(var k=i,l=0;l<t1.length;k++)
+			 	{
+					if(s.substring(k, k+1)!=" ")
+						l++;
+				 	d+=s.substring(k, k+1);
+			 	}
+			 	d+="</strong>";
+		 	}
+		 	return d;
+	 	}
+
+		function incTop_js_makehigh_mid(s, t, pos)
+	 	{
+			var d="";
+			var s1=s.replace(/ /g, "");
+			var t1=t.replace(/ /g, "");
+			s1=s1.toLowerCase();
+			t1=t1.toLowerCase();
+
+			d=s.substring(0, pos);
+			d+="<strong>";
+			for (var i=pos,j=0; j < t1.length; i++)
+			{
+				if (s.substring(i, i+1)!=" ") j++;
+				d+=s.substring(i, i+1);
+			}
+			d+="</strong>"+s.substring(i, s.length);
+			 return d;
+		}
+
+	 	function incTop_js_highlight(s, d, is_suf)
+	 	{
+			var ret="";
+			if(is_suf == 0)
+		 	{
+				ret=incTop_js_makehigh_pre(s, d);
+		 	}
+		 	else if(is_suf == -1)
+		 	{
+				ret=incTop_js_makehigh_suf(s, d);
+		 	}
+		 	else
+			{
+				ret=incTop_js_makehigh_mid(s, d, is_suf);
+			}
+
+			if(ret=="")
+				return s;
+		 	else
+			 	return ret;
+	 	}
+
+		function incTop_set_acinput(keyword)
+		{
+			if(!incTop_a_on)
+				return;
+
+			incTop_old = keyword;
+			$("#topSearchTerm").val(incTop_old);
+			incTop_Ip.focus();
+			incTop_ac_hide();
+		}
+
+		function incTop_js_strlen(s)
+		{
+			var i,l=0;
+
+			for(i=0; i<s.length; i++)
+			{
+				if(s.charCodeAt(i) > 127)
+					l+=2;
+			 	else
+				 	l++;
+			}
+
+			return l;
+	 	}
+
+		function incTop_js_substring(s, start, len)
+		{
+			var i,l=0;d = "";
+
+			for(i=start; i<s.length && l<len; i++)
+			{
+				if(s.charCodeAt(i) > 127)
+					l+=2;
+			 	else
+				 	l++ ;
+
+				 d+=s.substr(i,1);
+		 	}
+
+		 	return d;
+		}
+
+		function incTop_trim_space(ke, me)
+		{
+			if(me!=2)
+			{
+				ke = ke.replace(/^ +/g, "");
+				ke = ke.replace(/ +$/g, " ");
+			}
+			else
+			{
+				ke = ke.replace(/^ +/g, " ");
+				ke = ke.replace(/ +$/g, "");
+			}
+
+			ke = ke.replace(/ +/g, " ");
+			return ke ;
+		}
+
+		function incTop_get_cc(me)
+		{
+			var ke=incTop_trim_space($("#topSearchTerm").val(), me) + me;
+		 	return typeof(incTop_cc[ke])==incTop_UD ? null : incTop_cc[ke];
+	 	}
+
+	 	function incTop_set_cc(aq, al, ai, me)
+	 	{
+			incTop_cc[aq+me] = new Array(aq, al, ai) ;
+	 	}
+
+	 	function incTop_ac_hide()
+	 	{
+	 		var incTop_ac_body = document.getElementById("incTop_ac_body");
+
+			if(incTop_ac_body.style.display == incTop_N)
+				return;
+
+			incTop_popup_ac(0);
+			incTop_a_on = incTop_a_now = 0;
+     	}
+
+		function incTop_wi()
+		{
+			if(incTop_acuse==0)
+				return;
+
+			if(incTop_m_on)
+			{
+				setTimeout("incTop_wi()", incTop_wi_int);
+				return;
+			}
+
+			var now = $("#topSearchTerm").val();
+
+			if(now == "" && now != incTop_old)
+				incTop_ac_hide();
+
+			if(now != "" && now != incTop_old && incTop_keystatus!=1)
+			{
+				var o=null, me=1;
+				o = incTop_get_cc(me);
+				if(o && o[1][0] != "")
+					incTop_ac_show(o[0], o[1], o[2], me);
+				else
+				{
+					incTop_reqAC(me);
+				}
+			}
+
+			incTop_old = now;
+			setTimeout("incTop_wi()", incTop_wi_int);
+		}
+
+		function incTop_set_mouseon(f)
+		{
+			if(f==1)
+				incTop_arr_on = 1;
+	 		else if(f==2)
+	 			incTop_frm_on = 1 ;
+ 		}
+
+		function incTop_set_mouseoff(f)
+		{
+			if(f==1)
+				incTop_arr_on = 0;
+	 		else if(f==2)
+	 			incTop_frm_on = 0;
+ 		}
+
+		var getTagListAjaxRequestObject;
+
+		function createAjaxRequestObject()
+		{
+		    var ajaxReqObj = null;
+
+		    try
+		    {
+		        ajaxReqObj = new XMLHttpRequest();
+		    }
+		    catch(e_normalExplore)
+		    {
+		        try
+		        {
+		            ajaxReqObj = new ActiveXObject("Msxml2.XMLHTTP");
+		        }
+		        catch(e_oldExplore)
+		        {
+		            try
+		            {
+		                ajaxReqObj = new ActiveXObject("Microsoft.XMLHTTP");
+		            }
+		            catch(e_otherExplore)
+		            {
+		                ajaxReqObj = null;
+		            }
+		        }
+		    }
+
+		    if(ajaxReqObj == null)
+		    {
+		    	alert("AJAX 요청 객체 생성에 실패했습니다.\n AJAX 코드를 실행할 수 없습니다.");
+		    }
+
+		    return ajaxReqObj;
+		}
+
+		//searchResult call
+		function fnGetTagListAjaxCall()
+		{
+			return false;
+		}
+
+		//searchResultList
+		function getTagListAjaxOnResult()
+		{
+
+			if(getTagListAjaxRequestObject.readyState == 4)
+			{
+				var targetDiv = document.getElementById("dqAutoTagSpace");
+
+				if(getTagListAjaxRequestObject.status == 200)
+				{
+					targetDiv.innerHTML = getTagListAjaxRequestObject.responseText;
+				}
+				else
+				{
+					alert("fnGetInternalPapersByOhtersAjaxCall 호출과정에 에러가 발생했습니다.[error code : " + getTagListAjaxRequestObject.status + "]");
+					targetDiv.innerHTML = "fnGetInternalPapersByOhtersAjaxCall 호출과정에 에러가 발생했습니다.[error code : " + getTagListAjaxRequestObject.status + "]";
+				}
+			}
+		}
+
+ 	}
+</script>
+
+<div id="incTop_ac_body" class="lySer" style="display:none;" onmouseover="incTop_set_mouseon(2);" onmouseout="incTop_set_mouseoff(2);"></div>
+
+<script type="text/javascript">
+if (incTop_t==1 && incTop_c==1) {
+	incTop_wd();
+	setTimeout("incTop_wi()", incTop_wi_int);
+}
+</script>
+            </div>
+            </form>
+            <!-- //상단 검색 -->
+        </div>
+    </header>
+    <script type="text/javascript">
+		$(".removeSearchTerm").click(function() {
+			$("#topSearchTerm").val("");
+		    $(".removeSearchTerm").hide();
+		});
+
+		function dqTopSearch2()
+		{
+			$("#colTargetTop").val("TOTAL");
+			$("#dqTopSearch").attr("target", "");
+
+			if($("#topSearchTerm").val() != "")
+			{
+				$("#dqTopSearch").attr("action", "../../search/totalSearch.html");
+				$("#dqTopSearch").submit();
+			}
+			else
+			{
+				alert("검색어를 입력하세요");
+				$("#topSearchTerm").focus();
+				return ;
+			}
+		}
+
+		
+	</script>
+    <!-- //gnb -->
+    <div id="container">
+    
+    <div class="locWrap clfix">
+    <ul>
+        <li class="locLi alt">
+<a href="../securityinfoMain.html" class="locTit ">보안정보</a>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">ASEC 분석정보</a>
+            <div class="locList">
+                <p><a href="../secunews/secuNewsList3a0d.html?menu_dist=1">보안, 뉴스와 이슈</a></p>
+                <p><a href="../newsletter/newsLetter.html">보안 매거진</a></p>
+                <p class="on"><a href="asecIntro.html">ASEC 분석정보</a></p>
+                <p><a href="../secunews/secuNewsList3876.html?menu_dist=4">보안과 PC상식</a></p>
+                <p><a href="../dictionary/dictionaryList.html">보안 용어사전</a></p>
+            </div>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">ASEC 리포트</a>
+            <div class="locList">
+                <p><a href="asecIntro.html">ASEC 소개</a></p>
+                <p><a href="asecCodeList.html">악성코드 정보</a></p>
+                <p><a href="asecAdviceListc8f4.html?groupCode=VNI002">ASEC 보안권고문</a></p>
+                <p class="on"><a href="asecReportView21f7.html?groupCode=VNI001">ASEC 리포트</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<!-- 대타이틀 -->
+        <div class="topTitWrap">
+            <!-- title -->
+            <h2 class="topTit">ASEC 리포트</h2>
+            <!-- //title -->
+        </div>
+        <!-- //대타이틀 -->
+
+        <!-- contents -->
+        <div class="contents">
+            <form method="post" name="form" id="form">
+            <input type="hidden" id="seq"           name="seq"          value="24450"/>
+            <input type="hidden" id="key"           name="key"          value=""/>
+            <input type="hidden" id="searchType"    name="searchType"   value=""/>
+            <input type="hidden" id="searchText"    name="searchText"   value=""/>
+            <input type="hidden" id="groupLevel"    name="groupLevel"   value=""/>
+            <input type="hidden" id="groupLevel2"   name="groupLevel2"  value=""/>
+            <input type="hidden" id="detailCode"    name="detailCode"   value=""/>
+            <input type="hidden" id="detailCode2"   name="detailCode2"  value=""/>
+            <input type="hidden" id="curPage"       name="curPage"      value=""/>
+            <input type="hidden" id="groupCode"     name="groupCode"    value="VNI001"/>
+            <!-- 서브카피 -->
+            <div class="descCopy mb35">
+                
+                <p>매달 제공되는 ASEC 리포트에서 보안위협과 이에 대응하는 보안 기술의 최신동향, 전문정보를 확인하실 수 있습니다.</p>
+                
+                
+            </div>
+            <!-- //서브카피 -->
+
+            <!-- 게시판 -->
+            <div class="bbsView ASECViewWrap">
+                <!-- 게시판 view 제목 영역 -->
+                <div class="bbsViewTit">
+                    <h1 class="tit">[Vol.71] 11월 주요 보안 이슈</h1>
+                    <!-- sns -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- sns -->
+					<ul class="snsWrap">
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="facebook facebookPopupOpen"><span class="hide">Facebook</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt facebookHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Facebook</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="twitter twitterPopupOpen"><span class="hide">twitter</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt twitterHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Twitter</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="in linkedInPopupOpen"><span class="hide">Linked in</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt linkedInHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Linked in</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						
+							<li>
+								<div class="tooltipWrap">
+									<a href="#" class="paste pastePopupOpen"><span class="hide">붙여넣기</span></a>
+									<!-- 툴팁 layer -->
+									<div class="wrapHelpBox top lt pasteHelpBox">
+										<span class="arr"></span>
+										<div class="helpBox">
+											<p>블로그나 게시판에 붙여넣기 하실<br/> 수 있습니다.</p>
+										</div>
+									</div>
+									<!-- //툴팁 layer -->
+								</div>
+							</li>
+						
+					</ul>
+					<!-- //sns -->
+		<script type="text/javascript">
+		<!--
+			$(document).ready(function() {			   
+			    $(".facebookPopupOpen").hover(function() {
+			    	$(this).parent().children(".facebookHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".facebookHelpBox").hide();
+			    });
+			    $(".twitterPopupOpen").hover(function() {
+			    	$(this).parent().children(".twitterHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".twitterHelpBox").hide();
+			    });
+			    $(".pastePopupOpen").hover(function() {
+			    	$(this).parent().children(".pasteHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".pasteHelpBox").hide();
+			    });
+			    $(".linkedInPopupOpen").hover(function() {
+			    	$(this).parent().children(".linkedInHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".linkedInHelpBox").hide();
+			    });
+			});
+		//-->
+		</script>
+
+                    <!-- //sns -->
+                    
+                    
+	                    <ul class="viewInfo clfix">
+	                        <li><span class="fcStrong">AhnLab</span></li>
+	                        <li class="ls0">2015-12-23</li>
+	                        <li><span>조회수</span>147</li>
+	                    </ul>
+                    
+                </div>
+                <!-- //게시판 view 제목 영역 -->
+
+                <!-- 게시판 view 내용 영역 -->
+                <div class="bbsViewCont">
+                    <p><b><span style="font-size: 11pt;">■ 테슬라크립트와 크립토월 비교 분석</span></b></p><p>&nbsp;</p><p>테슬라크립트(TeslaCrypt)와 크립토월(CryptoWall)은 11월 한 달 동안 국내에서 가장 많은 감염을 발생시킨 것으로 확인되는 랜섬웨어다. 크립토월은 2013년에 등장하여 꾸준히 업데이트되고 있는 랜섬웨어로, 지불을 유도하는 안내 메시지에 기재되어 있는 것과 같이 RSA Key로 파일을 암호화한다.</p><p>&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282817931226.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282817931226.png">&nbsp;</p><p style="text-align: center;" align="center">[그림 2-1] 크립토월 감염 후 사용자에게 노출하는 html 파일</p><p style="text-align: center;" align="center">(위에서부터 2014년 11월 / 2015년 1월 / 2015년 11월 확인)</p><p>&nbsp;</p><p>이와 비교하여 테슬라크립트는 2015년 2~3월경 처음 등장했는데, 감염 후 사용자에게 노출하는 메시지에서 ‘RSA로 암호화한다’고 한 것과 달리 AES Key를 사용하여 파일을 암호화한다.&nbsp;&nbsp;</p><p>&nbsp;</p><p>초창기 테슬라크립트의 경우, 크립토락커(CryptoLocker)의 감염 후 메시지를 차용하기도 했으며, 테슬라크립트 2.0 이후에는 크립토월의 감염 후 메시지(html 파일)를 그대로 사용하고 있는 것으로 확인된다. 이에 따라 사용자들은 테슬라크립트에 감염되었음에도 크립토월에 감염된 것으로 착각하는 경우가 많으며, 해외에서는 이를 테슬라크립트가 크립토월로 ‘위장(disguise)’하고 있다고 표현하기도 한다.</p><p>&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282818074153.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282818074153.png"></p><p style="text-align: center;" align="center">[그림 2-2] TeslaCrypt 2.0 복호화 및 결제 유도 안내 html 파일(크립토월 버전 문자열만 제거)</p><p>&nbsp;</p><p>최근 확인되는 테슬라크립트는 파일을 암호화한 후 확장자를 ‘*.ccc’로 설정하는 것으로 확인되어, 국내에서는 CCC 랜섬웨어로 악명을 떨치고 있다.</p><p>&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282818369851.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282818369851.png">&nbsp;</p><p style="text-align: center;" align="center">[그림 2-3] ‘CCC 랜섬웨어’ 구글 검색 결과</p><p>&nbsp;</p><p>복호화 안내 메시지로 인해 테슬라크립트를 크립토월의 변종이라고 인식하는 사용자들이 많은데, 크립토월과 테슬라크립트에 감염되었을 때 사용자가 구분할 수 있는 차이점은 다음과 같다.</p><p>&nbsp;</p><p>1.&nbsp;감염 후 암호화된 파일명</p><p>&nbsp; &nbsp;<img title="1512293583091375.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512293583091375.png">&nbsp;</p><p>&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282818537104.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282818537104.png">&nbsp;</p><p style="text-align: center;" align="center">[그림 2-4] 테슬라크립트(왼쪽) / 크립토월 3.0(가운데) / 크립토월 4.0(오른쪽) 감염 후 파일명</p><p>&nbsp;</p><p>2.&nbsp;감염 후, 복호화 및 결제 안내 파일</p><p>&nbsp; &nbsp;<img title="1512293583205581.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512293583205581.png">&nbsp;</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282819305095.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282819305095.png">&nbsp;</p><p style="text-align: center;" align="center">[그림 2-5] 테슬라크립트(왼쪽) / 크립토월 3.0(가운데) / 크립토월 4.0(오른쪽) 이미지 파일 및 html 파일</p><p>&nbsp;</p><p>3.&nbsp;레지스트리 확인</p><p>&nbsp; &nbsp;<img title="1512293583443414.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512293583443414.png"><br style="clear: both;">&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282819542221.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282819542221.png">&nbsp;[그림 2-6] 크립토월 3.0 감염 후 레지스트리에 저장된 암호화 파일 목록</p><p>&nbsp;</p><p>테슬라크립트와 크립토월 이외에도 매우 다양한 종류의 랜섬웨어가 있지만, 결과적으로 파일을 암호화하여 인질로 사용한다는 컨셉은 같다. 랜섬웨어에 감염될 경우 암호화를 수행하는 악성코드가 제거되더라도 이미 암호화된 파일로 인해 사용자들의 피해가 극심한데, 최근 나타난 랜섬웨어는 자기 자신의 감염 흔적을 지우기 위해 파일 암호화가 완료되면 자기 스스로를 삭제하는 경우가 많다. 따라서 랜섬웨어 감염 PC에서 실행된 랜섬웨어가 확인되지 않는 경우도 비일비재하다.</p><p>&nbsp;</p><p>또한, 랜섬웨어가 등장한 초기에는 Windows의 VSC(Volumn Shadow Copy) 기능을 통해 암호화된 파일 중 일부 파일을 복구할 수 있었지만 최근 랜섬웨어는 VSC 기능을 이용한 백업 파일도 ‘vssadmin.exe delete’ 명령을 통해 삭제하여 복구가 어렵다. 이로 인해 백업의 중요성이 그 어느 때보다도 강조되고 있다.</p><p>&nbsp;</p><p>한동안 랜섬웨어에 대한 국내 유포는 끊이지 않을 것으로 보이며, 관련 변종도 꾸준히 등장할 것이다. 국내 최대 이슈였던 파밍 악성코드가 사용자들에게 많이 알려지면서 악성코드에 감염되더라도 이전처럼 쉽게 모든 개인 정보를 입력하는 사용자는 많이 줄었기 때문에 악성코드 유포자들이 랜섬웨어에 눈을 돌렸을 것으로 추정된다.</p><p>&nbsp;</p><p>따라서 확인되지 않은 메일의 첨부 파일은 바로 삭제하고, 다운로드 실행(Drive-by-Download) 방식으로 유포되는 악성코드 감염 예방을 위해 항상 최신 보안 패치와 사용 중인 백신을 최신 엔진 버전으로 유지해야 한다. 또한, 파일 공유 사이트 혹은 P2P를 통해 다운로드한 파일도 위험성이 있으므로 이러한 파일의 실행은 권장하지 않는다. 만약 불가피하게 실행해야 한다면, 반드시 사용 중인 백신으로 정밀 검사한 후 주의하여 실행할 수 있도록 하자.</p><p>&nbsp;</p><p>V3 제품에서는 해당 악성코드를 다음과 같이 진단하고 있다.</p><p>&nbsp;</p><p><b>&lt;V3 제품군의 진단명&gt;</b></p><p>Trojan/Win32.Teslacrypt (2015.11.07.02)</p><p>Trojan/Win32.CryptoWall (2015.11.11.00)</p><p>&nbsp;</p><p>&nbsp;</p><p><b><span style="font-size: 11pt;">■ 안드로이드 RAT, 드로이드잭(DroidJack)</span></b></p><p>&nbsp;</p><p>영국 경찰은 ‘드로이드잭(DroidJack)’ 으로 불리는 스마트폰 악성코드를 통해 28세의 남자를 체포했다. 영국 국가범죄수사국(UK's National Crime Agency)은 유럽의 5개국(독일, 프랑스, 벨기에, 스위스, 영국)과 미국에서 드로이드잭을 통해 범죄자를 검거한 것으로 확인됐다. 드로이드잭(DroidJack)은 원격 접속이 가능한 트로이목마 바이러스 혹은 ‘랫(RAT)'으로, 안드로이드 단말만 감염시킨다. 또한 사용자가 전혀 모르게 스마트폰 데이터의 트래픽을 감시하고 대화를 도청한다. 카메라에 찍힌 정보를 가로챌 수도 있다. 다음은 드로이드잭 검거 관련 BBC NEWS의 소식이다.</p><p>&nbsp;</p><p style="text-align: center;" align="center">&nbsp;<img title="1512282819824755.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282819824755.png">&nbsp;</p><p style="text-align: center;" align="center">[그림 2-7] BBC NEWS 2015.10.30 (드로이드잭 관련 검거 소식)</p><p>&nbsp;</p><p>드로이드잭은 다음과 같은 기능을 제공하며 가격은 $210이다. 온라인 구매 시 [그림 2-8]과 같이 사용자 정보를 요구한다.</p><p>&nbsp;</p><p>[주요 기능]</p><p>- apk 파일 빌더</p><p>- 스마트폰에 저장된 파일 탈취</p><p>- 스마트폰으로 파일 전송</p><p>- 스마트폰의 SMS 탈취</p><p>- 스마트폰에서 SMS 보내기</p><p>- 통화내역 탈취</p><p>- 주소록 탈취</p><p>- 스마트폰의 마이크를 이용하여 도청 및 녹음</p><p>- 스마트폰 인터넷 방문 기록 및 북마크 정보 탈취</p><p>- 위치 정보 탈취</p><p>- 스마트폰의 앱 실행, 실행 중인 앱 정보 탈취</p><p>- IMEI, MAC, 통신사 정보 탈취 및 루팅 여부 확인 등</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282819972444.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282819972444.png"><br style="clear: both;"><img title="1512282820044716.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282820044716.png"><br style="clear: both;"><img title="1512282820109410.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282820109410.png"><br style="clear: both;">[그림 2-8] 드로이드잭 v2.6 기능 및 가격</p><p>&nbsp;</p><p>드로이드잭을 이용하여 APK 빌드를 할 수 있으며, 감염된 사용자에게서 정보를 탈취하고 모니터링할 수 있다. 모니터링 화면 구성은 [그림 2-9]와 같으며, 다양한 기능을 제어할 수 있는 것을 확인할 수 있다.&nbsp;</p><p style="text-align: center;" align="center">&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282820272007.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282820272007.png"><br style="clear: both;">[그림 2-9] 드로이드잭 v2.6 빌더 및 모니터링 콘솔</p><p>&nbsp;</p><p>대표적인 기능 중 통화 내역 기록, 위치 추적, SMS 내역, 브라우저 방문 정보 등을 가로채는 기능을 살펴보면 다음과 같다.</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282820408826.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282820408826.png"><br style="clear: both;">[그림 2-10] 통화 내역 확인 기능</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282820821781.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282820821781.png"><br style="clear: both;">[그림 2-11] GPS 위치 정보 확인 기능</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282821364334.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282821364334.png"><br style="clear: both;">[그림 2-12] SMS 확인 기능</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282821476140.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282821476140.png"><br style="clear: both;">[그림 2-13] 브라우저 방문 기록 확인 기능</p><p>&nbsp;</p><p>안드로이드 악성 앱은 주로 구글(Google)이나 유틸리티, 유명 게임 등의 아이콘을 이용하여 제작되는 경우가 많은데 이는 사용자가 의심하지 않고 설치하도록 유도하기 위해서다. 안랩에서는 드로이드잭과 관련된 수많은 악성 앱을 진단하고 있다. 그 중 아이콘 몇 가지를 살펴보면 [그림 2-14]와 같다. 일부는 테스트를 위해 제작한 앱도 포함되어 있었다.</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282821886125.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282821886125.png"><br style="clear: both;">[그림 2-14] 드로이드잭 악성 앱</p><p>&nbsp;</p><p>유명 게임인 ‘Agar.io’의 아이콘으로 위장한 악성 앱을 설치한 화면을 살펴보면 [그림 2-15]와 같다. 설치 과정에서 필요한 권한을 획득한다. 설치 완료 후 실행되면 자신의 아이콘을 제거하여 사용자 스마트폰에 설치되어 있지 않은 것처럼 위장하고 있다.</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img title="1512282822232581.png" src="../../../../../image.ahnlab.com/img_upload/editor/1512282822232581.png"><br style="clear: both;">[그림 2-15] 권한 획득(왼쪽) / 설치 아이콘(가운데) / 설치 및 실행 후 아이콘이 사라진 화면(오른쪽)</p><p>&nbsp;</p><p>이러한 스파이 앱은 각종 악성 앱의 악의적인 기능의 총 집합체로 스마트폰에 저장된 거의 모든 정보를 조작하거나 탈취할 수 있기 때문에 특히 주의해야 한다. 따라서 앱은 공식 마켓에서 다운로드하여 설치하는 것이 상대적으로 안전하지만, 공식 마켓에도 악성 앱이 등록되어 있을 수 있으므로 평판 정보를 확인하고 설치하는 습관을 가져야 한다. 무심코 문자에 포함된 URL을 클릭하다 보면 악성 앱이 설치될 수도 있기 때문에 안전성이 확인되지 않은 URL이나 앱은 설치하지 않도록 주의해야 한다. 또한, 세계 1위의 모바일 전용 보안 앱(V3 모바일 등)이나 스미싱 탐지 앱(안랩 안전한 문자 등)을 설치하고, 자동 업데이트 설정으로 항상 최신 엔진을 유지하여 보다 안전한 스마트폰 환경을 만들어야 한다.</p><p>&nbsp;</p><p>V3 제품에서는 해당 악성코드를 다음과 같이 진단하고 있다.</p><p>&nbsp;</p><p><b>&lt;V3 제품군의 진단명&gt;</b></p><p>Android-Trojan/Sandrorat</p><p>&nbsp;</p>
+                </div>
+                <!-- //게시판 view 내용 영역 -->
+
+                <!-- 게시판 view 이전글/다음글 -->
+                <div class="bbsViewMove">
+                
+                
+                
+                    
+                        
+                        
+                        
+                    
+                    
+                
+                    
+                    
+                        
+                        
+                        
+                        
+                    
+                
+                    <p class="prev"><span>이전 글</span><a href="#" onclick="getView('24448');">랜섬웨어에 감염되는 이유와 사례</a></p>
+                    <p class="next"><span>다음 글</span><a href="#" onclick="getView('24451');">[Vol.71] 11월 악성코드 통계</a></p>
+                </div>
+                <!-- //게시판 view 이전글/다음글 -->
+
+                <!-- button -->
+                <div class="btnWrap clfix">
+                    <!-- sns -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- sns -->
+					<ul class="snsWrap">
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="facebook facebookPopupOpen"><span class="hide">Facebook</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt facebookHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Facebook</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="twitter twitterPopupOpen"><span class="hide">twitter</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt twitterHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Twitter</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						<li>
+							<div class="tooltipWrap">
+								<a href="#" class="in linkedInPopupOpen"><span class="hide">Linked in</span></a>
+								<!-- 툴팁 layer -->
+								<div class="wrapHelpBox top lt linkedInHelpBox">
+									<span class="arr"></span>
+									<div class="helpBox">
+										<p><span class="ls0">Linked in</span>에 공유하실 수<br/> 있습니다.</p>
+									</div>
+								</div>
+								<!-- //툴팁 layer -->
+							</div>
+						</li>
+						
+							<li>
+								<div class="tooltipWrap">
+									<a href="#" class="paste pastePopupOpen"><span class="hide">붙여넣기</span></a>
+									<!-- 툴팁 layer -->
+									<div class="wrapHelpBox top lt pasteHelpBox">
+										<span class="arr"></span>
+										<div class="helpBox">
+											<p>블로그나 게시판에 붙여넣기 하실<br/> 수 있습니다.</p>
+										</div>
+									</div>
+									<!-- //툴팁 layer -->
+								</div>
+							</li>
+						
+					</ul>
+					<!-- //sns -->
+		<script type="text/javascript">
+		<!--
+			$(document).ready(function() {			   
+			    $(".facebookPopupOpen").hover(function() {
+			    	$(this).parent().children(".facebookHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".facebookHelpBox").hide();
+			    });
+			    $(".twitterPopupOpen").hover(function() {
+			    	$(this).parent().children(".twitterHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".twitterHelpBox").hide();
+			    });
+			    $(".pastePopupOpen").hover(function() {
+			    	$(this).parent().children(".pasteHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".pasteHelpBox").hide();
+			    });
+			    $(".linkedInPopupOpen").hover(function() {
+			    	$(this).parent().children(".linkedInHelpBox").show();
+			    }, function() {
+			    	$(this).parent().children(".linkedInHelpBox").hide();
+			    });
+			});
+		//-->
+		</script>
+
+                    <!-- //sns -->
+
+                    <div class="flRight">
+                        <a href="#" class="btnCommon printPopupOpen"><span class="btnTxt">인쇄하기</span></a>
+                        <a href="#" class="btnCommon getList"><span class="btnTxt">목록보기</span></a>
+                    </div>
+                </div>
+                <!-- //button -->
+            </div>
+            <!-- //게시판 -->
+            </form>
+        </div>
+        <!-- //contents -->
+
+<script type="text/javascript">
+<!--
+var title = encodeURIComponent("[Vol.71] 11월 주요 보안 이슈");
+var longUrl = escape("asecView469e.html?seq=24450&amp;groupCode=");
+var twitterUrl = "http://twitter.com/home/";
+var event_tag = "";   
+
+	$(document).ready(function() {             
+	    $(".facebookPopupOpen").click(function() {
+	        popSnsShare("fb", "asecViewFacebook", title, longUrl, event_tag);
+	    });
+	    $(".twitterPopupOpen").click(function() {
+	        popSnsShare("tw", "asecViewTwitter", title, longUrl, event_tag);
+	    });
+	    $(".pastePopupOpen").click(function() {
+	    	scrap();
+	    });
+	    $(".linkedInPopupOpen").click(function() {
+	    	popSnsShare("ln", "secuNewsViewLinkedIn", title, longUrl, event_tag);
+	    });
+	    $(".printPopupOpen").click(function() {
+	        var url = "asecView.html"
+	                + "?tab=Print"
+	                + "&seq=24450"
+	                + "&groupCode=VNI001";
+	        POPUP.open(url, 'asecViewPrint', {width:618, height:620, scroll:true});
+	    });
+	    $(".getList").click(function() {
+            getList('');
+        });
+	});
+	
+	function scrap(){
+	    if('008' != '008'){
+	        alert("죄송합니다.\n\n이 글은 스크랩이 허용되지 않는 기사 입니다.");
+	    }
+	    else{
+	        POPUP.open('asecView55e1.html?seq=24450&amp;tab=Scrap&amp;groupCode=VNI001', 'asecView', {width:770, height:600, scroll:true});
+	    }
+	}
+    function getView(seq){
+        $("#seq").val(seq);
+        $("#form").attr("action", "asecView.html");
+        $("#form").attr("target", "_self");
+        $("#form").submit();
+    }
+
+    function getList(key){
+        var groupCode = 'VNI001';
+        if(groupCode == "VNI002"){
+            if(key != ""){
+                $("#key").val(key);
+                $("#searchType").val("");
+                $("#searchText").val("");
+                $("#groupLevel").val("");
+                $("#groupLevel2").val("");
+                $("#detailCode").val("");
+                $("#detailCode2").val("");
+                $("#curPage").val(1);
+            }
+            $("#form").attr("action", "asecAdviceList.html");
+        }
+        else{
+            $("#form").attr("action", "asecReportList.html");
+        }
+
+        $("#form").attr("target", "_self");
+        $("#form").submit();
+    }
+
+    //-->
+</script>
+    </div>
+    <!-- footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="footerWrap">
+			<p class="copyright">&copy; AhnLab, Inc. All rights reserved.</p>
+            <ul class="ftMenu">
+                <li><a href="http://company.ahnlab.com/" target="_blank" title="새창-회사소개 사이트 가기" class="footerTabCss" id="footerfocus">회사소개</a></li>
+                <li><a href="http://company.ahnlab.com/company/site/ir/present_stock_price.jsp" target="_blank" title="새창-투자정보 사이트 가기">투자정보</a></li>
+                <li><a href="http://company.ahnlab.com/company/site/recruit/comRecruitMain/comRecruitMainList.do" target="_blank" title="새창-채용정보 사이트 가기">채용정보</a></li>
+                <li><a href="../../etc/policy.html"><strong>개인정보취급방침</strong></a></li>
+                <li><a href="../../etc/agreement.html">이용약관</a></li>
+                <li><a href="../../etc/contactUs.html" class="ls0">Contact Us</a></li>
+                <li><a href="../../etc/sitemap.html">사이트맵</a></li>
+            </ul>
+
+            <div class="familyWrap familySiteCombo">
+                <p class="family"><a href="#" class="comboLink2 " title="패밀리 사이트 목록 보기">FAMILY SITE</a></p>
+                <!-- layer -->
+                <div class="lyUtill"><div class="lyWrap">
+                    <p><a href="../../../../../v3clinic.ahnlab.com/v3clinic/site/main/main.html" target="_blank" rel="nofollow" title="새창. V3 365 클리닉 사이트로 바로가기">V3 365 클리닉</a></p>
+                    <p><a href="http://shop.ahnlab.com/jump/jsp/fp/main.jsp" target="_blank" rel="nofollow" title="새창. AhnLab mall 사이트로 바로가기">AhnLab mall</a></p>
+                    <p><a href="http://v3mss.ahnlab.com/front/mss_main.do" target="_blank" rel="nofollow" title="새창. V3 MSS 사이트로 바로가기">V3 MSS</a></p>
+                    <p><a href="../../product/purchase/eLicense.html" rel="nofollow" title="E-License Service 사이트로 바로가기">E-License Service</a></p>
+                    
+                </div></div>
+                <!-- //layer -->
+            </div>
+
+            <div class="locSiteWrap globalSiteCombo">
+                <p class="locSite"><a href="#" class="comboLink2" title="국가별 사이트 목록 보기">한국</a></p>
+                <!-- layer -->
+                <div class="lyUtill"><div class="lyWrap">
+                    <p class="selected"><a href="../../main.html" target="_blank" rel="nofollow" title="새창. 한국 사이트로 바로가기">한국 (한국어)</a></p>
+                    <p><a href="../../../../../global.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. Global 사이트로 바로가기">Global (English)</a></p>
+                    <p><a href="../../../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. APAC 사이트로 바로가기">APAC (English)</a></p>
+                    <p><a href="../../../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="새창. 日本 사이트로 바로가기">日本 (日本語)</a></p>
+                    <p><a href="../../../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="새창. 中国 사이트로 바로가기">中国 (简体中文)</a></p>
+                    <p><a href="http://us.ahnlab.com/index.jsp" target="_blank" rel="nofollow" title="새창. United States 사이트로 바로가기">US (English)</a></p>
+                </div></div>
+                <!-- //layer -->
+            </div>
+			<div class="footInfo">
+				<p>
+					(우) <span class="ls0">13493</span> 경기도 성남시 분당구 판교역로 <span class="ls0 pr7">220</span>
+					대표이사 : <span class="pr7">권치중</span>
+					사업자등록번호 : <span class="ls0 pr7">214-81-83536</span>
+					통신판매신고번호 : <span class="ls0">2012-</span>경기성남<span class="ls0">-1189</span>
+				</p>
+				<p>
+					대표전화 : <span class="ls0 pr7">031-722-8000</span>
+					<span class="ls0">Fax</span> : <span class="ls0 pr7">031-722-8901</span>
+					구매문의 : <span class="ls0 pr7">1588-3096</span>
+					개인고객 기술지원 : <span class="ls0 pr7">1577-9880</span>
+					기업고객 기술지원 : <span class="ls0">1577-9431</span>
+				</p>
+			</div>
+        </div>
+    </footer>
+    
+<script type="text/javascript">
+
+function getCookie( cname ) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+       var c = ca[i];
+       while (c.charAt(0)==' ') c = c.substring(1);
+       if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+function closeWin(winName, expiredays) {
+   if($("input:checkbox[id='chkToday']").is(":checked") == true){
+      setCookie( winName, "done" , expiredays);
+   }
+   $("#mainLayer").hide();
+}
+
+function setCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17204763-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This script is for AceCounter START -->
+<script type="text/javascript">
+
+
+var _mk   = '';
+var _od   = 0 ;
+var _gd   = '';
+var _ud1 = '' ;
+var _skey = '' ;
+
+var cur_url = location.href;
+var url_index = cur_url.indexOf("event");
+
+if(url_index > -1){
+    _skey = cur_url;
+}
+
+</script>
+<!-- AceCounter END -->
+
+<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+<script type="text/javascript" >
+if(typeof _GUL == 'undefined'){
+var _GUL = 'acounter.ahnlab.com';var _GPT='80'; var _SGPT='443';var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL+":"+_SGPT:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'../../../../index2dcc.html?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/kr/site/js/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://acounter.ahnlab.com/?uid=2&amp;je=n&amp;' border=0 width=0 height=0 alt=""/></noscript>
+<!-- AceCounter Log Gathering Script End -->
+    <!-- //footer -->
+</div>
+
+</body>
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/asecView.do?groupCode=VNI001&seq=24450 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:59:21 GMT -->
+</html>

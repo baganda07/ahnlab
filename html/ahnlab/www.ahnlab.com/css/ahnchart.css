@@ -1,0 +1,11 @@
+
+/*도형 초기 스타일값*/
+/*svg{width:400px;height:400px;}*/
+.ahnChart .line{fill:none;stroke:#ee9a57;stroke-width:4px;}
+.ahnChart .circle{fill:#fff;stroke:#ee9a57;stroke-width:4px;}
+.ahnChart .bar{fill:#11808d;}
+.ahnChart text{font-family:Malgun Gothic,'맑은 고딕',verdana, tahoma, arial, sans-serif;font-size:11px;fill:#666;letter-spacing: 1px;}
+.ahnChart .axis path, .axis line{fill:none;stroke:#afafaf;stroke-width:0px}
+.ahnChart .axis_x{fill:#afafaf;stroke:none;}
+.ahnChart .textTop{font-family:verdana;font-size:16px;fill:#999;}
+.ahnChart .textBottom{fill:#333;font-family:verdana;font-weight:bold;font-size:24px;}

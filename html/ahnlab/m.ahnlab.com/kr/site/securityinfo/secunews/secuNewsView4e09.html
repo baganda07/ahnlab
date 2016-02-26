@@ -1,0 +1,1329 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from m.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=24472 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:26:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> -->
+    <!-- SEO -->
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <!-- 페이스북 -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="AhnLab"/>
+    <meta property="og:title" content="AhnLab :: 세상에서 가장 안전한 이름"/>
+    <meta property="og:description" content=""/>
+    <meta name="og:description" content=""/>
+    
+
+    <!-- 트위터 -->
+    <meta name="twitter:title"          content="AhnLab :: 세상에서 가장 안전한 이름">
+    <meta name="twitter:description"    content="">
+
+    <title>AhnLab :: 세상에서 가장 안전한 이름</title>
+    <link rel="stylesheet" href="../../../../css/mobile.html" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/swiper.html">
+
+    
+
+    
+    <script type="text/javascript" src="../../../../js/jquery.min.html"></script>
+    <script type="text/javascript" src="../../../../js/jquery.event.drag-1.5.min.html"></script>
+    <script type="text/javascript" src="../../../../js/jquery.touchSlider.html"></script>
+    <script type="text/javascript" src="../../../../js/slick.html"></script>
+    <script type="text/javascript" src="../../../../js/common.html"></script>
+    <script type="text/javascript" src="../../../../js/common_dev.html"></script>
+    <script type="text/javascript" src="../../../../js/swiper.html"></script>
+    <script type="text/javascript" src="../../../../js/jquery.imgpreload.min.html"></script>
+    <script type="text/javascript">
+    console.log("document.domain:"+document.domain);
+    //document.domain = "ahnlab.com";
+    document.domain = document.domain;
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+        //a링크 #처리
+        $('a[href = "#"]').click(function(e){
+            e.preventDefault();
+        });
+
+        $('.btnTel').click(function(e){
+            //location.href ="http://m.ahnlab.com/kr/site/support/customer/telinfo.do";
+            location.href ="../../support/supportMain.html";
+        });
+        $('header .btnSrch').click(function(e){
+            //window.open("http://m.ahnlab.com/kr/site/search/searchMain.do","searchMain","");
+            location.href="../../search/searchMain.html";
+        });
+
+        //이미지 에러처리
+        $("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "../../../../../image.ahnlab.com/img_upload/kr/site/images2/mobile/img_no_540_346.gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+
+        /* ajax 시작 로딩이미지*/
+        var timer;
+        $( document ).ajaxStart(function() {
+            console.log( "Triggered ajaxStart handler." );
+            $('.loading').show();
+            timer = setInterval(loadingImage, '200');
+        });
+        /* ajax 종료 로딩이미지 */
+        $( document ).ajaxComplete(function() {
+            console.log( "Triggered ajaxComplete handler." );
+            setTimeout(function() {
+            	   clearInterval(timer);// interval 함수 타이머 종료
+          	  }, 100);
+            $('.loading').hide();
+        });
+    });
+
+    function toLoginForm(from_url){
+    	var loginForm = '<form name="actionForm" id="actionForm" method="post" >';
+    	loginForm += '<input type="hidden" name="from_url" id="from_url" value="'+from_url+'"/>';
+    	loginForm += '</form>';
+
+    	$("body").append(loginForm);
+
+
+    	$("#actionForm").attr("action", "../../login/loginForm.html");
+    	$("#actionForm").submit();
+    }
+    var lodingIdx = 1;
+    function loadingImage(){
+    	var src = "//image.ahnlab.com/img_upload/kr/site/images2/mobile/loading/loading0"+ (++lodingIdx)+".png";
+
+    	console.log('seols loading:::::'+lodingIdx);
+        if(lodingIdx >= 8 ) lodingIdx = 0;
+    	$('#imgLoading').attr('src', '//image.ahnlab.com/img_upload/kr/site/images2/mobile/loading/loading0'+ (++lodingIdx)+'.png');
+    }
+    -->
+    </script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	    
+	
+	
+	
+	
+
+
+
+<script type="text/javascript">
+    $(function(){
+    	var drawerIndex = "4";
+        $(".menuCtg .gnb").eq(parseInt(drawerIndex)).trigger("click");
+    });
+</script>
+<!-- drawer -->
+<div id="naviMenu">
+<div>
+    <div class="closeArea"><a class="close"></a></div>
+    <ul class="menuCtg">
+    <li>
+        <p class="gnbHome"><a href="../../main.html">home</a></p>
+    </li>
+<!-- product -->
+    <li class="on">
+        <p class="gnb"><a href="javascript:">제품</a></p>
+        <ul>
+        <li>
+            <a href="javascript:" class="mnTit">개인제품</a>
+            <ul class="sub">
+            
+                
+                   
+			            
+				            
+				                <li><a href="../../product/productViewfac2.html?prodSeq=15">V3 365 클리닉</a></li>
+				            
+				                <li><a href="../../product/productView49a3.html?prodSeq=17">PC주치의</a></li>
+				            
+				                <li><a href="../../product/productView3a25.html?prodSeq=107">자녀PC보호</a></li>
+				            
+				                <li><a href="../../product/productView69f7.html?prodSeq=108">명의도용차단</a></li>
+				            
+				                <li><a href="../../product/productViewd67f.html?prodSeq=112">PC복구 Plus</a></li>
+				            
+				                <li><a href="../../product/productView7722.html?prodSeq=8">V3 Lite</a></li>
+				            
+				                <li><a href="../../product/productViewde70.html?prodSeq=66">Mobile Security</a></li>
+				            
+				                <li><a href="../../product/productView3edc.html?prodSeq=60">V3 Zip 2.0</a></li>
+				            
+			            
+                    
+                
+            
+                
+                   
+                
+            
+            </ul>
+        </li>
+        <li class="on">
+            <a href="javascript:" class="mnTit">기업제품</a>
+            <ul>
+            
+	            
+            
+	            
+	                    
+	                        
+	                        
+					             <li>
+					                <a href="javascript:" class="subTit">엔드포인트 보안</a>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView1895.html?prodSeq=13">V3 Internet Security 9.0</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewf542.html?prodSeq=81">V3 Endpoint Security 9.0</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView2106.do?prodSeq=26">V3 Net for Windows Server 9.0</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewe467.html?prodSeq=58">V3 Net for Unix/Linux Server</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewf3aa.html?prodSeq=23">V3 MSS</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView61d7.html?prodSeq=75">기업용 PC주치의</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewb613.html?prodSeq=86">AhnLab 내PC지키미</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView51af.html?prodSeq=103">AhnLab Policy Center 4.6</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView4808.html?prodSeq=73">AhnLab Patch Management</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewdbbc.html?prodSeq=88">AhnLab Privacy Management Suite</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView28fa.html?prodSeq=78">AhnLab Privacy Management</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView6aa8.html?prodSeq=105">EMS</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewe897.html?prodSeq=104">ERS</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewcfe7.html?prodSeq=57">TrusLine</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView2dde.html?prodSeq=110">EPS</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView4556.html?prodSeq=65">TrusZone</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView52ed.html?prodSeq=79">TS Engine Suite</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView3950.html?prodSeq=29">AhnLab Policy Center 4.6 for Windows</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView5428.html?prodSeq=59">AhnLab Policy Center Appliance</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView5e6d.html?prodSeq=109">AhnLab Safe Transaction</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewa8fb.html?prodSeq=34">AhnLab Online Security 2.0</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView8925.html?prodSeq=77">PrivacyCare PCscan</a></li>
+						                </ul>
+					                
+					            </li>
+					            
+	        	            
+	                        
+					             <li>
+					                <a href="javascript:" class="subTit">네트워크 보안</a>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView688c.html?prodSeq=10">TrusGuard</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewbae8.html?prodSeq=54">TrusGuard DPX</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewcfa0.html?prodSeq=87">TrusGuard IPX</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView788d.html?prodSeq=101">TSM</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView613f.html?prodSeq=9">TrusGuard Manager</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView947d.html?prodSeq=76">TrusAnalyzer</a></li>
+						                </ul>
+					                
+					            </li>
+					            
+	        	            
+	                        
+					             <li>
+					                <a href="javascript:" class="subTit">차세대 APT 보안</a>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView600f.html?prodSeq=68">MDS</a></li>
+						                </ul>
+					                
+					            </li>
+					            
+	        	            
+	                        
+					             <li>
+					                <a href="javascript:" class="subTit">모바일 보안</a>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productViewec8c.html?prodSeq=111">간편인증</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView7491.html?prodSeq=64">V3 Mobile Plus</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView0fab.html?prodSeq=67">V3 Mobile 2.0</a></li>
+						                </ul>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView46bd.html?prodSeq=102">V3 Mobile Enterprise</a></li>
+						                </ul>
+					                
+					            </li>
+					            
+	        	            
+	                        
+					             <li>
+					                <a href="javascript:" class="subTit">유틸리티</a>
+					                
+						                <ul class="sub">
+						                    <li><a href="../../product/productView68e5.html?prodSeq=61">V3 Zip 2.0</a></li>
+						                </ul>
+					                
+					            </li>
+					            
+	        	            
+	                        
+	        	            
+	                        
+	        	            
+	                        
+	        	            
+	                        
+	        	            
+	                    
+	            
+            
+
+            <!-- 글로벌 파트너 제품 노출  -->
+            
+                
+            
+                
+                <li>
+                     <a href="javascript:" class="subTit">글로벌 파트너 제품 </a>
+                     <ul class="sub">
+                         <li><a href="../../product/globalPartnerList.html">제품개요</a></li>
+                     
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         <li><a href="../../product/productView0cdd.html?prodSeq=90">통합 보안 관리</a></li>
+                         
+                         
+                         
+                         <li><a href="../../product/productViewdbc5.html?prodSeq=92">네트워크 인프라 보안</a></li>
+                         
+                         
+                         
+                         <li><a href="../../product/productViewf911.html?prodSeq=96">웹/데이터 보안</a></li>
+                         
+                         
+                         
+                         <li><a href="../../product/productView1c26.html?prodSeq=99">전력 관리</a></li>
+                         
+                         
+                     
+                     </ul>
+                </li>
+                
+            
+            </ul>
+        </li>
+        </ul>
+    </li>
+<!-- service -->
+    <li>
+        <p class="gnb"><a href="javascript:">서비스</a></p>
+        <ul>
+        <li>
+            <a href="javascript:" class="subTit">정보보호컨설팅</a>
+            <ul class="sub">
+            <li><a href="../../product/consultInfo9e66.html?tab=1">소개 및 특장점</a></li>
+            <li><a href="../../product/consultInfod686.html?tab=2">종류</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">보안관제</a>
+            <ul class="sub">
+            <li><a href="../../product/controlInfo9e66.html?tab=1">소개 및 특장점</a></li>
+            <li><a href="../../product/controlInfod686.html?tab=2">종류</a></li>
+            <li><a href="../../product/controlInfoc657.html?tab=3">파트너</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">보안 SI</a>
+            <ul class="sub">
+            <li><a href="../../product/secuInfo.html">소개 및 특장점</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">T-Care Service</a>
+            <ul class="sub">
+            <li><a href="../../product/careInfo9e66.html?tab=1">소개 및 특장점</a></li>
+            <li><a href="../../product/careInfod686.html?tab=2">종류</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../../product/aFirst.html" class="subTit">A-FIRST</a>
+        </li>
+        </ul>
+    </li>
+<!-- buy -->
+    <li>
+        <p class="gnb"><a href="javascript:">구매</a></p>
+        <ul>
+        <li>
+            <a href="javascript:" class="subTit">구매정보</a>
+            <ul class="sub">
+            <li><a href="../../product/purchase/purchaseInfo.html">Software</a></li>
+            <li><a href="../../product/purchase/purchaseInfo9703.html?tab=02">Network</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">라이선싱</a>
+            <ul class="sub">
+            <li><a href="../../product/purchase/purchaseLicensea5e2.html?selectIdx=0">라이선스 정의</a></li>
+            <li><a href="../../product/purchase/purchaseLicense50b6.html?selectIdx=1">라이선스 종류</a></li>
+            <li><a href="../../product/purchase/purchaseLicense0e50.html?selectIdx=2">소프트웨어 보증</a></li>
+            <li><a href="../../product/purchase/purchaseLicense0838.html?selectIdx=3">유지관리 서비스</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../../product/purchase/purchaseLicenseProgram.html" class="subTit">라이선스 프로그램</a>
+        </li>
+        <li>
+            <a href="../../product/purchase/eLicense.html" class="subTit">e-Licensing Service</a>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">구매처 안내</a>
+            <ul class="sub">
+            <li><a href="../../product/purchase/purchaseAhnlab.html">안랩 본사</a></li>
+            <li><a href="../../product/purchase/purchasePartner1.html">총판 및 파트너</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../../product/purchase/estimate.html" class="subTit">견적 및 도입 문의</a>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">재계약 안내</a>
+            <ul class="sub">
+            <li><a href="../../support/customer/exchangePers.html">개인회원</a></li>
+            <li><a href="../../support/customer/exchangePersc718.html?exchangeTab=2">기업회원</a></li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+<!-- support -->
+    <li>
+        <p class="gnb"><a href="javascript:">고객지원</a></p>
+        <ul>
+        <li><a href="../../support/faq/faqMain.html" class="subTit">FAQ</a></li>
+        <li><a href="../../support/customer/counselForm.do" class="subTit">1:1상담</a></li>
+        <li><a href="../../login/loginForm2aefe.html" class="subTit">고객의 소리</a></li>
+        <li><a href="../../support/customer/telinfo.html" class="subTit">전화상담</a></li>
+        <li><a href="../../support/b2b/techEdu.html" class="subTit">교육 및 세미나</a></li>
+        <li><a href="../../login/loginForm2c205.html" class="subTit">나의 문의 내역</a></li>
+        <li><a href="../../support/notice/noticeList.html" class="subTit">공지사항</a></li>
+        </ul>
+    </li>
+<!-- security -->
+    <li>
+        <p class="gnb"><a href="javascript:">보안정보</a></p>
+        <ul>
+        <li><a href="secuNewsList3a0d.html?menu_dist=1" class="subTit">최신 보안 뉴스</a></li>
+        <li><a href="secuNewsList93eb.html?menu_dist=2" class="subTit">보안 이슈</a></li>
+        <li><a href="secuNewsListe224.html?menu_dist=3" class="subTit">전문가 칼럼</a></li>
+        <li><a href="secuNewsList3876.html?menu_dist=4" class="subTit">보안과 PC상식</a></li>
+        <li>
+            <a href="javascript:" class="subTit">보안 매거진</a>
+            <ul class="sub">
+            <li><a href="../newsletter/newsLetter9e66.html?tab=1">시큐리티 레터</a></li>
+            <li><a href="../newsletter/newsLetter50fd.html?tab=2&amp;newsLetterTab=2">월간 '安'</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">ASEC분석정보</a>
+            <ul class="sub">
+            <li><a href="../asec/asecIntro.html">ASEC 소개</a></li>
+            <li><a href="../asec/asecCodeList.html">악성코드 정보</a></li>
+            <li><a href="../asec/asecAdviceListc8f4.html?groupCode=VNI002">ASEC 보안권고문</a></li>
+            <li><a href="../asec/asecReportView.html">ASEC 리포트</a></li>
+            </ul>
+        </li>
+        <li><a href="../dictionary/dictionaryList.html" class="subTit">보안 용어사전</a></li>
+        <li><a href="../statistics/security1.html" class="subTit">보안 통계</a></li>
+        </ul>
+    </li>
+<!-- partner -->
+    <li>
+        <p class="gnb"><a href="javascript:">파트너</a></p>
+        <ul>
+        <li>
+            <a href="javascript:" class="subTit">안랩 파트너 프로그램</a>
+            <ul class="sub">
+            <li><a href="../../product/partner/partnerInfo.html">프로그램 소개</a></li>
+            <li><a href="../../product/partner/partnerChannelInfo.html">채널 파트너</a></li>
+            <li><a href="../../product/partner/partnerTechInfo.html">기술 파트너</a></li>
+            <li><a href="../../product/partner/partnerPartnership.html">제휴 파트너</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../../product/partner/partnerAppForm.html" class="subTit">파트너 신청</a>
+        </li>
+        <li>
+            <a href="javascript:" class="subTit">교육 프로그램</a>
+            <ul class="sub">
+                <li><a href="../../product/partner/partnerOverview.html">교육 안내</a></li>
+                <li><a href="../../support/b2b/eduSales.html">세일즈 교육</a></li>
+                <li><a href="../../support/b2b/eduTech.html">기술 교육</a></li>
+                <li><a href="../../support/b2b/eduACSA.html">기술 인증 취득</a></li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    </ul>
+
+<!-- side menu -->
+    <ul class="sideMn">
+    <li class="mn01"><a href="../../product/productList.html">전체 제품 보기</a></li>
+    <li class="mn02"><a href="../../product/award.html">수상내역</a></li>
+    <li class="mn03"><a href="../../../../../www.ahnlab.com/kr/tv/index.html" target="_blank">안랩TV</a></li>
+    <li class="mn04"><a href="../../product/securityMap.html">Security Map</a></li>
+    <li class="tel"><a href="tel:1588-3096">구매문의 <span class="telNum">1588-3096</span></a></li>
+    <li class="tel"><a href="tel:1577-9880">개인기술지원 <span class="telNum">1577-9880</span></a></li>
+    <li class="tel"><a href="tel:1577-9431">기업기술지원 <span class="telNum">1577-9431</span></a></li>
+    <li class="mn05"><a href="../../product/purchase/purchasePartner1.html">총판 및<br /> 파트너 찾기</a></li>
+    <li class="mn06"><a href="http://shop.ahnlab.com/jump/jsp/fp/main.jsp" target="_blank">안랩몰</a></li>
+    <li class="mn07"><a href="../newsletter/newsLetter9e66.html?tab=1">시큐리티 레터</a></li>
+    <li class="mn08"><a href="../newsletter/newsLetter50fd.html?tab=2&amp;newsLetterTab=2">월간 안</a></li>
+    <li class="mn09"><a href="http://www.facebook.com/AhnLabOfficial" target="_blank">안랩Facebook</a></li>
+    </ul>
+</div>
+</div>
+<!-- //drawer -->
+<div class="wrap">
+<!-- 메인 팝업 -->
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav id="skipNavi">skip navigation
+        <ul>
+            <li><a href="#lnb">메뉴</a></li>
+            <li><a href="#content">본문</a></li>
+            <li><a href="#footer">하단 정보(링크)</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- header -->
+    <header class="headerCom">
+        <h1>
+            <a href="../../main.html"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/mobile/img_logo.png" alt="AhnLab" /></a>
+            <a href="secuNewsList3a0d.html?menu_dist=1" class="tit">보안정보</a>
+        </h1>
+        <button class="btnCtg">주요서비스 메뉴 펼치기</button>
+        <a href="#" class="btnSrch">검색</a>
+    </header>
+<!-- //header -->
+
+    <div id="container">
+        <nav id="lnb" class="secuNavi">
+            <ul class="slider">
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="secuNewsList3a0d.html?menu_dist=1">
+                            최신 보안 뉴스
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                            
+                        
+                        
+                        <li class='current'>
+                            <a href="secuNewsList93eb.html?menu_dist=2">
+                            보안 이슈
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="secuNewsListe224.html?menu_dist=3">
+                            전문가 칼럼
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="secuNewsList3876.html?menu_dist=4">
+                            보안과 PC상식
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="../newsletter/newsLetter9e66.html?tab=1">
+                            보안 매거진
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="../asec/asecIntro.html">
+                            ASEC 분석정보
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="../dictionary/dictionaryList.html">
+                            보안 용어사전
+                            </a>
+                        </li>
+                        
+                        <!-- class="current" -->
+                        
+                        
+                        
+                            
+                        
+                        <li >
+                            <a href="../statistics/security1.html">
+                            보안 통계
+                            </a>
+                        </li>
+                        
+                    
+                
+            
+            </ul>
+        </nav>
+<!-- contents -->
+        <form method="get" name="secuNewsViewForm" id="secuNewsViewForm" target="_self">
+        <input type="hidden" name="curPage" id="curPage" value="" />
+        <input type="hidden" name="menu_dist" id="menu_dist" value="2" />
+        <input type="hidden" name="seq" id="seq" value="24472" />
+        
+        <input type="hidden" name="series_key" id="series_key" value="" />
+        <input type="hidden" name="columnist" id="columnist" value="" />
+        <div id="content">
+            <div class="bbsView">
+                <div class="tit">
+                    <p>블록버스터급 사이버 공격, 그 실체와 보안 대책은?</p>
+                </div>
+                <div class="info">
+                    <span>AhnLab</span>
+                    <span class="divide"></span>
+                    <span>2016-01-04</span>
+                </div>
+                <div class="cont">
+                    <p><p>2010년 9월, 이란 핵 시설을 마비시키기 위한 미국의 스턱스넷 공격이 있었다. 이에 대한 반격으로 2013년 이란이 미국 뉴욕 인근의 댐 관리 시스템에 침입한 사실이 2015년 12월 뒤늦게 밝혀졌다. 이를 계기로 산업제어시스템의 보안에 대한 문제가 전세계적인 화두가 되고 있다.</p><p>&nbsp;</p><p>악성 소프트웨어 역사상 최대의 기술적 블록버스터라고 불리는 이 문제를 해결하기 위해 산업제어시스템이란 무엇이며 어떠한 공격이 있고, 신뢰할만한 보안 대책은 무엇인지 살펴보자.</p><p>&nbsp;</p><p><b><span style="color: rgb(0, 117, 200);">산업제어시스템 개요 및 공격 사례</span></b></p><p>산업제어시스템(ICS: Industrial Control System)은 해저 시추, 가스 및 전기 분배, 하수 처리, 정유, 수도, 교통 등의 국가 주요 기반 시설 및 산업 분야에서 원거리에 산재된 시스템의 효과적인 원격 모니터링 및 제어를 위해 필수적으로 사용되는 컴퓨터 기반의 시스템을 말한다.</p><p>&nbsp;</p><p>산업제어시스템은 안전 및 보안상의 이유로 인터넷에 연결되지 않은 분리된 망에 중요 시스템을 위치시키는 형태로 구성한다. 따라서 인터넷에 존재하는 다양한 사이버 보안 위협들의 영향에서 벗어나 있다고 오랜 세월 생각해되었지만 시스템 유지보수를 위한 제한적인 네트워크 연결, 원격 접속, 취약점을 갖고 있는 물리적 장치와의 접촉 등으로 인해 사이버 공격에 더 이상 예외일 수 없게 됐다.</p><p>&nbsp;</p><p style="text-align: center;" align="center"><span style="font-size: 10pt;">&nbsp;</span><img src="../../../../../image.ahnlab.com/img_upload/editor/1512293548126532.png" title="1512293548126532.PNG">&nbsp;</p><p style="text-align: center;" align="center"><span style="font-size: 10pt;">&nbsp;[그림1] 대표적인 </span><font size="2">산업제어시스템 사이버</font><span style="font-size: 10pt;">​</span><span style="font-size: 10pt;">공격 사례</span></p><p>&nbsp;</p><p>산업제어시스템을 타깃으로 한 대표적인 공격 사례는 다음과 같다.</p><p>&nbsp;</p><p>-2000년, 퇴사한 직원이 무선 네트워크를 이용하여 호주 퀸즈랜드의 폐수처리 제어 시스템을 해킹하여 오작동 유발, 세 달 동안 총 46차례 해킹하여 80만 리터의 폐수 무단 방출</p><p>-2003년, 미국 오하이오 주 데이비스-베시(Davis-Besse) 원자력발전소가 내부는 방화벽으로 보호되고 있었지만 설계사의 회사 네트워크에서 발전소로 원격 접속이 가능한 허점을 이용하여 슬래머 웜(Slammer Worm)에 감염. 원전 비안전 계통 신호 이상이 발생하여 원자력발전소 가동 중지</p><p>-2004년, 슬래머 웜에 의한 스카다(SCADA) 시스템 감염으로 8시간 동안 해양 설비 플랫폼(Offshore Production Platform) 가동 중단. 생산 중단 및 재가동으로 약 1,200만 달러의 손실 발생</p><p>-2005년, 다임러크라이슬러(DaimlerChrysler)의 미국 공장 시스템에서 사용 중인 마이크로소프트(Microsoft)의 Windows 2000 서버와 XP가 조톱 웜(Zotob Worm)에 감염되어 자동차 제조 공장 13곳 모두 1시간 가량 운영 중단.</p><p>-2010년, 이란 나탄즈(Natanz) 우라늄 농축시설 시스템의 유지보수를 위한 데스크톱이 유지보수 업체 직원의 실수로 스턱스넷에 감염되면서 IR-1 타입 원심 분리기 1,000여개 고장 및 교체</p><p>-2011년, 미국 일리노이주 스프링필드 외곽의 상수도 시설에 원격 접속이 가능한 점을 악용한 해킹으로 제어 펌프에 장애 발생</p><p>-2012년, 사우디아라비아의 정유회사인 아람코(Aramco)가 샤문(Shamoon)이라는 이름의 악성코드 감염으로 네트워크 마비</p><p>-2012년, 카타르에서 두 번째로 큰 LNG 생산 시설인 라스가스(RasGas)가 알 수 없는 악성코드 공격에 의해 네트워크 마비</p><p>-2012년, 스카다 시스템 업체 텔벤트(Telvent) 제품에 악성코드가 삽입</p><p>-2013년, 마약 및 총기 밀수에 악용할 목적으로 벨기에 앤트워트항 콘테이너 관리 시스템 해킹</p><p>-2013년, 전쟁 대피소로 사용되는 이스라엘 카멜(Carmel) 터널 개폐 장치 해킹으로 악성코드 감염, 이틀간 엄청난 교통 혼잡 발생</p><p>-2014년, 일본 몬주 원자력발전소 내부 작업자가 동영상 재생 프로그램을 업데이트하던 도중 악성코드에 감염, 42,000개 이상의 직원 개인 정보 노출</p><p>&nbsp;</p><p><b><span style="color: rgb(0, 117, 200);">산업제어시스템의 특성</span></b></p><p>산업제어시스템에 대한 사이버 공격을 막으려면 어떻게 해야 할까? 우선 산업제어시스템이 일반 IT 시스템과 다르다는 것을 알아야 한다. 차이점을 인지한 후에는 산업제어시스템만의 특화된 보안 체계를 수립해야 한다.&nbsp;</p><p>&nbsp;</p><p style="text-align: center;" align="center"><img src="../../../../../image.ahnlab.com/img_upload/editor/1601048803748882.png" title="1601048803748882.PNG"><br><span style="font-size: 10pt;">[표1] 산업제어시스템과 IT 시스템의 차이점</span></p><p style="text-align: center;" align="center"><span style="font-size: 10pt;">&nbsp;</span></p><p><b><span style="color: rgb(0, 117, 200);">산업제어시스템의 보안</span></b></p><p>산업제어시스템도 결국은 컴퓨터를 사용하여 정보를 처리한다는 점에서 정보시스템(IT)과 다르지 않다. 다만 일반적인 IT 시스템은 정보를 효율적∙효과적으로 처리하기 위해 물리적인 설비(컴퓨터 하드웨어)를 이용하지만 산업제어시스템은 물리적인 설비를 효율적∙효과적으로 처리하기 위해 정보를 이용한다는 것이 가장 큰 차이점이라 할 수 있다.</p><p>&nbsp;</p><p>산업제어시스템의 보안을 효과적으로 이행하려면 이러한 목적과 위험이 미칠 수 있는 영향 수준의 차이를 고려해야 한다. 목적의 차이를 고려하여 기밀성, 무결성, 가용성을 보호하는 IT 환경에서의 보안 패러다임과는 달리, 안전성(Safety), 신뢰성(Reliability), 가용성(Availability)을 우선적으로 고려하는 보안 패러다임의 전환이 필요하다.</p><p>&nbsp;</p><p>또한, 산업제어시스템의 경우 이를 통하여 제어되는 설비가 실제 환경에 미치는 경제적∙환경적인 영향이 매우 광범위하기 때문에 보안에 대한 보증 수준 역시 매우 높게 요구된다는 것을 고려해야 한다. 현재에도 산업제어시스템을 구성하는 소프트웨어 및 하드웨어를 설계, 구현할 때 철저한 V&amp;V(Verification &amp; Validation)를 통하도록 요구되고 있는 것처럼, 보안에 대한 요구 수준 또한 높아야 할 것이다.</p><p>&nbsp;</p><p>이처럼 산업제어시스템의 특성과 고유의 위험에 대해 식별하고 이해를 한다고 해도 실무적인 관점에서 보안을 계획할 때에는 고민이 될 수밖에 없다. 소프트웨어 공학에서와 마찬가지로 정보보호 활동 역시 모범 규준(Best Practice)을 기반으로 계획을 수립하는 것이 유효하기 때문에, 잘 정리되어 있는 국내외의 표준 및 규제를 참조 할 수 있다. 특히, 우리나라보다 앞서 이러한 문제에 직면한 미국이나 유럽의 경우 기존 IT 시스템과 다른 단말 환경 및 보안 목표 등의 특성을 고려한 별도의 표준이나 강제력 있는 규제를 제정하여 관리하고 있어 이를 참조하는 것을 권고한다. 「NIST, SP 800-82 Guide to Industrial Control Systems (ICS) Security」, 「NERC(North American Electric Reliability Corporation), CIP(Critical Infrastructure Protection)」, 「AGA(American Gas Association), Report No.12」, 「IAEA(International Atomic Energy Agency), NSS(Nuclear Security Series) No.17」 등 산업제어시스템에 특화된 규제 및 표준을 그 예로 들 수 있다.</p><p>&nbsp;</p><p>최근 수력 원자력 해킹 사건 등을 겪으며 우리나라에도 산업제어시스템에 대한 강제력 있는 규제와 가이드라인, 전용 보안 백신에 대한 필요성이 대두되고 있다. 이런 흐름에 발맞춰 지난 해 11월, KINS/RG-N08.22(디지털 계측 및 제어장치의 사이버보안)가 개정되어 실무적으로 활용 가능한 수준으로 요건이 구체화됐다. 이는 국내의 원자력안전법에 따라 규제기관인 KINS(원자력안전기술원)에서 관리하고 있는 규제 지침이다. 지침은 “사이버보안 조직의 구성, 필수디지털장치의 식별 및 분석, 심층방어 보호전략, 사이버 침해행위의 발생 가능성과 계측 및 제어장치의 기능적 중요도를 고려한 사이버보안 수준, 사이버 침해행위의 탐지•방어•지연•완화 및 복구를 포함하는 보안 통제수단”을 비롯한 사이버 보안 대책의 이행 및 유지를 요구하고 있다. 또한, 2015년 12월 1일, 일부 개정되어 2016년 6월 2일 시행이 예정된 「원자력시설 등의 방호 및 방사능 방재 대책법」에서는 법률에 "전자적 침해 행위", "원자력 시설 컴퓨터 및 정보 시스템"의 정의를 신설하고, 정부 및 원자력사업자가 각각 원자력시설 컴퓨터 및 정보시스템 보안을 강화하기 위한 시책 및 규정을 마련하도록 하는 등 사이버 보안에 대한 제도적인 강화가 이뤄지고 있다.</p><p>&nbsp;</p><p>이러한 제도 아래 관리적 관점과 기술적 관점에서의 보안 계획 수립이 필요하다. 관리적 관점에서는 산업제어시스템의 사이버 보안에 대한 명확한 역할과 책임의 정의, 시스템별 관리, 사전 보안 정책 수립, 사전 교육의 수행 등이 있다. 특히, 기존 인원들에 대한 보안 인식 제고를 위하여 사이버 보안 인식 교육 및 훈련 프로그램을 수립하고 운영하는 것이 무엇보다 중요하다고 할 수 있다. 계획 수립 시 「NIST 800-50 Building an Information Technology Security Awareness and Training Program」 등을 참조할 수 있다.</p><p>&nbsp;</p><p>기술적 관점에서는 침입 탐지 시스템의 설치 및 사고 모니터링 실시, 외부 연결 접점에 대한 식별 및 보호, 매체 통제, 제어 시스템에 제공되는 보안 기능 적용, 보안 프로토콜 적용 등을 고려할 수 있다.</p><p>&nbsp;</p><p>특히 기술적 관점의 보안 대책은 산업제어시스템만의 특화된 구현이 필요하다. 앞서 살펴본 것처럼 IT 시스템과는 달리 안전성, 신뢰성, 가용성을 보호 목표로 하는 대책을 구현할 필요가 있으며, 기존의 보호 대책보다 효과적인 대책 구현이 필요하다. 다행스럽게도 산업 제어 시스템은 다양한 기능을 수행하는 IT 시스템과 달리 정해진 기능을 수행하는 것에 맞춰져 있기 때문에 화이트리스트 기반의 보안 기술(Positive Security Model) 적용이 가능하여 블랙리스트 기반의 보호(Negative Security Model) 기반보다 효과적으로 보호 대책의 구현이 가능하다는 것이 전문가들의 견해다.</p><p>&nbsp;</p><p>화이트리스트 기반의 보안 기술은 제어 시스템 대상의 악성코드와 같은 특화된 위협에 효과적인 대응 방안으로 주목 받고 있는 기술이다. 기존 블랙리스트 기반의 보안 솔루션이 모든 프로그램을 허용하고 블랙리스트에 속한 악성코드 등에 대응하는 솔루션인 반면에 화이트리스트 기반의 보안 기술은 허용된 프로그램만 실행 가능하도록 한다. 따라서 신∙변종 악성코드나 운영 담당자의 오남용(불필요한 프로그램 설치, 운영체제의 안전하지 않은 설정 등) 등 시스템에 침해를 줄 수 있는 행위 차단이 가능하다. 또한 화이트리스트 기반의 보안 기술은 많은 종류의 제로데이 공격을 방지할 수 있다. 그리고 산업 제어 시스템의 위협은 IT 시스템과의 연계가 증가하면 할수록 증가하므로 IT 시스템과 연계에 승인된 이동 매체와 승인된 IP/포트만 사용을 허가하도록 한다. 특히 USB를 통한 악성코드 감염을 방지하기 위해 USB 사용 시 자동적으로 저장 데이터에 대한 악성코드 감염 여부를 확인할 수 있도록 하는 보호 대책의 구현 또한 가능하다.</p><p>&nbsp;</p><p>국내에서도 화이트리스트 기반의 보안 제품이 효과적인 대안으로 주목 받고 있다. 화이트리스트 기반 보안 제품 중에 하나인 AhnLab EPS 역시 지속적인 연구 개발과 검증을 통해 다양한 기반 시설에 도입되면서 긍정적인 효과를 보이고 있다. &nbsp;</p><p>&nbsp;</p><div style="text-align: center;" align="center"><img src="../../../../../image.ahnlab.com/img_upload/editor/1601048804030995.png" title="1601048804030995.PNG"><br><span lang="EN-US" style="font-size: 10pt;">[</span><span style="font-size: 10pt;">표</span><span lang="EN-US" style="font-size: 10pt;">2] </span><span style="font-size: 10pt;">화이트리스트 기반의</span><span lang="EN-US" style="font-size: 10pt;"> AhnLab EPS </span><span style="font-size: 10pt;">도입 효과</span>&nbsp;</div><p class="MsoNormal"><span lang="EN-US"><o:p></o:p></span></p><p><span lang="EN-US">​</span></p><p><span lang="EN-US">산업제어시스템이 사용되는 기반 시설이나 시스템이 미치는 영향력은 광범위하다<span lang="EN-US">.
+</span>만약 사이버 공격으로 정상적인 기능 수행에 문제가 발생하면 수많은 사람들의 안전에 큰 타격을 입힐 수 있다<span lang="EN-US">. </span>뿐만 아니라 생산성 손실에 따른 경제적 타격으로 국가 경제에 부정적인 영향을 미칠 수도 있다<span lang="EN-US">. </span>따라서 산업 제어 시스템 환경에 적합한 보안
+기술에 대한 끊임없는 연구와 개발로 취약점을 최소화하여 불의의 사고가 발생하지 않도록 항상 주의해야 할 것이다<span lang="EN-US">.</span></span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+<p class="MsoNormal"><span lang="EN-US" style="font-size: 10pt;">[</span><span style="font-size: 10pt;">참고 문헌</span><span lang="EN-US" style="font-size: 10pt;">]&nbsp;</span></p><p><span lang="EN-US" style="font-size: 10pt;">[1] </span><span style="font-size: 10pt;">박선필</span><span lang="EN-US" style="font-size: 10pt;">, </span><span style="font-size: 10pt;">박경용</span><span lang="EN-US" style="font-size: 10pt;">/AhnLab, CERT
+Report, 2015.06</span><span style="font-size: 10pt;">&nbsp;</span></p><p>&nbsp;</p></p>
+                </div>
+
+                
+                <div class="mediaInfo">
+                
+                    
+                    
+                    <img src="../../../../../image.ahnlab.com/img_upload/info/securityinfo/200809/008.gif" class="photo" alt="AhnLab 로고" onerror="this.src='../../../../../image.ahnlab.com/img_upload/img_no_54_12.html'"/>
+                    <span class="divide"></span>
+                    
+                
+                    
+                    <span>제품기획팀 이지훈 차장</span>
+                    
+                </div>
+                
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btnSns">
+   <button class="facebook facebookPopupOpen">Facebook</button>
+       <span class="divide"></span>
+   <button class="twitter twitterPopupOpen">Twitter</button>
+       <span class="divide"></span>
+   <button class="linkedin linkedInPopupOpen">Linkedin</button>
+       <span class="divide"></span>
+   
+   <button class="urlCopoy pastePopupOpen">url copoy</button>
+   
+</div>
+
+<script type="text/javascript">
+<!--
+    // 변수에 대한 설정은 각페이지에서 해야한다.
+	$(document).ready(function() {
+		$(".facebookPopupOpen").click(function() {
+			popSnsShare("fb", "secuNewsViewFacebook", twitt_title, longUrl, event_tag);
+			return false;
+		});
+		$(".twitterPopupOpen").click(function() {
+			popSnsShare("tw", "secuNewsViewTwitter", twitt_title, longUrl, event_tag);
+			return false;
+		});
+		$(".pastePopupOpen").click(function() {
+	        prompt("아래의 주소를 복사하여 블로그, 카페등에 붙여넣으시면됩니다.",promptUrl);
+	        return false;
+		});
+		$(".linkedInPopupOpen").click(function() {
+		    popSnsShare("ln", "secuNewsViewLinkedIn", twitt_title, longUrl, event_tag);
+		    return false;
+		});
+	});
+//-->
+</script>
+
+
+                
+
+                
+                <div class="move">
+                    
+	                    <p class="prev">
+	                        <span class="moveTxt">이전</span><a href="javascript:getSecuNewsView(24471);">“안전해서 더욱 자유로운 세상”</a>
+	                    </p>
+                    
+                    
+	                    <p class="next">
+	                        <span class="moveTxt">다음</span><a href="javascript:getSecuNewsView(24473);">Q&A로 풀어본 MDS에 대한 궁금증 5가지</a>
+	                    </p>
+                    
+                </div>
+            </div>
+            <div class="btnBbs">
+                <a href="#" onclick="getList();" class="btnLink typeB">목록보기</a>
+            </div>
+
+            
+            <div class="contDiv">
+                <h2>관련 제품</h2>
+                <ul class="listPrd">
+                
+                <li>
+                    <input type="hidden" class="prodSeq" value="68" />
+                    <a href="../../product/productView600f.html?prodSeq=68" >
+                        <img src="../../../../../image.ahnlab.com/img_upload/product/1411138072601079.png" class="photo" alt="MDS" />
+                        <dl>
+                            <dt>
+                                <p class="tit">MDS</p>
+                            </dt>
+                            <dd>지능형 위협 대응 솔루션</dd>
+                        </dl>
+                    </a>
+                </li>
+                
+                <li>
+                    <input type="hidden" class="prodSeq" value="54" />
+                    <a href="../../product/productViewbae8.html?prodSeq=54" >
+                        <img src="../../../../../image.ahnlab.com/img_upload/product/1411062612457194.png" class="photo" alt="TrusGuard DPX" />
+                        <dl>
+                            <dt>
+                                <p class="tit">TrusGuard DPX</p>
+                            </dt>
+                            <dd>DDoS 방어 기술, 경험, <br>전문가의 결합</br></dd>
+                        </dl>
+                    </a>
+                </li>
+                
+                </ul>
+            </div>
+            
+        </div>
+        </form>
+<!-- //contents -->
+    </div>
+
+<script type="text/javascript">
+<!--
+    var org_title = "블록버스터급 사이버 공격, 그 실체와 보안 대책은?";
+    var ex_title = org_title.replaceAll("&quot;", "'").replaceAll("&#xB7;", ".");
+    var twitt_title = encodeURIComponent(ex_title);
+
+    var promptUrl = document.URL;
+    var longUrl = escape(promptUrl);
+    longUrl = longUrl.replaceAll("renew", "www");
+    var event_tag = encodeURIComponent("#AhnV3");
+
+function getSecuNewsView(seq) {
+    $("#seq").val(seq);
+    $("#secuNewsViewForm").attr("action", "secuNewsView.html");
+    $("#secuNewsViewForm").submit();
+}
+
+function getList() {
+    $("#secuNewsViewForm").attr("action", "secuNewsList.html");
+    $("#secuNewsViewForm").submit();
+}
+-->
+</script>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+    <div class="mnSns">
+        <a href="http://www.facebook.com/AhnLabOfficial" target="_blank" title="새창"><span class="facebook">Facebook</span></a>
+        <a href="https://twitter.com/AhnLab_man" target="_blank" title="새창"><span class="twitter">Twitter</span></a>
+        <a href="#" onclick="openViewLayer();" target="_blank" title="새창"><span class="blog">Blog</span></a>
+    </div>
+    <div class="btnWrap">
+		
+		
+		  <a href="#" onclick="toLoginForm('../../main/main.html');" class="btnFoot">로그인</a>
+		
+		<a href="../../../../../www.ahnlab.com/kr/site/main/main.html" target="_self" class="btnFoot">PC버전</a>
+        <div class="locSite">
+            <p class="locCurrent">한국</p>
+            <ul>
+	            <li><a href="../../main.html" target="_blank" rel="nofollow" title="새창. 한국 사이트로 바로가기">한국 (한국어)</a></li>
+	            <li><a href="../../../../../mglobal.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. Global 사이트로 바로가기">Global (English)</a></li>
+	            <li><a href="../../../../../mglobal.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. APAC 사이트로 바로가기">APAC (English)</a></li>
+	            <li><a href="../../../../../mjp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="새창. 日本 사이트로 바로가기">日本 (日本語)</a></li>
+	            <li><a href="../../../../../mcn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="새창. 中国 사이트로 바로가기">中国 (简体中文)</a></li>
+	            <li><a href="../../../../../mglobal.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="새창. United States 사이트로 바로가기">US (English)</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="ftMenu">
+    <li><a href="../../../../../company.ahnlab.com/company/site/main/comIntroMain.html" target="_blank">회사소개</a></li>
+    <li><a href="../../etc/policy.html">개인정보취급방침</a></li>
+    <li><a href="../../etc/agreement.html">이용약관</a></li>
+    <li><a href="../../etc/contactUs.html">Contact Us</a></li>
+    </ul>
+    <p class="copyright">&copy; AhnLab, Inc. All right reserved.</p>
+</footer>
+<a href="#top" class="moveTop">top</a>
+<!-- layer popup -->
+<div class="layerPop" id="blogLayer">
+    <button class="close" onclick="closeViewLayer();">닫기</button>
+    <div class="popCont typeB">
+        <ul>
+	        <li><a href="http://blogsabo.ahnlab.com/" target="_blank" title="새창">사보 보안세상</a></li>
+	        <li><a href="http://blog.ahnlab.com/">AhnLab 블로그</a></li>
+	        <li><a href="http://asec.ahnlab.com/" target="_blank" title="새창">ASEC 블로그</a></li>
+        </ul>
+    </div>
+    <div class="dim"></div>
+</div>
+<!-- //layer popup -->
+
+
+<!-- //footer -->
+<form name="logoutForm" id="logoutForm" method="post" action="https://m.ahnlab.com/kr/site/login/userLogout.do">
+</form>
+<script type="text/javascript" >
+
+function userLogout(){
+	$("#logoutForm").attr("target", "_self").submit();
+}
+
+function openViewLayer(){
+    $("#blogLayer").show();
+    addPopOpen();
+}
+
+function closeViewLayer(){
+    $("#blogLayer").hide();
+    removePopOpen();
+}
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-17204763-2', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This script is for AceCounter START -->
+<script type="text/javascript">
+
+
+var _mk   = '';
+var _od   = 0 ;
+var _gd   = '';
+var _ud1 = '' ;
+var _skey = '' ;
+
+var cur_url = location.href;
+var url_index = cur_url.indexOf("event");
+
+if(url_index > -1){
+    _skey = cur_url;
+}
+
+</script>
+<!-- AceCounter END -->
+
+<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+<script type="text/javascript" >
+if(typeof _GUL == 'undefined'){
+var _GUL = 'acounter.ahnlab.com';var _GPT='80'; var _SGPT='443';var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL+":"+_SGPT:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'../../../../index2dcc.html?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/js/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://acounter.ahnlab.com/?uid=2&amp;je=n&amp;' border=0 width=0 height=0 alt=""/></noscript>
+<!-- AceCounter Log Gathering Script End -->
+
+<!-- loading -->
+    <div class="loading" style="display:none">
+    <!-- <div class="loading"> -->
+        <img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/mobile/loading/loading01.png" class="loading" alt="loading" id="imgLoading"/>
+    </div>
+<!-- //loading -->
+</div>
+
+</body>
+
+<!-- Mirrored from m.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=24472 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:26:43 GMT -->
+</html>

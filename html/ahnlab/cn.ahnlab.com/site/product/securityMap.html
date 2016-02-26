@@ -1,0 +1,197 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from cn.ahnlab.com/site/product/securityMap.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:34:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="Security Map，安全概述图" />
+    <meta name="Description" content="通过安全概述图，可以看到安博士-AhnLab所有的产品概述。" />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="安全概述图 | AhnLab"/>
+	<meta property="og:description"     content="通过安全概述图，可以看到安博士-AhnLab所有的产品概述。"/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="安全概述图 | AhnLab">
+	<meta name="twitter:description"    content="通过安全概述图，可以看到安博士-AhnLab所有的产品概述。">
+
+    <!-- SEO -->
+    <title>安全概述图 | AhnLab</title>
+
+    <link href="../../css/cn/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/site.js"></script>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	$("input, textarea").placeholder();
+
+        //이미지 에러처리
+        $("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            if($(this).parent().get(0).tagName == "A"){
+            	w = $(this).width();
+                h = $(this).height();
+            }
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//cn.ahnlab.com/image/cn/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+        });
+        
+        //dim처리된 링크에 대체 택스트 달기
+        $("a").each(function (){
+	        if($(this).hasClass("dis")){
+	            $(this).attr("title", "不提供该服务。");
+	        }
+	    });
+	        
+        //선택된 탭에 대체 택스트 달기
+        $("li.on > a").each(function (){
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">当前页面</span>" + text);
+        });
+        
+        //a링크 #처리
+        $('a[href = "#"]').click(function(){
+            return false;
+        });
+
+        //로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://cn.ahnlab.com/site/login/logout.do',
+                dataType: 'json',
+                method : 'POST',
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+        
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('/site/login/loginForm.do', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+
+<body class="pop secMap">
+    <div class="popTit">
+        <h1><img src="../../image/cn/product/img_logo_sec_map.gif" alt="AhnLab Security Map" /></h1>
+    </div>
+    <div class="popCont">
+        <img src="../../image/cn/product/img_sec_map.jpg" alt="" />
+    </div>
+</body>
+
+<!-- Mirrored from cn.ahnlab.com/site/product/securityMap.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 12:34:45 GMT -->
+</html>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @Html.FrontHtml().HtmlTitle()
+    @Html.FrontHtml().Meta()
+    @Html.FrontHtml().RegisterStyles()
+    @Html.FrontHtml().RegisterScripts()
+</head>
+<body>
+    <div class="wrap">
+        @Html.FrontHtml().RenderView("Share.Header")
+        <div id="container">
+            @Html.FrontHtml().Position("Container")
+        </div>
+        @Html.FrontHtml().RenderView("Share.Footer")
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#container").addClass("main");
+
+            $('#d-main-visual').mainslider();
+
+            $('#d-image-banner').bannerslider({
+                targetSelector: 'img.bann'
+            });
+
+            $('#d-text-banner1, #d-text-banner2, #d-text-banner3').bannerslider({
+                autoSelector: 'button',
+                moveHorizontal: false,
+                moveSync: 'd-text-banner'
+            });
+            $("a.noticeCss").focus(function () {
+                goNotice();
+            });
+            $("a.pressCss").focus(function () {
+                goPress();
+            });
+        });
+
+        function getViewNotice(pressSeq) {
+
+            $("#noticeForm").find("input:hidden[name=pressSeq]").val(pressSeq);
+            $("#noticeForm").attr("action", "support/notice/noticeView.html");
+            $("#noticeForm").attr("target", "_self");
+            $("#noticeForm").submit();
+        }
+
+        function getViewPress(pressSeq) {
+
+            $("#pressForm").find("input:hidden[name=pressSeq]").val(pressSeq);
+            $("#pressForm").attr("target", "_self");
+            $("#pressForm").attr("action", "about/pressRoomView.html");
+            $("#pressForm").submit();
+        }
+
+        function getViewSecurity(seq) {
+
+            $("#secuInsForm").find("#seq").val(seq);
+            $("#secuInsForm").attr("action", "securitycenter/securityinsight/securityInsightView.html");
+            $("#secuInsForm").attr("target", "_self");
+            $("#secuInsForm").submit();
+        }
+        function getViewVirus(seq) {
+
+            $("#virusCenterForm").find("#virusSeq").val(seq);
+            $("#virusCenterForm").attr("action", "securitycenter/viruscenter/virusView.html");
+            $("#virusCenterForm").attr("target", "_self");
+            $("#virusCenterForm").submit();
+        }
+
+        function goNotice() {
+            $("#noticeDiv").removeClass("on");
+            $("#noticeDiv").addClass("on");
+            $("#noticeListDiv").show();
+            $("#pressDiv").removeClass("on");
+            $("#pressListDiv").hide();
+        }
+        function goPress() {
+            $("#pressDiv").removeClass("on");
+            $("#pressDiv").addClass("on");
+            $("#pressListDiv").show();
+            $("#noticeDiv").removeClass("on");
+            $("#noticeListDiv").hide();
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>안철수연구소 : 최신 보안뉴스</title>
+<link>http://www.ahnlab.com</link>
+<description>안철수연구소 RSS 서비스 | 최신 보안뉴스</description>
+<lastBuildDate>2016-01-26 20:03:05</lastBuildDate>
+<copyright>Copyright 2016 ⓒ AhnLab,Inc. All rights reserved</copyright>
+<language>ko-KO</language>
+<item>
+<title><![CDATA[우크라이나 발전소 2차 사이버공격 받아 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24568 ]]></link>
+<description><![CDATA[ 오픈 소스 백도어 기반으로 하는 악성코드로 공격 받아우크라이나 발전소는 다시 공격을 받고 있다. 이번에는 국가가 지원하는 악성코드 운영자가 이 ]]></description>
+<dc:date>2016-01-26 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA["AWS 서버 이사 할까, 말까" IT담당자는 '고민중' ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24569 ]]></link>
+<description><![CDATA[ '서버(Server) 이사 할까, 말까' 요즘 클라우드 컴퓨팅 서비스를 이용하거나 고려중인 기업 IT 담당자들의 최대 관심사 중 하나는 '아마존웹서비스(AWS) 서 ]]></description>
+<dc:date>2016-01-26 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[오라클의 자바, 데이터베이스 서버 내 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24567 ]]></link>
+<description><![CDATA[ 오라클은 지난 1월 19일 자체 제품 포트폴리오 전반에 걸쳐 무려 248개의 취약점을 고치기 위한 4분기 패치 업데이트를 배포했다. 이 엄청난 규모에서 오 ]]></description>
+<dc:date>2016-01-26 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[인텔, 악성코드 유포로 악용될 수 있는 취약점 패치 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24566 ]]></link>
+<description><![CDATA[ 버전 2.4는 안전한 SSL 연결로 인텔 서버와 통신인텔은 악성코드를 설치하는 데 악용될 수 있는 취약점을 패치하기 위해 인텔 드라이버 업데이트 유틸리 ]]></description>
+<dc:date>2016-01-26 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[안랩, AWS 고객 대상 원격관제 서비스 시작 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24570 ]]></link>
+<description><![CDATA[ 안랩(대표 권치중)이 클라우드 컴퓨팅 서비스 기업 아마존웹서비스(AWS) 사용 고객의 클라우드 서버에 대한 보안을 제공하는 'AWS 고객을 위한 안랩 원격 ]]></description>
+<dc:date>2016-01-26 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[법원 "개인정보 유출 카드3사 1인당 10만원 배상" ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24561 ]]></link>
+<description><![CDATA[ 카드 3사가 2014년 고객 개인정보 1억여 건을 유출한 것과 관련, 피해자에게 배상해야 한다는 법원의 첫 판결이 나왔다. &lt;ⓒ게티이미지뱅크&gt;서울중앙지법 민사합의22부( ]]></description>
+<dc:date>2016-01-25 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[비식별정보 맘껏 쓰라는 정부…고양이에게 생선을? ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24562 ]]></link>
+<description><![CDATA[ 정부가 ICT 핵심 산업 뿐만 아니라 금융사들에까지 비식별화된 개인 정보를 자유롭게 활용할 수 있도록 하는 법을 만들겠다고 발표하면서 논란이 일고 ]]></description>
+<dc:date>2016-01-25 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[오라클 248개 취약점 패치, 즉시 업데이트 필수 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24563 ]]></link>
+<description><![CDATA[ 오라클은 50개 이상의 제품에 대한 248 문제를 해결하는 2016년 첫 분기 보안 업데이트를 발표하였다. 이번 업데이트에서 오라클은 회사에서 이미 수정한 ]]></description>
+<dc:date>2016-01-25 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[암호화 풀 수 없는 스마트폰 판매를 금지한다고? ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24564 ]]></link>
+<description><![CDATA[ 기술 기업의 본고장인 캘리포니아주 하원에서 기기 제조 업체나 운영체제(OS) 업체가 해독할 수 없는 암호화 기술을 탑재한 기기 판매를 금지하는 법안 ]]></description>
+<dc:date>2016-01-25 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[어쩌다 연말정산서비스는 또 IE만 지원하게 됐나 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24559 ]]></link>
+<description><![CDATA[ 국세청이 15일 연말정산간소화서비스를 개통한데 이어 19일부터 편리한 연말정산서비스를 제공하기 시작했으나 인터넷익스플로러(IE) 외에 크롬, 사파 ]]></description>
+<dc:date>2016-01-22 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[정부, 국가 중요시설 및 다중시설 테러 대비 강화 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24558 ]]></link>
+<description><![CDATA[ 박근혜 대통령이 주재한 제49차 중앙통합방위회의에서 최근 북한과 내부 적대 세력, IS등에 의한 테러 위험에 대해 지적하며 국가 중요시설과 다중 이 ]]></description>
+<dc:date>2016-01-22 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[애플, 구형 아이폰 성능↑ iOS9.2.1 업데이트 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24556 ]]></link>
+<description><![CDATA[ 애플이 구형 아이폰의 처리속도를 높여주고 보안 취약점을 수정한 iOS9.2.1 버전을 업데이트했다. 이 버전은 마이너 버전이지만 iOS 기기의 성능과 안정 ]]></description>
+<dc:date>2016-01-22 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[인텔 드라이버 업데이트 툴, 이제서야 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24557 ]]></link>
+<description><![CDATA[ 그동안 인텔이 제공해 온 드라이버 업데이트용 툴을 활용해 관련 소프트웨어를 다운로드 받을 때 암호화 통신을 사용하지 않고 있었던 것으로 나타났 ]]></description>
+<dc:date>2016-01-22 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA["가짜 와이파이로 아이폰 정보 빼간다" ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24560 ]]></link>
+<description><![CDATA[ 가짜 와이파이 통신망을 구축한 뒤 스마트폰에 담긴 정보를 빼갈 수 있다는 경보가 발령됐다. 애플은 아이폰의 이 같은 취약점을 보완할 패치를 내놨 ]]></description>
+<dc:date>2016-01-22 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[2015년 최악의 비밀번호 “여전히 123456” ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24554 ]]></link>
+<description><![CDATA[ 매년 반복되는 웹사이트 해킹의 장점도 있다. 보안 연구원들이 사용자명과 비밀번호를 입수해 우리에게 최악의 비밀번호가 무엇인지 알려줄 수 있다 ]]></description>
+<dc:date>2016-01-21 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[수천만 리눅스 서버 겨냥 취약점 주의 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24555 ]]></link>
+<description><![CDATA[ 전 세계 수천만대에 달하는 리눅스 서버, PC는 물론 안드로이드4.0 킷캣 이후 버전에 영향을 줄 수 있는 제로데이 취약점이 발견돼 보안패치가 시급하다 ]]></description>
+<dc:date>2016-01-21 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[OpenSSH 취약점 공개…암호 키 등 민감 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24552 ]]></link>
+<description><![CDATA[ OpenSSH 프로토콜 여러개 취약점 패치 발표OpenSSH 프로토콜의 여러개 취약점이 패치되었다. 이 취약점을 공격하면 암호 키 등 민감 정보를 훔칠 수 있다. ]]></description>
+<dc:date>2016-01-21 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[정부·공공기관 보유정보 찾기 쉬워졌다 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24553 ]]></link>
+<description><![CDATA[ 국민들이 공개 청구 없이도 볼 수 있는 공공기관 보유 정보가 대폭 많아질 전망이다. 정부가 공공기관별 사전정보공개 기능을 강화하고 '대한민국 정 ]]></description>
+<dc:date>2016-01-21 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[보안 관리자를 위한 랜섬웨어 대응에 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24550 ]]></link>
+<description><![CDATA[ 안랩이 예상한 올해 주요 사이버보안 위협 트렌드 중 하나는 바로 ‘랜섬웨어의 기능 고도화 및 공격범위 확대’다. 랜섬웨어는 PC나 스마트폰 내 정보 ]]></description>
+<dc:date>2016-01-20 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[美 핵규제위원회, 핵 관련 컴퓨터시스 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?curPage=1&menu_dist=1&seq=24548 ]]></link>
+<description><![CDATA[ “현재 기관 네트워크 보호할 수 있도록 최적화되어 있지 않다” 지적미국 핵규제위원회(NRC)의 감사실의 감사보고서에 따르면, 비기밀 핵관련 컴퓨터 ]]></description>
+<dc:date>2016-01-20 00:00:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+</channel>
+</rss>

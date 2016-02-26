@@ -1,0 +1,1764 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from global.ahnlab.com/site/product/productSubDetail.do?prodSeq=5738 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 11:50:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=1280" />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="Anti-virus solution for servers, anti-malware for servers " />
+    <meta name="Description" content="AhnLab V3 Net for Windows Server protects important business assets  against virus and malware." />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="V3 Net for Windows Server | AhnLab"/>
+	<meta property="og:description"     content="AhnLab V3 Net for Windows Server protects important business assets  against virus and malware."/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="V3 Net for Windows Server | AhnLab">
+	<meta name="twitter:description"    content="AhnLab V3 Net for Windows Server protects important business assets  against virus and malware.">
+
+    <!-- SEO -->
+    <title>V3 Net for Windows Server | AhnLab</title>
+
+    <link href="../../css/en/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/site.js"></script>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	$("input, textarea").placeholder();
+
+        //이미지 에러처리
+        $("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            if($(this).parent().get(0).tagName == "A"){
+            	w = $(this).width();
+                h = $(this).height();
+            }
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//global.ahnlab.com/image/en/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+        });
+        
+        //dim처리된 링크에 대체 택스트 달기
+        $("a").each(function (){
+	        if($(this).hasClass("dis")){
+	            $(this).attr("title", "This service is currently not available.");
+	        }
+	    });
+	        
+        //선택된 탭에 대체 택스트 달기
+        $("li.on > a").each(function (){
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+        });
+        
+        //a링크 #처리
+        $('a[href = "#"]').click(function(){
+            return false;
+        });
+
+        //로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://global.ahnlab.com/site/login/logout.do',
+                dataType: 'json',
+                method : 'POST',
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+        
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('/site/login/loginForm.do', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <nav id="skipNavi">skip navigation
+        <ul>
+            <li><a href="#naviMenu">menu</a></li>
+            <li><a href="#naviUtill">member</a></li>
+            <li><a href="#container">container</a></li>
+            <li><a href="#footer">footer menu</a></li>
+        </ul>
+    </nav>
+    <!-- gnb -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+
+        $('.serWrap').mouseover(function(){
+             $(this).attr("class","serWrap on");
+       });
+
+        $('.serWrap').mouseout(function(){
+            $(this).attr("class","serWrap");
+      });
+
+    });
+
+    function dqTopSearch() {
+            if ($("#topSearchText").val() == "") {
+                alert('Please enter search keyword.');
+                $("#topSearchText").focus();
+                return;
+            }
+
+            $("#dqTopSearch").attr("target", "");
+            $("#dqTopSearch").attr("action", "../search/searchResultAll.html");
+            $("#dqTopSearch").submit();
+        }
+
+ // 입력체크
+    function dqTopHandleEnter(event)
+    {
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+
+        if(keyCode == 13)
+        {
+                dqTopSearch();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+        </script>
+
+    <header class="htop">
+        <div class="htopWrap">
+            <!-- logo -->
+            <p class="logo"><a href="../main.html"><img src="../../image/en/common/img_logo.gif" alt="AhnLab"></a></p>
+            <!-- logo -->
+            <!-- etc menu -->
+            <nav id="naviUtill">
+                <ul>
+                    <li class="locSite"><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        <a href="#" class="link" title="Change Country">GLOBAL</a>
+                        <!-- layer -->
+                        <div class="lyUtill"><div class="lyWrap">
+                            <p><a href="../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" title="New Window">한국 (한국어)</a></p>
+                            <p class="selected"><a href="../main.html" target="_blank" rel="nofollow" title="New Window">Global (English)</a></p>
+                            <p class=""><a href="../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="New Window">APAC (English)</a></p>
+                            <p class=""><a href="../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="New Window">日本 (日本語)</a></p>
+                            <p class=""><a href="../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="New Window">中国 (简体中文)</a></p>
+                            <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="New Window">US (English)</a></p>
+                        </div></div>
+                        <!-- //layer -->
+                    </li>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                    
+                    <li><a href="../login/loginForm.html" class="link">Log in</a></li>
+                    
+                    <li><a href="../login/loginForm6cea.html" class="link">My Account</a></li>
+                    <li><a href="../support/partner/ourPartner.html" class="link">Partner</a></li>
+                </ul>
+            </nav>
+            <!-- //etc menu -->
+
+            <!-- menu -->
+            <nav id="naviMenu">
+                <ul>
+                    <li class="muProd selected"><!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
+                        
+                        <a href="productSubDetail5d8e.html?prodSeq=15231" class="oneLink">Products &amp; Services</a>
+                        <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                            
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+                                <p class="tit"><a href="productSubDetail5d8e.html?prodSeq=15231">Advanced Threat Defense</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="productSubDetail5d8e.html?prodSeq=15231">AhnLab MDS</a></li>
+                                    
+                                    <li><a href="productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="productSubDetail95eb.html?prodSeq=5805">Endpoint Security</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="productSubDetail95eb.html?prodSeq=5805">V3 Internet Security</a></li>
+                                    
+                                    <li><a href="productSubDetail5bc8.html?prodSeq=1">AhnLab Policy Center</a></li>
+                                    
+                                    <li><a href="productSubDetail03e4.html?prodSeq=5738">V3 Net for Windows Server</a></li>
+                                    
+                                    <li><a href="productSubDetail3295.html?prodSeq=9008">AhnLab Online Security </a></li>
+                                    
+                                    <li><a href="productSubDetail7a8d.html?prodSeq=9002">AhnLab TS Engine</a></li>
+                                    
+                                    <li><a href="productSubDetail2616.html?prodSeq=11227">AhnLab Mobile Smart Defense</a></li>
+                                    
+                                    <li><a href="productSubDetail656f.html?prodSeq=11325">V3 Mobile Security </a></li>
+                                    
+                                    <li><a href="productSubDetaile828.html?prodSeq=10003">AhnLab EPS</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="productSubDetaila6a5.html?prodSeq=10082">Network Security</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="productSubDetaila6a5.html?prodSeq=10082">AhnLab DPS</a></li>
+                                    
+                                    <li><a href="productSubDetail7ac7.html?prodSeq=5690">AhnLab TrusGuard</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+                                <p class="tit"><a href="productSubDetail3c3b.html?prodSeq=1000">Service</a></p>
+                                
+                                <ul class="thrList">
+                                    
+                                    <li><a href="productSubDetail3c3b.html?prodSeq=1000">Managed Security Services</a></li>
+                                    
+                                    <li><a href="productSubDetail6f51.html?prodSeq=1113">IT Security Consulting Services</a></li>
+                                    
+                                    <li><a href="productSubDetail79c9.html?prodSeq=1114">Forensic Services</a></li>
+                                    
+                                </ul>
+                                
+                            </div>
+                            
+                            
+                        </div></div></div>
+                        
+                    </li>
+                    
+                    
+                     
+                        <li class="muDown ">
+                     
+                     
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../download/free/freeTrial.html" class="oneLink">Downloads</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../download/free/freeTrial.html">Free Trial</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../download/engine/engineList.html">Engine/Patch File Downloads</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../download/removal/removalList.html">Removal Tools</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../download/documents/documentsList.html">Document Downloads</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                            <div class="fr">
+                                <div class="pdList">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <a href="productSubDetail5d8e.html?prodSeq=15231">
+                                        <img src="../../image/en/common/img_gnb_product.jpg" class="photo" alt="">
+                                        <p class="fcBlue">AhnLab MDS</p>
+                                        <p>A Complete Defense Strategy against Next-Generation Threats.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                        <li class="muSup ">
+                     
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../support/supportMain.html" class="oneLink">Support</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../support/html/supportProgram.html">Technical Support</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../support/html/supportProgram.html">Support Program</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../support/html/ahnReport.html">AhnReport</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../support/virusreport/virusReport.html">Submit <br />Suspicious Files</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../login/loginFormac54.html?tab=1">If you are reporting from the PC with the problems</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../login/loginFormdb20.html?tab=2">If you "cannot" report from <br />the PC with the problems</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../support/productfaq/productFaqList.html">Product FAQ</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../support/virusfaq/virusFaqList.html">Virus FAQ</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../login/loginForm1222.html">Q&A</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../support/notice/noticeList.html">Notice</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab Global Partner Program</dt>
+                                    <dd class="part">
+                                        <p>Expand Your Business through AhnLab Partner Program.</p>
+                                        <a href="../support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                        <li class="muSecur ">
+                     
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../securitycenter/securitycenterMain.html" class="oneLink">Security Center</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/html/aboutASEC.html">About ASEC</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/asec/asecReportList.html">ASEC Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/html/techReport.html">Tech Report</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/securityinsight/securityInsightList.html">Security Insight</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/viruscenter/virusList.html">Virus Center</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../securitycenter/html/securityRiskLevel.html">Security Risk Level</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                            <div class="fr">
+                                <a href="http://www.gartner.com/technology/media-products/pdfindex.jsp?g=ahnlab-1-2JFY8YE" target="_blank" class="bann mds" title="View in PDF">
+                                    <p class="fcBlue">AhnLab V3 Mobile, A Smart Choice for a Mobile-Only Era</p>
+                                    <p>AhnLab Newsletter<br>featuring Gartner research</p>
+                                </a>
+                            </div>
+                        
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                     
+                     
+                     
+                     
+                        <li class="muAL ">
+                     
+                     <!-- 1depth -->
+                     
+                     
+                     
+                     
+                     
+                     <a href="../about/aboutAhnlab.html" class="oneLink">About AhnLab</a>
+                     
+                     
+                     
+                     
+                     <!-- menu layer -->
+                     <div class="lyMu"><div class="lyMuWrap"><div class="lyMuCont">
+                     
+                         <div class="fl">
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/aboutAhnlab.html">About Us</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/securityPortfolio.html">AhnLab Solutions Portfolio</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/pressRoomList.html">Press Releases</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/eventList.html">Event</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap clear">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/securityStrategy.html">Technology</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../about/securityStrategy.html">Security Strategy</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                  <!-- 3depth -->
+                                  <ul class="thrList">
+                                     
+                                  
+                                  
+                                  
+                                        <li><a href="../about/coreTechnology.html">Core Technology</a></li>
+                                  
+                                  
+                                  </ul>
+                                  
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../about/certificates.html">Certificates</a></p>
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+	                            
+	                            
+	                                <div class="naviWrap ">
+	                            
+
+                                <!-- 2depth -->
+                                
+                                
+                                
+                                
+                                <p class="tit"><a href="../etc/contactUs.html">Contact Us</a></p>
+                                
+                                
+                                
+                                
+                                
+
+                                
+                                 </div>
+                            
+                         </div>
+                     
+                        
+                        
+                        
+                        
+                            <div class="fr">
+                                <dl>
+                                    <dt>AhnLab Global Partner Program</dt>
+                                    <dd class="part">
+                                        <p>Expand Your Business through AhnLab Partner Program.</p>
+                                        <a href="../support/partner/ourPartner.html" class="linkArr">Read More</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        
+                        </div></div></div>
+                        <!-- //menu layer -->
+                        </li>
+                    
+                </ul>
+            </nav>
+            <!-- //menu -->
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <form method="post" name="dqTopSearch" id="dqTopSearch">
+            <!-- 상단 검색 -->
+            <div class="topSerch">
+                <div class="serWrap"><!-- mouseover, focus 일 경우 on 클래스 추가 -->
+                    <input type="text" name="searchText" id="topSearchText" title="Enter Search Keyword" value="" onkeypress="return dqTopHandleEnter(event);">
+                    <a href="#" onclick="javascript:dqTopSearch2(); return false;"><span class="blind">Search</span></a>
+                </div>
+            </div>
+            <!-- //상단 검색 -->
+            </form>
+<script type="text/javascript"> 
+function dqTopSearch2() {
+    if ($("#topSearchText").val() == "") {
+    	alert('Please enter search keyword.');
+        $("#topSearchText").focus();
+        return;
+    }
+
+    $("#dqTopSearch").attr("target", "");
+    $("#dqTopSearch").attr("action", "../search/searchResultAll.html");
+    $("#dqTopSearch").submit();
+}
+</script>
+        </div>
+    </header>
+
+
+    <!-- //gnb -->
+    <div id="container">
+    
+    
+    <div class="locWrap clfix">
+    <ul>
+        <li class="locLi alt">
+<a href="productSubDetail5d8e.html?prodSeq=15231" class="locTit ">Products & Services</a>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">Endpoint Security</a>
+            <div class="locList">
+                <p><a href="productSubDetail5d8e.html?prodSeq=15231">Advanced Threat Defense</a></p>
+                <p class="on"><a href="productSubDetail95eb.html?prodSeq=5805">Endpoint Security</a></p>
+                <p><a href="productSubDetaila6a5.html?prodSeq=10082">Network Security</a></p>
+                <p><a href="productSubDetail3c3b.html?prodSeq=1000">Service</a></p>
+            </div>
+        </li>
+        <li class="locLi LocationNavi">
+            <a href="#" class="locTit locLink">V3 Net for Windows Server</a>
+            <div class="locList">
+                <p><a href="productSubDetail95eb.html?prodSeq=5805">V3 Internet Security</a></p>
+                <p><a href="productSubDetail5bc8.html?prodSeq=1">AhnLab Policy Center</a></p>
+                <p class="on"><a href="productSubDetail03e4.html?prodSeq=5738">V3 Net for Windows Server</a></p>
+                <p><a href="productSubDetail3295.html?prodSeq=9008">AhnLab Online Security </a></p>
+                <p><a href="productSubDetail7a8d.html?prodSeq=9002">AhnLab TS Engine</a></p>
+                <p><a href="productSubDetail2616.html?prodSeq=11227">AhnLab Mobile Smart Defense</a></p>
+                <p><a href="productSubDetail656f.html?prodSeq=11325">V3 Mobile Security </a></p>
+                <p><a href="productSubDetaile828.html?prodSeq=10003">AhnLab EPS</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topTitWrap">
+            <h1 class="topTit">V3 Net for Windows Server</h1>
+        </div>
+
+        <div class="contents">
+            <div class="prodWrap">
+                <div class="briefArea">
+                    <div class="brief">
+                        <p class="desc">Your Security Partner Protecting the Value of Servers</p>
+                        <p class="name">V3 Net for Windows Server</p>
+                        <ul class="listMenu clfix">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+                            
+                            
+                            <li><a href="../download/free/freeTrial.html" target="_blank">Free Trial</a></li>
+                            
+                            
+                        </ul>
+                        <p class="btnPrint"><a href="#" onclick="fn_winOpen('5738');" class="linkArr">Print this page</a></p>
+                    </div>
+                    <div class="photoWrap"><img src="http://global.ahnlab.com/global/upload/product/productmanagement/prodImg_5738" alt="V3 Net for Windows Server" /></div>
+                </div>
+
+                <div class="detailWrap">
+                    <div class="detailArea">
+                        <div class="tabWrap">
+                            <div class="prodTab"><!-- 1. 브라우저 상단에 도달하면 해당 값이 들어감 style="position:fixed; top:0; z-index:1000;" -->
+                                <ul class="tabs clfix">
+                                
+                                    <li class="on"><a href="#" class="prodTabClk tab1">Overview</a></li>
+                                
+                                
+                                    <li><a href="#" class="prodTabClk tab2">Features</a></li>
+                                
+                                
+                                    <li><a href="#" class="prodTabClk tab3">Advantages</a></li>
+                                
+                                
+                                
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="prodCont tab1View">
+                            <h2 class="blind">Overview</h2>
+                            <p style="font-size:18px; color:#0e77d9;">As the Internet develops and the number of Internet users increases, the malicious codes and new security threats are spreading more quickly and widely via the Internet. To protect your computer from harmful security attacks, you must check all data transferred via the Internet, as well as files on your  computer.</p>
+<p style="padding-top:25px;">V3Net for Windows Server is an integrated security solution to protect your computer and sensitive personal information by detecting and repairing malicious security threats, and blocking hack attacks. V3Net helps check and specify the security protection settings, and remove Internet threats such as viruses and spyware with a user-friendly interface.</p>
+
+
+                        </div>
+                        
+                        
+                        <div class="prodCont tab2View" style="display:none;">
+                            <h2 class="blind">Features</h2>
+                            <p style="padding:0 0 5px; font-size:18px; color:#282828;">Anti-Virus &amp; Anti-Spyware</p>
+<p>Detects and removes malicious codes and spyware, which have been installed on the computer without your awareness, disclose private data and/or generate annoying pop-up ads.</p>
+
+<p style="padding:20px 0 5px; font-size:18px; color:#282828;">Protection from Hack Attacks</p>
+<p>Blocks unauthorized programs from connecting to the Internet and disclosing data, and blocks unauthorized users from accessing your computer.</p>
+
+<p style="padding:20px 0 5px; font-size:18px; color:#282828;">Security Event Notification</p>
+<p>Automatically informs you if any malicious codes or hack attacks are detected on your computer.</p>
+
+<p style="padding:20px 0 5px; font-size:18px; color:#282828;">Professional Response Service</p>
+<p>Provides 24x7 fast and accurate response through the global response center ASEC.</p>
+
+
+                        </div>
+                        
+                        
+                        <div class="prodCont tab3View" style="display:none;">
+                            <h2 class="blind">Advantages</h2>
+                            <p style="font-size:18px; color:#0e77d9;">Companies use file servers to manage and share important data. If the vulnerability of servers remains unattended, attacks of malicious codes can cause the damage and leakage of data stored in those servers. In addition, many client PCs connected to them can be infected by malicious codes. V3Net protects the assets of your company and ensures business consistency by protecting servers from those threats.</p>
+
+<ul style="padding:35px 0 0;">
+	<li style="padding-left:10px; text-indent:-10px;">- Secures the safety of a system by preventing servers from becoming the host of malicious codes and spreading them inside.</li>
+	<li style="padding-left:10px; text-indent:-10px;">- Reduces the cost of system extension by blocking attacks of malicious codes which cause server overload.</li>
+	<li style="padding-left:10px; text-indent:-10px;">- Enhances work productivity by providing working environments free and safe from malicious code attacks.</li>
+	<li style="padding-left:10px; text-indent:-10px;">- Minimize the burden of security management and administration by reinforcing server utilization functions for administrators such as ‘no server rebooting’ and resource management function.</li>
+	<li style="padding-left:10px; text-indent:-10px;">- Enhances security as it is also safe to use servers by directly making access to internal network rather than through the internet or external network.</li>
+</ul>
+
+
+                        </div>
+                        
+                        
+                        
+                    </div>
+
+                    <div class="sideArea" style="top:0;"><!-- 2. sideArea가 detailWrap의 아래끝에 도달하면 fixWrap에 추가했던 값 삭제하고 sideArea의 top:0;을 bottom:-1px;로 변경 -->
+                        <div class="fixWrap"><!-- 1. 브라우저 상단에 도달하면 해당 값이 들어감 style="position:fixed; top:0; z-index:1000;" -->
+                            <!-- 안랩 제품인 경우 구매정보 -->
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="menuBox">
+                                <div class="menuTit">
+                                    <p>Downloads</p>
+                                </div>
+                                <ul class="buyInfo">
+                                    
+                                    <li class="menu01"><a href="../download/documents/documentsList.html">Manual</a></li>
+                                    
+                                    
+                                    
+                                    <li class="menu02"><a href="../download/documents/documentsList.html">Brochure</a></li>
+                                    
+                                    
+                                    
+                                    
+                                    <li class="menu03"><a href="#" class="dis">Case study</a></li>
+                                    
+                                    
+                                    
+                                    <li class="menu04"><a href="#" class="dis">Engine/Patch</a></li>
+                                    
+                                    
+                                    
+                                    <li class="menu05"><a href="#" class="dis">White Paper</a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <ul class="etcMenu">
+                                <li class="menu01"><a href="#" class="clickSecurityMapGnb">Security Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../js/lib/jquery/jquery.floating.js"></script>
+    <script type="text/javascript">
+    <!--    
+        $(function() {
+            $('.prodTab, .fixWrap').floating({ limitTargetSelector:'.prodRecom', limitSourceSelector:'.fixWrap' });
+        });
+    
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+        });
+        
+        /* $(".randProdPoint").click(function(){
+            $(".randProdPoint").parent().removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        }); */
+        
+        //관련제품 클릭, 포커스
+        $(".randProdPoint").click(function(){
+            $(this).parents(".listRelate").find("li").removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        }).focusin(function (){
+            $(this).parents(".listRelate").find("li").removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        }); 
+                
+        $(".prodTabClk").click(function(){
+
+        	//탭
+            $(".prodTabClk").parent().removeClass("on");
+            $(this).parent().addClass("on");
+            
+            $(".prodTabClk").each(function (){
+                var text = $(this).html();
+                if(text.indexOf("<span") > -1 && text.indexOf("</span>") > -1){
+                    text = text.substring(text.indexOf("</span>") + 7);
+                }
+                $(this).html(text);
+            });
+            
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+
+            
+            //컨텐츠
+            $(".prodCont").hide();
+            
+            for(var i=1; i<27; i++){
+                if($(this).hasClass("tab" + i)){
+                    $(".tab"+ i +"View").show();
+                    $("html, body").animate({//Scroll된 Target
+                        scrollTop:$(".tab"+ i +"View").offset().top
+                    }, 500);
+                }
+            }
+            $(window).resize();
+        }).focusin(function (){
+            //탭
+            $(".prodTabClk").parent().removeClass("on");
+            $(this).parent().addClass("on");
+            
+            $(".prodTabClk").each(function (){
+                var text = $(this).html();
+                if(text.indexOf("<span") > -1 && text.indexOf("</span>") > -1){
+                    text = text.substring(text.indexOf("</span>") + 7);
+                }
+                $(this).html(text);
+            });
+            
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+
+            //컨텐츠
+            $(".prodCont").hide();
+            
+            for(var i=1; i<27; i++){
+                if($(this).hasClass("tab" + i)){
+                    $(".tab"+ i +"View").show();
+                    $("html, body").animate({//Scroll된 Target
+                        scrollTop:$(".tab"+ i +"View").offset().top
+                    }, 500);
+                }
+            }
+            $(window).resize();
+        });
+        
+         function fn_winOpen(prod_seq) {
+             var v_url = "http://global.ahnlab.com/site/product/productSubDetailPrint.do?prodSeq=" + prod_seq;
+             var v_width = "680";
+             var v_height = "650";
+             
+             window.open(v_url,'btnPop','width='+v_width+',height='+v_height + ',scrollbars=yes');
+         }
+         
+   -->
+   </script>
+
+    </div>
+    <!-- footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="ftWrap">
+            <ul class="ftMenu">
+                <li><a href="../etc/privacyPolicy.html">Privacy &amp; Security</a></li>
+                
+                <li><a href="../etc/termsOfUse.html">Terms of Use</a></li>
+                <li><a href="../etc/contactUs.html">Contact Us</a></li>
+                <li><a href="../etc/sitemap.html">Sitemap</a></li>
+            </ul>
+
+            <div class="locSiteWrap globalSiteCombo">
+                <p class="locSite"><a href="#" class="comboLink2" title="Change Country">GLOBAL</a></p>
+                <!-- layer -->
+                <div class="lyUtill" id=""><div class="lyWrap">
+                    <p><a href="../../../www.ahnlab.com/kr/site/main.html" target="_blank" rel="nofollow" class="fKr" title="New Window">한국 (한국어)</a></p>
+                    <p class="selected"><a href="../main.html" target="_blank" rel="nofollow" title="New Window">Global (English)</a></p>
+                    <p class=""><a href="../../../apac.ahnlab.com/site/main.html" target="_blank" rel="nofollow" title="New Window">APAC (English)</a></p>
+                    <p class=""><a href="../../../jp.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fJapan" title="New Window">日本 (日本語)</a></p>
+                    <p class=""><a href="../../../cn.ahnlab.com/site/main.html" target="_blank" rel="nofollow" class="fChina" title="New Window">中国 (简体中文)</a></p>
+                    <p><a href="http://us.ahnlab.com/" target="_blank" rel="nofollow" title="New Window">US (English)</a></p>
+                </div></div>
+                <!-- //layer -->
+            </div>
+
+            <p class="copyright">&copy; AhnLab, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+	/*
+	$(".globalSiteCombo").focusin(function(){
+		$(".globalSiteCombo").addClass("on");
+		$(".footer .locSite").addClass("on");
+	});
+	$(".globalSiteCombo").focusout(function(){
+		$(".globalSiteCombo").removeClass("on");
+		$(".footer .locSite").removeClass("on");
+	});
+	*/
+});
+function getCookie( cname ) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+       var c = ca[i];
+       while (c.charAt(0)==' ') c = c.substring(1);
+       if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+function closeWin(winName, expiredays) {
+   if($("input:checkbox[id='chkToday']").is(":checked") == true){
+      setCookie( winName, "done" , expiredays);
+   }
+   $("#mainLayer").hide();
+}
+
+function setCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+
+</script>
+
+	<script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-17204763-7', 'auto');
+	   ga('send', 'pageview');
+
+	 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language='javascript'>
+
+
+var _mk   = '';
+var _od   = 0 ;
+var _gd   = '';
+var _ud1 = '' ;
+var _skey = '' ;
+
+var cur_url = location.href;
+var url_index = cur_url.indexOf("event");
+
+if(url_index > -1){
+    _skey = cur_url;
+}
+
+</script>
+<!-- AceCounter END --> 
+
+
+
+	<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+	<script language='javascript'>
+		if(typeof _GUL == 'undefined'){
+			var _GUL = 'acounter.ahnlab.com';var _GPT='80'; var _SGPT='443';var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL+":"+_SGPT:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'http://global.ahnlab.com/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+			document.writeln("<scr"+"ipt language='javascript' src='/js/lib/acecounter/en/acecounter_V70.js'></scr"+"ipt>");
+		}
+	</script>
+	<noscript><img src='http://acounter.ahnlab.com/?uid=6&amp;je=n&amp;' border=0 width=0 height=0></noscript>
+	<!-- AceCounter Log Gathering Script End -->
+
+
+
+
+
+
+
+
+
+    <!-- //footer -->
+</div> 
+</body>
+
+
+<!-- Mirrored from global.ahnlab.com/site/product/productSubDetail.do?prodSeq=5738 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 11:50:04 GMT -->
+</html>

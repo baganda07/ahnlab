@@ -1,0 +1,13 @@
+﻿[
+  {
+    "ModuleName": "Pdf",
+    "User": "admin",
+    "UtcDatetime": "2015-06-06T16:02:16.8776483Z",
+    "VersionRange": {
+      "SourceVersion": null,
+      "TargetVersion": "4.3.0.0",
+      "InstallationType": 0
+    },
+    "InstallationFileName": "4.3.0.0-20150606230215.zip"
+  }
+]

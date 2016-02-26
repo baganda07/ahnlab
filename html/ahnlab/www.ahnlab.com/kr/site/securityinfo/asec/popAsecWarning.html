@@ -1,0 +1,320 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/popAsecWarning.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:11:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="보안 위험등급, 안전, 대비, 주의, 긴급, 보안 위혐 수준, 보안경보" />
+    <meta name="Description" content="보안경보는 사용자들을 위협하는 외부의 보안 위협 수준을 나타내는 지표로, 시시각각으로 변화하는 보안 위협에 대한 사용자들의 보안 의식을 높이고, 자신의 정보를 스스로 안전하게 보호할 수 있도록 하기 위한 보안 알림 서비스입니다." />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="보안경보 (보안 위험등급이란?) | AhnLab"/>
+	<meta property="og:description"     content="보안경보는 사용자들을 위협하는 외부의 보안 위협 수준을 나타내는 지표로, 시시각각으로 변화하는 보안 위협에 대한 사용자들의 보안 의식을 높이고, 자신의 정보를 스스로 안전하게 보호할 수 있도록 하기 위한 보안 알림 서비스입니다."/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="보안경보 (보안 위험등급이란?) | AhnLab">
+	<meta name="twitter:description"    content="보안경보는 사용자들을 위협하는 외부의 보안 위협 수준을 나타내는 지표로, 시시각각으로 변화하는 보안 위협에 대한 사용자들의 보안 의식을 높이고, 자신의 정보를 스스로 안전하게 보호할 수 있도록 하기 위한 보안 알림 서비스입니다.">
+
+    <!-- SEO -->
+    <title>보안경보 (보안 위험등급이란?) | AhnLab</title>
+
+    <link href="../../../../css/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	//Placeholder
+    	$("input, textarea").placeholder();
+
+    	//a링크 #처리
+    	$('a[href = "#"]').click(function(){
+  			return false;
+        });
+
+    	//이미지 에러처리
+    	$("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//image.ahnlab.com/img_upload/kr/site/images2/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+    	//로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://www.ahnlab.com/kr/site/login/userLogout.do',
+                dataType: 'json',
+				type : 'post',
+                data: $("#loginForm").serialize(),
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('../../product/securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+
+        });
+
+        //보안 통계 팝업
+        $(".securityStaticsPopup").click(function() {
+            POPUP.open('../statistics/security1.html', 'statisticsPopup', {
+                width : 1000,
+                height : 760,
+                scroll : true
+            });
+        });
+
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('../../../../index.html', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+
+<!-- popup size w(600) * h(446) scroll yes -->
+<body class="pop">
+  <div class="popWrap">
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- popup 타이틀 -->
+        <div class="contTitWrap">
+            <h2 class="contTit">보안 위협등급이란</h2>
+        </div>
+        <!-- //popup 타이틀 -->
+
+        <!-- popup Contents -->
+        <div class="popCont">
+            <p>사용자들을 위협하는 외부의 보안 위협 수준을 나타내는 지표로, 이용자들의 피해 상황을 <br />
+                포함한 AhnLab의 내부 판단 기준에 근거하여 결정됩니다. 시시각각으로 변화하는 보안 위협에 <br />
+                대한 사용자들의 보안 의식을 높이고, 자신의 정보를 스스로 안전하게 보호할 수 있도록 하기 <br />
+                위한 보안 알림 서비스입니다.</p>
+
+            <h3 class="contSubTit mt30">ASEC 대응 프로세스</h3>
+
+            <p>각각의 위협등급은 아래와 같은 의미를 가지며, 위협등급에 따라 알맞은 대응이 필요합니다.</p>
+
+            <div class="tList01 mt15">
+                <table>
+                    <caption>
+                        <span>ASEC 대응 프로세스 각 등급 별 의미</span>
+                    </caption>
+                    <colgroup>
+                        <col style="width:26%;" />
+                        <col style="width:74%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="first">등급</th>
+                            <th scope="col">의미</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first">
+                            <td class="first">1단계<span class="safetyStep"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/ico_safety_step01.gif" alt="안전단계 아이콘" /></span></td>
+                            <td class="tLeft">사용자의 시스템을 위협하는 외부 보안 위협이 존재하지 않는 <br />
+                                상태로, AhnLab이 만들어 가고자 하는 안전한 네트워크 세상의 <br />
+                                모습입니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="first">2단계<span class="safetyStep"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/ico_safety_step02.gif" alt="대비단계 아이콘" /></span></td>
+                            <td class="tLeft">외부 보안 위협으로 인한 사용자의 피해가 다소 우려되는 <br />
+                                상황으로 백신 프로그램 설치, 최신 보안패치 설치, 최신 엔진 <br />
+                                업데이트 등 기본적인 보안 수칙 실천이 반드시 필요합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="first">3단계<span class="safetyStep"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/ico_safety_step03.gif" alt="주의단계 아이콘" /></span></td>
+                            <td class="tLeft">외부 보안 위협의 증가로 인한 피해가 늘어나 사용자들의 주의가 <br />
+                                요구되는 상황입니다. 사용 시스템에 이상 증상이 발생할 경우 <br />
+                                바이러스 감염을 의심하여 즉시 감염 여부를 진단해야 하며, <br />
+                                AhnLab을 비롯한 백신업체의 대응 상황에 주의를 기울여야 <br />
+                                합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="first">4단계<span class="safetyStep"><img src="../../../../../image.ahnlab.com/img_upload/kr/site/images2/info/ico_safety_step04.gif" alt="위험단계 아이콘" /></span></td>
+                            <td class="tLeft">특정 악성코드로 인한 감염피해가 급증하여 사용자들의 <br />
+                                즉각적인 대응이 필요한 상황입니다. AhnLab을 비롯한 <br />
+                                백신업체의 대응 안내 내용에 따라 이용 시스템을 안전하게 <br />
+                                보호하고, 긴급 엔진이 업데이트되는 즉시 백신 프로그램에 <br />
+                                적용해야 합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="contSubTit mt35">등급설정의 기준</h3>
+
+            <p>각 등급은 외부의 위협 수준을 판단할 수 있는 객관적이며 다양한 지표에 의해 결정됩니다. <br />
+                얼마나 많은 이용자들이 바이러스 등 보안 위협으로 인한 피해를 겪고 있는지를 확인할 수 있는 <br />
+                고객 문의건수와 긴급엔진 제작 여부, 신종 바이러스 분석정보 제작 여부 등 외부 보안 위협에 <br />
+                대응하는 AhnLab 내부의 다양한 판단 지표에 근거하여 설정됩니다.</p>
+        </div>
+        <!-- //popup Contents -->
+
+        <!-- popup Button -->
+        <div class="btnCenter">
+            <a href="#" class="btnCommon darkBlue" onclick="javascript:self.close(); return false;"><span class="btnTxt">확인</span></a>
+        </div>
+        <!-- //popup Button -->
+
+  </div>
+</body>
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/popAsecWarning.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:11:42 GMT -->
+</html>

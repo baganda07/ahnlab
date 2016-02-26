@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>안철수연구소 : 악성코드 정보</title>
+<link>http://www.ahnlab.com</link>
+<description>안철수연구소 RSS 서비스 | 악성코드 정보</description>
+<lastBuildDate>2016-01-26 20:01:06</lastBuildDate>
+<copyright>Copyright 2016 ⓒ AhnLab,Inc. All rights reserved</copyright>
+<language>ko-KO</language>
+<item>
+<title><![CDATA[Trojan/Win32.KeyLogger.C1317552 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34826 ]]></link>
+<description><![CDATA[ * 전파 경로자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러스 ]]></description>
+<dc:date>2016-01-21 22:13:07.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Dridex.C1318460 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34825 ]]></link>
+<description><![CDATA[ * 전파 경로<p style="margin:0cm;marg ]]></description>
+<dc:date>2016-01-21 21:54:30.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Banki.C1317069 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34824 ]]></link>
+<description><![CDATA[ * 전파 경로자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러스, 트로이목마)에서 설치하는 것으로 보인다.  * 실행 후 증상< ]]></description>
+<dc:date>2016-01-14 20:30:48.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.CryptoWall.C1317179 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34823 ]]></link>
+<description><![CDATA[ * 전파 경로자체 전파 기능은 없으며 사용자가 스팸메일 첨부파일을 실행했거나 취약점을 이용한 웹 페이지에 접속했을 때 드라이브 바이 다운로드 방 ]]></description>
+<dc:date>2016-01-14 19:58:00.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Agent.73728.AVA ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34821 ]]></link>
+<description><![CDATA[ * 전파 경로<span lang="EN-US" style ]]></description>
+<dc:date>2015-04-21 20:08:58.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Tinba.C167545 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34819 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-02-06 17:45:28.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Downloader.24064.MZ ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34818 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-02-06 16:53:46.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Banki.36352 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34817 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-01-27 18:12:28.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Downloader.28160.GA ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34816 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-01-27 18:00:16.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Ransom ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34815 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-01-23 15:51:50.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Downloader.28672.ABV ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34814 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2015-01-23 15:35:46.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win32/Nuqel.worm.2087936 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34813 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2014-12-08 18:08:02.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Smokeldr ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34808 ]]></link>
+<description><![CDATA[ 첨부된 파일은 변형에 따라서 다음과 같은 외형을 가지고 있다..
+
+ 
+- .Net Cryptor
+- VB Cryptor
+- Custom Pack
+</fo ]]></description>
+<dc:date>2014-11-26 21:14:37.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Ciadoor.152064.B ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34807 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+언패킹 교육용 프로그램으로, 아래 URL에서 다운 받을 수 있다. 
+
+URL: www.tuts4you.com
+* 실행 후 증상
+
+[파일 생성]
+
+생성하는 파일은 없다. 
+
+  
+<br ]]></description>
+<dc:date>2014-10-08 10:52:19.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Dynamerdtc.M.279726 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34806 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+언패킹 교육용 프로그램으로, 아래 URL에서 다운 받을 수 있다. 
+
+URL: www.tuts4you.com
+* 실행 후 증상
+
+[파일 생성]
+
+c:\windows\softwareprotecto ]]></description>
+<dc:date>2014-10-08 10:43:41.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Sharik.C578185 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34805 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2014-10-01 14:35:53.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Win-Trojan/Agent.69632.AZY ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34804 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2014-10-01 11:50:07.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Agent.R120313 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34802 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2014-09-30 15:39:45.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Dropper/Win32.Necurs ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34801 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+자체 전파 기능은 없으며 사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러 ]]></description>
+<dc:date>2014-09-03 16:33:42.0</dc:date>
+<author>안철수연구소</author>
+</item>
+<item>
+<title><![CDATA[Trojan/Win32.Downloader.R116781 ]]></title>
+<link><![CDATA[ http://www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do?virusSeq=34800 ]]></link>
+<description><![CDATA[ * 전파 경로
+
+사용자가 메일, 메신저, 게시판, 자료실 등에서 실행 파일을 다운로드 해 실행하거나 다른 악성코드(웜, 바이러스, 트로이목마)에서 설치하는 것으로 보인다.
+
+* 실행 후 증상 ]]></description>
+<dc:date>2014-08-25 16:08:55.0</dc:date>
+<author>안철수연구소</author>
+</item>
+</channel>
+</rss>

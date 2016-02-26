@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>About</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-02-22T11:12:37.2134235Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Security Center</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-02-22T11:12:27.3639048Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Support</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-02-22T11:12:18.5500687Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Downloads</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-02-22T11:12:10.2005573Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Products &amp; Services</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-02-22T11:12:00.3181692Z</UtcActionDate>
+	</LastAction>
+</ArrayOfLastAction>

@@ -1,0 +1,25 @@
+﻿ <form method="post" name="dqTopSearch" id="dqTopSearch">
+            <!-- 상단 검색 -->
+            <div class="topSerch">
+                <div class="serWrap">
+                    <!-- mouseover, focus 일 경우 on 클래스 추가 -->
+                    <input type="text" name="searchText" id="topSearchText" title="Enter Search Keyword" value="" onkeypress="return dqTopHandleEnter(event);">
+                    <a href="#" onclick="javascript:dqTopSearch2(); return false;"><span class="blind">Search</span></a>
+                </div>
+            </div>
+            <!-- //상단 검색 -->
+        </form>
+        <script type="text/javascript">
+
+            function dqTopSearch2() {
+                if ($("#topSearchText").val() == "") {
+                    alert('Please enter search keyword.');
+                    $("#topSearchText").focus();
+                    return;
+                }
+
+                $("#dqTopSearch").attr("target", "");
+                $("#dqTopSearch").attr("action", "search/searchResultAll.html");
+                $("#dqTopSearch").submit();
+            }
+        </script>

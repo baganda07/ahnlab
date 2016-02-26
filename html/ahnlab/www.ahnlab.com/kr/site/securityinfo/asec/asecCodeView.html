@@ -1,0 +1,257 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:25:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+    
+        
+    
+    
+        
+    
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- SEO -->
+    <meta name="Keywords" content="바이러스, 스파이웨어, 유해가능 프로그램, 모바일 악성코드" />
+    <meta name="Description" content="ASEC이 분석한 바이러스, 스파이웨어, 유해가능 프로그램, 모바일 악성코드 정보를 찾아보실 수 있습니다." />
+	<!-- 페이스북 -->
+	<meta property="og:title"           content="악성코드 정보 | AhnLab"/>
+	<meta property="og:description"     content="ASEC이 분석한 바이러스, 스파이웨어, 유해가능 프로그램, 모바일 악성코드 정보를 찾아보실 수 있습니다."/>
+
+	<!-- 트위터 -->
+	<meta name="twitter:title"          content="악성코드 정보 | AhnLab">
+	<meta name="twitter:description"    content="ASEC이 분석한 바이러스, 스파이웨어, 유해가능 프로그램, 모바일 악성코드 정보를 찾아보실 수 있습니다.">
+
+    <!-- SEO -->
+    <title>악성코드 정보 | AhnLab</title>
+
+    <link href="../../../../css/ahnlab.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.ui.js"></script>
+    <script type="text/javascript" src="../../../../js/common.js"></script>
+    <script type="text/javascript" src="../../../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../../../js/site.js"></script>
+    <script type="text/javascript" src="../../../../js/lib/jquery/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+    document.domain = "ahnlab.com";
+    </script>
+    <script type="text/javascript">
+    <!--
+    $(document).ready(function (){
+
+    	//Placeholder
+    	$("input, textarea").placeholder();
+
+    	//a링크 #처리
+    	$('a[href = "#"]').click(function(){
+  			return false;
+        });
+
+    	//이미지 에러처리
+    	$("img").each(function() {
+            var instance = $(this);
+            var w = $(this).parent().width();
+            var h = $(this).parent().height();
+            var img = new Image();
+            $(img).error(function() {
+                instance.attr("src", "//image.ahnlab.com/img_upload/kr/site/images2/common/img_no_"+ w +"_"+ h +".gif");
+            }).attr("src", instance.attr("src"));
+       });
+
+    	//로그아웃
+        $(".logoutBtn").click(function (){
+            $.ajax({
+                url: 'https://www.ahnlab.com/kr/site/login/userLogout.do',
+                dataType: 'json',
+				type : 'post',
+                data: $("#loginForm").serialize(),
+                success: function(json) {
+                    if (json.isSuccess) {
+                        location.reload();
+                    } else {
+                        alert(json.resultMessage);
+                    }
+                },
+                error: function(x, o, e){
+                    alert("Network Error!");
+                }
+            });
+        });
+
+        //닫기 버튼
+        $(".btnClose").click(function(){
+            self.close();
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function() {
+            POPUP.open('../../product/securityMap.html', 'securityMap', {
+                width : 1000,
+                height : 750,
+                scroll : true
+            });
+
+        });
+
+        //보안 통계 팝업
+        $(".securityStaticsPopup").click(function() {
+            POPUP.open('../statistics/security1.html', 'statisticsPopup', {
+                width : 1000,
+                height : 760,
+                scroll : true
+            });
+        });
+
+        //input box에 숫자만 허용 - ex: numberonly="true" 속성을 붙임
+        $(document).on("keyup", "input:text[numberOnly]", function() {
+            $(this).val( $(this).val().replace(/[^0-9]/gi,"") );
+        });
+    });
+
+    //로그인
+    function fnLoginCheck(url){
+        if("" != "Y"){
+            if(confirm("로그인 후 서비스 이용이 가능한 페이지입니다.\n로그인 페이지로 이동하시겠습니까?")){
+                Common.login('../../../../index.html', url);
+                return;
+            }else{
+                return;
+            }
+        }
+        location.href = url;
+    }
+    -->
+    </script>
+</head>
+
+<!-- popup size w(600) * h(446) scroll yes -->
+<body class="pop">
+  <div class="popWrap">
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="errWrap">
+        <p class="tit">요청하신 페이지를 처리할 수 없습니다.</p>
+        <p>잘못된 경로로 접근 하셨거나, 사용할 수 없는 웹사이트 주소입니다.<p>
+        <p>이용에 불편을 드려 대단히 죄송합니다.</p>
+
+        <!-- button -->
+        <div class="btnCenter">
+            <a href="#" class="btnCommon btnCloseError"><span class="btnTxt">닫기</span></a>
+        </div>
+        <!-- //button -->
+    </div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $(".btnCloseError").click(function (){
+        self.close();
+    });
+});
+</script>
+  </div>
+</body>
+
+<!-- Mirrored from www.ahnlab.com/kr/site/securityinfo/asec/asecCodeView.do by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 13:25:31 GMT -->
+</html>

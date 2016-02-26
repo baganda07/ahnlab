@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.ahnlab.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 10:35:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>AhnLab</title>
+<script type="text/javascript">
+<!--
+	function init() {
+		var ie = document.all ? 1 : 0;
+		var lang = (ie) ? navigator.browserLanguage : navigator.language;
+		var domain = location.href;
+		var browsers = new Array(/Mobile/, /Windows CE/, /POLARIS/, /Android/, /Phone/);
+		var browsers_except = "iPad";
+		var mobile_yn = "N";
+
+		for ( var key in browsers) {
+			if (navigator.userAgent.match(browsers[key]) != null) {
+				if (navigator.userAgent.match(browsers_except) != null) {
+					mobile_yn = "iPad";
+				} else {
+					mobile_yn = "Y";
+				}
+			}
+		}
+		if (mobile_yn == "Y") {
+			if (lang.indexOf('ko') > -1) { // 1. 한국어 OS 사용
+				if (domain.indexOf("v3clinic.ahnlab.com") > -1 || domain.indexOf("v3365") > -1 || domain.indexOf("v3clinic") > -1) {
+					location.href = "../v3clinic.ahnlab.com/v3clinic/site/main/main.html";
+				} else if (domain.indexOf("conference.ahnlab.com") > -1) {
+					location.href = "../conference.ahnlab.com/conference/rsa2014/index.html";
+				} else if (domain.indexOf("company.ahnlab.com") > -1) {
+					location.href = "../company.ahnlab.com/company/site/main/comIntroMain.html";
+				} else {
+					location.href = "../m.ahnlab.com/index.html";
+				}
+			} else {
+				if (domain.indexOf("v3clinic.ahnlab.com") > -1 || domain.indexOf("v3365") > -1 || domain.indexOf("v3clinic") > -1) {
+					location.href = "../v3clinic.ahnlab.com/v3clinic/site/main/main.html";
+				} else if (domain.indexOf("conference.ahnlab.com") > -1) {
+					location.href = "../conference.ahnlab.com/conference/rsa2014/index.html";
+				} else if (domain.indexOf("company.ahnlab.com") > -1) {
+					location.href = "../company.ahnlab.com/company/site/main/comIntroMain.html";
+				} else {
+					//location.href = "http://us.ahnlab.com";
+					if (lang.indexOf('ja') > -1) { // 2. 일본어 OS
+						location.href = "../mjp.ahnlab.com/site/main.html";
+					} else if (lang.indexOf('zh-CN') > -1) { // 3. 중국어 간체 (PRC) OS 사용
+						location.href = "../mcn.ahnlab.com/site/main.html";
+					} else if (lang.indexOf('zh-SG') > -1) { // 4. 중국어 간체 (Singapore) OS 사용
+						location.href = "../mglobal.ahnlab.com/site/main.html";
+					} else if ((lang.indexOf('zh-TW') > -1) || (lang.indexOf('zh-MO') > -1) || (lang.indexOf('zh-HK') > -1)) { // 5. 중국어 번체 OS 사용 (대만/홍콩/마카오)
+						location.href = "../mglobal.ahnlab.com/site/main.html";
+					} else if (lang.indexOf('en') > -1) { // 6. 영문 OS 사용
+						location.href = "../mglobal.ahnlab.com/site/main.html";						
+					} else {
+						location.href = "../mglobal.ahnlab.com/site/main.html";
+					}
+					
+				}
+			}
+
+		} else {
+			if (domain.indexOf("www.ahnlab.com") > -1) {
+				if (lang.indexOf('ko') > -1) { // 1. 한국어 OS 사용
+					location.href = "kr/site/main.html";
+				} else if (lang.indexOf('ja') > -1) { // 2. 일본어 OS
+					location.href = "../jp.ahnlab.com/site/main.html";
+				} else if (lang.indexOf('zh-CN') > -1) { // 3. 중국어 간체 (PRC) OS 사용
+					location.href = "../cn.ahnlab.com/site/main.html";
+				} else if (lang.indexOf('zh-SG') > -1) { // 4. 중국어 간체 (Singapore) OS 사용
+					location.href = "../apac.ahnlab.com/site/main.html";
+				} else if ((lang.indexOf('zh-TW') > -1) || (lang.indexOf('zh-MO') > -1) || (lang.indexOf('zh-HK') > -1)) { // 5. 중국어 번체 OS 사용 (대만/홍콩/마카오)
+					location.href = "../apac.ahnlab.com/site/main.html";
+				} else if (lang.indexOf('en') > -1) { // 6. 영문 OS 사용
+					if (mobile_yn == "iPad") {
+						location.href = "../global.ahnlab.com/site/main.html";
+					} else {
+						location.href = "../global.ahnlab.com/site/main.html";
+					}
+				} else {
+					location.href = "../global.ahnlab.com/site/main.html";
+				}
+			} else if (domain.indexOf("www.ahnlab.co.kr") > -1) {
+				location.href = "kr/site/main.html";
+			} else if (domain.indexOf("v3clinic.ahnlab.com") > -1 || domain.indexOf("v3365") > -1 || domain.indexOf("v3clinic") > -1) {
+				location.href = "../v3clinic.ahnlab.com/v3clinic/site/main/main.html";
+			} else if (domain.indexOf("outadmin.ahnlab.com") > -1) {
+				location.href = "../outadmin.ahnlab.com/outAdmin";
+			} else if (domain.indexOf("conference.ahnlab.com") > -1) {
+				location.href = "../conference.ahnlab.com/conference/rsa2014/index.html";
+			} else if (domain.indexOf("company.ahnlab.com") > -1) {
+				location.href = "../company.ahnlab.com/company/site/main/comIntroMain.html";
+			}
+		}
+	}
+	function notice() {
+		location.href = "error_server.html";
+	}
+	function ddos() {
+		var domain = location.href;
+		if (domain.indexOf("v3clinic.ahnlab.com") > -1 || domain.indexOf("v3365") > -1 || domain.indexOf("v3clinic") > -1) {
+			location.href = "../v3clinic.ahnlab.com/v3clinic/site/main/main.html";
+		} else {
+			location.href = "kr/site/html/ddos/ddos.html";
+		}
+	}
+// -->
+</script>
+</head>
+<body onload="init()"></body>
+<!--<body onload="notice()"></body>-->
+
+<!-- Mirrored from www.ahnlab.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jan 2016 10:35:35 GMT -->
+</html>
