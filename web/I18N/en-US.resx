@@ -1685,4 +1685,31 @@ Are you sure you want to use this size?</value>
   <data name="Destination name" xml:space="preserve">
     <value>Destination name</value>
   </data>
+  <data name="(Offline)" xml:space="preserve">
+    <value>(Offline)</value>
+  </data>
+  <data name="Create a subsite" xml:space="preserve">
+    <value>Create a subsite</value>
+  </data>
+  <data name="Import database" xml:space="preserve">
+    <value>Import database</value>
+  </data>
+  <data name="Take offline" xml:space="preserve">
+    <value>Take offline</value>
+  </data>
+  <data name="Clear cache" xml:space="preserve">
+    <value>Clear cache</value>
+  </data>
+  <data name="Selected Files" xml:space="preserve">
+    <value>Selected Files</value>
+  </data>
+  <data name="jpg" xml:space="preserve">
+    <value>jpg</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="The SingleChoice field is required." xml:space="preserve">
+    <value>The SingleChoice field is required.</value>
+  </data>
 </root>

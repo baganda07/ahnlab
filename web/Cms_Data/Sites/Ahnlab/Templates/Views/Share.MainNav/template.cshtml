@@ -46,13 +46,7 @@
                                     @if (parent["CssClass"].ToString() != "muProd")
                                     {
                                         <div class="fr">
-                                            <div class="pdList">
-                                                <a href="product/productSubDetail5d8e.html?prodSeq=15231">
-                                                    <img src="../image/en/common/img_gnb_product.jpg" class="photo" alt="">
-                                                    <p class="fcBlue">AhnLab MDS</p>
-                                                    <p>A Complete Defense Strategy against Next-Generation Threats.</p>
-                                                </a>
-                                            </div>
+                                            @Html.Raw(parent["HtmlAdv"])
                                         </div>
                                     }
                                 </div>
@@ -61,75 +55,6 @@
                     }
                 </li>
             }
-
-            @*<li class="muSup ">
-                    <!-- 1depth -->
-
-                    <a href="support/supportMain.html" class="oneLink">Support</a>
-
-                    <!-- menu layer -->
-                    <div class="lyMu">
-                        <div class="lyMuWrap">
-                            <div class="lyMuCont">
-                                <div class="fr">
-                                    <dl>
-                                        <dt>AhnLab Global Partner Program</dt>
-                                        <dd class="part">
-                                            <p>Expand Your Business through AhnLab Partner Program.</p>
-                                            <a href="support/partner/ourPartner.html" class="linkArr">Read More</a>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //menu layer -->
-                </li>
-
-                <li class="muSecur ">
-                    <!-- 1depth -->
-
-                    <a href="securitycenter/securitycenterMain.html" class="oneLink">Security Center</a>
-
-                    <!-- menu layer -->
-                    <div class="lyMu">
-                        <div class="lyMuWrap">
-                            <div class="lyMuCont">
-                                <div class="fr">
-                                    <a href="http://www.gartner.com/technology/media-products/pdfindex.jsp?g=ahnlab-1-2JFY8YE" target="_blank" class="bann mds" title="View in PDF">
-                                        <p class="fcBlue">AhnLab V3 Mobile, A Smart Choice for a Mobile-Only Era</p>
-                                        <p>AhnLab Newsletter<br>featuring Gartner research</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //menu layer -->
-                </li>
-
-                <li class="muAL ">
-                    <!-- 1depth -->
-
-                    <a href="about/aboutAhnlab.html" class="oneLink">About AhnLab</a>
-
-                    <!-- menu layer -->
-                    <div class="lyMu">
-                        <div class="lyMuWrap">
-                            <div class="lyMuCont">
-                                <div class="fr">
-                                    <dl>
-                                        <dt>AhnLab Global Partner Program</dt>
-                                        <dd class="part">
-                                            <p>Expand Your Business through AhnLab Partner Program.</p>
-                                            <a href="support/partner/ourPartner.html" class="linkArr">Read More</a>
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //menu layer -->
-                </li>*@
         </ul>
     </nav>
 }

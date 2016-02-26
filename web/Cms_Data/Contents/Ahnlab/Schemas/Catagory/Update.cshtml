@@ -60,7 +60,7 @@
             @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["CssClass"], null)
             
             </td>          
-            </tr>
+            </tr><input class='long' id="HtmlAdv" name="HtmlAdv" type="hidden" value="@(Model.HtmlAdv ?? "")" />
             @if (allowedEdit) {
                 <tr>
             <th>

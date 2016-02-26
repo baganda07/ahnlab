@@ -1,0 +1,17 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"Name")>@Html.Raw(Model.Name ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Description")>@Html.Raw(Model.Description ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Overview")>@Html.Raw(Model.Overview ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Features")>@Html.Raw(Model.Features ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Advantages")>@Html.Raw(Model.Advantages ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Specifications")>@Html.Raw(Model.Specifications ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Image")>@Html.Raw(Model.Image ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Order")>@Html.Raw(Model.Order ?? "")</div>
+		<div @ViewHelper.Edit(Model,"IsHot")>@Html.Raw(Model.IsHot ?? "")</div>
+		<div @ViewHelper.Edit(Model,"ShowOnMenu")>@Html.Raw(Model.ShowOnMenu ?? "")</div>
+	</div>
+</div>
+}

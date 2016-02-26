@@ -1,2 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfCategory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Models" />
+<ArrayOfCategory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Models">
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>D392GQEPLSXB2CGW</CategoryUUID>
+		<ContentUUID>XDBJMYR35987YPFR</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>R372SXD8BED94FG9</CategoryUUID>
+		<ContentUUID>XDBJMYR35987YPFR</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>D392GQEPLSXB2CGW</CategoryUUID>
+		<ContentUUID>GJP2MNWPHNYT2224</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>R372SXD8BED94FG9</CategoryUUID>
+		<ContentUUID>GJP2MNWPHNYT2224</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>D392GQEPLSXB2CGW</CategoryUUID>
+		<ContentUUID>YRQ2UCXGJPQLWHWB</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>AC72BVL3NCF9B6PG</CategoryUUID>
+		<ContentUUID>YRQ2UCXGJPQLWHWB</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>D392GQEPLSXB2CGW</CategoryUUID>
+		<ContentUUID>TQT2ABWWE7XEY2PM</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>AC72BVL3NCF9B6PG</CategoryUUID>
+		<ContentUUID>TQT2ABWWE7XEY2PM</ContentUUID>
+	</Category>
+</ArrayOfCategory>

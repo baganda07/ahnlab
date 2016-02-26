@@ -1,0 +1,125 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "multipart/form-data" })))
+{
+    <table><tr>
+            <th>
+            <label for="Name">Name</label>
+            </th>
+            <td>
+            <input class='long' id="Name" name="Name" type="text" value="@(Model.Name ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Description">Description</label>
+            </th>
+            <td>
+            <textarea name="Description" id="Description" class="Description tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Description ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Description"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Overview">Overview</label>
+            </th>
+            <td>
+            <textarea name="Overview" id="Overview" class="Overview tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Overview ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Overview"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Features">Features</label>
+            </th>
+            <td>
+            <textarea name="Features" id="Features" class="Features tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Features ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Features"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Advantages">Advantages</label>
+            </th>
+            <td>
+            <textarea name="Advantages" id="Advantages" class="Advantages tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Advantages ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Advantages"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Specifications">Specifications</label>
+            </th>
+            <td>
+            <textarea name="Specifications" id="Specifications" class="Specifications tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Specifications ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Specifications"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Image">Image</label>
+            </th>
+            <td>
+            <input id="Image" name="Image" type="file" data-value="@(Model.Image ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Image"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Order">Order</label>
+            </th>
+            <td>
+            <input class="long" id="Order" name="Order" type="text" value="@(Model.Order ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Order"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='IsHot' name="IsHot" type="checkbox" @(Convert.ToBoolean(Model.IsHot)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="IsHot"/>
+            <label class="inline" for="IsHot">IsHot</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["IsHot"], null)
+            </td>          
+            </tr><tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='ShowOnMenu' name="ShowOnMenu" type="checkbox" @(Convert.ToBoolean(Model.ShowOnMenu)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="ShowOnMenu"/>
+            <label class="inline" for="ShowOnMenu">ShowOnMenu</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ShowOnMenu"], null)
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

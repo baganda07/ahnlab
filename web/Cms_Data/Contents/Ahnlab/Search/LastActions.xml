@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>About</ContentSummary>
+		<FolderName>Product</FolderName>
+		<ContentSummary>AhnLab Policy Center</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-02-22T11:12:37.2134235Z</UtcActionDate>
+		<UtcActionDate>2016-02-26T16:10:50.5905219Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Security Center</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-02-22T11:12:27.3639048Z</UtcActionDate>
+		<FolderName>Product</FolderName>
+		<ContentSummary>AhnLab Policy Center</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-02-26T16:10:12.2402308Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Support</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-02-22T11:12:18.5500687Z</UtcActionDate>
+		<FolderName>Product</FolderName>
+		<ContentSummary>V3 Internet Security</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-02-26T15:52:43.1721602Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Downloads</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-02-22T11:12:10.2005573Z</UtcActionDate>
+		<FolderName>Product</FolderName>
+		<ContentSummary> AhnLab MDSE</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-02-26T15:50:25.0696304Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Products &amp; Services</ContentSummary>
+		<FolderName>Product</FolderName>
+		<ContentSummary>AhnLab MDS</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-02-22T11:12:00.3181692Z</UtcActionDate>
+		<UtcActionDate>2016-02-26T15:46:52.5572659Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

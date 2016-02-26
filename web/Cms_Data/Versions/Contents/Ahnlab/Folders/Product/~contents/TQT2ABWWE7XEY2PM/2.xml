@@ -1,0 +1,285 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-02-26T16:10:50.5565231Z</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab-Policy-Center</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-02-26T23:10:12.1992325+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-02-26T16:10:50.5565231Z</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">TQT2ABWWE7XEY2PM</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab Policy Center</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;Simplified Management of Business Endpoint Security&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #0e77d9;"&gt;AhnLab Policy Center (APC) is a unified central management solution for managing our award-winning security applications for desktops and servers. From one location, easily manage and administer your endpoint security products to ensure seamless protection across the organization. APC provides flexible and scalable network configurations to fit any organization or network topology.&lt;/p&gt;
+&lt;div style="padding: 35px 0px 35px 0px;"&gt;&lt;img style="display: block; margin-left: auto; margin-right: auto;" src="/Cms_Data/Contents/Ahnlab/Media/product/GL2.1.3_01_01.jpg" alt="GL2.1.3_01_01.jpg" height="722" width="750" /&gt;&lt;/div&gt;
+&lt;p&gt;​&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="font-size: 25px; color: #282828; padding-bottom: 15px;"&gt;Endpoint Protection&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding-bottom: 5px;"&gt;Security Policy Management&lt;/p&gt;
+&lt;p&gt;APC provides total virus and malware protection, by collaborating with all AhnLab V3 products in your network. With a fully-integrated console, administrators can easily configure and deploy security protection profiles for managed domains or groups.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Proactive Defense&lt;/p&gt;
+&lt;p&gt;APC detects system security vulnerabilities in advance, including unknown security threats, by analyzing the following behaviors: (1) vulnerable shared folders or user accounts detected, (2) infected agent computer detected, or (3) an agent computer that violates the internet access control policies of AhnLab TrusGuard.&lt;/p&gt;
+&lt;p style="font-size: 25px; color: #282828; padding: 30px 0px 15px 0px;"&gt;Central Management&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding-bottom: 5px;"&gt;Administrative Console&lt;/p&gt;
+&lt;p&gt;The single-point console lets administrators easily assess the security status of computers and servers across an entire corporate network. Administrators can configure settings, deploy APC agents, and control agent computers remotely.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Desktop Management&lt;/p&gt;
+&lt;p&gt;This feature configures settings for endpoint security program patches, Windows updates, and power management for agent computers to keep all the computers in your network up-to-date and to reduce energy consumption. Remote control support enables quick technical support and troubleshooting of networked computers.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Domain and Group Management&lt;/p&gt;
+&lt;p&gt;APC allows administrators to configure a domain or group based on internal organizational structures or other criteria. Simplified management of domains and groups provides effective control for large-scale networks and customizable security policies for each unit.&lt;/p&gt;
+&lt;p style="font-size: 25px; color: #282828; padding: 30px 0px 15px 0px;"&gt;Monitoring &amp;amp; Reporting&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding-bottom: 5px;"&gt;Dashboard&lt;/p&gt;
+&lt;p&gt;The dashboard provides useful, at-a-glance information about your security status, including agent computer details, vulnerabilities, virus and spyware data, policy deployment, and scheduled tasks. Administrators can send notices, run engine updates, remotely control agent computers, distribute package files, run virus scans, or restart agents directly from the dashboard.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Reports&lt;/p&gt;
+&lt;p&gt;APC provides details about agent computers, including software and hardware configurations, vulnerable accounts and shared folders, security programs, and detected threats. Administrator can create custom reports with need-based queries and schedule reports at specified times.&lt;/p&gt;
+&lt;div style="padding: 35px 0px 35px 0px;"&gt;&lt;img style="display: block; margin-left: auto; margin-right: auto;" src="/Cms_Data/Contents/Ahnlab/Media/product/GL2.1.3_02_01.jpg" alt="GL2.1.3_02_01.jpg" height="724" width="760" /&gt;&lt;/div&gt;
+&lt;p&gt;​&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #282828; padding-bottom: 5px;"&gt;Save Management costs&lt;/p&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- With centralized management, you can reduce the overall costs needed to manage the security of all PCs&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- By promptly applying PC management and policies to prevent malicious codes you can maximize operational efficiency&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- The cost and time required for PC security management can be reduced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Enhance Productivity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- By establishing a safe business security environment, you can enhance your business productivity&lt;/li&gt;
+&lt;li&gt;- Security problems and accidents due to poor security consciousness of users can be prevented&lt;/li&gt;
+&lt;li&gt;- When PC problems occur, you can quickly get back to your work through central control&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Flexibility Improve Image&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- You can improve your company&amp;rsquo;s image as a reliable company by establishing a safe security environment&lt;/li&gt;
+&lt;li&gt;- You can secure competitiveness by managing stable operations of IT systems&lt;/li&gt;
+&lt;/ul&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #282828; padding-bottom: 5px;"&gt;Admin&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab Policy Center Admin Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 14%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 70%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col" colspan="2"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;System Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;Mandatory Elements&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Internet Explorer 6.0 or higher&lt;/p&gt;
+&lt;p&gt;.Net Framework 3.5 or higher&lt;/p&gt;
+&lt;p&gt;WinSock 2.0&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="4"&gt;Hardware&lt;/td&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Intel Pentium 1G or higher&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Memory&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;1GB or more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;HDD&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Reserved space 2G or more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;NIC&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;10/100 Ethernet Card &lt;span style="margin-left: 100px;"&gt;* IA64 is not supported&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Windows XP Professional&lt;/p&gt;
+&lt;p&gt;Windows 2003, 2008, 2012 Server&lt;/p&gt;
+&lt;p&gt;Windows Vista&lt;/p&gt;
+&lt;p&gt;Windows 7, 8&lt;/p&gt;
+&lt;p&gt;* 64-bit compatible mode is supported&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 25px 0px 5px 0px;"&gt;Server&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab Policy Center Server Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 14%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 70%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col" colspan="2"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;System Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;Mandatory Elements&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;MS SQL Server 2000 or higher&lt;/p&gt;
+&lt;p&gt;MSDE 2000 or higher/IBM DB2 9.5 or higher&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="5"&gt;Hardware&lt;/td&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Intel Pentium 1.5GHz or higher recommended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Memory&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;1GB or more recommended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;HDD&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Reserved space 5G or more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;NIC&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;10/100 Ethernet Card&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2" style="text-align: left;"&gt;* A dedicated policy server is recommended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Recommended OS: Windows 2003 Server&lt;/p&gt;
+&lt;p&gt;Supported OS: Windows 2000, 2003, 2008, 2012 Server&lt;/p&gt;
+&lt;p&gt;Windows 2000, Windows XP Professional&lt;/p&gt;
+&lt;p&gt;* Supports 64-bit compatible mode&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 25px 0px 5px 0px;"&gt;Agent&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab Policy Center Agent Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 14%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 70%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col" colspan="2"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;System Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;Mandatory Elements&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Internet Explorer 6.0 or higher&lt;/p&gt;
+&lt;p&gt;WinSock 2.0&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="3"&gt;Hardware&lt;/td&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;IBM-PC compatible computer of Pentium 233M or higher&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Memory&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;64 MB or more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;HDD&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;400MB or more&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td colspan="2"&gt;OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Windows 2000, 2003, 2008, 2012 Server&lt;/p&gt;
+&lt;p&gt;Windows 2000, XP Professional&lt;/p&gt;
+&lt;p&gt;Windows Vista&lt;/p&gt;
+&lt;p&gt;Windows 7, 8&lt;/p&gt;
+&lt;p&gt;* Supports 64-bit compatible mode&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/TQT2ABWWE7XEY2PM/prodImg_1.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">4</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>___EnableVersion___</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>AC72BVL3NCF9B6PG</UUID>
+					<DisplayName>Endpoint Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>
