@@ -1712,4 +1712,55 @@ Are you sure you want to use this size?</value>
   <data name="The SingleChoice field is required." xml:space="preserve">
     <value>The SingleChoice field is required.</value>
   </data>
+  <data name="Sign in" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="The Remember me field is required." xml:space="preserve">
+    <value>The Remember me field is required.</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="The Redirect to home page field is required." xml:space="preserve">
+    <value>The Redirect to home page field is required.</value>
+  </data>
+  <data name="Redirect to home page" xml:space="preserve">
+    <value>Redirect to home page</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="Back to home page" xml:space="preserve">
+    <value>Back to home page</value>
+  </data>
+  <data name="New sub page" xml:space="preserve">
+    <value>New sub page</value>
+  </data>
+  <data name="This page is set as homepage. Are you sure you want to remove it?" xml:space="preserve">
+    <value>This page is set as homepage. Are you sure you want to remove it?</value>
+  </data>
+  <data name="Move To" xml:space="preserve">
+    <value>Move To</value>
+  </data>
+  <data name="Are you sure you want to delete this page?" xml:space="preserve">
+    <value>Are you sure you want to delete this page?</value>
+  </data>
+  <data name="Are you sure you want to unpublish this page?" xml:space="preserve">
+    <value>Are you sure you want to unpublish this page?</value>
+  </data>
+  <data name="Show folder relations" xml:space="preserve">
+    <value>Show folder relations</value>
+  </data>
+  <data name="Used in" xml:space="preserve">
+    <value>Used in</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Usage</value>
+  </data>
+  <data name="Folder settings" xml:space="preserve">
+    <value>Folder settings</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
 </root>

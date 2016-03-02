@@ -25,24 +25,28 @@
                                     {
                                         @Html.Raw("<div class=\"fl\">")
                                     }
-
-                                    @foreach (var child in children)
+                                    @foreach (TextContent child in children)
                                     {
-
+                                        var products = ((TextContent[])ViewBag.Products).Where(p => p.Categories("Catalog").Select(c => c.UUID).Contains(child.UUID));
                                         <div class="naviWrap @(i == 0 || i % 4 == 0 ? "clear" : "")">
                                             <p class="tit"><a href="#">@child["Name"]</a></p>
-                                            @*<ul class="thrList">
-                                                    <li><a href="product/productSubDetail5d8e.html?prodSeq=15231">AhnLab MDS</a></li>
-                                                    <li><a href="product/productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>
-                                                </ul>*@
+                                            @if (products != null && products.Any())
+                                            {
+                                                <ul class="thrList">
+                                                    @foreach (var product in products)
+                                                    {
+                                                        <li><a href="@Url.FrontUrl().PageUrl("product", new { userkey = product.UserKey})">@product["Name"]</a></li>
+                                                    }
+                                                    @*<li><a href="product/productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>*@
+                                                </ul>
+                                            }
                                         </div>
-                                        i++;
+                                            i++;
                                     }
                                     @if (parent["CssClass"].ToString() != "muProd")
                                     {
                                         @Html.Raw(" </div>")
                                     }
-
                                     @if (parent["CssClass"].ToString() != "muProd")
                                     {
                                         <div class="fr">

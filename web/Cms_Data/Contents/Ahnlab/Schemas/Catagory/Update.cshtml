@@ -60,7 +60,16 @@
             @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["CssClass"], null)
             
             </td>          
-            </tr><input class='long' id="HtmlAdv" name="HtmlAdv" type="hidden" value="@(Model.HtmlAdv ?? "")" />
+            </tr><tr>
+            <th>
+            <label for="HtmlAdv">HtmlAdv</label>
+            </th>
+            <td>
+            <textarea name="HtmlAdv" id="HtmlAdv" class="HtmlAdv tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.HtmlAdv ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["HtmlAdv"], null)
+            
+            </td>          
+            </tr>
             @if (allowedEdit) {
                 <tr>
             <th>

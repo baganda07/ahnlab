@@ -34,6 +34,8 @@
                     </div>
                 </th>
                 		<th class="Name @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Name",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Name", "Name", -1)</th>
+		<th class="IsHot @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "IsHot",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "IsHot", "IsHot", -1)</th>
+		<th class="ShowOnMenu @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "ShowOnMenu",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "ShowOnMenu", "ShowOnMenu", -1)</th>
 		<th class="UtcCreationDate @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "UtcCreationDate",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Creation date", "UtcCreationDate", -1)</th>
 		<th class="Published @SortByExtension.RenderSortHeaderClass(ViewContext.RequestContext, "Published",-1)">@SortByExtension.RenderGridHeader(ViewContext.RequestContext, "Published", "Published", -1)</th>
 
@@ -107,7 +109,7 @@
                                    @Html.IconImage("folder") @Kooboo.CMS.Content.Models.IPersistableExtensions.AsActual(item).FriendlyText</a>
                             }
                         </td>
-                        <td colspan="2">
+                        <td colspan="4">
                         </td>
                          @if(showBrodcastingColumns)
                         {
@@ -168,6 +170,8 @@
        		<td>@if(Model.ShowTreeStyle){
 		<span class="expander">@Html.IconImage("arrow")</span>}
 <a href="@this.Url.Action("Edit","TextContent",ViewContext.RequestContext.AllRouteValues().Merge("UserKey", (object)(item.UserKey)).Merge("UUID",(object)(item.UUID)).Merge("return",Request.RawUrl))">@Html.IconImage("file document")@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Name)</a></td>
+		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.IsHot)</td>
+		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.ShowOnMenu)</td>
 		<td class="date">@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.UtcCreationDate)</td>
 		<td>@Kooboo.CMS.Form.Html.HtmlCodeHelper.RenderColumnValue(item.Published)</td>
         @if(showBrodcastingColumns)
@@ -229,7 +233,7 @@
             </td>
             		<td class="treeStyle">
 		<span class="expander">@Html.IconImage("arrow")</span>
-		<a data-bind="attr:{href:item._EditUrl_}">@Html.IconImage("file document")<!--ko text: item.Name--><!--/ko--></a></td>
+		<a data-bind="attr:{href:item._EditUrl_}">@Html.IconImage("file document")<!--ko text: item.Name--><!--/ko--></a></td>		<td data-bind="html:item.IsHot"></td>		<td data-bind="html:item.ShowOnMenu"></td>
             <td class="date" data-bind="html:item._LocalCreationDate_"></td>
             <td><span data-bind="text : (item.Published == true?'@("YES".Localize())': '-')"></span></td>
             @if(showBrodcastingColumns)

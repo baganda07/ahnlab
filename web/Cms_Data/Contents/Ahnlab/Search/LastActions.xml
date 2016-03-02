@@ -4,30 +4,30 @@
 		<FolderName>Product</FolderName>
 		<ContentSummary>AhnLab Policy Center</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-02-26T16:10:50.5905219Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Product</FolderName>
-		<ContentSummary>AhnLab Policy Center</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-02-26T16:10:12.2402308Z</UtcActionDate>
+		<UtcActionDate>2016-03-01T16:34:59.6739741Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
 		<FolderName>Product</FolderName>
 		<ContentSummary>V3 Internet Security</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-02-26T15:52:43.1721602Z</UtcActionDate>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-01T16:34:53.8940353Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
 		<FolderName>Product</FolderName>
 		<ContentSummary> AhnLab MDSE</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-02-26T15:50:25.0696304Z</UtcActionDate>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-01T16:34:47.646393Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
 		<FolderName>Product</FolderName>
 		<ContentSummary>AhnLab MDS</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-02-26T15:46:52.5572659Z</UtcActionDate>
+		<UtcActionDate>2016-03-01T16:34:28.9387013Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>About</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-01T16:08:24.7371858Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

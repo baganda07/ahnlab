@@ -1,0 +1,174 @@
+﻿@if (ViewBag.Product != null)
+{
+    <div class="prodWrap">
+        <div class="briefArea">
+            <div class="brief">
+                <p class="desc">@Html.Raw(ViewBag.Product.Description)</p>
+                <p class="name">@ViewBag.Product.Name</p>
+                <ul class="listMenu clfix"></ul>
+                @*<p class="btnPrint"><a href="#" onclick="fn_winOpen('15231');" class="linkArr">Print this page</a></p>*@
+            </div>
+            <div class="photoWrap"><img src="@Url.FrontUrl().ResizeImageUrl(ViewBag.Product.Image, 530, 346)" alt="@ViewBag.Product.Name" /></div>
+        </div>
+        <div class="detailWrap">
+            <div class="detailArea">
+                <div class="tabWrap">
+                    <div class="prodTab">
+                        <!-- 1. 브라우저 상단에 도달하면 해당 값이 들어감 style="position:fixed; top:0; z-index:1000;" -->
+                        <ul class="tabs clfix">
+                            @if (!string.IsNullOrEmpty(ViewBag.Product.Overview))
+                            {
+                                <li class="on"><a href="#" class="prodTabClk tab1">Overview</a></li>
+                            }
+                            @if (!string.IsNullOrEmpty(ViewBag.Product.Features))
+                            {
+                                <li><a href="#" class="prodTabClk tab2">Features</a></li>
+                            }
+                            @if (!string.IsNullOrEmpty(ViewBag.Product.Advantages))
+                            {
+                                <li><a href="#" class="prodTabClk tab3">Advantages</a></li>
+                            }
+                            @if (!string.IsNullOrEmpty(ViewBag.Product.Specifications))
+                            {
+                                <li><a href="#" class="prodTabClk tab4">Specifications</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(ViewBag.Product.Overview))
+                {
+                    <div class="prodCont tab1View">
+                        <h2 class="blind">Overview</h2>
+                        @Html.Raw(ViewBag.Product.Overview)
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.Product.Features))
+                {
+                    <div class="prodCont tab2View" style="display: none;">
+                        <h2 class="blind">Features</h2>
+                        @Html.Raw(ViewBag.Product.Features)
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.Product.Advantages))
+                {
+                    <div class="prodCont tab3View" style="display: none;">
+                        <h2 class="blind">Advantages</h2>
+                        @Html.Raw(ViewBag.Product.Advantages)
+                    </div>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.Product.Specifications))
+                {
+                    <div class="prodCont tab3View" style="display: none;">
+                        <h2 class="blind">Specifications</h2>
+                        @Html.Raw(ViewBag.Product.Specifications)
+                    </div>
+                }
+            </div>
+            @Html.FrontHtml().RenderView("Module.SideBarRight")
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('.prodTab, .fixWrap').floating({ limitTargetSelector: '.prodRecom', limitSourceSelector: '.fixWrap' });
+        });
+
+        //시큐리티맵 팝업
+        $(".clickSecurityMapGnb").click(function () {
+            POPUP.open('securityMap.html', 'securityMap', {
+                width: 1000,
+                height: 750,
+                scroll: true
+            });
+        });
+
+        /* $(".randProdPoint").click(function(){
+            $(".randProdPoint").parent().removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        }); */
+
+        //관련제품 클릭, 포커스
+        $(".randProdPoint").click(function () {
+            $(this).parents(".listRelate").find("li").removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        }).focusin(function () {
+            $(this).parents(".listRelate").find("li").removeClass("on");
+            $(this).parent().addClass("on");
+            $(".randProdView").hide();
+            $(".randProdView").eq($(".randProdPoint").index(this)).show();
+        });
+
+        $(".prodTabClk").click(function () {
+
+            //탭
+            $(".prodTabClk").parent().removeClass("on");
+            $(this).parent().addClass("on");
+
+            $(".prodTabClk").each(function () {
+                var text = $(this).html();
+                if (text.indexOf("<span") > -1 && text.indexOf("</span>") > -1) {
+                    text = text.substring(text.indexOf("</span>") + 7);
+                }
+                $(this).html(text);
+            });
+
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+
+
+            //컨텐츠
+            $(".prodCont").hide();
+
+            for (var i = 1; i < 27; i++) {
+                if ($(this).hasClass("tab" + i)) {
+                    $(".tab" + i + "View").show();
+                    $("html, body").animate({//Scroll된 Target
+                        scrollTop: $(".tab" + i + "View").offset().top
+                    }, 500);
+                }
+            }
+            $(window).resize();
+        }).focusin(function () {
+            //탭
+            $(".prodTabClk").parent().removeClass("on");
+            $(this).parent().addClass("on");
+
+            $(".prodTabClk").each(function () {
+                var text = $(this).html();
+                if (text.indexOf("<span") > -1 && text.indexOf("</span>") > -1) {
+                    text = text.substring(text.indexOf("</span>") + 7);
+                }
+                $(this).html(text);
+            });
+
+            var text = $(this).html();
+            $(this).html("<span class=\"blind\">Current page</span>" + text);
+
+            //컨텐츠
+            $(".prodCont").hide();
+
+            for (var i = 1; i < 27; i++) {
+                if ($(this).hasClass("tab" + i)) {
+                    $(".tab" + i + "View").show();
+                    $("html, body").animate({//Scroll된 Target
+                        scrollTop: $(".tab" + i + "View").offset().top
+                    }, 500);
+                }
+            }
+            $(window).resize();
+        });
+
+        function fn_winOpen(prod_seq) {
+            var v_url = "http://global.ahnlab.com/site/product/productSubDetailPrint.do?prodSeq=" + prod_seq;
+            var v_width = "680";
+            var v_height = "650";
+
+            window.open(v_url, 'btnPop', 'width=' + v_width + ',height=' + v_height + ',scrollbars=yes');
+        }
+
+
+    </script>
+}

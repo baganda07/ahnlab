@@ -7,3 +7,5 @@ jquery.placeholder.js
 jquery.easing.1.3.js
 jquery.mainslider.js
 jquery.bannerslider.js
+jquery.floating.js
+custom.js
