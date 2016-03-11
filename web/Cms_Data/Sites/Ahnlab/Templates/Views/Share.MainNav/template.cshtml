@@ -1,7 +1,7 @@
 ﻿@functions{
     private List<TextContent> GetChildren(string parentUUID)
     {
-        return ((TextContent[])ViewBag.Categories).Where(t => t.ParentUUID == parentUUID).ToList();
+        return ((TextContent[])ViewBag.Categories).ToList().Where(t => !string.IsNullOrEmpty(t.ParentUUID) && t.ParentUUID == parentUUID).ToList();
     }
 }
 @if (ViewBag.ParentCategories != null && ViewBag.ParentCategories.Length > 0)
@@ -15,7 +15,7 @@
 
                 <li class="@parent["CssClass"]">
                     <!-- mouseover, focus 일 경우 li 태그에 on 클래스 추가, 선택되었을 때는 selected 클래스 추가 -->
-                    <a href="#" class="oneLink">@parent["Name"]</a>
+                    <a href="@(!string.IsNullOrEmpty(parent["Url"].ToString()) ? parent["Url"].ToString() : "")" class="oneLink">@parent["Name"]</a>
                     @if (children != null && children.Any())
                     {
                         <div class="lyMu">
@@ -29,7 +29,7 @@
                                     {
                                         var products = ((TextContent[])ViewBag.Products).Where(p => p.Categories("Catalog").Select(c => c.UUID).Contains(child.UUID));
                                         <div class="naviWrap @(i == 0 || i % 4 == 0 ? "clear" : "")">
-                                            <p class="tit"><a href="#">@child["Name"]</a></p>
+                                            <p class="tit"><a href="@(!string.IsNullOrEmpty(child["Url"].ToString()) ? child["Url"].ToString() : "")">@child["Name"]</a></p>
                                             @if (products != null && products.Any())
                                             {
                                                 <ul class="thrList">

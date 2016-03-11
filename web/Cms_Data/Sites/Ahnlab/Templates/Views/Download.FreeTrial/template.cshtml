@@ -1,0 +1,32 @@
+﻿<div class="descCopy mb35">
+    <p>@("The latest version of our products are available for download. All products include a free evaluation period for your first installation only.".Label())</p>
+    <p>@("To continue using these programs after your evaluation period has expired, you are required to purchase a product license.")</p>
+</div>
+
+<div class="dlWrap">
+    @if (ViewBag.FreeTrial != null)
+    {
+        foreach (var item in ViewBag.FreeTrial)
+        {
+            var product = ((TextContent) item).Parent("Product").FirstOrDefault();
+            <div class="dlItem">
+                <p class="cate">@item.Category</p>
+                <div class="boxTBlue">
+                    <div class="dlFile">
+                        <div class="fl">
+                            <div class="tit">
+                                @Html.Raw(!string.IsNullOrEmpty(item.SubTitle) ? "<p class='small'>" + item.SubTitle + "</p>" : "")
+                                <p><a href="@(product != null ? Url.FrontUrl().PageUrl("product", new { userkey = product["userkey"]}).ToString() : "#")">@item.Title</a></p>
+                            </div>
+                            <p>O/S : @item.OS</p>
+                        </div>
+                        <div class="imgWrap">
+                            <img src="@Url.FrontUrl().ResizeImageUrl(item.Thumbnail, 230, 0)" alt="@item.Title" />
+                        </div>
+                        <a class="linkArr" href="@item.Link" title="@item.Title">@("Download".Label())</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
