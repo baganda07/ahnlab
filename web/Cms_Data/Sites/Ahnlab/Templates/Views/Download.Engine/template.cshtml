@@ -1,0 +1,113 @@
+﻿@*<form id="form" name="form" method="post">
+    <input type="hidden" id="fileName" name="fileName" />
+    <input type="hidden" name="curPage" id="curPage" value="1" />*@
+@{
+    var listCats = new List<TextContent>();
+    foreach (TextContent item in ViewBag.Engines)
+    {
+        var cats = item.Categories("Engine~EngineCategories");
+        foreach (var cat in cats.Where(cat => !listCats.Contains(cat)))
+        {
+            listCats.Add(cat);
+        }
+    }
+}
+@if (listCats.Any())
+{
+    var i = 0;
+    <div class="descCopy mb35">
+        @("The latest version of our products are available for download. The files apply only on the products registered.".Label())
+    </div>
+
+    <div class="tList01 dlTable">
+
+        <table>
+            <caption>
+                @("Engine/Patch File Downloads".Label())
+            </caption>
+            <colgroup>
+                <col style="width:21%;" />
+                <col style="width:40%;" />
+                <col style="width:10%;" />
+                <col style="width:13%;" />
+                <col style="width:16%;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="first">@("Category".Label())</th>
+                    <th scope="col">@("Product".Label())</th>
+                    <th scope="col">@("File Type".Label())</th>
+                    <th scope="col">@("Date".Label())</th>
+                    <th scope="col">@("Download".Label())</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cat in listCats)
+                {
+                    var engines = ((TextContent[])ViewBag.Engines).Where(t => t.Categories("Engine~EngineCategories").Contains(cat));
+                    if (engines.Any())
+                    {
+                        foreach (var engine in engines)
+                        {
+                            if (i == 0)
+                            {
+                                <tr class="first">
+
+                                    <td class="first" rowspan="@engines.Count()">@cat["Name"]</td>
+                                    <td class="al">
+                                        @engine["Product"]
+                                    </td>
+                                    <td>@engine["Type"]</td>
+                                    <td>@engine.UtcCreationDate.ToShortDateString()</td>
+                                    <td class="al">
+                                        @if (!string.IsNullOrEmpty(engine["File"].ToString()))
+                                        {
+                                            <a href="@Url.Content(engine["file"].ToString())" target="_blank" class="btnDn" title="@engine["Product"]">
+                                                @("Download".Label()))
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a href="@engine["Link"]" target="_blank" class="btnDn" title="@engine["Product"]">
+                                                @("Download".Label())
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr >
+                                    <td class="al">
+                                        @engine["Product"]
+                                    </td>
+                                    <td>@engine["Type"]</td>
+                                    <td>@engine.UtcCreationDate.ToShortDateString()</td>
+                                    <td class="al">
+                                        @if (!string.IsNullOrEmpty(engine["File"].ToString()))
+                                        {
+                                            <a href="@Url.Content(engine["file"].ToString())" target="_blank" class="btnDn" title="@engine["Product"]">
+                                                @("Download".Label()))
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a href="@engine["Link"]" target="_blank" class="btnDn" title="@engine["Product"]">
+                                                @("Download".Label())
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                            i++;
+                        }
+                    }
+
+                }
+                
+
+            </tbody>
+        </table>
+    </div>
+}
+    @*</form>*@ 

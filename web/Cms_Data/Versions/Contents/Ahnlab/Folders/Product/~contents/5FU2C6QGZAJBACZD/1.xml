@@ -1,0 +1,231 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-11T22:47:23.2747727+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab-EPS</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:47:23.2747727+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:47:23.2747727+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">5FU2C6QGZAJBACZD</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab EPS</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">A Compact, Optimized Security Solution for Industrial Systems</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #0e77d9;"&gt;Industrial control systems have long been considered immune to cyber attacks as they are mostly isolated from the Internet. Unfortunately, this no longer holds true. Today&amp;rsquo;s advanced cyber attacks are targeting critical infrastructures and organizations with highly valuable information, leading to sabotage of massive assembly lines, severe economic damages, and data breaches.&lt;/p&gt;
+&lt;p style="font-size: 18px; padding-top: 20px;"&gt;AhnLab EPS is a compact, optimized security solution for industrial systems based on whitelisting. Find out how EPS ensures the stability of operations and increases endpoint security effectiveness without impacting business productivity.&lt;/p&gt;
+&lt;div style="padding: 35px 0px 0px 0px;"&gt;&lt;img src="https://global.ahnlab.com/image/en/product/upload/GL2.5.1_01_01.jpg" alt="Whitelist-based Security Solution, AhnLab EPS" /&gt;&lt;/div&gt;
+&lt;div style="text-align: center; margin: 40px 0px;"&gt;&lt;object id="myExperience03" width="480" height="270" seamlesstabbing="undefined" type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience03&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=4235584486001&amp;amp;autoStart=false&amp;amp;linkBaseURL=&amp;amp;debuggerID=&amp;amp;startTime=1415818036004" class="BrightcoveExperience"&gt;
+			
+&lt;embed wmode="transparent" bgcolor="#ffffff" flashvars="videoId=4235584486001&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~,AAABQ7vJFJE~,YUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;domain=embed&amp;amp;dynamicStreaming=true" base="http://admin.brightcove.com" seamlesstabbing="false" allowfullscreen="true" swliveconnect="true" autostart="false" type="application/x-shockwave-flash" src="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience03&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=4235584486001&amp;amp;autoStart=true&amp;amp;linkBaseURL=&amp;amp;debuggerID=&amp;amp;startTime=141581803600" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" name="flashObj" height="270" width="480"&gt;
+	&lt;/object&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #282828; padding: 0px 0px 5px 0px;"&gt;Whitelist Approach&lt;/p&gt;
+&lt;p&gt;Application whitelisting takes a proactive approach, denying everything that is not specifically approved. This approach allows only trusted programs in the whitelist, in contrast to traditional reactive solutions that only block known threats that are explicitly defined in a blacklist. By ensuring that only clean, approved applications can be executed, it protects networks from a broader range of potential threats.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Specialized for Industrial Systems&lt;/p&gt;
+&lt;p&gt;The importance and nature of industrial control systems, such as production lines, plants, and Point of Sales (POS) machines, present particular challenges to ensuring their continued security and stability. Coupled with restrictive controls on clients in these systems, EPS ensures stable system operation and security integrity in industrial environments.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Complete Network Control&lt;/p&gt;
+&lt;p&gt;Enables you to control the direction of communication and block malicious network IPs and ports in to keep potential risks at bay. Customize your protection for networks and preempt threats.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Simplified Endpoint Protection&lt;/p&gt;
+&lt;p&gt;EPS places its powerful antivirus engine on the central server, so that IT administrators do not need to update and maintain the signatures at every endpoint.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Learning Mode&lt;/p&gt;
+&lt;p&gt;Administrator can simulate the results when the configured settings or security policies are applied to real circumstances. It helps reduce disruptions to productivity and unexpected errors that are common with untested deployments.&lt;/p&gt;
+&lt;div style="text-align: center; padding: 35px 0px 35px 0px;"&gt;&lt;img src="https://global.ahnlab.com/image/en/product/upload/GL2.5.1_02_01.jpg" alt="" /&gt;&lt;/div&gt;
+&lt;p style="font-size: 18px; color: #282828; padding-bottom: 10px;"&gt;&lt;strong&gt;AhnLab EPS&lt;/strong&gt; Server&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #d8d8d8;"&gt;&lt;caption&gt;AhnLab EPS Server Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 20%;" /&gt; &lt;col style="width: 80%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th scope="col"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;System Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hardware&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;- CPU : Intel&amp;reg; Xeon&amp;reg; Processor E5620 G6X 2(2.4GHz, 4MB L3 Cache, 80W)&lt;/li&gt;
+&lt;li&gt;- Memory : 16GB&lt;/li&gt;
+&lt;li&gt;- HDD : 1TB 15K SAS DP HDD X 2 (raid 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;RHEL 6.5 (64bit)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Console Browser&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Internet Explorer 8.0 or higher&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="margin-top: 15px;"&gt;- Max 8,000 agents&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 40px 0px 10px 0px;"&gt;&lt;strong&gt;AhnLab EPS&lt;/strong&gt; Agent&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #d8d8d8;"&gt;&lt;caption&gt;AhnLab EPS Agent Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 20%;" /&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 55%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th scope="col"&gt;Category&lt;/th&gt;&lt;th scope="col" colspan="2"&gt;System Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hardware&lt;/td&gt;
+&lt;td colspan="2" style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;- CPU : Pentium 133MHz&lt;/li&gt;
+&lt;li&gt;- Memory : 15MB or more&lt;/li&gt;
+&lt;li&gt;- HDD : 100MB or more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td rowspan="3"&gt;OS&lt;br /&gt;(32bit/64bit Supported)&lt;/td&gt;
+&lt;td&gt;Embedded OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;- Windows Embedded Standard 2009&lt;/li&gt;
+&lt;li&gt;- Windows Embedded Standard 7&lt;/li&gt;
+&lt;li&gt;- Windows Embedded POSReady 2009&lt;/li&gt;
+&lt;li&gt;- Windows Embedded POSReady 7&lt;/li&gt;
+&lt;li&gt;- Windows Embedded 8.1 (Pro, Industry)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Client OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;- Windows XP (Home, Professional)&lt;/li&gt;
+&lt;li&gt;- Windows Vista (Enterprise, Ultimate)&lt;/li&gt;
+&lt;li&gt;- Windows 7 (Professional, Enterprise, Ultimate)&lt;/li&gt;
+&lt;li&gt;- Windows Embedded POSReady 7&lt;/li&gt;
+&lt;li&gt;- Windows 8.1 (Pro, Enterprise)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Server OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;- Windows 2000 (Professional, Server, Advanced Server)&lt;/li&gt;
+&lt;li&gt;- Windows Server 2003 (Standard, Enterprise)&lt;/li&gt;
+&lt;li&gt;- Windows Server 2008 (Standard, Enterprise)&lt;/li&gt;
+&lt;li&gt;- Windows Server 2012 (Essentials, Standard)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #0e77d9;"&gt;In industrial environments, immediate action to remove known or even unknown security threats must be taken to ensure seamless operations and services, but frequent security program patching or updating is often impossible or impractical. AhnLab EPS provides stable system operation and optimized security for these environments with restrictive controls on client systems. Its advanced whitelisting technology delivers cost-effective endpoint protection, and also ensures business continuity with minimal maintenance requirements.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; margin: 20px 0px 5px;"&gt;Stability&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- Proactively protects against unknown malware&lt;/li&gt;
+&lt;li&gt;- Prevents malware-induced security breaches&lt;/li&gt;
+&lt;li&gt;- Provides system stability without requiring signature or patch updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="font-size: 18px; color: #282828; margin: 20px 0px 5px;"&gt;Productivity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- Eliminates interruptions caused by malicious or unauthorized software&lt;/li&gt;
+&lt;li&gt;- Operates around the clock without the need for constant maintenance&lt;/li&gt;
+&lt;li&gt;- Allows simple administration and implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="font-size: 18px; color: #282828; margin: 20px 0px 5px;"&gt;Cost-cutting&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- Reduces system and data restoration costs by preventing malware damages&lt;/li&gt;
+&lt;li&gt;- Reduces time and costs required for system security and maintenance&lt;/li&gt;
+&lt;/ul&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/5FU2C6QGZAJBACZD/prodImg_10003.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">8</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">15</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>AC72BVL3NCF9B6PG</UUID>
+					<DisplayName>Endpoint Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

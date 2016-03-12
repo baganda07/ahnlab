@@ -1,0 +1,369 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-11T22:38:54.910376+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab-Online-Security</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:38:54.910376+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:38:54.910376+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">UMEJMCABN7885U9R</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab Online Security</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">The Key to Secure Online Financial Transactions</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="color: #0e77d9; font-size: 18px;"&gt;AhnLab Online Security (AOS) is designed exclusively to provide security for online transactions. Regardless of the security protocols used on a local computer, AOS provides complete security for the online transaction. It is a proven web transaction security solution of 15 years which monitors and responds quickly against the numerous hackers who attempt illegal financial transactions and steal financial information.&lt;/p&gt;
+&lt;p style="margin-top: 25px;"&gt;Unlike a typical single-purpose security solution, AOS combines three key security elements into an innovative security solution that prevents the leakage of information and thwarts attempts to compromise online financial transactions.&lt;/p&gt;
+&lt;p style="margin-top: 25px;"&gt;AOS is comprised of 4 security services which include Anti-keylogger, Firewall, Anti-virus/spyware and Secure Browser. The services ensure that advanced security features are in place to safeguard users&amp;rsquo; financial and personal information.&lt;/p&gt;
+&lt;div style="padding: 35px 0px 0px; text-align: center;"&gt;&lt;object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"&gt;
+		&lt;param value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;amp;isUI=1" name="movie"&gt;
+		&lt;param value="#FFFFFF" name="bgcolor"&gt;
+		&lt;param value="videoId=1466777327001&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~,AAABQ7vJFJE~,YUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;domain=embed&amp;amp;dynamicStreaming=true" name="flashVars"&gt;
+		&lt;param value="http://admin.brightcove.com" name="base"&gt;
+		&lt;param value="false" name="seamlesstabbing"&gt;
+		&lt;param value="true" name="allowFullScreen"&gt;
+		&lt;param value="true" name="swLiveConnect"&gt;
+		&lt;param name="wmode" value="transparent"&gt;
+		&lt;embed wmode="transparent" bgcolor="#FFFFFF" flashvars="videoId=1466777327001&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~,AAABQ7vJFJE~,YUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;domain=embed&amp;amp;dynamicStreaming=true" base="http://admin.brightcove.com" seamlesstabbing="false" allowfullscreen="true" swliveconnect="true" type="application/x-shockwave-flash" src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;amp;isUI=1" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" name="flashObj" height="270" width="480"&gt;
+	&lt;/object&gt;&lt;/div&gt;
+&lt;div style="padding: 35px 0px;"&gt;&lt;img src="//global.ahnlab.com/image/en/product/upload/GL2.3.1_01_01.jpg" alt="Concept of AhnLab Online Security" /&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab Online Security Features Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 20%;" /&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 55%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;Services&lt;/th&gt;&lt;th scope="col"&gt;Features&lt;/th&gt;&lt;th scope="col"&gt;Dex-scriptions&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="5"&gt;AOS&lt;br /&gt;Secure&lt;br /&gt;Browser&lt;/td&gt;
+&lt;td&gt;Self-Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Anti-debugging&lt;/p&gt;
+&lt;p&gt;Anti-reverse engineering&lt;/p&gt;
+&lt;p&gt;Program Packing&lt;/p&gt;
+&lt;p&gt;Detects execution file manipulation&lt;/p&gt;
+&lt;p&gt;Prevents auto-deletion of temporary files&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Memory/&lt;br /&gt;Web Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Access to memory&lt;/p&gt;
+&lt;p&gt;Detects memory manipulation&lt;/p&gt;
+&lt;p&gt;Detects COM Hooking&lt;/p&gt;
+&lt;p&gt;Detects webpage alteration&lt;/p&gt;
+&lt;p&gt;Cross Site x-script&lt;/p&gt;
+&lt;p&gt;Screen Capturing&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Application Control&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;White List based control&lt;/p&gt;
+&lt;p&gt;Black List based control&lt;/p&gt;
+&lt;p&gt;Browser Help x-object control&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Pharming Prevention&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Detects pharming by host file alteration and checks the validity of URL and IP&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Application Memory&lt;br /&gt;Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Addition protection on the Application Memory in the Secure Browser&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="7"&gt;AOS&lt;br /&gt;Anti-keylogger&lt;/td&gt;
+&lt;td&gt;PS/2 Keyboard&lt;br /&gt;Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Prevents PS/2 Port Scan&lt;/p&gt;
+&lt;p&gt;Prevents IDT hooking&lt;/p&gt;
+&lt;p&gt;Prevents hacking by Keyboard Filter Driver&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;USB Keyboard&lt;br /&gt;Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Prevents USB Bus Driver Hooking/Filtering&lt;/p&gt;
+&lt;p&gt;Prevents USB Hub Driver Hooking/Filtering&lt;/p&gt;
+&lt;p&gt;Prevents USB Generic Driver hooking/Filtering&lt;/p&gt;
+&lt;p&gt;Prevents HID USB driver hooking/filtering&lt;/p&gt;
+&lt;p&gt;Prevents Keyboard HID Class Driver hooking/filtering&lt;/p&gt;
+&lt;p&gt;Prevents Keyboard Class Driver hooking&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Bluetooth Keyboard&lt;br /&gt;Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Prevents HIDBHT upperfilter&lt;/p&gt;
+&lt;p&gt;Prevents HIDBTH Hooking&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Application Level&lt;br /&gt;Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Prevents System Message Queue Hooking&lt;/p&gt;
+&lt;p&gt;Prevents Thread Message Queue Hooking&lt;/p&gt;
+&lt;p&gt;Prevents SubClassing&lt;/p&gt;
+&lt;p&gt;Prevents Application API Hooking&lt;/p&gt;
+&lt;p&gt;Prevents acquiring of key input values through BHO&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;PS2/USB/Wireless&lt;br /&gt;keyboard input&lt;br /&gt;values protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Supports USB, PS/2, Bluetooth, HID, wireless&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;ID Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Protection of drawing-type ID&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Prevents crash between&lt;br /&gt;security programs&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Provides direct input to prevent crash between the security programs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="13"&gt;AOS Firewall&lt;/td&gt;
+&lt;td rowspan="4"&gt;Personal Firewall&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Detects programs which communicate outside of PC and sends alerts to user.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Detail monitoring on program with allow/block settings for each IP and port&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Specific IP can be allowed or blocked&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Specific port can be allowed or blocked&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Shared Folder Control/&lt;br /&gt;Monitoring&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Block/ allow other computer from accessing user share folder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="2"&gt;Network Connection&lt;br /&gt;Management&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Displays the TCP/UDP connection information for communication with outside of network&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Respond against disguised or covert type of hacking tool difficult to detect&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td rowspan="4"&gt;Detects/blocks&lt;br /&gt;real-time hacking tool&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Detects/blocks virus and malicious codes in real-time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Detects and blocks exclusively key logging program&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Detects/blocks console hacking programs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td style="text-align: left;"&gt;Detects/blocks Back Orifice Hidden Process&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Prevents Forced&lt;br /&gt;Termination&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Prevents termination via UI or tray icons&lt;/p&gt;
+&lt;p&gt;Prevents termination through administrator&lt;/p&gt;
+&lt;p&gt;Prevents termination through commands&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Automatic Engine&lt;br /&gt;Update&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Enhanced scan/update speed with TS engine 24/7. Daily update of the most recent malicious codes and hacking tools.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;AOS Anti-virus/&lt;br /&gt;spyware&lt;/td&gt;
+&lt;td&gt;Anti-virus&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Total malware scan/treatment of virus, worm and spyware&lt;/p&gt;
+&lt;p&gt;Detects malicious code or possibly malicious code by Heuristic Scan&lt;/p&gt;
+&lt;p&gt;Simultaneously scan boot, memory, registry and file&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="margin: 35px 0px 10px; color: #282828; font-size: 18px;"&gt;System Requirements&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;System Requirements Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 75%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;Requirements&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Hardware&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul&gt;
+&lt;li&gt;Intel Pentium4 2.8GHz or higher&lt;/li&gt;
+&lt;li&gt;Memory 512 MB or higher (Recommend 1G or higher)&lt;/li&gt;
+&lt;li&gt;HDD 500MB or higher (1GB or higher)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;OS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Windows XP ~ Windows 8.1 (64bit: Vista, 7, 8)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Browser&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;p&gt;Internet Explorer 7, 8, 9, 10, 11 (Windows)&lt;/p&gt;
+&lt;p&gt;Firefox 29.0 and higher *&lt;/p&gt;
+&lt;p&gt;Chrome 34.0 and higher *&lt;/p&gt;
+&lt;p&gt;Safari 5.0 and higher&lt;/p&gt;
+&lt;p&gt;Opera 21.0 and higher *&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Install Method&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;ActiveX, EXE, Plug-in, SDK (Software Development Kit)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Language Support&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Korean, English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="text-indent: -17px; padding-left: 15px; margin-top: 10px;"&gt;※ AOS can run on the browsers marked with * in lower versions but for the complete features to run, it is recommended to run on the version and higher indicated.&lt;/p&gt;
+&lt;p style="text-indent: -17px; padding-left: 15px; margin-top: 10px;"&gt;※ Above information is common system requirement for AhnLab Online Security. For OS and browser support information for AOS Firewall, please contact the technical support at AhnLab.&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="padding: 0px 0px 10px; color: #282828; font-size: 18px;"&gt;AhnLab Online Security&lt;/p&gt;
+&lt;p style="padding-bottom: 35px;"&gt;provides strong security features to prevent memory hacking, webpage alteration and screen capturing. It is an easy-to-implement solution without a separate program installation but runs once connected to the website.&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab Online Security Advantages Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 30%;" /&gt; &lt;col style="width: 70%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;Category&lt;/th&gt;&lt;th scope="col"&gt;Advantages&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Strong Security Features&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Provides prevention features on memory hacking, webpage alteration and screen capturing.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Multi-Browser&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Supports multiple browsers such as Internet Explorer 6.0 and higher, Firefox, chrome, Safari and Opera.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Easy-to-implement&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Total user-friendly interface with one step install/uninstall, service is available with the initial program install.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Customized Service&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;4 services can be selectively installed via various kinds of install methods such as by ActiveX, EXE, Plug-in and SDK (Software Development Kit)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Lightweight and fast speed&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Enjoy lightweight and fast speed with the V3 engine.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Self-Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Self-Protection protects product from incapacitation due to hacking or from abnormal terminations.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Bluetooth keyboard&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Supports Bluetooth keyboard as well as PS/2 and USB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Systemic Customer Service&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;No.1 security solutions in Korea with 20 years of emergency response knowhow and professional support service&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="text-indent: -10px; padding-left: 10px; margin-top: 10px;"&gt;- Reduced Costs: AOS can be implemented seamlessly into existing websites. Not only does it reduce costs and labor in the implementing process, but it also reduces costs of potential claims by users. By reducing the incidence of security events and fraud claims, businesses can also benefit from higher productivity.&lt;/p&gt;
+&lt;p style="text-indent: -10px; padding-left: 10px; margin-top: 10px;"&gt;- Easy-to-Use, Simple UI: AOS' complex and sophisticated technology is wrapped in user-friendly interface. Instant messaging provides notifications of attacks or intrusion attempts and simple configurations allow it to work in the background without interfering with activity on the website.&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/UMEJMCABN7885U9R/prodImg_9008.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">4</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">7</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>AC72BVL3NCF9B6PG</UUID>
+					<DisplayName>Endpoint Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

@@ -1,0 +1,210 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-11T22:49:34.318958+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab-DPS</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:49:34.318958+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:49:34.318958+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">DWRJMV4U3SMSZGVK</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab DPS</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Complete Protection against Evolving DDoS Threats</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #0e77d9;"&gt;Distributed-denial-of-service (DDoS) attacks have become one of the most serious threats against today's Internet-based entities, including e-commerce, infrastructure, and government websites. In a DDoS attack, compromised zombie computers or botnets can take down websites or other Internet services with excessive requests for system resources.&lt;/p&gt;
+&lt;p style="padding-top: 25px;"&gt;AhnLab DDos attack Protection System (DPS) is designed to defeat today&amp;rsquo;s highly complex and sophisticated DDoS attacks with an intelligent defense strategy. It ensures business continuity and resource availability with an all-inclusive security layer that not only detects today&amp;rsquo;s more complex attacks, but also mitigates their effects. DPS provides all-inclusive features to block these complex attacks, regardless of techniques or methods.&lt;/p&gt;
+&lt;ul style="margin: 25px 0px 0px;"&gt;
+&lt;li&gt;- Real-time traffic monitoring and automatic self-learning&lt;/li&gt;
+&lt;li&gt;- Protection from network to application (HTTP)&lt;/li&gt;
+&lt;li&gt;- Source IP based protection and spoofed IP protection
+&lt;p style="padding-left: 20px;"&gt;TCP Flooding: SYN, SYN-ACK, ACK, Fin, PSH, RST, URG, XMAS&lt;/p&gt;
+&lt;p style="padding-left: 20px;"&gt;Other : UDP, ICMP, IP, Fragments, DNS Query&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style="padding-left: 10px; text-indent: -10px;"&gt;- TCP session based protection: TCP Multi-Connection, TCP Established Attack, Low Bandwidth TCP Session Flooding&lt;/li&gt;
+&lt;li style="padding-left: 10px; text-indent: -10px;"&gt;- HTTP based protection: HTTP Get Flooding, HTTP Null Page Flooding, HTTP CC Attack, HTTP Redirect Bypass Flooding, SQL Query Based HTTP Attack&lt;/li&gt;
+&lt;li style="padding-left: 10px; text-indent: -10px;"&gt;- Protection against new and advanced attacks, like DNS Amplification Attack, RUDY or Slowloris&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style="text-align: center; padding: 35px 0px 35px 0px;"&gt;&lt;object id="flashObj" width="480" height="270" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"&gt;&lt;param value="12700" name="_cx"&gt;&lt;param value="7144" name="_cy"&gt;&lt;param value="videoId=3748875913001&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~,AAABQ7vJFJE~,YUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;domain=embed&amp;amp;dynamicStreaming=true" name="FlashVars"&gt;&lt;param value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;amp;isUI=1" name="Movie"&gt;&lt;param value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;amp;isUI=1" name="Src"&gt;&lt;param value="Window" name="WMode"&gt;&lt;param value="0" name="Play"&gt;&lt;param value="-1" name="Loop"&gt;&lt;param value="High" name="Quality"&gt;&lt;param value="LT" name="SAlign"&gt;&lt;param value="-1" name="Menu"&gt;&lt;param value="http://admin.brightcove.com" name="Base"&gt;&lt;param value="" name="Allowx-scriptAccess"&gt;&lt;param value="NoScale" name="Scale"&gt;&lt;param value="0" name="DeviceFont"&gt;&lt;param value="0" name="EmbedMovie"&gt;&lt;param value="FFFFFF" name="BGColor"&gt;&lt;param value="" name="SWRemote"&gt;&lt;param value="" name="MovieData"&gt;&lt;param value="0" name="SeamlessTabbing"&gt;&lt;param value="0" name="Profile"&gt;&lt;param value="" name="ProfileAddress"&gt;&lt;param value="0" name="ProfilePort"&gt;&lt;param value="all" name="AllowNetworking"&gt;&lt;param value="true" name="AllowFullScreen"&gt;&lt;param value="false" name="AllowFullScreenInteractive"&gt;&lt;param value="0" name="IsDependent"&gt;
+														
+		&lt;embed pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" wmode="transparent" swliveconnect="true" allowfullscreen="true" type="application/x-shockwave-flash" seamlesstabbing="false" name="flashObj" base="http://admin.brightcove.com" flashvars="videoId=3748875913001&amp;amp;playerID=1392189846001&amp;amp;playerKey=AQ~~,AAABQ7vJFJE~,YUe9mtKqvkTJ6LPNpcv0hLzeWs1gEpiM&amp;amp;domain=embed&amp;amp;dynamicStreaming=true" bgcolor="#FFFFFF" src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;amp;isUI=1" height="270" width="480"&gt;
+	&lt;/object&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #282828; padding: 0px 0px 5px 0px;"&gt;Multi-Layered Mitigation Filtering&lt;/p&gt;
+&lt;p&gt;DPS employs following multi-layered mitigation filters to stop highly complex attacks: Untrusted traffic block, Ant-spoofing protection, HTTP access authentication, Unauthorized IP block, Threshold-based protection and Signature-based protection.&lt;/p&gt;
+&lt;div style="padding: 35px 0px 35px 0px;"&gt;&lt;img src="http://global.ahnlab.com/image/en/product/upload/GL2.2.1_02_01.jpg" alt="Multi-Layered Protection" /&gt;&lt;/div&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Clustering Capability&lt;/p&gt;
+&lt;p&gt;The outstanding scalability provided by the clustering capability can simultaneously manage up to 120 Gbps of bandwidth and synchronize a list of trusted IP addresses with all the other devices within the cluster.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;One Device - 128 Zones&lt;/p&gt;
+&lt;p&gt;DPS can simultaneously configure up to 128 different zones with different protection policies for each zone.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Powerful Monitoring&lt;/p&gt;
+&lt;p&gt;Monitoring traffic flow and mitigation measures across the network is made simple with color indicators: green means the network is secure, orange requires attention, and red is critical. Mobile devices are also supported.&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="font-size: 18px; color: #0e77d9;"&gt;Organizations need an effective, comprehensive approach to ensure the continuity of services and resources. DPS effectively mitigates both volumetric and small, targeted attacks with its clustering technology and multiple protection layers. DPS provides the optimal defense for internet resources and services.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Maintains Business Continuity&lt;/p&gt;
+&lt;p&gt;By preventing business disruptions, DPS reduces the risk of lost sales, inconvenienced customers, or damaged reputations.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Reduces Human Resource Costs&lt;/p&gt;
+&lt;p&gt;With its multi-layered mitigation filters and autonomous learning capability, DPS can reduce the need for hands-on monitoring and changes to configuration settings that are required by typical DDoS mitigation solution.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Monitors 24/7&lt;/p&gt;
+&lt;p&gt;DPS shows the status of traffic and filters on the network, including system resource usage and network port connections. It can be accessed from mobile devices, which provides unparalleled visibility of network security.&lt;/p&gt;
+&lt;p style="font-size: 18px; color: #282828; padding: 20px 0px 5px 0px;"&gt;Minimizes aftershocks&lt;/p&gt;
+&lt;p&gt;As soon as new attack patterns or methods are detected, DPS responds promptly, which minimizes the time and effort required to deal with aftershocks of the incident.&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;div style="overflow: hidden; border-top: #6a8ec6 2px solid;"&gt;
+&lt;table style="border-spacing: 1px; margin-top: -1px; width: 100%; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab DPS Specification Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 26%;" /&gt; &lt;col style="width: 42%;" /&gt; &lt;col style="width: 42%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;&lt;/th&gt;&lt;th scope="col"&gt;AhnLab DPS 6000&lt;/th&gt;&lt;th scope="col"&gt;AhnLab DPS 10000&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Performance&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Standard: 4 Gbps&lt;/p&gt;
+&lt;p&gt;Maximum: 6 Gbps&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Standard: 10 Gbps&lt;/p&gt;
+&lt;p&gt;Maximum: 20 Gbps&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td colspan="2"&gt;Exclusive multi-core&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Memory&lt;/td&gt;
+&lt;td&gt;8 GB&lt;/td&gt;
+&lt;td&gt;16 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Flash&lt;/td&gt;
+&lt;td&gt;2 GB and up&lt;/td&gt;
+&lt;td&gt;2 GB and up&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;OS&lt;/td&gt;
+&lt;td colspan="2"&gt;AhnLab proprietary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Power/Fan&lt;/td&gt;
+&lt;td colspan="2"&gt;Redundant dual sources&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Interfaces:
+&lt;ul&gt;
+&lt;li&gt;&amp;bull; 1G Copper&lt;/li&gt;
+&lt;li&gt;&amp;bull; 1G Fiber (SFP)&lt;/li&gt;
+&lt;li&gt;&amp;bull; 10G (SFP+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;2 EA (Mgmt Port)&lt;/p&gt;
+&lt;p&gt;4 EA (Max 6 EA, Optional)&lt;/p&gt;
+&lt;p&gt;Max 6 EA (Optional)&lt;/p&gt;
+&lt;p&gt;* Available with 1G / 10G Combination&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;2 EA (Mgmt Port)&lt;/p&gt;
+&lt;p&gt;2 EA (Mgmt Port, Optional)&lt;/p&gt;
+&lt;p&gt;4 EA (Max 8 EA, Optional)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Certificate (CC)&lt;/td&gt;
+&lt;td colspan="2"&gt;EAL 4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/DWRJMV4U3SMSZGVK/prodImg_10082.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">16</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>28KJBUME6Z5TX95W</UUID>
+					<DisplayName>Network Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

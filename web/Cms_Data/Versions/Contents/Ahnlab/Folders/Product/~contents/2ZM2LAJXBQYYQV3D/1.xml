@@ -1,0 +1,176 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-11T22:59:37.9796485+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">V3-Mobile-Security</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:59:37.9796485+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:59:37.9796485+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">2ZM2LAJXBQYYQV3D</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">V3 Mobile Security</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Safeguarding Your Mobile Experience</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="color: #0e77d9; font-size: 18px;"&gt;Smartphones are becoming hugely popular around the world, but unfortunately, that means that they are also becoming a greater target for security threats. The technology that has become your &amp;ldquo;best friend&amp;rdquo; at hand can turn into your worst nightmare.&lt;/p&gt;
+&lt;p style="padding: 40px 0px; text-align: center;"&gt;&lt;img src="http://global.ahnlab.com/global/upload/editor/1503055144703830.jpg" alt="Threats of smarthphones" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #0e77d9;"&gt;AhnLab V3 Mobile Security is a comprehensive mobile solution for anti-malware, anti-theft and privacy protection.&lt;/span&gt; &lt;span style="color: #000000;"&gt;It protects your sensitive data through a complete analysis of data access levels against mobile malware and malicious applications, and helps you find your lost or stolen device.&lt;/span&gt;&lt;/p&gt;
+&lt;ul style="margin: 25px 0px;"&gt;
+&lt;li&gt;- Optimized security solution for Android smartphones and tablets&lt;/li&gt;
+&lt;li&gt;- Full-scale protection against the latest mobile malware (malicious apps), spam, and data leakage&lt;/li&gt;
+&lt;li&gt;- Secure protection for personal data, applications, memory cards, and operating systems&lt;/li&gt;
+&lt;li&gt;- Designed to use less battery power and less memory&lt;/li&gt;
+&lt;li&gt;- Employs the proven, world-class mobile AV engine, V3 Mobile&lt;/li&gt;
+&lt;li&gt;- Helps to secure your lost or stolen device using remote commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AhnLab V3 Mobile Security is specifically designed to protect your Android smartphone and today&amp;rsquo;s wireless environment. Experience V3 Mobile Security for free in Google Play (from April 2015)!&lt;/p&gt;
+&lt;p style="padding: 40px 0px 0px; text-align: center;"&gt;&lt;img src="http://global.ahnlab.com/global/upload/editor/1506054805854278.jpg" alt="Experience V3 Mobile Security for free in Google Play!" /&gt;&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="color: #0e77d9; font-size: 18px;"&gt;V3 Mobile Security provides comprehensive protection for Android devices against all the latest and advanced mobile threats through optimized features.&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Anti-Virus&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;- Real-time monitors, fast and accurate scans and automatic/scheduled engine updates available&lt;/li&gt;
+&lt;li&gt;- Detects malware when accessing webpages through text message and app URLs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Anti-Theft&lt;/p&gt;
+&lt;p&gt;Remotely locks device, tracks location of the device and deletes or resets data using remote commands&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Call Block&lt;/p&gt;
+&lt;p&gt;Restricts caller IDs and international calls; unwanted and unknown calls can be selectively blocked&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Privacy Cleaner&lt;/p&gt;
+&lt;p&gt;Deletes web searches, clipboard data and cache histories to keep your records clean&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Privacy Advisor&lt;/p&gt;
+&lt;p&gt;Informs users about what each installed app can do on Device administrator, app payments, location tracking, tapping, contacts access and other sensitive information&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;One-Touch Scan&lt;/p&gt;
+&lt;p&gt;Scans for malware in devices, checks engine update status and vulnerabilities on the device as well as installed apps&amp;rsquo; permissions with just a single tap&lt;/p&gt;
+&lt;p style="padding: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;App Lock / Hidden Gallery&lt;/p&gt;
+&lt;p&gt;Locks apps on device with App Lock and hides pictures/videos from gallery by using a password.&lt;/p&gt;
+&lt;p style="padding: 20px 0px 15px; color: #282828; font-size: 18px;"&gt;System Requirements&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;System Requirements Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 30%;" /&gt; &lt;col style="width: 70%;" /&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;&lt;th scope="row" bgcolor="#fbfcfd"&gt;OS&lt;/th&gt;
+&lt;td style="text-align: left;"&gt;Android platform version 4.0 (ICS) and later versions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;&lt;th scope="row" bgcolor="#fbfcfd"&gt;Device&lt;/th&gt;
+&lt;td style="text-align: left;"&gt;Android smartphones and smart devices&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;&lt;th scope="row" bgcolor="#fbfcfd"&gt;Screen&lt;/th&gt;
+&lt;td style="text-align: left;"&gt;- Resolution: 540 x 960 and higher&lt;br /&gt;- Size : 4~7 inches&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;&lt;th scope="row" bgcolor="#fbfcfd"&gt;Language&lt;/th&gt;
+&lt;td style="text-align: left;"&gt;English / Korean / Japanese&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="color: #0e77d9; padding-bottom: 25px; font-size: 18px;"&gt;AhnLab prides itself for its 15 years of mobile solutions development and for its know-how of exclusive malware analytics.&lt;/p&gt;
+&lt;p style="color: #000000; padding-bottom: 10px; font-size: 18px;"&gt;No. 1 with 100% Protection&lt;/p&gt;
+&lt;p&gt;AhnLab V3 Mobile Security employs the proven, world-class mobile AV engine, V3 Mobile. V3 Mobile engine has been proven with AV-TEST and AV-Comparatives certificates. It helps V3 Mobile Security detects accurately and promptly elusive mobile malware. Also, this is the very reason why major Android smartphone manufacturers rely on V3 Mobile.&lt;/p&gt;
+&lt;ul style="margin: 10px 0px 25px;"&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Acquired AV-TEST Certificate &lt;span style="color: #0e77d9;"&gt;13 times&lt;/span&gt; consecutively (as of January 2015)&lt;/li&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Passed AV-Test with &lt;span style="color: #0e77d9;"&gt;a score of 100%&lt;/span&gt; on the Protection test (as of January 2015)&lt;/li&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Scored &lt;span style="color: #0e77d9;"&gt;99.9%&lt;/span&gt; in the AV-Comparatives Detection test (as of August 2014)&lt;/li&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Developed and provided the first mobile anti-virus in 2001 (V3 Mobile Palm 1.0, a freeware for Palm-based PDAs)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style="color: #000000; padding-bottom: 10px; font-size: 18px;"&gt;Optimized and Comprehensive protection for Android devices&lt;/p&gt;
+&lt;p&gt;AhnLab V3 Mobile Security offers not only the mobile anti-virus but a total security for Android smartphones so that you can enjoy your mobile life without worries.&lt;/p&gt;
+&lt;ul style="margin: 10px 0px 25px;"&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Based on the proven mobile anti-virus engine, V3 Mobile Security &lt;span style="color: #0e77d9;"&gt;stops mobile malware&lt;/span&gt; in its tracks&lt;/li&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Protects &lt;span style="color: #0e77d9;"&gt;your privacy&lt;/span&gt; by informing apps&amp;rsquo; inappropriate requests for permissions and cleaning search history&lt;/li&gt;
+&lt;li style="padding: 0px 0px 0px 10px; text-indent: -10px;"&gt;- Helps to &lt;span style="color: #0e77d9;"&gt;find your lost device&lt;/span&gt; using remote commands to sound alarm, delete data, or lock device remotely&lt;/li&gt;
+&lt;/ul&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/2ZM2LAJXBQYYQV3D/prodImg_11325.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">7</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">24</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>AC72BVL3NCF9B6PG</UUID>
+					<DisplayName>Endpoint Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

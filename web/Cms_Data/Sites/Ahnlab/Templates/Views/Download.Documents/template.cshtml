@@ -1,0 +1,107 @@
+﻿@functions
+{
+    protected class CatHasDocument
+    {
+        public TextContent Category { get; set; }
+        public List<ProductHasDoc> ProductHasDocs { get; set; }
+
+    }
+    protected class ProductHasDoc
+    {
+        public TextContent Product { get; set; }
+        public List<TextContent> Documents { get; set; }
+    }
+}
+@{
+    var cats = new List<CatHasDocument>();
+    foreach (TextContent item in ViewBag.Products)
+    {
+        //var documents = allDocuments.Where(d => d.ParentUUID == item.UUID).ToList();
+        //var itemCats = allCategories.Where(c => c.UUID == item.ParentUUID).ToList();
+        var documents = item.Children("Documents");
+        var itemCats = item.Categories("Catalog");
+        var hasDocProduct = new ProductHasDoc();
+        if (!documents.Any()) {continue;}
+        hasDocProduct.Product = item;
+        hasDocProduct.Documents = documents.ToList();
+        if (cats.Any(c => c.Category != null && itemCats.Select(i => i.UUID).Contains(c.Category.UUID)))
+        {
+            var catExists = cats.Where(c => c.Category != null && itemCats.Select(i => i.UUID).Contains(c.Category.UUID));
+            foreach (var cat in catExists.Where(cat => cat != null))
+            {
+                if (cat.ProductHasDocs == null)
+                {
+                    cat.ProductHasDocs = new List<ProductHasDoc>();
+                }
+                cat.ProductHasDocs.Add(hasDocProduct);
+            }
+        }
+        else
+        {
+            cats.AddRange(itemCats.Select(i => new CatHasDocument { Category = i, ProductHasDocs = new List<ProductHasDoc> { hasDocProduct } }));
+        }
+    }
+    cats = cats.OrderBy(t => t.Category["Order"]).ToList();
+}
+<div class="descCopy mb35">
+    @("The latest version of our products are available for download. Learn about the various product lines of AhnLab.".Label())
+</div>
+<div class="tList01 dlTable">
+    <table>
+        <caption>@("Document Downloads".Label())</caption>
+        <colgroup>
+            <col style="width:20%;" />
+            <col style="width:30%;" />
+            <col style="width:12%;" />
+            <col style="width:13%;" />
+            <col style="width:13%;" />
+            <col style="width:12%;" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" class="first">@("Category".Label())</th>
+                <th scope="col">@("Product".Label())</th>
+                <th scope="col" colspan="@ViewBag.Types.Length">@("Download".Label())</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cat in cats)
+            {
+                var i = 0;
+                foreach (var product in cat.ProductHasDocs)
+                {
+
+                    <tr class="@(i == 0 ? "first":"") ">
+                        @if (i == 0)
+                        {
+                            <td class="first" rowspan="@cat.ProductHasDocs.Count">@cat.Category["Name"]</td>
+                        }
+
+                        <td class="al">@product.Product["Name"]</td>
+                        @foreach (var type in ViewBag.Types)
+                        {
+                            var document = product.Documents.FirstOrDefault(d => d["Type"].ToString() == type["UUID"].ToString());
+
+                            <td>
+                                @if (document != null)
+                                {
+                                    if (!string.IsNullOrEmpty(document["File"].ToString()))
+                                    {
+                                        <a href="@Url.Content(document["File"].ToString())" target="_blank" class="btnDn manual" title="@document["Name"]">@type.Name</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@document["Link"]" target="_blank" class="btnDn manual" title="@document["Name"]">@type.Name</a>
+                                    }
+                                }
+
+                            </td>
+                        }
+                    </tr>
+                    i++;
+                }
+
+            }
+        </tbody>
+    </table>
+</div> 

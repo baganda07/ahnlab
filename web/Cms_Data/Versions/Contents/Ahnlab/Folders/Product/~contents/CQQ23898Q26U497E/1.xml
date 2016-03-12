@@ -1,0 +1,500 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-11T22:51:40.5651202+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab-TrusGuard</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:51:40.5651202+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-11T22:51:40.5651202+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">CQQ23898Q26U497E</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Product</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">AhnLab TrusGuard</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">The Solution for Integrated Network Security</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Overview</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="color: #0e77d9; font-size: 18px;"&gt;AhnLab TrusGuard integrates firewall, IPS, VPN, anti-virus, and anti-spam security features with a unique self-defense system against DDoS attacks. It is designed for efficient and secure connectivity with internal systems through an IPSec/SSL VPN. AhnLab offers a full lineup of TrusGuard to protect any business environment, including TrusGuard 22000 for full-scale, customizable corporate network security.&lt;/p&gt;
+&lt;div style="padding: 35px 0px;"&gt;&amp;nbsp;&lt;img src="//global.ahnlab.com/global/upload/editor/1411260043329432.jpg" title="1411260043329432.jpg" /&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Features</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;AhnLab TrusGuard Features Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 75%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;Feature&lt;/th&gt;&lt;th scope="col"&gt;Details&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Firewall&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Stateful Packet Inspection methods&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Blacklist and Whitelist filters&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Guarantees constant, independent performance regardless of the number of policies or sessions&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports multiple NAT features; Static/Dynamic NAT, Excluded NAT, NAT Traversal&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Separate QoS policy can be applied by IP/Port&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Intuitive configuration and easy management&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Schedule-based policy configuration; One time, Daily, Weekly, Monthly, Yearly and Specific Period&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Guarantee of availability: Active-Active, Active-Standby HA (with/without L4 switch)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Password-based authentication, internal one-time password, and external RADIUS/LDAP/AD linkage authentication&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports VoIP dynamic port (H.323/ SIP)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Policy validity check&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports Session Shaping&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports User-ID based firewall policy settings/management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;IPS&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Packet flow-based anomaly detection/block against network attacks and malicious codes&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Signature-based intrusion prevention (maintenance of more than 6,000 signatures)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Signatures updated daily&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Behavior-based intrusion prevention&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supported by ASEC, AhnLab Security Emergency response Center&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- User-defined rules and signatures&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Customized IPS policy can be applied by network zones&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Bot prevention feature&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Zero-day attack protection, via a 3-step defense system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Application Control&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- More than 1000 application signatures supported&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Access and login control on the main application users&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports 250 specialized applications in Korea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;C&amp;amp;C Detect and Block&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Detects and blocks C&amp;amp;C server access&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports more than 100,000 cloud-based C&amp;amp;C blacklist signatures&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- C&amp;amp;C blacklist daily updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Anti-virus&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Detects and blocks file-based viruses and malicious codes (via the embedded AhnLab V3 engine)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Detects and blocks file-based viruses, Trojans, worms, spyware, adware, phishing attempts, spam, malicious sites, and other Internet threats&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Prevents email viruses at the gateway (outbreak prevention)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports major protocols; HTTP, SMTP, POP3, and FTP&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Scans compressed files (maximum of 5 compressions) and specific file extensions&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supported by around the clock monitoring and analysis at ASEC&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- 24/7 update via the Contents Delivery Network (CDN)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Anti-Spam/&lt;br /&gt;Web Filtering&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Blocks Spam Mail, supports SMTP and POP3&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Detects and blocks spam with a global anti-spam engine and Real-time Blacklist(RBL)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Blocks spam based on user-defined keywords (includes wildcard and regex support)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports whitelist of Sender IPs and E-mail addresses&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Synced with DB of harmful websites information and website filtering&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Synced with DB of websites information which distribute malicious codes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;DDoS Protection&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Dedicated defense engine for DDoS attacks&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Prevents TCP, UDP, and ICMP flooding&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Prevents HTTP vulnerability attacks&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Prevents various types of DDoS attacks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;IPSec VPN&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Supports manual key, IKE, and IKEv2&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Includes encryption algorithms for 3DES, AES (128, 192, 256), SEED, and ARIA&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Includes authentication algorithms for SHA 1, SHA 2 (256, 384, 512), and HAS 160&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Uses a hub and spoke, star, or mesh topology&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Includes NAT Traversal support, dead peer detection, and prevents Replay attack&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Includes firewall and IPS interlocking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;SSL VPN&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Gateway-to-Client VPN&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Includes firewall and IPS interlocking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;NAC&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;Network access control (NAC) in conjunction with the V3 antivirus solution :
+&lt;ul style="padding: 5px 0px 0px 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Access control for computers that have not installed APC Agent and provides automatic redirection to the installation page&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Network quarantine for malware-infected computers and forced remediation via APC Agent&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- Malicious traffic blocking as well as real-time, automatic V3 updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;IPv6&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv4/IPv6 dual stack support&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv4/IPv6-enabled simultaneous processing&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv6 networking, routing, and packet filtering support&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv6 static and dynamic Routing (RIPv1/v2, OSPF)&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv6 translation&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv6 stateful inspection-based packet filtering&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- IPv6 log collection and analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Monitoring&lt;/td&gt;
+&lt;td style="text-align: left;"&gt;
+&lt;ul style="padding-left: 10px;"&gt;
+&lt;li style="text-indent: -10px;"&gt;- Real-time graphical monitoring and analysis of network, firewall, IPS, antivirus, antispam, and related log data&lt;/li&gt;
+&lt;li style="text-indent: -10px;"&gt;- AhnLab TrusGuard Manager and TrusAnalyzer (installation of optional S/W required)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Advantages</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="margin: 0px 0px 5px; color: #282828; font-size: 18px;"&gt;Scales up to protect high-performance networks&lt;/p&gt;
+&lt;p&gt;Capable of handling growing network traffic, thanks to optimization for high-performance multicore environments&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Ensures network stability&lt;/p&gt;
+&lt;p&gt;Protects network resources (such as, websites, database servers, applications servers, and client machines) from unknown network attacks with the 3-step defense.&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Covers IPv6 network environments&lt;/p&gt;
+&lt;p&gt;Complete support for IPv6 networks&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Reduces total cost of operation (TCO)&lt;/p&gt;
+&lt;p&gt;Offers cost cuts compared to integrating multiple security products Relieves operational and labor costs associated with managing multiple security solutions&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Increases productivity and network efficiency&lt;/p&gt;
+&lt;p&gt;Eliminates unwanted traffic via access control and restriction of programs and sites that are hazardous or not related to work Optimizes network traffic to lower network operation costs&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Centralizes responses to network threats&lt;/p&gt;
+&lt;p&gt;Routes VPN traffic through the head office for enhanced security Centralizes management of quarantines and treatment of infected computers via the AnhLab Policy Center (APC)&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Enhances protection for branch offices&lt;/p&gt;
+&lt;p&gt;Includes IPS, antivirus, and anti-malsite features that are distributed to branch offices for enhanced protection against attacks&lt;/p&gt;
+&lt;p style="margin: 20px 0px 5px; color: #282828; font-size: 18px;"&gt;Proactive Defense&lt;/p&gt;
+&lt;p&gt;TrusGuard provides a total security with an exclusive response system of ACCESS (AhnLab Cloud Computing E-Security System). With the real time threats analysis process, proactive defense is ensured on the unknown and Zero-day attacks.&lt;/p&gt;
+&lt;div style="padding: 35px 0px;"&gt;&lt;img src="//global.ahnlab.com/global/upload/editor/1412014001388731.jpg" title="1412014001388731.jpg" /&gt;&lt;br style="clear: both;" /&gt;&lt;br /&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Specifications</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p style="margin: 0px 0px 10px; color: #282828; font-size: 18px;"&gt;SMB/Branch Office&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;SMB/Branch Office Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 14%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 17%;" /&gt; &lt;col style="width: 17%;" /&gt; &lt;col style="width: 17%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;31A&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;50A&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;70A&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;100A&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;400A&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td&gt;1 Core&lt;/td&gt;
+&lt;td&gt;1 Core&lt;/td&gt;
+&lt;td&gt;2 Core&lt;/td&gt;
+&lt;td&gt;2 Core&lt;/td&gt;
+&lt;td&gt;2 Core&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;RAM&lt;/td&gt;
+&lt;td&gt;1GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;CF&lt;/td&gt;
+&lt;td&gt;1GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;HDD&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;500GB&lt;/td&gt;
+&lt;td&gt;1TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Interface&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Switch x 4&lt;/p&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 2&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/td&gt;
+&lt;td&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/td&gt;
+&lt;td&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/p&gt;
+&lt;p&gt;1G Base-X x 4&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Firewall&lt;br /&gt;Throughput&lt;br /&gt;(Max)&lt;/td&gt;
+&lt;td&gt;1GB&lt;/td&gt;
+&lt;td&gt;1.5GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;td&gt;6GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;IPS&lt;br /&gt;Throughput &lt;br /&gt;(Max)&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;700M&lt;/td&gt;
+&lt;td&gt;1G&lt;/td&gt;
+&lt;td&gt;1.5G&lt;/td&gt;
+&lt;td&gt;2.5G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;VPN Tunnel&lt;/td&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;td&gt;10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Concurrent&lt;br /&gt;Session&lt;/td&gt;
+&lt;td&gt;200,000&lt;/td&gt;
+&lt;td&gt;800,000&lt;/td&gt;
+&lt;td&gt;1,200,000&lt;/td&gt;
+&lt;td&gt;1,700,000&lt;/td&gt;
+&lt;td&gt;2,500,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="text-indent: -17px; padding-left: 15px; margin-top: 10px;"&gt;※ TrusGuard 31A model supports only firewall/IPSec VPN.&lt;/p&gt;
+&lt;p style="margin: 35px 0px 10px; color: #282828; font-size: 18px;"&gt;Enterprise/Data Center and for Headquarter&lt;/p&gt;
+&lt;div style="overflow: hidden; border-top-color: #6a8ec6; border-top-width: 2px; border-top-style: solid;"&gt;
+&lt;table style="width: 100%; margin-top: -1px; border-spacing: 1px; background-color: #ebebeb;"&gt;&lt;caption&gt;Enterprise/Data Center and for Headquarter Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 14%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 16%;" /&gt; &lt;col style="width: 16%;" /&gt;&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="background-color: #fbfcfd;"&gt;&lt;th scope="col"&gt;&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;500A&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;1000P&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;5000&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;10000P&lt;/th&gt;&lt;th scope="col"&gt;TrusGuard&lt;br /&gt;22000&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;CPU&lt;/td&gt;
+&lt;td&gt;4 Core&lt;/td&gt;
+&lt;td&gt;6 Core&lt;/td&gt;
+&lt;td&gt;8 Core&lt;/td&gt;
+&lt;td&gt;12 Core&lt;/td&gt;
+&lt;td&gt;16 Core&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;RAM&lt;/td&gt;
+&lt;td&gt;8GB&lt;/td&gt;
+&lt;td&gt;8GB&lt;/td&gt;
+&lt;td&gt;16GB&lt;/td&gt;
+&lt;td&gt;16GB&lt;/td&gt;
+&lt;td&gt;24GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;CF&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;4GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;HDD&lt;/td&gt;
+&lt;td&gt;1TB&lt;/td&gt;
+&lt;td&gt;2TB&lt;/td&gt;
+&lt;td&gt;2TB&lt;/td&gt;
+&lt;td&gt;2TB&lt;/td&gt;
+&lt;td&gt;2TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Interface&lt;br /&gt;(Default)&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/p&gt;
+&lt;p&gt;1G Base-X x 6&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 6&lt;/p&gt;
+&lt;p&gt;1G Base-X x 8&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 10&lt;/p&gt;
+&lt;p&gt;1G Base-X x 4&lt;/p&gt;
+&lt;p&gt;10G Base-X x 2&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 14&lt;/p&gt;
+&lt;p&gt;1G Base-X x 8&lt;/p&gt;
+&lt;p&gt;10G Base-X x 2&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 10&lt;/p&gt;
+&lt;p&gt;1G Base-X x 4&lt;/p&gt;
+&lt;p&gt;10G Base-X x 4&lt;br /&gt;(10G x 2 ports,&lt;br /&gt;2 cards)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Interface&lt;br /&gt;(Option)&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Can replace&lt;br /&gt;existing card&lt;br /&gt;(Max 3 slots)&lt;/p&gt;
+&lt;p&gt;10/100/1000&lt;br /&gt;Base-T x 8&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Can replace&lt;br /&gt;existing card&lt;br /&gt;(Max 3 slots)&lt;/p&gt;
+&lt;p&gt;1G Base-X x 8&lt;/p&gt;
+&lt;p&gt;10G Base-X x 2&lt;/p&gt;
+&lt;p&gt;10G Base-X x 4&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Can replace&lt;br /&gt;existing card&lt;br /&gt;(Max 3 slots)&lt;/p&gt;
+&lt;p&gt;10G Base-X x 2&lt;/p&gt;
+&lt;p&gt;10G Base-X x 4&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;Can replace&lt;br /&gt;existing card&lt;br /&gt;(Max 7 slots)&lt;/p&gt;
+&lt;p&gt;1G Base-X x 8&lt;/p&gt;
+&lt;p&gt;10G Base-X x 2&lt;/p&gt;
+&lt;p&gt;10G Base-X x 4&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Firewall&lt;br /&gt;Throughput&lt;br /&gt;(Max)&lt;/td&gt;
+&lt;td&gt;8GB&lt;/td&gt;
+&lt;td&gt;12GB&lt;/td&gt;
+&lt;td&gt;30GB&lt;/td&gt;
+&lt;td&gt;50GB&lt;/td&gt;
+&lt;td&gt;100GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;IPS&lt;br /&gt;Throughput &lt;br /&gt;(Max)&lt;/td&gt;
+&lt;td&gt;3G&lt;/td&gt;
+&lt;td&gt;5G&lt;/td&gt;
+&lt;td&gt;10G&lt;/td&gt;
+&lt;td&gt;20G&lt;/td&gt;
+&lt;td&gt;20G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;VPN Tunnel&lt;/td&gt;
+&lt;td&gt;12,000&lt;/td&gt;
+&lt;td&gt;20,000&lt;/td&gt;
+&lt;td&gt;20,000&lt;/td&gt;
+&lt;td&gt;40,000&lt;/td&gt;
+&lt;td&gt;40,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="background-color: #ffffff;"&gt;
+&lt;td&gt;Concurrent&lt;br /&gt;Session&lt;/td&gt;
+&lt;td&gt;3,000,000&lt;/td&gt;
+&lt;td&gt;4,000,000&lt;/td&gt;
+&lt;td&gt;6,000,000&lt;/td&gt;
+&lt;td&gt;10,000,000&lt;/td&gt;
+&lt;td&gt;15,000,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Image</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">/Cms_Data/Contents/Ahnlab/Folders/Product/~contents/CQQ23898Q26U497E/prodImg_5690.png</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Order</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMenu</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">17</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Catalog</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>D392GQEPLSXB2CGW</UUID>
+					<DisplayName>Products &amp; Services</DisplayName>
+				</CategoryContent>
+				<CategoryContent>
+					<UUID>28KJBUME6Z5TX95W</UUID>
+					<DisplayName>Network Security</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

@@ -1,0 +1,91 @@
+﻿@if (ViewBag.Tools != null)
+{
+    var i = 0;
+        @Html.FrontHtml().RenderHtmlBlock("RemovalTool.Introduction")
+        
+
+        <div class="tList01 dlTable">
+            <table>
+                <caption>@("Removal Tools".Label())</caption>
+
+                <colgroup>
+                    <col style="width:10%;" />
+                    <col style="width:46%;" />
+                    <col style="width:12%;" />
+                    <col style="width:32%;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col" class="first">@("No".Label())</th>
+                        <th scope="col">@("Name".Label())</th>
+                        <th scope="col">@("Date".Label())</th>
+                        <th scope="col">@("Download".Label())</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.Tools)
+                    {
+                        
+                        <tr class="first">
+                            <td class="first">@(ViewBag.Tools.TotalItemCount - i)</td>
+                            <td class="al">
+                                @item.Name
+                            </td>
+
+
+                            <td>@item.UtcCreationDate.ToShortDateString()</td>
+
+
+                            <td class="al">
+                                @if (!string.IsNullOrEmpty(item.File))
+                                {
+                                    var fileInfo = new FileInfo(item.File);
+                                    <a href="@Url.Content(item.File)" target="_blank" class="btnDn fs14" title="@item.Name">@fileInfo.Name</a>
+                                }
+                                else
+                                {
+                                    string[] link = ((string)item.Link).Split('/');
+                                    <a href="@item.Link" target="_blank" class="btnDn fs14" title="@item.Name">@link.LastOrDefault()</a>
+                                }
+                                
+                            </td>
+                        </tr>
+                        i++;
+                    }
+                </tbody>
+            </table>
+        </div>
+    
+        var pageOption = new PagerOptions
+        {
+            ShowFirstLast = false,
+            ShowPrevNext = false,
+            StatisticsTextFormatString = "",
+            NumericPagerItemCount = 5,
+            CssClass = "paging",
+            CurrentPagerItemWrapperFormatString = "<span><a class='on'>{0}</a></span>",
+            //NavigationPagerItemWrapperFormatString = "<span class=''>{0}</span>",
+            PagerItemWrapperFormatString = "<span>{0}</span>",
+            //FirstPageText = "<a class='btnMove first'><span class='blind'>Go Back To First Page</span></a>",
+            //PrevPageText = "<a class='btnMovep rev'><span class='blind'>Previous Page</span></a>",
+            //NextPageText = "<a class='btnMove next'><span class='blind'>Next Page</span></a>",
+            //LastPageText = "<a class='btnMove last' ><span class='blind'>Go Next To Last Page</span></a>",
+            //ShowDisabledPagerItems = false
+        };
+    
+        @*<div class="paging">
+            <a href="#" onclick='return false;' class="btnMove first"><span class="blind">Go Back Before Page 10</span></a>
+            <a href="#" onclick='return false;' class="btnMove prev"><span class="blind">Previous Page</span></a>
+            <span><a href="#" onclick="pageForm('1');return false;" class="on">1</a></span>
+            <span><a href="#" onclick="pageForm('2');return false;">2</a></span>
+            <span><a href="#" onclick="pageForm('3');return false;">3</a></span>
+            <span><a href="#" onclick="pageForm('4');return false;">4</a></span>
+            <span><a href="#" onclick="pageForm('5');return false;">5</a></span>
+            <span><a href="#" onclick="pageForm('6');return false;">6</a></span>
+            <span><a href="#" onclick="pageForm('7');return false;">7</a></span>
+            <span><a href="#" onclick="pageForm('8');return false;">8</a></span>
+            <a href="#" onclick="pageForm('2');return false;" class="btnMove next"><span class="blind">Next Page</span></a>
+            <a href="#" onclick='return false;' class="btnMove last"><span class="blind">Go After Page 10</span></a>
+        </div>*@
+    @Html.FrontHtml().Pager(ViewBag.Tools,pageOption)
+}
