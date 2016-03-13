@@ -320,4 +320,34 @@
 		<CategoryUUID>28KJBUME6Z5TX95W</CategoryUUID>
 		<ContentUUID>H46JPGN2FLKLULYY</ContentUUID>
 	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>HAPJ9YZ682LEX2KL</CategoryUUID>
+		<ContentUUID>ECNJ8KRNT6AJ623L</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>DK52N9ATMFCNDUAC</CategoryUUID>
+		<ContentUUID>ECNJ8KRNT6AJ623L</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>HAPJ9YZ682LEX2KL</CategoryUUID>
+		<ContentUUID>T5T27DPTZ4H49BF8</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>DK52N9ATMFCNDUAC</CategoryUUID>
+		<ContentUUID>T5T27DPTZ4H49BF8</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>D392GQEPLSXB2CGW</CategoryUUID>
+		<ContentUUID>S5P2FTP8XCGX28N3</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Catalog</CategoryFolder>
+		<CategoryUUID>AC72BVL3NCF9B6PG</CategoryUUID>
+		<ContentUUID>S5P2FTP8XCGX28N3</ContentUUID>
+	</Category>
 </ArrayOfCategory>

@@ -1,0 +1,6 @@
+﻿@if (ViewBag.Article == null)
+{
+    ViewBag.Article = ViewBag.First;
+}
+
+@Html.Raw(ViewBag.Article.Content)

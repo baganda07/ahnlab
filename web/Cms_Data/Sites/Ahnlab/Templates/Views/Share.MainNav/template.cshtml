@@ -28,6 +28,7 @@
                                     @foreach (TextContent child in children)
                                     {
                                         var products = ((TextContent[])ViewBag.Products).Where(p => p.Categories("Catalog").Select(c => c.UUID).Contains(child.UUID));
+                                        var technicals = ((TextContent[])ViewBag.Technicals).Where(p => p.Categories("Catalog").Select(c => c.UUID).Contains(child.UUID));
                                         <div class="naviWrap @(i == 0 || i % 4 == 0 ? "clear" : "")">
                                             <p class="tit"><a href="@(!string.IsNullOrEmpty(child["Url"].ToString()) ? child["Url"].ToString() : "")">@child["Name"]</a></p>
                                             @if (products != null && products.Any())
@@ -36,6 +37,16 @@
                                                     @foreach (var product in products)
                                                     {
                                                         <li><a href="@Url.FrontUrl().PageUrl("product", new { userkey = product.UserKey})">@product["Name"]</a></li>
+                                                    }
+                                                    @*<li><a href="product/productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>*@
+                                                </ul>
+                                            }
+                                            @if (technicals != null && technicals.Any())
+                                            {
+                                                <ul class="thrList">
+                                                    @foreach (var item in technicals)
+                                                    {
+                                                        <li><a href="@Url.FrontUrl().PageUrl("support/technical", new { userkey = item.UserKey })">@item["Title"]</a></li>
                                                     }
                                                     @*<li><a href="product/productSubDetailea32.html?prodSeq=1112">AhnLab MDSE</a></li>*@
                                                 </ul>
