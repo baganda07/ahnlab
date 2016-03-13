@@ -12,6 +12,7 @@
     var q = Request["q"];
     var pageIndexParam = Request["page"];
     int pageIndex = 1;
+    int pageSize = 10;
     if (!int.TryParse(pageIndexParam, out pageIndex))
     {
         pageIndex = 1;
@@ -36,7 +37,7 @@
     {
         productfaqs = productfaqs.Where(f => f.FAQ["Title"].ToString().Contains(q) || f.FAQ["Content"].ToString().Contains(q)).ToList();
     }
-    var pagedList = productfaqs.ToPagedList(pageIndex, 10);
+    var pagedList = productfaqs.ToPagedList(pageIndex, pageSize);
 }
 
 
@@ -97,7 +98,7 @@
             @foreach (var item in pagedList)
             {
                 <tr>
-                    <td>@(pagedList.TotalItemCount - (pageIndex - 1) * 10 - i)</td>
+                    <td>@(pagedList.TotalItemCount - (pageIndex - 1) * pageSize - i)</td>
                     <td>@item.Product["Name"]</td>
                     <td class="al">
                         <a href="@Url.FrontUrl().PageUrl("support/productfaq/detail", new {userkey = item.FAQ.UserKey})">@item.FAQ["Title"]</a>
