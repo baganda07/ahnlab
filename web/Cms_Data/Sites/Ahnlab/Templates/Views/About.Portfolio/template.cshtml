@@ -1,0 +1,7 @@
+﻿@Html.FrontHtml().RenderHtmlBlock("About.Portfolio")
+@if(ViewBag.Portfolio != null){
+	foreach(var item in ViewBag.Portfolio){
+		<h2 class="cTit">@item.Title</h2>
+        @Html.Raw(@item.Content)
+	}
+}
