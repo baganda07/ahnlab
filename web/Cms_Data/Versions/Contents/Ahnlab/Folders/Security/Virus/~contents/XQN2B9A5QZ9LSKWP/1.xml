@@ -1,0 +1,133 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T17:36:07.2142247+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">O97M-Hopper-L</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T17:36:07.2142247+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T17:36:07.2142247+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">XQN2B9A5QZ9LSKWP</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Security~Virus</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Virus</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Name</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">O97M.Hopper.L</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Description</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;h3 class="blind"&gt;Description&lt;/h3&gt;
+&lt;div class="tList01"&gt;
+&lt;table&gt;&lt;caption&gt;Malicious Code Risk Level Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 25%;" /&gt; &lt;col style="width: 25%;" /&gt; &lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class="first" scope="col"&gt;System Risk&lt;/th&gt;&lt;th scope="col"&gt;Network Risk&lt;/th&gt;&lt;th scope="col"&gt;Spread Risk&lt;/th&gt;&lt;th scope="col"&gt;Current Spread Level&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="first warn"&gt;
+&lt;td class="first"&gt;Very Low&lt;/td&gt;
+&lt;td&gt;undecided&lt;/td&gt;
+&lt;td&gt;Very Low&lt;/td&gt;
+&lt;td&gt;Unknown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="tList02 mt30"&gt;
+&lt;table&gt;&lt;caption&gt;Malicious Code Basic Information Details&lt;/caption&gt;&lt;colgroup&gt; &lt;col style="width: 20%;" /&gt; &lt;col style="width: 30%;" /&gt; &lt;col style="width: 20%;" /&gt; &lt;col style="width: 30%;" /&gt; &lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class="first"&gt;&lt;th scope="row"&gt;Aliases&lt;/th&gt;
+&lt;td colspan="3"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Created File&lt;/th&gt;
+&lt;td colspan="3"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Activity&lt;/th&gt;
+&lt;td colspan="3"&gt;File&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Platform&lt;/th&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;th class="bdrL" scope="row"&gt;Infection Route&lt;/th&gt;
+&lt;td&gt;File Execution&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Type&lt;/th&gt;
+&lt;td&gt;Virus&lt;/td&gt;
+&lt;th class="bdrL" scope="row"&gt;Infection Method&lt;/th&gt;
+&lt;td&gt;Macro&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Origin&lt;/th&gt;
+&lt;td&gt;Oversea&lt;/td&gt;
+&lt;th class="bdrL" scope="row"&gt;Date Discovered&lt;br /&gt;(Local time)&lt;/th&gt;
+&lt;td&gt;06-08-2000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th scope="row"&gt;Instructions&lt;/th&gt;
+&lt;td colspan="3"&gt;You can scan this virus with the latest Engine&amp;nbsp; &lt;a class="fcWarn" href="https://www.ahnlab.com/kr/site/download/product/productEngineList.do"&gt;2010.04.01.00&lt;/a&gt; &lt;br /&gt; You can cure this virus with the latest Engine&amp;nbsp; &lt;a class="fcWarn" href="https://www.ahnlab.com/kr/site/download/product/productEngineList.do"&gt;2010.04.01.00 &lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>DetailInfo</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">1</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories>
+		<Category>
+			<FolderName>Security~Virus~VirusType</FolderName>
+			<Contents />
+		</Category>
+		<Category>
+			<FolderName>Security~RiskLevel</FolderName>
+			<Contents>
+				<CategoryContent>
+					<UUID>DPF2ZKABERUGGYPN</UUID>
+					<DisplayName>1</DisplayName>
+				</CategoryContent>
+			</Contents>
+		</Category>
+	</Categories>
+</VersionInfo>

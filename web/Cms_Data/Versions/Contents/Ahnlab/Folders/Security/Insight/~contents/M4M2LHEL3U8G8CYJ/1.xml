@@ -1,0 +1,128 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T17:00:02.9260358+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">-ASEC_Advisory-AhnLab-V3-Specific-Compressed-File-Handling-Vulnerability</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T17:00:02.9260358+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T17:00:02.9260358+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">M4M2LHEL3U8G8CYJ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Security~Insight</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">[ASEC_Advisory] AhnLab V3 Specific Compressed File Handling Vulnerability</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;f&amp;cedil;逽&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Severity Rate: High&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Overview &lt;/strong&gt;&lt;br /&gt;A buffer overflow vulnerability was discovered which could let attackers execute arbitrary privileged commands. This issue takes place when an application scans maliciously manipulated compressed file types for viruses.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type of Attack&lt;/strong&gt;&lt;br /&gt;An attacker can exploit the flaw by sending a maliciously crafted compressed file (ALZ/UUE/XXE) which can be used to execute arbitrary commands.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Affected Software&lt;/strong&gt;&lt;br /&gt; - AhnLab V3Pro 2004(AhnLab V3 VirusBlock 2005 international)&lt;br /&gt; - AhnLab V3Net for Windows Server 6.0 &lt;br /&gt; - AhnLab MyV3&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impact &lt;/strong&gt;&lt;br /&gt;There exists a buffer overflow vulnerability during scanning of maliciously crafted compressed files. The successful exploitation of this flaw could potentially allow attackers to execute arbitrary commands or create malicious files on the targeted system.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;br /&gt;The buffer overflow vulnerability is exposed when scanning specific compressed files that were manipulated by malicious users. An exploit of this vulnerability can lead to arbitrary code execution attacks. This flaw affects ALZ, UUE, XXE compressed file formats. This issue is due to a failure of the application to properly check the byte size of the file name before copying it into buffers. Compressed file formats other than the three mentioned above are not affected by this threat. By default, the manual scan of V3Pro 2004 does not scan compressed files for viruses. Therefore, it will be necessary for the compressed file scan option to be enabled in order for this vulnerability to be exploited.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;br /&gt;AhnLab has released a scan engine that fixes this vulnerability. We recommend that you run the Smart Update Utility to update to the latest scan engine. The Smart Update Utility helps keep AhnLab products up to date. To manually invoke the Smart Update Utility, do one of the following:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt; Click Start-&amp;gt;All Programs-&amp;gt;AhnLab-&amp;gt;Smart Update Utility-&amp;gt;Smart Update Utility.&lt;br /&gt; Click Update on the tool bar.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The following image will display when the application starts.&lt;br /&gt;Click Start to begin updating and downloading files from our update server. It may take several minutes to complete depending on the connection speed.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caution &lt;/strong&gt;&lt;br /&gt;In order for the latest engine to be updated, your computer must be connected to the Internet.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Below is a list of fixed versions.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt; To see build information, click on Help and select Product Information.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;table width="480" border="0" cellpadding="0" cellspacing="2"&gt;
+&lt;tbody&gt;
+&lt;tr align="center" bgcolor="#dadada"&gt;
+&lt;td&gt;Product Name&lt;/td&gt;
+&lt;td&gt;Version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr bgcolor="#f6f6f6"&gt;
+&lt;td&gt;AhnLab V3Pro 2004&lt;/td&gt;
+&lt;td&gt;Later than 6.0.0.488&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr bgcolor="#f6f6f6"&gt;
+&lt;td&gt;AhnLab V3Net for Windows Server 6.0&lt;/td&gt;
+&lt;td&gt;Later than 6.0.0.488&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr bgcolor="#f6f6f6"&gt;
+&lt;td&gt;AhnLab MyV3&lt;/td&gt;
+&lt;td&gt;Not Vulnerable as of October 11, 2005&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Acknowledgement &lt;br /&gt;We especially thank Chew Keong Tan of Secunia(&lt;a href="http://www.secunia.com)"&gt;http://www.secunia.com)&lt;/a&gt; for reporting this issue and helping us to find a solution.&lt;br /&gt;&lt;br /&gt;ASEC Contact Information&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Email:
+&lt;script language="javascript"&gt;
+write_mail("asec", "ahnlab.com", true);
+&lt;/script&gt;
+&lt;a href="mailto:asec@ahnlab.com"&gt;asec@ahnlab.com&lt;/a&gt;&lt;br /&gt;Copyright 2002-2005 ASEC(AhnLab Security E-response Center) All Rights Reserved.&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

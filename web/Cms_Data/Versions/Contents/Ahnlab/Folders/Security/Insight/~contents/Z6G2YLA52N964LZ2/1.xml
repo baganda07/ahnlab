@@ -1,0 +1,173 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T16:59:13.6563686+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">-August-2005-Vulnerability-found-in-Microsoft-Plug-and-Play</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T16:59:13.6563686+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T16:59:13.6563686+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Z6G2YLA52N964LZ2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Security~Insight</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">[August 2005] Vulnerability found in Microsoft Plug and Play</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;table width="560" border="0" cellpadding="0" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;table width="560" bgcolor="#cccccc" border="0" cellpadding="8" cellspacing="1"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left" bgcolor="#ffffff"&gt;&lt;strong&gt;Security risk found in July &lt;/strong&gt;&lt;br /&gt;
+&lt;p&gt;Summer is turning to Fall, the leaves are beginning to collect on the ground and, although we have to say goodbye to the summer sun for the time being, we have a hot new issue to which we must turn our attention. Earlier this month Microsoft announced the discovery of a new MS05-039 Plug and Play (PnP) service vulnerability. In reaction to this announcement, ASEC ( AhnLab Security E-response Center ) began preparing for the inevitable appearance of worms and viruses expected to take advantage of this newfound weakness. As we anticipated, our vigilance paid off and allowed for the early discovery of new worms and malicious code circulating on the Net. Early detection of this kind of threat is critical to decrease the creation time of malicious code and to prevent a truly widespread outbreak.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td height="16"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;table width="560" bgcolor="#cccccc" border="0" cellpadding="5" cellspacing="1"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td bgcolor="#ffffff"&gt;
+&lt;table width="100%" border="0" cellpadding="0" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr align="center"&gt;
+&lt;td height="40" width="22%"&gt;&lt;strong&gt;System Risk&lt;/strong&gt;&lt;/td&gt;
+&lt;td width="59%"&gt;&lt;strong&gt;Vulnerability&lt;/strong&gt;&lt;/td&gt;
+&lt;td width="19%"&gt;&lt;strong&gt;Malicious &lt;br /&gt;Code (YES/NO)&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3" style="height: 1px; background-color: #c8c8c8;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td height="36" align="center"&gt;MID&lt;/td&gt;
+&lt;td&gt;Vulnerability of Remote code execution exist in Msdds.dll library&lt;/td&gt;
+&lt;td align="center"&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3" style="height: 1px; background-color: #c8c8c8;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td height="36" align="center"&gt;MID&lt;/td&gt;
+&lt;td&gt;Microsoft Windows RDP(Remote Desktop Protocol) Denial of Service Attack (MS05-041)&lt;/td&gt;
+&lt;td align="center"&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3" style="height: 1px; background-color: #c8c8c8;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td height="36" align="center"&gt;HIGH&lt;/td&gt;
+&lt;td&gt;Internet Explorer COM Objects related vulnerability (MS05-038)&lt;/td&gt;
+&lt;td align="center"&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3" style="height: 1px; background-color: #c8c8c8;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td height="36" align="center"&gt;HIGH&lt;/td&gt;
+&lt;td&gt;Microsoft PnP(Plug and Play) Buffer overflow Vulnerability (MS05-039)&lt;/td&gt;
+&lt;td align="center"&gt;YES&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3" style="height: 1px; background-color: #c8c8c8;"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr align="center"&gt;
+&lt;td colspan="3" height="40"&gt;&lt;strong&gt;[1] Major vulnerability found in August&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table width="560" border="0" cellpadding="6" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;&lt;span class="acbic"&gt;&lt;strong&gt;Malicious code exposure and expected Worm appearance &lt;/strong&gt;&lt;/span&gt;
+&lt;p&gt;The risk to computer users by malicious code has been on the rise lately as vulnerabilities and security breaches are uncovered within their systems. In particular, Microsoft (MS) products have been a major target for these forms of attack. In an attempt to counter this onslaught, MS releases security vulnerability patches on the second Tuesday of every month. In their most recent release, Microsoft announced 6 patches. From these patches, the PnP service was noted to have the weakness of remote execution which allows it to be used by malicious code as a spring board into a user's system. These types of attacks are especially insidious because of the multitude of users who can be affected and the ease with which vulnerabilities can go unnoticed. &lt;br /&gt;Displayed below is a time table which lists the events that took place from the announcement of MS05-039 to the appearance of the first instance of malicious code.&lt;/p&gt;
+&lt;p&gt;2005/08/09 MS05-039 MS announce Security vulnerability warning&lt;br /&gt;2005/08/11 MS05-039 first and second attacking code found ( Infrequent attacking code) &lt;br /&gt;2005/08/12 MS05-039 third attacking code found (Code that used on Malicious code) &lt;br /&gt;2005/08/14 Zotob.A worm discovered (Afternoon of 14th) &lt;br /&gt;2005/08/14 Zotob.B &lt;br /&gt;2005/08/15 Zotob.C - Mass Mailer feature included&lt;/p&gt;
+&lt;p&gt;Within three days of the announcement, the malicious code used within the worm had been exposed. Two days after this exposure, the (Zotob) worm was discovered. It can typically be expected that as time proceeds and the awareness of vulnerabilities is increased, the interval between release and discovery of malicious code decreases, thereby reducing the potential damage caused by these and other harmful internet threats. The development of the malicious code used in this worm was claimed by the creator of the Blaster Worm. Even though the offending code targeted only Windows 2000, and it had an inaccurate offset position on Korean Windows systems, system administrators and end-users need to be especially aware of vulnerabilities that can contribute to the widespread destruction caused by worms such as these.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AhnLab ASEC&lt;br /&gt;Written by Jung Kwang Jin, Sr. Researcher&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">1</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>
