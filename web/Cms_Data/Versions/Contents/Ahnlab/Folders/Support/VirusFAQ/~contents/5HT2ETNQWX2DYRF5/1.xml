@@ -1,0 +1,114 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T11:02:48.1310339+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">The-message-service-exe-terminated-unexpectedly-with-Status-Code-128-is-displayed-and-the-system-reboots-automatically-after-60-seconds-</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:02:48.1310339+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:02:48.1310339+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">5HT2ETNQWX2DYRF5</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Support~VirusFAQ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">The message "service.exe terminated unexpectedly with Status Code 128." is displayed and the system reboots automatically after 60 seconds.</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;This symptom is associated with Win32/Zotob.worm that attempts to infect your system, exploiting Windows vulnerability (MS05-039).&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;When Win32/Zotob.worm infects your system, it creates files in the Windows system folder and opens TCP # 33333 port, and then attempts to connect the specific IRC server using random ports. Once the connection is established successfully, Win32/Zotob.worm activates many malicious functions by the command from the offer.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;This is an attack that exploits OS vulnerability. You should install the following patches to avoid this attack.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;[How to install the patch]&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;1) Download and install the security patches, Plug-and-Play Vulnerability (MS05-039) Exploit for your version of Windows from the URL below. [Required]&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;- &lt;a href="http://www.microsoft.com/technet/security/Bulletin/ms05-039.mspx"&gt;Go to Microsoft Security Bulletin MS05-039 vulnerability page &lt;/a&gt; &amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;2) Reboot the system.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;3) Install all the security patches that MS recommends via the following steps; [Run Internet Explorer]-[Tools]-[Windows Update]-[Check for Updates and Install]-[Install Now]. [Required]&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;However, if you cannot use the method described above due to the system rebooting every 60 seconds, please run a removal tool for the security hole as the following steps.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;1. Download and execute V3 FirstBlock for pnp vulnerability.exe from the page below.&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;- &lt;a href="http://global.ahnlab.com/security/security_tools.html"&gt;Go to the RemovalTools page for PnP Vulnerability (MS05-039) &lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;2. When executed, it blocks the attacking packets.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp; &amp;nbsp;You can check the log by clicking &amp;lsquo;Network&amp;rsquo; tab in the main window.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;3. Proceed as instructed in [How to install the patch] above, when V3 FirstBlock for pnp vulnerability is running.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;V3 FirstBlock for PnP Vulnerability detects and blocks the attacking packets only. It does not detect or repair malicious codes exploiting the vulnerability. You need to scan against viruses after updating Windows.&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;For your reference, this vulnerability does not affect Windows 9x (95, 98, 98SE, Me) systems. It threatens mainly Windows 2000 systems and may affect unpatched Windows XP systems.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;- &lt;a href="http://info.ahnlab.com/securityinfo/virus_view_eng_new2.jsp?SEQ_NO=2623"&gt;Go to Win32/Zotob.worm.31744 information &lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;- &lt;a href="http://info.ahnlab.com/securityinfo/virus_view_eng_new2.jsp?SEQ_NO=2619"&gt;Go to Win32/Zotob.worm.15386 information&amp;nbsp;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;- &lt;a href="http://info.ahnlab.com/securityinfo/virus_view_eng_new2.jsp?SEQ_NO=2618"&gt;Go to Win32/Zotob.worm.22528 information &lt;/a&gt;&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">1</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

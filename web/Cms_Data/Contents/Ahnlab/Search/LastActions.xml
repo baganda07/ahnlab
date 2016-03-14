@@ -2,32 +2,32 @@
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
 		<FolderName>Catalog</FolderName>
-		<ContentSummary>Product FAQ</ContentSummary>
+		<ContentSummary>Notice</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-13T04:02:47.1844967Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T04:27:06.7779643Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~ProductFAQ</FolderName>
-		<ContentSummary>I can’t remember my password after encrypting a file. Can you help me?</ContentSummary>
+		<FolderName>Support~Notice</FolderName>
+		<ContentSummary>[Notice] Another OpenSSL Security Issue Response FAQ</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-13T03:12:45.2826918Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T04:20:21.9693609Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Product</FolderName>
-		<ContentSummary>AhnLab V3 Mobile 2.0 for Android</ContentSummary>
+		<FolderName>Support~Notice</FolderName>
+		<ContentSummary>[Notice] OpenSSL Security Issue Response FAQ</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-13T03:12:07.3761018Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T04:19:42.0526832Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~ProductFAQ</FolderName>
-		<ContentSummary>What do the different colored lights on V3 Click mean?</ContentSummary>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Virus FAQ</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-13T03:10:14.0991764Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T04:12:24.3248026Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~ProductFAQ</FolderName>
-		<ContentSummary>What is the difference between Clean Wise and Clean Wide?</ContentSummary>
+		<FolderName>Support~VirusFAQ</FolderName>
+		<ContentSummary>The system reboots in safe mode and the mouse pointer disappears. </ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-13T03:09:27.1394884Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T04:03:16.8683186Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

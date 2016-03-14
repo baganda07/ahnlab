@@ -1,0 +1,111 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T11:19:42.0370566+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">-Notice-OpenSSL-Security-Issue-Response-FAQ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:19:42.0370566+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:19:42.0370566+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">R59JPLSUYW3DTLQM</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Support~Notice</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">[Notice] OpenSSL Security Issue Response FAQ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;table width="713" align="center" border="0" cellpadding="0" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="margin: 0px; padding: 0px 20px; color: #666666; line-height: 18px; font-family: verdana,tahoma; font-size: 12px;" valign="top"&gt;
+&lt;p&gt;Global.ahnlab.com knows that you care how information about you is used and shared, and we appreciate your trust that we will do so carefully and sensibly.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong style="color: #005db4;"&gt;Does global.ahnlab.com share the information it receives?&lt;/strong&gt; &lt;br /&gt; &lt;br /&gt; Information about our customers is an important part of our business, and we are not in the business of selling it to others. We share customer information only as described below and with global partners of AhnLab, Inc. controls that either are subject to this Privacy Notice.&lt;br /&gt; &amp;nbsp;&lt;/p&gt;
+&lt;table width="670" align="center" border="0" cellpadding="0" cellspacing="0"&gt;&lt;colgroup&gt; &lt;col width="60%" /&gt; &lt;col width="40%" /&gt; &lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;th style="background: #e8f0f7; margin: 0px; padding: 5px 0px 2px; color: #666666; line-height: 19px; font-family: verdana,tahoma; font-size: 12px; border-top-color: #6189af; border-right-color: #d1d1d1; border-bottom-color: #d1d1d1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid;"&gt;Previous Global Partners&lt;/th&gt;&lt;th style="background: #e8f0f7; margin: 0px; padding: 5px 0px 2px; color: #666666; line-height: 19px; font-family: verdana,tahoma; font-size: 12px; border-top-color: #6189af; border-bottom-color: #d1d1d1; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;"&gt;Current&amp;nbsp;Global Patners&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="background: #ffffff; margin: 0px; padding: 5px 10px 2px; color: #666666; line-height: 18px; font-family: verdana,tahoma; font-size: 12px; border-right-color: #d1d1d1; border-bottom-color: #6189af; border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;"&gt;&lt;strong&gt;&amp;middot;&lt;/strong&gt; Damage Control S.A.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; LogicToken Company Ltd.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; S&amp;amp;F Scout&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Scan&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; SQNetworks&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Wesco Computers Corporation (notebookshop.com)&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; World Star International JSC&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Bluezebra&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; CyberSoft Operating Corporation&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Foreseeson Technology&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Global One Business Ltd.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Multimedia Contents Security Service Sdn. Bhd.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Opiron&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Silverlake Online Security Sdn. Bhd.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Sun Sales Team&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; TSL&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; VinaGenuwin&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Wesco Computers Corporation (notebookshop.com)&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; E2ON&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Silver State Technologies&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; VinaSystem&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; AnswerNet&lt;/td&gt;
+&lt;td valigh="top" rowspan="3" style="background: #ffffff; margin: 0px; padding: 5px 10px 2px; color: #666666; line-height: 19px; font-family: verdana,tahoma; font-size: 12px; border-bottom-color: #6189af; border-bottom-width: 1px; border-bottom-style: solid;"&gt;&lt;strong&gt;&amp;middot;&lt;/strong&gt; Damage Control S.A.&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; SQNetworks&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; World Star International&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Bluezebra&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Multimedia Contents Security Service&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Silverlake Online Security&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; VinaGenuwin&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; Synetcom&lt;br /&gt; &lt;strong&gt;&amp;middot;&lt;/strong&gt; PT. Tekhan Raya&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;This Privacy Statement is effective&amp;nbsp;May 7, 2014&lt;/strong&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt; &amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="margin-left: 15px;" width="713" border="0" cellpadding="0" cellspacing="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="padding: 15px 10px 7px; border: 1px solid #ecebe9;" bgcolor="#f4f3f1"&gt;
+&lt;p style="margin: 0px 0px 3px; padding: 0px; color: #888888; line-height: 16px; font-family: verdana,tahoma; font-size: 12px;"&gt;ㆍIf you have any questions, please contact us at &lt;a href="mailto:e-support@ahnlab.com" style="color: #1a7cf5;"&gt;e-support@ahnlab.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">1</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

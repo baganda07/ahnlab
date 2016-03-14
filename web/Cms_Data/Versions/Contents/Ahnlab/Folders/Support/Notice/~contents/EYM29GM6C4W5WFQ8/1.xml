@@ -1,0 +1,141 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-14T11:20:21.9224841+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">-Notice-Another-OpenSSL-Security-Issue-Response-FAQ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:20:21.9224841+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-14T11:20:21.9224841+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">EYM29GM6C4W5WFQ8</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Support~Notice</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">[Notice] Another OpenSSL Security Issue Response FAQ</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 11pt;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움; font-size: 12pt;"&gt;Summary&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;1. What are the new OpenSSL vulnerability and its impact?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;Another vulnerabilities in OpenSSL have been revealed. These vulnerabilities can be exploited to decrypt and modify SSL (Secure Sockets Layer) and TLS (Transport Layer Security) traffic between clients and servers that use OpenSSL, if the version of the library on the server is 1.0.1 or newer. Also, these vulnerabilities can allow a remote attacker to cause a denial of service or run arbitrary code.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="text-decoration: underline;"&gt;&lt;span style="font-family: 돋움;"&gt;OpenSSL Vulnerability [05 Jun 2014]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ SSL/TLS MITM vulnerability (CVE-2014-0224)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;The attacker can decrypt and modify traffic from the attacked client and server.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ DTLS recursion flaw (CVE-2014-0221)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;By sending an invalid DTLS handshake to an OpenSSL DTLS client the code can be made to recur eventually crashing in a DoS attack.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ DTLS invalid fragment vulnerability (CVE-2014-0195)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;By sending invalid DTLS fragments to an OpenSSL DTLS client or server can run arbitrary code on a vulnerable client or server.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ SSL_MODE_RELEASE_BUFFERS NULL pointer dereference (CVE-2014-0198)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;The attacker can launch a denial of service via a NULL pointer dereference.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ SSL_MODE_RELEASE_BUFFERS session injection or denial of service (CVE-2010-5298)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;The attacker can inject data across sessions or cause a denial of service.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;■ Anonymous ECDH denial of service (CVE-2014-3470)&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;OpenSSL TLS clients enabling anonymous ECDH ciphersuites are subject to a denial of service attack.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;2. What are the affected AhnLab products?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&lt;span style="font-family: 굴림;" face="굴림"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;Only some versions of these AhnLab products are affected:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&lt;span style="font-family: 굴림;" face="굴림"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&lt;span style="font-family: 굴림;" face="굴림"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab TrusGuard v2.1.0, v2.1.2, v2.1.3&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab TrusGuard Manager (ATM) v1.5.6.8, v1.5.7.5, v1.5.8.10&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab TrusGuard LogServer (ATL) v2.1.2.3&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab Policy Center Appliance (APC) v4.5.12, v4.5.13, v4.5.14, v4.5.15 (APC 4.0 Windows not affected.)&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;AhnLab DPS v1.0.6, v1.0.7&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab MDS v2.1.3&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&lt;span style="font-family: 굴림;" face="굴림"&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab TrusLine v2.0.2.2&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab EPS v1.0.2.14&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt; &lt;span style="font-family: 돋움;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움; font-size: 12pt;"&gt;Security Advisory for AhnLab Product Users&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;3. I am using an affected product. When will the patch be available?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;AhnLab is currently developing updates that address the vulnerability. Details will be provided when the patches are released.&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;* AhnLab is developing updates that are consistent with various environments and testing various areas to verify its stability. It usually takes several months to verify the stability of a simple change in function. AhnLab is releasing updates as fast as possible to assuage any concerns you may have about this security issue and to provide stable services.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;em&gt;&lt;span style="text-decoration: underline;"&gt;&lt;span style="font-family: 돋움;"&gt;** The updated patches AhnLab will provide are to prevent any future exploits of OpenSSL vulnerabilities.&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;4. What measures should I take before the updated patches are available?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;Control access to your system by registering administrative IPs to allow and apply patches as soon as they are available.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;5. How do I certify the updated patches?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움;"&gt;&lt;span style="color: #000000; font-family: 굴림;" face="굴림" color="#000000"&gt;&lt;br /&gt; &lt;span style="font-family: 돋움; font-size: 10pt;"&gt;Software vulnerabilities are certified by the National Intelligence Service&amp;rsquo;s CC certification. The National Intelligence Service advises to verify and upgrade encryption regularly to remediate vulnerabilities, and AhnLab is complying with the recommendation.&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #4169e1; font-family: 돋움; font-size: 10pt;"&gt;6. If I have inquiries about the updated patches, whom do I contact?&lt;/span&gt;&lt;br /&gt; &lt;span style="color: #4169e1; font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #000000; font-family: 돋움; font-size: 10pt;"&gt;Please refer to the following contact information.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움;"&gt;[North America_ AhnLab US]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;span style="font-family: 돋움;"&gt;- Email : &lt;/span&gt;&lt;a href="mailto:info@ahnlab.com"&gt;&lt;span style="font-family: 돋움;"&gt;info@ahnlab.com&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움;"&gt;[Japan_ AhnLab Japan]&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;- Email : &lt;/span&gt;&lt;a href="mailto:webmaster@ahnlab.co.jp"&gt;&lt;span style="font-family: 돋움;"&gt;webmaster@ahnlab.co.jp&lt;/span&gt;&lt;/a&gt;&lt;span style="font-family: 돋움;"&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움;"&gt;[China_AhnLab China]&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt; &lt;span style="font-family: 돋움;"&gt;- Email : &lt;/span&gt;&lt;a href="mailto:v3site@ahn.com.cn"&gt;&lt;span style="font-family: 돋움;"&gt;v3site@ahn.com.cn&lt;/span&gt;&lt;/a&gt;&lt;span style="font-family: 돋움;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;/span&gt;&lt;span style="font-family: 돋움;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 돋움; font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: 돋움;"&gt;[Other regions_AhnLab HQ Korea]&lt;/span&gt;&lt;br /&gt;&lt;/strong&gt;&lt;span style="font-family: 돋움;"&gt;- Tel : &lt;span class="skype_c2c_print_container notranslate"&gt;+82-31-722-7998&lt;/span&gt;&lt;span data-ismobile="false" data-isrtl="false" data-isfreecall="false" data-numbertype="paid" data-numbertocall="+82317227998" onclick="SkypeClick2Call.MenuInjectionHandler.makeCall(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" tabindex="-1" dir="ltr" class="skype_c2c_container notranslate" id="skype_c2c_container"&gt;&lt;span skypeaction="skype_dropdown" dir="ltr" class="skype_c2c_highlighting_inactive_common"&gt;&lt;span id="non_free_num_ui" class="skype_c2c_textarea_span"&gt;&lt;img src="resource://skype_ff_extension-at-jetpack/skype_ff_extension/data/call_skype_logo.png" class="skype_c2c_logo_img" height="0" width="0" /&gt;&lt;span class="skype_c2c_text_span"&gt;+82-31-722-7998&lt;/span&gt;&lt;span class="skype_c2c_free_text_span"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt; &lt;span style="font-family: 돋움;"&gt;- Email : &lt;/span&gt;&lt;a href="mailto:global_sa@ahnlab.com"&gt;&lt;span style="font-family: 돋움;"&gt;global_sa@ahnlab.com&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

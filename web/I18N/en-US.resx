@@ -1763,4 +1763,10 @@ Are you sure you want to use this size?</value>
   <data name="FileName" xml:space="preserve">
     <value>FileName</value>
   </data>
+  <data name="Copy view" xml:space="preserve">
+    <value>Copy view</value>
+  </data>
+  <data name="Edit DRAFT page" xml:space="preserve">
+    <value>Edit DRAFT page</value>
+  </data>
 </root>

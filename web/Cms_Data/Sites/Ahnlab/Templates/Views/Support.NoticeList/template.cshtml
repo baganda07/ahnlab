@@ -1,0 +1,77 @@
+﻿@{
+    var pageIndexParam = Request["page"];
+    int pageIndex = 1;
+    if (!int.TryParse(pageIndexParam, out pageIndex))
+    {
+        pageIndex = 1;
+    }
+}
+
+<div class="faqSrch">
+    <label for="wrtKeyword" class="msg">@("Enter a question".Label())</label>
+    <div class="inputWrap">
+        <form action="">
+            <input type="text" name="q" id="searchText" class="txtBox" value="@Request["q"]" maxlength="50" onkeypress="javascript:if (event.keyCode == 13) { searchForm(1); return false; }" title="Enter a word or a sentence" placeholder="Enter a word or a sentence" style="width:548px;" />
+            <a href="javascript:;" id="btnSearchFAQ" class="btnSmDb ml6">@("Search".Label())</a>
+        </form>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#btnSearchFAQ").click(function () {
+                    $(this).parent("form").submit();
+                });
+            });
+        </script>
+    </div>
+</div>
+
+<div class="tblInfo mt35">
+    <p>@("Total".Label()) <strong class="fcBlue">@ViewBag.Articles.TotalItemCount</strong></p>
+</div>
+<div class="bbsList">
+    <table>
+        <caption>Support List</caption>
+        <colgroup>
+            <col style="width:10%;">
+            <col style="width:64%;">
+            <col style="width:16%;">
+            <col style="width:10%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">@("No.".Label())</th>
+                <th scope="col">@("Article".Label())</th>
+                <th scope="col">@("Date".Label())</th>
+                <th scope="col">@("Hit".Label())</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{var i = 0;}
+            @foreach (var item in ViewBag.Articles)
+            {
+                <tr>
+                    <td>@(ViewBag.Articles.TotalItemCount - (pageIndex - 1) * pageIndex - i)</td>
+                    <td class="al">
+                        <a href="@Url.FrontUrl().PageUrl("support/notice/detail", new {userkey = item.UserKey})">@item.Title</a>
+                    </td>
+                    <td>@item.UtcCreationDate.ToShortDateString()</td>
+                    <td>@item.Hit</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+</div>
+@{var pageOption = new PagerOptions
+        {
+            ShowFirstLast = false,
+            ShowPrevNext = false,
+            StatisticsTextFormatString = "",
+            NumericPagerItemCount = 5,
+            CssClass = "paging",
+            CurrentPagerItemWrapperFormatString = "<span><a class='on'>{0}</a></span>",
+            //NavigationPagerItemWrapperFormatString = "<span class=''>{0}</span>",
+            PagerItemWrapperFormatString = "<span>{0}</span>",
+        };
+}
+@Html.FrontHtml().Pager(ViewBag.Articles, pageOption) 
+
