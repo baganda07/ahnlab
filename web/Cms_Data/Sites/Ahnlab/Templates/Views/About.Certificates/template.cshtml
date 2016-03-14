@@ -1,0 +1,15 @@
+﻿<div class="descCopy">AhnLab obtained multiple international certificates which prove the high quality of AhnLab products and services.</div>
+<div class="awList">
+  <ul class="clfix">
+    @if (ViewBag.Certificates != null)
+    {
+      foreach (var item in ViewBag.Certificates)
+      {
+        <li>
+          <img src="@Url.FrontUrl().ResizeImageUrl(item.Thumbnail, 150, 130)" alt="@item.Title" />
+          <p>@item.Title</p>
+        </li>
+      }
+    }
+  </ul>
+</div>
