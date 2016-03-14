@@ -1772,4 +1772,7 @@ Are you sure you want to use this size?</value>
   <data name="The field {0} is a invalid date value." xml:space="preserve">
     <value>The field {0} is a invalid date value.</value>
   </data>
+  <data name="The folder does not exists.&quot;{0}&quot;" xml:space="preserve">
+    <value>The folder does not exists."{0}"</value>
+  </data>
 </root>
