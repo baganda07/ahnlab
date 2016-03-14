@@ -1775,4 +1775,16 @@ Are you sure you want to use this size?</value>
   <data name="The folder does not exists.&quot;{0}&quot;" xml:space="preserve">
     <value>The folder does not exists."{0}"</value>
   </data>
+  <data name="XLS" xml:space="preserve">
+    <value>XLS</value>
+  </data>
+  <data name="Creation date" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="Lastest modification date" xml:space="preserve">
+    <value>Lastest modification date</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
 </root>
