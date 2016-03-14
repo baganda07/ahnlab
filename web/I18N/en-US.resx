@@ -1763,4 +1763,13 @@ Are you sure you want to use this size?</value>
   <data name="FileName" xml:space="preserve">
     <value>FileName</value>
   </data>
+  <data name="XLIFF" xml:space="preserve">
+    <value>XLIFF</value>
+  </data>
+  <data name="XLS" xml:space="preserve">
+    <value>XLS</value>
+  </data>
+  <data name="The field {0} is a invalid date value." xml:space="preserve">
+    <value>The field {0} is a invalid date value.</value>
+  </data>
 </root>
