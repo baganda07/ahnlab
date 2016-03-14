@@ -1,0 +1,57 @@
+﻿ @{
+    var pageIndexParam = Request["page"];
+    int pageIndex = 1;
+    if (!int.TryParse(pageIndexParam, out pageIndex))
+    {
+        pageIndex = 1;
+    }
+}
+
+@*<div class="tblInfo mt35">
+    <p>@("Total".Label()) <strong class="fcBlue">@ViewBag.Articles.TotalItemCount</strong></p>
+</div>*@
+<div class="bbsList">
+    <table>
+        <caption>@("Security Insight".Label())</caption>
+        <colgroup>
+            <col style="width:12%;">
+            <col style="width:76%;">
+            <col style="width:12%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">@("No.".Label())</th>
+                <th scope="col">@("Article".Label())</th>
+                <th scope="col">@("Date".Label())</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{var i = 0;}
+            @foreach (var item in ViewBag.Articles)
+            {
+                <tr>
+                    <td>@(ViewBag.Articles.TotalItemCount - (pageIndex - 1) * pageIndex - i)</td>
+                    <td class="al">
+                        <a href="@Url.FrontUrl().PageUrl("security/insight/detail", new {userkey = item.UserKey})">@item.Title</a>
+                    </td>
+                    <td>@item.UtcCreationDate.ToShortDateString()</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+</div>
+@{var pageOption = new PagerOptions
+        {
+            ShowFirstLast = false,
+            ShowPrevNext = false,
+            StatisticsTextFormatString = "",
+            NumericPagerItemCount = 5,
+            CssClass = "paging",
+            CurrentPagerItemWrapperFormatString = "<span><a class='on'>{0}</a></span>",
+            //NavigationPagerItemWrapperFormatString = "<span class=''>{0}</span>",
+            PagerItemWrapperFormatString = "<span>{0}</span>",
+        };
+}
+@Html.FrontHtml().Pager(ViewBag.Articles, pageOption) 
+

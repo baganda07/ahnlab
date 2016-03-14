@@ -1,0 +1,232 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><tr>
+            <th>
+            <label for="Name">Name</label>
+            </th>
+            <td>
+            <input class='long' id="Name" name="Name" type="text" value="@(Model.Name ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Risk">Risk</label>
+            </th>
+            <td>
+            <input class='long' id="Risk" name="Risk" type="text" value="@(Model.Risk ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Risk"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="DetailInfo">DetailInfo</label>
+            </th>
+            <td>
+            <textarea name="DetailInfo" id="DetailInfo" class="DetailInfo tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.DetailInfo ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["DetailInfo"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Protection">Protection</label>
+            </th>
+            <td>
+            <textarea name="Protection" id="Protection" class="Protection tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Protection ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Protection"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="OtherInfo">OtherInfo</label>
+            </th>
+            <td>
+            <textarea name="OtherInfo" id="OtherInfo" class="OtherInfo tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.OtherInfo ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["OtherInfo"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="SystemRisk">SystemRisk</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_SystemRisk =  @"";}
+                <select name="SystemRisk" class="long">
+                        <option value="@(@"Very Low")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"Very Low".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"Very Low".ToLower()) ? "selected" : "")>Very Low</option>
+                        <option value="@(@"Low")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"Low".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"Low".ToLower()) ? "selected" : "")>Low</option>
+                        <option value="@(@"Medium")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"Medium".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"Medium".ToLower()) ? "selected" : "")>Medium</option>
+                        <option value="@(@"High")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"High".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"High".ToLower()) ? "selected" : "")>High</option>
+                        <option value="@(@"Very Hight")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"Very Hight".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"Very Hight".ToLower()) ? "selected" : "")>Very Hight</option>
+                        <option value="@(@"Unknown")" @((Model.SystemRisk != null && Model.SystemRisk.ToString().ToLower() == @"Unknown".ToLower()) || (Model.SystemRisk == null && dropDownDefault_SystemRisk.ToLower() == @"Unknown".ToLower()) ? "selected" : "")>Unknown</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["SystemRisk"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="NetworkRisk">NetworkRisk</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_NetworkRisk =  @"";}
+                <select name="NetworkRisk" class="long">
+                        <option value="@(@"Very Low")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"Very Low".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"Very Low".ToLower()) ? "selected" : "")>Very Low</option>
+                        <option value="@(@"Low")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"Low".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"Low".ToLower()) ? "selected" : "")>Low</option>
+                        <option value="@(@"Medium")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"Medium".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"Medium".ToLower()) ? "selected" : "")>Medium</option>
+                        <option value="@(@"High")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"High".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"High".ToLower()) ? "selected" : "")>High</option>
+                        <option value="@(@"Very High")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"Very High".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"Very High".ToLower()) ? "selected" : "")>Very High</option>
+                        <option value="@(@"Unknown")" @((Model.NetworkRisk != null && Model.NetworkRisk.ToString().ToLower() == @"Unknown".ToLower()) || (Model.NetworkRisk == null && dropDownDefault_NetworkRisk.ToLower() == @"Unknown".ToLower()) ? "selected" : "")>Unknown</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["NetworkRisk"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="SpreadRisk">SpreadRisk</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_SpreadRisk =  @"";}
+                <select name="SpreadRisk" class="long">
+                        <option value="@(@"Very Low")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"Very Low".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"Very Low".ToLower()) ? "selected" : "")>Very Low</option>
+                        <option value="@(@"Low")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"Low".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"Low".ToLower()) ? "selected" : "")>Low</option>
+                        <option value="@(@"Medium")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"Medium".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"Medium".ToLower()) ? "selected" : "")>Medium</option>
+                        <option value="@(@"High")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"High".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"High".ToLower()) ? "selected" : "")>High</option>
+                        <option value="@(@"Very High")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"Very High".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"Very High".ToLower()) ? "selected" : "")>Very High</option>
+                        <option value="@(@"Unknown")" @((Model.SpreadRisk != null && Model.SpreadRisk.ToString().ToLower() == @"Unknown".ToLower()) || (Model.SpreadRisk == null && dropDownDefault_SpreadRisk.ToLower() == @"Unknown".ToLower()) ? "selected" : "")>Unknown</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["SpreadRisk"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="CurrentSpreadLevel">Current Spread Level</label>
+            </th>
+            <td>
+            @{ var dropDownDefault_CurrentSpreadLevel =  @"";}
+                <select name="CurrentSpreadLevel" class="long">
+                        <option value="@(@"Very Low")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"Very Low".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"Very Low".ToLower()) ? "selected" : "")>Very Low</option>
+                        <option value="@(@"Low")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"Low".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"Low".ToLower()) ? "selected" : "")>Low</option>
+                        <option value="@(@"Medium")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"Medium".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"Medium".ToLower()) ? "selected" : "")>Medium</option>
+                        <option value="@(@"High")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"High".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"High".ToLower()) ? "selected" : "")>High</option>
+                        <option value="@(@"Very High")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"Very High".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"Very High".ToLower()) ? "selected" : "")>Very High</option>
+                        <option value="@(@"Unknown")" @((Model.CurrentSpreadLevel != null && Model.CurrentSpreadLevel.ToString().ToLower() == @"Unknown".ToLower()) || (Model.CurrentSpreadLevel == null && dropDownDefault_CurrentSpreadLevel.ToLower() == @"Unknown".ToLower()) ? "selected" : "")>Unknown</option></select>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["CurrentSpreadLevel"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Aliases">Aliases</label>
+            </th>
+            <td>
+            <input class='long' id="Aliases" name="Aliases" type="text" value="@(Model.Aliases ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Aliases"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="CreatedFile">CreatedFile</label>
+            </th>
+            <td>
+            <input class='long' id="CreatedFile" name="CreatedFile" type="text" value="@(Model.CreatedFile ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["CreatedFile"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Activity">Activity</label>
+            </th>
+            <td>
+            <input class='long' id="Activity" name="Activity" type="text" value="@(Model.Activity ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Activity"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Platform">Platform</label>
+            </th>
+            <td>
+            <input class='long' id="Platform" name="Platform" type="text" value="@(Model.Platform ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Platform"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Origin">Origin</label>
+            </th>
+            <td>
+            <input class='long' id="Origin" name="Origin" type="text" value="@(Model.Origin ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Origin"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="InfectionRoute">Infection Route</label>
+            </th>
+            <td>
+            <input class='long' id="InfectionRoute" name="InfectionRoute" type="text" value="@(Model.InfectionRoute ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["InfectionRoute"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="InfectionMethod">Infection Method</label>
+            </th>
+            <td>
+            <input class='long' id="InfectionMethod" name="InfectionMethod" type="text" value="@(Model.InfectionMethod ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["InfectionMethod"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="DateDiscovered">Date Discovered (Local time)</label>
+            </th>
+            <td>
+            <input class='long' id="DateDiscovered" name="DateDiscovered" type="text" value="@(Model.DateDiscovered ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["DateDiscovered"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Instructions">Instructions</label>
+            </th>
+            <td>
+            <textarea name="Instructions" id="Instructions" class="Instructions tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Instructions ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Instructions"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Summary">Summary</label>
+            </th>
+            <td>
+            <textarea name="Summary" id="Summary" class="Summary tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Summary ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Summary"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

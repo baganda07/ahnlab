@@ -1,0 +1,17 @@
+﻿<div class="descCopy">
+    @Html.FrontHtml().RenderHtmlBlock("Security.RiskLevel")
+</div>
+@foreach (var item in ViewBag.Risks)
+{
+    <div class="riskLevel">
+        <div class="level">
+            <h2 class="cTit">@("Level".Label()) @item.Level</h2>
+            <img alt="@("Level" + item.Level) @item.Type" src="@Url.FrontUrl().ResizeImageUrl(item.Thumbnail, 280, 150)">
+        </div>
+        <p class='dg @("lev0"+item.Level)'>@item.Type</p>
+        <p>@item.Description</p>
+        <div class="act">
+            <span>@("Action".Label())</span>@item.Action
+        </div>
+    </div>
+}

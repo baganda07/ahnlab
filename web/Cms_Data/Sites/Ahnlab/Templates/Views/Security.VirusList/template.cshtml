@@ -1,0 +1,118 @@
+﻿@{
+    var pageIndexParam = Request["page"];
+    int pageIndex = 1;
+    if (!int.TryParse(pageIndexParam, out pageIndex))
+    {
+        pageIndex = 1;
+    }
+}
+<div class="tabComm">
+    <ul>
+        <li class="@(string.IsNullOrEmpty(Request["c"]) ? "on":"")">
+            <a href="@Url.FrontUrl().PageUrl("security/virus-center")">@("All".Label())</a>
+        </li>
+        @foreach (var item in ViewBag.Types)
+        {
+            <li class="@(item.UserKey == Request["c"]? "on": "")">
+                <a href="@Url.FrontUrl().PageUrl("security/virus-center", new {c = item.UserKey})">
+                    @if (item.UserKey == Request["c"])
+                    {
+                        <span class="blind">@("Current page".Label())</span>
+                    }
+                    @item.Name
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+<div class="underTabSrch right">
+    <form action="">
+        <span class="select mr6">
+            <select name="c">
+                <option value="" @(string.IsNullOrEmpty(Request["c"]) ? "selected" : "")>All</option>
+                @foreach (var item in ViewBag.Types)
+                {
+                    <option @(item.UserKey == Request["c"] ? "selected" : "") value="@item.UserKey">@item.Name</option>
+                }
+            </select>
+        </span>
+        <input type="text" style="width:234px" title="Enter Search Keyword" placeholder="Enter Search Keyword" onkeypress="javascript:if (event.keyCode == 13) { searchForm(1); return false; }" maxlength="50" class="txtBox mr6" value="@Request["q"]" id="searchText" name="q">
+        <a class="btnSmDb" href="javascript:;">@("Search".Label())</a>
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".btnSmDb").click(function () {
+                $(this).parent("form").submit();
+            });
+        });
+    </script>
+</div>
+<h1 class="blind">@("Virus".Label())</h1>
+
+<div class="bbsList">
+    <table>
+        <caption>@("Virus Center List".Label())</caption>
+        <colgroup>
+            <col style="width:20%;">
+            <col style="width:34%;">
+            <col style="width:30%;">
+            <col style="width:16%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">@("No.".Label())</th>
+                <th scope="col">@("Name".Label())</th>
+                <th scope="col">@("Type".Label())</th>
+                <th scope="col">@("Risk".Label())</th>
+                <!-- <th scope="col">Update Date</th>  -->
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var i = 0;
+            }
+            @foreach (var item in ViewBag.Viruses)
+            {
+
+                <tr>
+                    <td>@(ViewBag.Viruses.TotalItemCount - (pageIndex - 1) * pageIndex - i)</td>
+                    <td class="al">
+                        <a href="@Url.FrontUrl().PageUrl("security/virus-center/detail", new {userkey = item.UserKey})">@item.Name</a>
+                    </td>
+                    <td>
+                        @{
+                            var cats = ((TextContent)item).Categories("Security~Virus~VirusType").Where(c => !string.IsNullOrEmpty(c.ParentUUID));
+                            var j = 1;
+                        }
+                        @if (cats.Any())
+                        {
+                            foreach (var cat in cats)
+                            {
+                                @cat["Name"]
+                                @(j != cats.Count() ? "" : ", ")
+                                j++;
+                            }
+                        }
+
+                    </td>
+                    <td>@item.Risk</td>
+                    <!-- <td>02-15-2016</td>  -->
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+</div>
+@{var pageOption = new PagerOptions
+        {
+            ShowFirstLast = false,
+            ShowPrevNext = false,
+            StatisticsTextFormatString = "",
+            NumericPagerItemCount = 5,
+            CssClass = "paging",
+            CurrentPagerItemWrapperFormatString = "<span><a class='on'>{0}</a></span>",
+            //NavigationPagerItemWrapperFormatString = "<span class=''>{0}</span>",
+            PagerItemWrapperFormatString = "<span>{0}</span>",
+        };
+}
+@Html.FrontHtml().Pager(ViewBag.Viruses, pageOption) 

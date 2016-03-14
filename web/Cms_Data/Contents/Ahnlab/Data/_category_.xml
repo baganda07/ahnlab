@@ -350,4 +350,34 @@
 		<CategoryUUID>AC72BVL3NCF9B6PG</CategoryUUID>
 		<ContentUUID>S5P2FTP8XCGX28N3</ContentUUID>
 	</Category>
+	<Category>
+		<CategoryFolder>Security~RiskLevel</CategoryFolder>
+		<CategoryUUID>DPF2ZKABERUGGYPN</CategoryUUID>
+		<ContentUUID>XQN2B9A5QZ9LSKWP</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Security~Virus~VirusType</CategoryFolder>
+		<CategoryUUID>W2C2QQRX9URZEJLH</CategoryUUID>
+		<ContentUUID>TGF22434QE22H9J4</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Security~Virus~VirusType</CategoryFolder>
+		<CategoryUUID>SY82WM2223MY933F</CategoryUUID>
+		<ContentUUID>TGF22434QE22H9J4</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Security~Virus~VirusType</CategoryFolder>
+		<CategoryUUID>JKK24VWWMDDN6DQ9</CategoryUUID>
+		<ContentUUID>TGF22434QE22H9J4</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Security~Virus~VirusType</CategoryFolder>
+		<CategoryUUID>SY82WM2223MY933F</CategoryUUID>
+		<ContentUUID>FW4277A5NBRU958L</ContentUUID>
+	</Category>
+	<Category>
+		<CategoryFolder>Security~Virus~VirusType</CategoryFolder>
+		<CategoryUUID>MQUJERWRG6AAJB3Y</CategoryUUID>
+		<ContentUUID>FW4277A5NBRU958L</ContentUUID>
+	</Category>
 </ArrayOfCategory>

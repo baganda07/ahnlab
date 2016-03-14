@@ -1,0 +1,233 @@
+﻿@if (ViewBag.Virus != null)
+{
+    var types = ((TextContent)ViewBag.Virus).Categories("Security~Virus~VirusType");
+    var parentType = types.FirstOrDefault(t => string.IsNullOrEmpty(t.ParentUUID));
+    var childTypes = types.Where(t => !string.IsNullOrEmpty(t.ParentUUID));
+    <div class="bbsView ASECCode">
+        <div class="titWrap">
+            <h1 class="tit">
+                @if (parentType != null)
+                {
+                    <span class="codeType type01">@parentType["Name"]</span>
+                }
+                <span class="codeName">@ViewBag.Virus.Name</span>
+            </h1>
+            <ul class="viewInfo clfix">
+                <li>
+                    <span>@("Type".Label())</span>
+                    @{var j = 1;}
+                    @if (childTypes.Any())
+                    {
+                        foreach (var type in childTypes)
+                        {
+                            @type["Name"]
+                            @(j != type.Count() ? "" : ", ")
+                            j++;
+                        }
+                    }
+                </li>
+                <li><span>@("Update Date".Label())</span>@ViewBag.Virus.UtcCreationDate.ToString("MM-dd-yy hh:mm")</li>
+                <li><span>@("Risk".Label())</span>@ViewBag.Virus.Risk</li>
+            </ul>
+            <div class="tabList">
+                <ul>
+                    <li class="first on"><a class="DescriptionTab" href="#"><span class="blind">@("Current page".Label())</span>@("Description".Label())</a></li>
+                    @if (!string.IsNullOrEmpty(ViewBag.Virus.DetailInfo))
+                    {
+                        <li class=""><a class="RemovalTab" href="#">@("Detail Information".Label())</a></li>
+                    }
+                    @if (!string.IsNullOrEmpty(ViewBag.Virus.Protection))
+                    {
+                        <li class=""><a class="ProtectionTab" href="#">@("Protection".Label())</a></li>
+                    }
+                    @if (!string.IsNullOrEmpty(ViewBag.Virus.OtherInfo))
+                    {
+                        <li class=""><a class="OtherInfoTab" href="#">@("Other Information".Label())</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <!-- Description 탭영역 -->
+        <div class="view DescriptionView" style="display: block;">
+            <h3 class="blind">@("Description".Label())</h3>
+            <div class="tList01">
+                <table>
+                    <caption>@("Malicious Code Risk Level Details".Label())</caption>
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="first" scope="col">@("System Risk".Label())</th>
+                            <th scope="col">@("Network Risk".Label())</th>
+                            <th scope="col">@("Spread Risk".Label())</th>
+                            <th scope="col">@("Current Spread Level".Label())</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first warn">
+                            <td class="first">@ViewBag.Virus.SystemRisk</td>
+                            <td>@ViewBag.Virus.NetworkRisk</td>
+                            <td>@ViewBag.Virus.SpreadRisk</td>
+                            <td>@ViewBag.Virus.CurrentSpreadLevel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tList02 mt30">
+                <table>
+                    <caption>@("Malicious Code Basic Information  Details".Label())</caption>
+                    <colgroup>
+                        <col style="width:20%;">
+                        <col style="width:30%;">
+                        <col style="width:20%;">
+                        <col style="width:30%;">
+                    </colgroup>
+                    <tbody>
+                        <tr class="first">
+                            <th scope="row">@("Aliases".Label())</th>
+                            <td colspan="3">@ViewBag.Virus.Aliases</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Created File".Label())</th>
+                            <td colspan="3">@ViewBag.Virus.CreatedFile</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Activity".Label())</th>
+                            <td colspan="3">@ViewBag.Virus.Activity</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Platform".Label())</th>
+                            <td>@ViewBag.Virus.Platform</td>
+                            <th class="bdrL" scope="row">@("Infection Route".Label())</th>
+                            <td>@ViewBag.Virus.InfectionRoute</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Type".Label())</th>
+                            <td>
+                                @{j = 1;}
+                                @if (childTypes.Any())
+                                {
+                                    foreach (var type in childTypes)
+                                    {
+                                        @type["Name"]
+                                        @(j != type.Count() ? "" : ", ")
+                                        j++;
+                                    }
+                                }
+                            </td>
+                            <th class="bdrL" scope="row">@("Infection Method".Label())</th>
+                            <td>@ViewBag.Virus.InfectionMethod</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Origin".Label())</th>
+                            <td>@ViewBag.Virus.Origin</td>
+                            <th class="bdrL" scope="row">@("Date Discovered<br>(Local time)".Label())</th>
+                            <td>
+                                @ViewBag.Virus.DateDiscovered
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">@("Instructions".Label())</th>
+                            <td colspan="3">
+                                @Html.Raw(ViewBag.Virus.Instructions)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="csTit mt25">@("Symptom and Summary".Label())</p>
+            @Html.Raw(ViewBag.Virus.Summary)
+
+        </div>
+        @if (!string.IsNullOrEmpty(ViewBag.Virus.DetailInfo))
+        {
+            <!-- Detail Information 탭영역 -->
+
+            <div style="display: none;" class="view RemovalView">
+                <h3 class="blind">@("Detail Information".Label())</h3>
+                @Html.Raw(ViewBag.Virus.DetailInfo)
+            </div>
+
+        }
+        @if (!string.IsNullOrEmpty(ViewBag.Virus.Protection))
+        {
+             <!-- Solution and Prevention 탭영역 -->
+            <div style="display:none;" class="view ProtectionView">
+                <h3 class="blind">@("Protection".Label())</h3>
+                @Html.Raw(ViewBag.Virus.Protection)
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(ViewBag.Virus.OtherInfo))
+        {
+            <!-- Other Information 탭영역 -->
+            <div style="display:none;" class="view OtherInfoView">
+                <h3 class="blind">@("Other Information".Label())</h3>
+                @Html.Raw(ViewBag.Virus.OtherInfo)
+            </div>
+        }
+    </div>
+    <div class="btnWrap clfix">
+        <div class="fr">
+            @*<a onclick="javascript:goPrint(); return false;" class="btnCm" href="javascript:;">Print</a>*@
+            <a class="btnCm" href="@Url.FrontUrl().PageUrl("security/virus-center")">@("Back to the List".Label())</a>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".DescriptionTab").click(function () {
+                $(this).parent().parent().find("li").each(function () {
+                    $(this).removeClass("on");
+                });
+                $(this).parent().addClass("on");
+                $(".DescriptionView").show();
+                $(".RemovalView").hide();
+                $(".ProtectionView").hide();
+                $(".ReferenceView").hide();
+            });
+            $(".RemovalTab").click(function () {
+                $(this).parent().parent().find("li").each(function () {
+                    $(this).removeClass("on");
+                });
+                $(this).parent().addClass("on");
+                $(".DescriptionView").hide();
+                $(".RemovalView").show();
+                $(".ProtectionView").hide();
+                $(".ReferenceView").hide();
+            });
+            $(".ProtectionTab").click(function () {
+                $(this).parent().parent().find("li").each(function () {
+                    $(this).removeClass("on");
+                });
+                $(this).parent().addClass("on");
+                $(".DescriptionView").hide();
+                $(".RemovalView").hide();
+                $(".ProtectionView").show();
+                $(".ReferenceView").hide();
+            });
+            $(".OtherInfoTab").click(function () {
+                $(this).parent().parent().find("li").each(function () {
+                    $(this).removeClass("on");
+                });
+                $(this).parent().addClass("on");
+                $(".DescriptionView").hide();
+                $(".RemovalView").hide();
+                $(".ProtectionView").hide();
+                $(".OtherInfoView").show();
+            });
+        });
+
+        @*function goPrint() {
+            var url = "@Request.Url .contents *";
+            POPUP.open(url, 'popVirusPrintView', { width: 618, height: 620, scroll: true });
+        }
+        //--&gt;*@
+    </script>
+}

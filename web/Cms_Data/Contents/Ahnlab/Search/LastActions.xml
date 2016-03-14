@@ -2,35 +2,32 @@
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
 		<FolderName>Catalog</FolderName>
-		<ContentSummary>Notice</ContentSummary>
+		<ContentSummary>Virus Center</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-14T04:27:06.7779643Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T11:17:20.5885814Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~Notice</FolderName>
-		<ContentSummary>[Notice] Another OpenSSL Security Issue Response FAQ</ContentSummary>
+		<FolderName>Security~Virus</FolderName>
+		<ContentSummary>Trojan/Win32.Banki.C1317069</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T04:20:21.9693609Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T10:58:48.6195079Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~Notice</FolderName>
-		<ContentSummary>[Notice] OpenSSL Security Issue Response FAQ</ContentSummary>
-		<UtcActionDate>2016-03-14T04:19:42.0526832Z</UtcActionDate>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Virus FAQ</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-14T04:12:24.3248026Z</UtcActionDate>
+		<FolderName>Security~Virus</FolderName>
+		<ContentSummary>O97M.Hopper.L</ContentSummary>
+		<Action>Delete</Action>
+		<UtcActionDate>2016-03-14T10:56:30.533057Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Support~VirusFAQ</FolderName>
-		<ContentSummary>The system reboots in safe mode and the mouse pointer disappears. </ContentSummary>
+		<FolderName>Security~Virus</FolderName>
+		<ContentSummary>Trojan/Win32.Upatre.R165831</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T04:03:16.8683186Z</UtcActionDate>
+		<UtcActionDate>2016-03-14T10:56:25.7778154Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>About Us</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-13T08:34:07.2318754Z</UtcActionDate>
+		<FolderName>Security~Virus~VirusType</FolderName>
+		<ContentSummary>Trojan</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-03-14T10:56:03.1972472Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>
