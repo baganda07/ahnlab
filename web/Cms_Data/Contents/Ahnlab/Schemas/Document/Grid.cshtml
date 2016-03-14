@@ -144,7 +144,7 @@
     {
         var isRoot = string.IsNullOrEmpty(parentChain);
         //column datasource
-        var Type_data = (new TextFolder(Repository.Current,"Documents~Types")).CreateQuery().ToArray();
+        var Type_data = (new TextFolder(Repository.Current,"Download~Documents~Types")).CreateQuery().ToArray();
         if (Repository.Current.EnableWorkflow == true)
         {
             items = Kooboo.CMS.Content.Services.ServiceFactory.WorkflowManager.GetPendWorkflowItemForContents(Repository.Current, items.ToArray(), User.Identity.Name);

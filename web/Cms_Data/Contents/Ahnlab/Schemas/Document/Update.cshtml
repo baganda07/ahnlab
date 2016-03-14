@@ -31,7 +31,7 @@
             @{ var dropDownDefault_Type =  @"";}
                 <select name="Type" class="long">
                         @{
-                            var textFolder_Type = new TextFolder(Repository.Current, "Documents~Types");
+                            var textFolder_Type = new TextFolder(Repository.Current, "Download~Documents~Types");
                             var query_Type = textFolder_Type.CreateQuery().DefaultOrder();
                         }
                         <option value=""></option>

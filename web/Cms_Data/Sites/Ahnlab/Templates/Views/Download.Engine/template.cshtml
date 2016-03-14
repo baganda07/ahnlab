@@ -5,7 +5,7 @@
     var listCats = new List<TextContent>();
     foreach (TextContent item in ViewBag.Engines)
     {
-        var cats = item.Categories("Engine~EngineCategories");
+        var cats = item.Categories("Download~Engine~EngineCategories");
         foreach (var cat in cats.Where(cat => !listCats.Contains(cat)))
         {
             listCats.Add(cat);
@@ -44,7 +44,7 @@
             <tbody>
                 @foreach (var cat in listCats)
                 {
-                    var engines = ((TextContent[])ViewBag.Engines).Where(t => t.Categories("Engine~EngineCategories").Contains(cat));
+                    var engines = ((TextContent[])ViewBag.Engines).Where(t => t.Categories("Download~Engine~EngineCategories").Contains(cat));
                     if (engines.Any())
                     {
                         foreach (var engine in engines)

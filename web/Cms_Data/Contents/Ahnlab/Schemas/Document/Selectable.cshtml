@@ -109,7 +109,7 @@
 </div>
 @helper AddTreeItems(IEnumerable<TextContent> items, Schema schema, TextFolder folder, bool isRoot)
     {
-        var Type_data = (new TextFolder(Repository.Current,"Documents~Types")).CreateQuery().ToArray();    
+        var Type_data = (new TextFolder(Repository.Current,"Download~Documents~Types")).CreateQuery().ToArray();    
         if (items.Count() > 0)
         {
             foreach (dynamic item in items)
