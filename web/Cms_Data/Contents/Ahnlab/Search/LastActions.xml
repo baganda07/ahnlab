@@ -15,10 +15,7 @@
 	<LastAction>
 		<FolderName>Support~Notice</FolderName>
 		<ContentSummary>[Notice] OpenSSL Security Issue Response FAQ</ContentSummary>
-		<Action>Add</Action>
 		<UtcActionDate>2016-03-14T04:19:42.0526832Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
 		<FolderName>Catalog</FolderName>
 		<ContentSummary>Virus FAQ</ContentSummary>
 		<Action>Update</Action>
@@ -29,5 +26,11 @@
 		<ContentSummary>The system reboots in safe mode and the mouse pointer disappears. </ContentSummary>
 		<Action>Add</Action>
 		<UtcActionDate>2016-03-14T04:03:16.8683186Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>About Us</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-13T08:34:07.2318754Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

@@ -1,0 +1,44 @@
+﻿@using System.Activities.Statements
+<div class="descCopy">
+  Come and meet AhnLab at events, conferences and seminars around the world.  Add our events to your calendar and keep track of our upcoming events.
+</div>
+<h2 class="cTit">Upcoming</h2>
+<div class="boxTBlue upComing">
+  <div class="evtBox first">
+    <p class="ac">No event is held currently.</p>
+  </div>
+</div>
+<h2 class="cTit mt35">Past</h2>
+<div class="boxTBLine past">
+  @if (ViewBag.Event != null)
+  {
+    foreach (var item in ViewBag.Event)
+    {
+      <div class="evtBox">
+        <a href="@item.Url" class="photo" target="_self" title="@item.Title">
+          <img src="@Url.FrontUrl().ResizeImageUrl(item.Thumbnail, 210, 140)" alt="@item.Title" class="pastImage" />
+        </a>
+        <div class="rCont">
+          <p class="tit">
+            <a href="@item.Url" target="_self" title="@item.Title">
+              @item.Title
+            </a>
+          </p>
+          <dl class="mt15">
+            <dt>Date</dt>
+            <dd>@item.FromDate ~ @item.ToDate</dd>
+          </dl>
+          <dl>
+            <dt>Location</dt>
+            <dd>@item.Location</dd>
+          </dl>
+          <p class="mt5" style="TEXT-ALIGN: justify" align=justify>
+            <span style="FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Verdana, Dotum, Gulim, Arial; COLOR: rgb(102,102,102); LETTER-SPACING: normal; LINE-HEIGHT: 16px; BACKGROUND-COLOR: rgb(255,255,255)">
+              @item.Summary
+            </span>
+          </p>
+        </div>
+      </div>
+    }
+  }
+</div>
