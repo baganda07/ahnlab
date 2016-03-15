@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
+		<FolderName>HomeBanner</FolderName>
+		<ContentSummary>(AhnLab MDS)</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-03-15T16:20:28.6395944Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>HomeBanner</FolderName>
+		<ContentSummary>(2015 Previews &amp;amp; 2016 Predictions)</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-03-15T16:19:23.7793846Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
 		<FolderName>Catalog</FolderName>
 		<ContentSummary>Event</ContentSummary>
 		<Action>Update</Action>
@@ -17,17 +29,5 @@
 		<ContentSummary>Certificates</ContentSummary>
 		<Action>Update</Action>
 		<UtcActionDate>2016-03-14T15:07:31.355646Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Technology</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-14T15:07:08.5697939Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>About Us</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-14T15:06:53.2124874Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

@@ -1832,4 +1832,7 @@ Are you sure you want to use this size?</value>
   <data name="The Redirect type field is required." xml:space="preserve">
     <value>The Redirect type field is required.</value>
   </data>
+  <data name="XLIFF" xml:space="preserve">
+    <value>XLIFF</value>
+  </data>
 </root>
