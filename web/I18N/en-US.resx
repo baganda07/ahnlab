@@ -1787,4 +1787,52 @@ Are you sure you want to use this size?</value>
   <data name="Editor" xml:space="preserve">
     <value>Editor</value>
   </data>
+  <data name="The folder does not exists.&quot;{0}&quot;" xml:space="preserve">
+    <value>The folder does not exists."{0}"</value>
+  </data>
+  <data name="Input URL/Pattern" xml:space="preserve">
+    <value>Input URL/Pattern</value>
+  </data>
+  <data name="Output URL/Pattern" xml:space="preserve">
+    <value>Output URL/Pattern</value>
+  </data>
+  <data name="Regex" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="Redirect type" xml:space="preserve">
+    <value>Redirect type</value>
+  </data>
+  <data name="The field Redirect type is invalid." xml:space="preserve">
+    <value>The field Redirect type is invalid.</value>
+  </data>
+  <data name="New URL redirect" xml:space="preserve">
+    <value>New URL redirect</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="Regular expression" xml:space="preserve">
+    <value>Regular expression</value>
+  </data>
+  <data name="The Regex field is required." xml:space="preserve">
+    <value>The Regex field is required.</value>
+  </data>
+  <data name="Use either normal text matching or regular expression" xml:space="preserve">
+    <value>Use either normal text matching or regular expression</value>
+  </data>
+  <data name="'Input URL/Pattern' is invalid." xml:space="preserve">
+    <value>'Input URL/Pattern' is invalid.</value>
+  </data>
+  <data name="An ordinary string OR regular expression to match the request URL, for example: oldpage_(\w+)." xml:space="preserve">
+    <value>An ordinary string OR regular expression to match the request URL, for example: oldpage_(\w+).</value>
+  </data>
+  <data name="An ordinary string OR regular expression to replace the matched request URL, for example: newpage_$1." xml:space="preserve">
+    <value>An ordinary string OR regular expression to replace the matched request URL, for example: newpage_$1.</value>
+  </data>
+  <data name="The Redirect type field is required." xml:space="preserve">
+    <value>The Redirect type field is required.</value>
+  </data>
+  <data name="XLIFF" xml:space="preserve">
+    <value>XLIFF</value>
+  </data>
 </root>
