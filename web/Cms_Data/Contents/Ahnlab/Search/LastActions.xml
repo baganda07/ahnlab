@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>ASEC Report</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-15T14:43:08.8676108Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>About ASEC</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-15T14:42:24.1364371Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Tech Report</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-15T14:42:12.4755586Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>About ASEC</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-03-15T14:41:44.4508696Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
 		<FolderName>About~Certificates</FolderName>
 		<ContentSummary>AV-Comparatives</ContentSummary>
 		<Action>Add</Action>
 		<UtcActionDate>2016-03-14T14:03:13.5740125Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>About~Certificates</FolderName>
-		<ContentSummary>AV-TEST</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T14:02:56.0426913Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>About~Certificates</FolderName>
-		<ContentSummary>ICSA Labs Certification</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T14:02:38.2593931Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>About~Certificates</FolderName>
-		<ContentSummary>West Coast Labs Checkmark Certification</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T14:02:12.7971289Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>About~Certificates</FolderName>
-		<ContentSummary>Common Criteria Recognition Arrangement</ContentSummary>
-		<Action>Add</Action>
-		<UtcActionDate>2016-03-14T14:00:24.2973469Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>
