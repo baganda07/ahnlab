@@ -1,0 +1,115 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-03-17T15:24:15.5950533+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Frost-Sullivan-Recognizes-AhnLab-with-the-2015-South-Korea-Technology-Innovation-Award-in-APT-Solutions</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-17T15:24:15.5950533+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-03-17T15:24:15.5950533+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">86M2Y85XBRJYE3LG</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">About~PressReleases</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Frost &amp; Sullivan Recognizes AhnLab with the 2015 South Korea Technology Innovation Award in APT Solutions</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;div class="titWrap"&gt;
+&lt;h1 class="tit"&gt;Frost &amp;amp; Sullivan Recognizes AhnLab with the 2015 South Korea Technology Innovation Award in APT Solutions&lt;/h1&gt;
+&lt;ul class="viewInfo"&gt;
+&lt;li&gt;&lt;span&gt;Date&lt;/span&gt;2015-09-21&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;Hit&lt;/span&gt;3116&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="view"&gt;
+&lt;p&gt;&lt;strong&gt;SEOUL, Sept 17, 2015&lt;/strong&gt; &amp;ndash; Frost &amp;amp; Sullivan has recognized AhnLab Inc with the 2015 South Korea Technology Innovation Award in Advanced Persistent Threat (APT) solutions.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Mr. Charles Lim, Senior Industry Analyst, Networking, Information and Cyber Security, Asia Pacific at Frost &amp;amp; Sullivan said that AhnLab has differentiated itself from other security vendors in its drive for excellence in developing a holistic APT solution in South Korea.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&amp;ldquo;In its latest MDS &amp;ndash; Malware Defense System lineup, AhnLab has developed several proprietary algorithms to analyze advanced malware and various attack vectors across the network, providing the right approach to mitigate threats and perform remediation as a total solution,&amp;rdquo; he added.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;He said that AhnLab uses a hybrid technology of static analysis and dynamic analysis to detect malware with its automated analysis technology at the assembly-level. With this, it is capable of blocking and analyzing evasive malware or variants that infiltrate into the endpoint via various ways, such as encrypted traffic using SSL, a USB drive or though the trusted internal network.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;He added that due to its product efficiencies, the industry views AhnLab as the top 2 vendors in South Korea, which also puts the company within the top 10 APT vendors in Asia Pacific.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&amp;ldquo;The MDS&amp;rsquo; ease of use, clear visibility of attack vectors and accuracy of detection were well-received by key IT security professionals in the region,&amp;rdquo; Mr. Lim said.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p align="center"&gt;&lt;img src="https://global.ahnlab.com/global/upload/editor/1509218278395036.jpg" /&gt;&lt;br style="clear: both;" /&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;AhnLab Vice President, Mr. Suk-kyoon Kang said the company is honored to be recognized with the 2015 South Korea Technology Innovation Award in APT Solutions by Frost &amp;amp; Sullivan, a reputable consulting firm.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&amp;ldquo;I would like to dedicate the award to all our employees for their hard work. It really motivates us to continue to provide all our clients with the best APT solutions,&amp;rdquo; he said.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;The Frost &amp;amp; Sullivan South Korea Excellence awards, in its fourth year running now, have identified and honored best-in-class companies that have demonstrated excellence in their respective industries.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The recipients of the 2015 Frost &amp;amp; Sullivan South Korea Excellence Awards were identified based on an in-depth research conducted by Frost &amp;amp; Sullivan's analysts. The award categories offered each year are carefully reviewed and evaluated to reflect the current market landscape and include new emerging trends.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The short-listed companies were evaluated on a variety of actual market performance indicators which include revenue growth; market share and growth in market share; leadership in product innovation; marketing strategy and business development strategy.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About Frost &amp;amp; Sullivan&lt;/strong&gt; &lt;br /&gt;Frost &amp;amp; Sullivan, the Growth Partnership Company, works in collaboration with clients to leverage visionary innovation that addresses the global challenges and related growth opportunities that will make or break today's market participants.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;For more than 50 years, we have been developing growth strategies for the global 1000, emerging businesses, the public sector and the investment community. Is your organization prepared for the next profound wave of industry convergence, disruptive technologies, increasing competitive intensity, Mega Trends, breakthrough best practices, changing customer dynamics and emerging economies?&amp;nbsp;&amp;nbsp; &lt;a target="_blank" href="http://www.frost.com/prod/servlet/register-form.pag?refpage=http%3A//www.frost.com/prod/servlet/frost-home.pag&amp;amp;SRC=Contact"&gt;Contact Us: Start the discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;About AhnLab, Inc.&lt;br /&gt;&lt;/strong&gt;AhnLab creates agile, integrated Internet security solutions for consumers and businesses, ranging in size from SMBs to enterprise organizations. Founded in 1995, AhnLab is a global leader in security research and product development that delivers comprehensive protection for networks, transactions, and essential services. By combining cloud analysis with endpoint and server resources, AhnLab generates best-of-breed breach detection and threat prevention that scales easily for large and high-speed networks. This multi-dimensional approach combines with exceptional service to create truly global protection against attacks that evade traditional security defenses. That&amp;rsquo;s why more than 25,000 organizations rely on AhnLab&amp;rsquo;s award-winning products and services to make the Internet safe and reliable for their business operations.&lt;br /&gt;Learn more today by contacting your AhnLab partner or local AhnLab sales representative, visit &lt;a href="http://www.ahnlab.com/"&gt;www.ahnlab.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="bbsMove"&gt;
+&lt;p class="prev"&gt;&lt;span&gt;Prev&lt;/span&gt; &lt;a onclick="javascript:getView(11591); return false;" href="#"&gt;AhnLab V3 Received &amp;lsquo;2015 EIST&amp;rsquo; Award By ICSA Labs&lt;/a&gt;&lt;/p&gt;
+&lt;p class="next"&gt;&lt;span&gt;Next&lt;/span&gt; &lt;a onclick="javascript:getView(11560); return false;" href="#"&gt;AhnLab introduces its Anti-APT Security Solutions at CommunicAsia 2014&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="btnWrap clfix"&gt;
+&lt;div class="fr"&gt;&lt;a onclick="javascript:getList(); return false;" class="btnCm" href="#"&gt;Back to the List&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">1</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

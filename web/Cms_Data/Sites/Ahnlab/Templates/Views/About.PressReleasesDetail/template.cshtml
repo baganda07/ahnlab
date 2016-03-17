@@ -1,0 +1,21 @@
+﻿@if (ViewBag.Article != null)
+{
+    <div class="bbsView">
+        <div class="titWrap">
+            <h1 class="tit">@ViewBag.Article.Title</h1>
+            <ul class="viewInfo">
+                @*<li><span>Product</span>AhnLab V3 Click</li>*@
+                <li><span>@("Date".Label())</span>@ViewBag.Article.UtcCreationDate.ToString("d")</li>
+                <li><span>@("Hit".Label())</span>@ViewBag.Article.Hit</li>
+            </ul>
+        </div>
+        <div class="view">
+            @Html.Raw(ViewBag.Article.Content)
+        </div>
+        <div class="btnWrap clfix">
+            <div class="fr">
+                <a class="btnCm" href="@Url.FrontUrl().PageUrl("security/insight")">@("Back to the List".Label())</a>
+            </div>
+        </div>
+    </div>
+}

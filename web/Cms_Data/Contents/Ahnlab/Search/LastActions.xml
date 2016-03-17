@@ -2,32 +2,32 @@
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
 		<FolderName>Catalog</FolderName>
-		<ContentSummary>ASEC Report</ContentSummary>
+		<ContentSummary>Contact Us</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-15T14:43:08.8676108Z</UtcActionDate>
+		<UtcActionDate>2016-03-17T08:56:19.1735764Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
 		<FolderName>Catalog</FolderName>
-		<ContentSummary>About ASEC</ContentSummary>
+		<ContentSummary>Technology</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-15T14:42:24.1364371Z</UtcActionDate>
+		<UtcActionDate>2016-03-17T08:55:50.3605908Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
 		<FolderName>Catalog</FolderName>
-		<ContentSummary>Tech Report</ContentSummary>
+		<ContentSummary>Certificates</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-15T14:42:12.4755586Z</UtcActionDate>
+		<UtcActionDate>2016-03-17T08:55:04.0374163Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>About ASEC</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-15T14:41:44.4508696Z</UtcActionDate>
+		<FolderName>About~PressReleases</FolderName>
+		<ContentSummary>AhnLab V3 Received ‘2015 EIST’ Award By ICSA Labs</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-03-17T08:24:41.2874152Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>AV-Comparatives</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-14T14:03:13.5740125Z</UtcActionDate>
+		<FolderName>About~PressReleases</FolderName>
+		<ContentSummary>Frost &amp; Sullivan Recognizes AhnLab with the 2015 South Korea Technology Innovation Award in APT Solutions</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-03-17T08:24:15.9988946Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

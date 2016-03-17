@@ -1,45 +1,23 @@
 ﻿<div class="mng">
-  <div class="cont">
-    <div class="fav">
-      <ul>
-        <li>
-          <p class="tit"><a href="@Url.FrontUrl().PageUrl("support")">Support</a></p>
-          <ul>
-            <li><a href="@Url.FrontUrl().PageUrl("/support/technical/support-program")">Support Program</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("/support/technical/ahnReport")">AhnReport</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("support/virusreport")">Virus & Malware Inquiry</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("support/productfaq")">Product FAQ</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("support/virusfaq")">Virus FAQ</a></li>
-            <li><a href="#">Q&amp;A</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <p class="tit"><a href="@Url.FrontUrl().PageUrl("/download/free-trial")">Downloads</a></p>
-          <ul>
-            <li><a href="@Url.FrontUrl().PageUrl("/download/free-trial")">Free Trial</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("/download/engine-patch")">Engine/Patch File Downloads</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("/download/removal-tools")">Removal Tools</a></li>
-            <li><a href="@Url.FrontUrl().PageUrl("/download/documents")">Document Downloads</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <p class="tit"><a href="login/loginForm6cea.html">My Account</a></p>
-          <ul>
-            <li><a href="#">Account Information</a></li>
-            <li><a href="#">My Product List</a></li>
-            <li><a href="#">My Q&amp;A</a></li>
-            <li><a href="#">Report History</a></li>
-          </ul>
-        </li>
-      </ul>
+    <div class="cont">
+        <div class="fav">
+            <ul>
+                <li>
+                    @Html.FrontHtml().RenderHtmlBlock("Footer.Col-1")
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    @Html.FrontHtml().RenderHtmlBlock("Footer.Col-2")
+            </ul>
+            <ul>
+                <li>
+                    @Html.FrontHtml().RenderHtmlBlock("Footer.Col-3")
+                </li>
+            </ul>
+        </div>
+        <div class="guide">
+            @Html.FrontHtml().RenderHtmlBlock("Footer.Col-4")
+        </div>
     </div>
-    <div class="guide">
-      <p class="tit"><a href="etc/contactUs.html">Contact Us</a></p>
-      <p><a href="mailto:global.sales@ahnlab.com">global.sales@ahnlab.com</a></p>
-    </div>
-  </div>
 </div>

@@ -1,0 +1,15 @@
+﻿<h2 id="noticeDiv" class="on">
+    <a href="@Url.FrontUrl().PageUrl("support/notice")" class="noticeCss" >@("Notice".Label())</a><span>&nbsp;</span>
+</h2>
+<div class="list" id="noticeListDiv" style="display:block;">
+    <ul>
+        @foreach (var item in ViewBag.Notice)
+        {
+        <li>
+                <a href="@Url.FrontUrl().PageUrl("support/notice/detail",new {userkey = item.UserKey})">@("[Notice]".Label()) @item.Title</a>
+                <span class="date">@item.UtcCreationDate.ToShortDateString()</span>
+            </li>
+        }
+    </ul>
+    <a href="@Url.FrontUrl().PageUrl("support/notice")" class="moreLh" title="Notice">More</a>
+</div>

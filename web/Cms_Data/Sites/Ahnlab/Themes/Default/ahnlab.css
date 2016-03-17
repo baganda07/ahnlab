@@ -417,7 +417,7 @@ table.calTbl td.today, table.calTbl td.today a{background:#0e77d9;color:#fff;}
 .thrList a{display:block;font-size:12px;line-height:15px;}
 .muProd .naviWrap{padding-right:30px;*float:initial;*display:inline;*zoom:1;*vertical-align:top;}
 
-.htopWrap .logo{float:left;height:50px;padding:5px 0 15px 15px;}
+.htopWrap .logo{float:left;height:50px;padding:5px 0 16px 15px;}
 .htopWrap #naviUtill{float:right;height:49px;margin-right:-16px;padding-top:22px;}
 .htopWrap #naviUtill ul{float:left;}
 .htopWrap #naviUtill li{position:relative;z-index:550;float:left;padding-left:0;background:url('image/en/common/bg_gnb.png') no-repeat 0 0;}

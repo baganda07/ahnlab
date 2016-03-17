@@ -9,39 +9,18 @@
         </div>
       </a> 
     </div>
-    <div class="news">
-      <h2>Security Insight</h2>
-      <ul>
-        <form method="post" name="secuInsForm" id="secuInsForm">
-          <input type="hidden" id="seq" name="seq" value="0" />
-          <li><a href="#" onclick="javascript:getViewSecurity('2267'); return false;">The Top 5 Security Threats that will Dominate 2016</a></li>
-          <li><a href="#" onclick="javascript:getViewSecurity('2242'); return false;">‘Top 5 + 5’ Security Issues for 2015</a></li>
-          <li><a href="#" onclick="javascript:getViewSecurity('2241'); return false;">&#039;Dyre&#039;: A Worldwide Threat to Internet Banking</a></li>
-          <li><a href="#" onclick="javascript:getViewSecurity('2234'); return false;">How to Avoid Ransomware Attacks</a></li>
-        </form>
-      </ul>
-    </div>
+    @Html.FrontHtml().RenderView("Security.InsightHome")
     <div class="mnIf">
-      <a href="securitycenter/html/techReport.html" class="col">
-        Tech<br />Report
-        <p class="date">Weekly Security News</p>
+      <a href="@Url.FrontUrl().PageUrl("security/techReport")" class="col">
+        @("Tech<br />Report".Label())
+        <p class="date">@("Weekly Security News".Label())</p>
       </a>
-      <a href="securitycenter/asec/asecReportList.html" class="col2">
-        ASEC<br />Report
-        <p class="date">Technology Trends in One Sight</p>
+      <a href="@Url.FrontUrl().PageUrl("security/asec-report")" class="col2">
+        @("ASEC<br />Report".Label())
+        <p class="date">@("Technology Trends in One Sight".Label())</p>
       </a>
     </div>
-    <div class="issue">
-      <h2>Latest Threats</h2>
-      <ul>
-        <form method="post" name="virusCenterForm" id="virusCenterForm">
-          <input type="hidden" id="virusSeq" name="virusSeq" value="0" />
-          <li><a href="#" onclick="javascript:getViewVirus('34829'); return false;"><span>1.</span> Trojan/Win32.Upatre.R165831</a></li>
-          <li><a href="#" onclick="javascript:getViewVirus('34828'); return false;"><span>2.</span> Trojan/Win32.Bulta.R170374</a></li>
-          <li><a href="#" onclick="javascript:getViewVirus('34827'); return false;"><span>3.</span> Trojan/Win32.Hwdoor.R163295</a></li>
-        </form>
-      </ul>
-    </div>
+    @Html.FrontHtml().RenderView("Security.VirusHome")
     <div class="rollBann" id="d-image-banner">
       <button type="button" class="anim stop"><span class="blind">Animation stop</span></button>
       <ul>

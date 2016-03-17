@@ -1,0 +1,14 @@
+﻿<h2 id="pressDiv"><a href="@Url.FrontUrl().PageUrl("about/press-releases")" class="pressCss">@("Press Releases".Label())</a></h2>
+<div class="list" id="pressListDiv">
+    <ul>
+        @foreach (var item in ViewBag.PressReleases)
+        {
+
+            <li>
+                <a href="@Url.FrontUrl().PageUrl("about/press-releases/detal", new{userkey = item.UserKey})">@item.Title</a>
+                <span class="date">@item.UtcCreationDate.ToShortDateString()</span>
+            </li>
+        }
+    </ul>
+    <a href="@Url.FrontUrl().PageUrl("about/press-releases")" class="moreLh" title="Press Releases">@("More".Label())</a>
+</div>

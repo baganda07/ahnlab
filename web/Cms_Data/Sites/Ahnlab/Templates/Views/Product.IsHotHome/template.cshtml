@@ -1,0 +1,11 @@
+﻿<div class="prod">
+    @foreach (var item in ViewBag.Product)
+    {
+        <a href="@Url.FrontUrl().PageUrl("product/detail", new {userKey = item.UserKey})">
+            <h2>@item.Name</h2>
+            <p>@Html.Raw(item.Description)</p>
+            <img src="@Url.FrontUrl().ResizeImageUrl(item.Image, 162, 108)" class="photo" alt="" />
+            <span class="moreLh">@("More".Label())</span>
+        </a>
+    }
+</div>

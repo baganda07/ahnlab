@@ -1,0 +1,9 @@
+﻿<div class="news">
+    <h2>@("Security Insight".Label())</h2>
+    <ul>
+        @foreach (var item in ViewBag.Insights)
+        {
+            <li><a href="@Url.FrontUrl().PageUrl("security/insight/detail", new{userkey=item.UserKey})">@item.Title</a></li>
+        }
+    </ul>
+</div>

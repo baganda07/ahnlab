@@ -43,7 +43,7 @@
         <tr>
           <td>@(ViewBag.Articles.TotalItemCount - (pageIndex - 1) * pageIndex - i)</td>
           <td class="al">
-            <a href="@Url.FrontUrl().PageUrl("security/insight/detail", new {userkey = item.UserKey})">@item.Title</a>
+            <a href="@Url.FrontUrl().PageUrl("about/press-releases/detail", new { userkey = item.UserKey })">@item.Title</a>
           </td>
           <td>@item.UtcCreationDate.ToShortDateString()</td>
         </tr>

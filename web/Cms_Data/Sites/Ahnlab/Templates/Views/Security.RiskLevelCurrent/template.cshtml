@@ -1,0 +1,15 @@
+﻿@if (ViewBag.RiskLevel != null)
+{
+    <div class="warn">
+        <h2>@("Security Risk<br />Level".Label())</h2>
+        <div class="wrCont">
+            <a href="@Url.FrontUrl().PageUrl("security/risk-level")" class="warn3">
+                <p class="blind">Level @ViewBag.RiskLevel.Level:@ViewBag.RiskLevel.Type</p>
+                @*<p class="date">
+                    <script type="text/javascript">document.write(ASEC_AUTOMADE_ENG_VER);</script>
+                </p>*@
+            </a>
+        </div>
+        <a href="@Url.FrontUrl().PageUrl("security/virus-center")" class="moreLh">@("New Virus &amp; Spyware".Label())</a>
+    </div>
+}

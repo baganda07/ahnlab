@@ -1,0 +1,14 @@
+﻿ <div class="issue">
+      <h2>@("Latest Threats".Label())</h2>
+     <ul>
+         @{
+             var i = 1;
+         }
+         @foreach (var item in ViewBag.Viruses)
+         {
+        
+             <li><a href="@Url.FrontUrl().PageUrl("security/virus-center/detail", new {userkey = item.UserKey})" ><span>@i.</span> @item.Name</a></li>
+             i++;
+         }
+     </ul>
+    </div>
