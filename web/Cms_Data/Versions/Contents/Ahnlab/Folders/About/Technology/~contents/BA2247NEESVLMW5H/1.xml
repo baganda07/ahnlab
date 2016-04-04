@@ -1,0 +1,142 @@
+﻿<VersionInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Content.Versioning">
+	<CommitUser>admin</CommitUser>
+	<UtcCommitDate>2016-04-03T21:45:02.8389167+07:00</UtcCommitDate>
+	<TextContent xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserKey</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Core-Technology</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Id</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string"></d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcCreationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-04-03T21:45:02.8389167+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UtcLastModificationDate</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2016-04-03T21:45:02.8389167+07:00</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UUID</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">BA2247NEESVLMW5H</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Repository</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Ahnlab</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>FolderName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">About~Technology</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>SchemaName</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Article</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Title</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Core Technology</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>IsHot</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ShowOnMainNav</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Content</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;div class="downBox coreTch"&gt;
+&lt;div class="cont type01"&gt;
+&lt;p class="tit"&gt;Multi-Dimensional Behavior Analysis&lt;/p&gt;
+&lt;p class="fcStrong"&gt;How to Identify Advanced Persistent, Targeted Malware Threats with Multidimensional Analysis&lt;/p&gt;
+&lt;p&gt;This white paper illustrates a multidimensional analysis of malware as an approach to identify advanced persistent, targeted threats.&lt;/p&gt;
+&lt;div class="rArea"&gt;&lt;a target="_blank" title="Multi-Dimensional Behavior Analysis Download in PDF" href="http://image.ahnlab.com/global/upload/download/documents/1401223629348403.pdf" class="btnSm pdf"&gt;PDF Downloads&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="downBox coreTch"&gt;
+&lt;div class="cont type02"&gt;
+&lt;p class="tit"&gt;Cloud-Based Intelligence&lt;/p&gt;
+&lt;p class="fcStrong"&gt;The Solution to Complex Cyber Attacks&lt;/p&gt;
+&lt;p&gt;In this white paper, AhnLab Introduces a new solution based on cloud computing technology, automated threat analysis, and DNA maps of malware characteristics identified from a database of approximately 500 million code samples.&lt;/p&gt;
+&lt;div class="rArea"&gt;&lt;a target="_blank" title="Cloud-Based Intelligence Download in PDF" href="http://image.ahnlab.com/global/upload/download/documents/1407011669275891.pdf" class="btnSm pdf"&gt;PDF Downloads&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 class="cTit mt30"&gt;AhnLab Security Map&lt;/h3&gt;
+&lt;div class="techV"&gt;
+&lt;div class="video"&gt;&lt;object id="myExperience1465295502001" width="480" height="270" type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience1465295502001&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=2094656735001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkRH3arvRTDGUUVrLmzIWm8u&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=1465295502001&amp;amp;autoStart=&amp;amp;debuggerID=&amp;amp;startTime=1459694444896" class="BrightcoveExperience" seamlesstabbing="undefined"&gt;&lt;param name="allowScriptAccess" value="always"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="seamlessTabbing" value="false"&gt;&lt;param name="swliveconnect" value="true"&gt;&lt;param name="wmode" value="window"&gt;&lt;param name="quality" value="high"&gt;&lt;param name="bgcolor" value="#FFFFFF"&gt;&lt;/object&gt;
+&lt;script&gt;
+brightcove.createExperiences();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;ul class="blDot"&gt;
+&lt;li&gt;Based on our cloud computing strategy, AhnLab&amp;rsquo;s technologies and solutions seamlessly converge into a single platform to cope with evolving IT security challenges. We deliver comprehensive, coordinated protection against the widest variety of threat sources, thanks to consistent high quality at every level of our security strategy.&lt;/li&gt;
+&lt;li&gt;AhnLab keeps enterprise networks safe at every point of entry with an all -inclusive security layer that not only defeats today&amp;rsquo;s attacks, but also thwarts tomorrow&amp;rsquo;s evolving threats.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 class="cTit mt30"&gt;AhnLab MDS Overview&lt;/h3&gt;
+&lt;div class="techV"&gt;
+&lt;div class="video"&gt;&lt;object id="myExperience1466777329001" width="480" height="270" type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience1466777329001&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=2094656735001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkRH3arvRTDGUUVrLmzIWm8u&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=1466777329001&amp;amp;autoStart=&amp;amp;debuggerID=&amp;amp;startTime=1459694444911" class="BrightcoveExperience" seamlesstabbing="undefined"&gt;&lt;param name="allowScriptAccess" value="always"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="seamlessTabbing" value="false"&gt;&lt;param name="swliveconnect" value="true"&gt;&lt;param name="wmode" value="window"&gt;&lt;param name="quality" value="high"&gt;&lt;param name="bgcolor" value="#FFFFFF"&gt;&lt;/object&gt;
+&lt;script&gt;
+brightcove.createExperiences();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;ul class="blDot"&gt;
+&lt;li&gt;AhnLab MDS is the only corporate security solution that combines local and cloud-based analytics to stop advanced persistent threats (APTs) anywhere across the organization.&lt;/li&gt;
+&lt;li&gt;AhnLab MDS delivers truly comprehensive threat protection, applying rapid malware recognition and remediation with real-time blocking of malicious network traffic and dynamic disruption of active security breaches. This advanced security system protects endpoints, servers, networks and cloud resources within a single architecture and an integrated management environment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 class="cTit mt30"&gt;AhnLab MDS, The Technology&lt;/h3&gt;
+&lt;div class="techV"&gt;
+&lt;div class="video"&gt;&lt;object id="myExperience2181198119001" width="480" height="270" type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience2181198119001&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=2094656735001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkRH3arvRTDGUUVrLmzIWm8u&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=2181198119001&amp;amp;autoStart=&amp;amp;debuggerID=&amp;amp;startTime=1459694444989" class="BrightcoveExperience" seamlesstabbing="undefined"&gt;&lt;param name="allowScriptAccess" value="always"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="seamlessTabbing" value="false"&gt;&lt;param name="swliveconnect" value="true"&gt;&lt;param name="wmode" value="window"&gt;&lt;param name="quality" value="high"&gt;&lt;param name="bgcolor" value="#FFFFFF"&gt;&lt;/object&gt;
+&lt;script&gt;
+brightcove.createExperiences();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;ul class="blDot"&gt;
+&lt;li&gt;MDS is the only solution that delivers fast, truly comprehensive host and network protection against known and unknown malware, zero-day exploits and persistent attacks. All features are integrated in a single platform, which makes it easy to deploy and manage.&lt;/li&gt;
+&lt;li&gt;MDS delivers long-term value for your organization through a low total cost of ownership, reduced complexity and exceptional rapid return on investment (ROI).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 class="cTit mt30"&gt;AhnLab Smart Defense (ASD) Overview&lt;/h3&gt;
+&lt;div class="techV"&gt;
+&lt;div class="video"&gt;&lt;object id="myExperience3029435856001" width="480" height="270" type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;amp;width=480&amp;amp;height=270&amp;amp;flashID=myExperience3029435856001&amp;amp;bgcolor=%23FFFFFF&amp;amp;playerID=2094656735001&amp;amp;playerKey=AQ~~%2CAAABQ7vJFJE~%2CYUe9mtKqvkRH3arvRTDGUUVrLmzIWm8u&amp;amp;isVid=true&amp;amp;isUI=true&amp;amp;dynamicStreaming=true&amp;amp;%40videoPlayer=3029435856001&amp;amp;autoStart=&amp;amp;debuggerID=&amp;amp;startTime=1459694444997" class="BrightcoveExperience" seamlesstabbing="undefined"&gt;&lt;param name="allowScriptAccess" value="always"&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;param name="seamlessTabbing" value="false"&gt;&lt;param name="swliveconnect" value="true"&gt;&lt;param name="wmode" value="window"&gt;&lt;param name="quality" value="high"&gt;&lt;param name="bgcolor" value="#FFFFFF"&gt;&lt;/object&gt;
+&lt;script&gt;
+brightcove.createExperiences();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;ul class="blDot"&gt;
+&lt;li&gt;ASD delivers sophisticated, comprehensive cloud-based threat protection, applying rapid malware recognition and remediation, enabling a quick and accurate response against known, unknown and variant threats.&lt;/li&gt;
+&lt;li&gt;ASDs network maximizes analytic accuracy by effectively sharing threat information real-time, that is detected by millions of computers linked to the network.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Hit</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">0</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Published</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentFolder</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>ParentUUID</d2p1:Key>
+			<d2p1:Value i:nil="true" />
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>UserId</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">admin</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+		<d2p1:KeyValueOfstringanyType>
+			<d2p1:Key>Sequence</d2p1:Key>
+			<d2p1:Value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">2</d2p1:Value>
+		</d2p1:KeyValueOfstringanyType>
+	</TextContent>
+	<Categories />
+</VersionInfo>

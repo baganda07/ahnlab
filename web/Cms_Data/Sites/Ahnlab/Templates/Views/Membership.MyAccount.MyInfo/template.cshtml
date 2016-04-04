@@ -1,0 +1,12 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+}
+<div class="myInfo">
+    <p>@("Welcome!".Label())</p>
+    <p><strong>@member.GetProfile("FirstName")</strong></p>
+    <p class="desc">@member.Email</p>
+    <div class="btn">
+        <a href="@Url.FrontUrl().PageUrl("member/profile")">@("Edit My Information".Label())</a>
+        <a href="@Url.FrontUrl().PageUrl("member/reset-password")">@("Reset Password".Label())</a>
+    </div>
+</div>

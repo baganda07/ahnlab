@@ -1,0 +1,13 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"Level")>@Html.Raw(Model.Level ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Type")>@Html.Raw(Model.Type ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Description")>@Html.Raw(Model.Description ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Action")>@Html.Raw(Model.Action ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Thumbnail")>@Html.Raw(Model.Thumbnail ?? "")</div>
+		<div @ViewHelper.Edit(Model,"IsCurrent")>@Html.Raw(Model.IsCurrent ?? "")</div>
+	</div>
+</div>
+}

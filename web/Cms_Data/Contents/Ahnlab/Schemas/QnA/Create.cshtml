@@ -1,0 +1,201 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "application/x-www-form-urlencoded" })))
+{
+    <table><tr>
+            <th>
+            <label for="Question">Question</label>
+            </th>
+            <td>
+            <input class='long' id="Question" name="Question" type="text" value="@(Model.Question ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Question"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="UserName">User Name</label>
+            </th>
+            <td>
+            <input class='long' id="UserName" name="UserName" type="text" value="@(Model.UserName ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["UserName"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Email">Email</label>
+            </th>
+            <td>
+            <input class='long' id="Email" name="Email" type="text" value="@(Model.Email ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Email"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ContactNumber">Contact Number</label>
+            </th>
+            <td>
+            <input class='long' id="ContactNumber" name="ContactNumber" type="text" value="@(Model.ContactNumber ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ContactNumber"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ProductUUID">ProductUUID</label>
+            </th>
+            <td>
+            <input class='long' id="ProductUUID" name="ProductUUID" type="text" value="@(Model.ProductUUID ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductUUID"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ProductName">Product</label>
+            </th>
+            <td>
+            <input class='long' id="ProductName" name="ProductName" type="text" value="@(Model.ProductName ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductName"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Details">Details</label>
+            </th>
+            <td>
+            <textarea name="Details" id="Details" class="Details tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Details ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Details"], null)
+            
+            </td>          
+            </tr>
+<tr>
+    <th>Attachment</th>
+    <td>
+        <div id="Attachment_Container" class="mediafile">
+            <input id="Attachment" name="Attachment" type="hidden" value='@(Model.Attachment)' data-bind="value:fieldValue"  />
+            <span class="field-validation-valid" data-valmsg-for="Attachment" data-valmsg-replace="true"></span>
+            <ul class="clearfix" data-bind="foreach:data">
+                <!-- ko if: isImage -->
+                <li class="img">
+                    <span class="preview"></span>
+                    <a class="action" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                    <img data-bind="attr:{src:Url}" height="100" width="100">
+                </li>
+                <!-- /ko -->
+                <!-- ko ifnot: isImage -->
+                <li>
+                    <span class="left" data-bind="{text:FileName}"></span>
+                    <a class="action right" data-bind="click: $parent.removeItem">@Html.IconImage("minus small")</a>
+                </li>
+                <!-- /ko -->
+            </ul>
+            <a class="action add" href='@Url.Action("Selection", ViewContext.RequestContext.AllRouteValues().Merge("Controller", "MediaContent").Merge("FolderName", null))")'>@Html.IconImage("plus small")</a>
+            
+        </div>
+        <script>
+            $(function () {
+                function MediaFile_ViewModel(initValue) {
+                    var self = this;
+                    function getFileName(url) {
+                        return _.last(url.split('/'));
+                    }
+                    function isImage(url) {
+                        return /.jpg$|.png$|.gif$|.bmp$|.jpeg$/i.test(url);
+                    }
+                    var items = [];
+                    _.each(initValue.split('|'), function (item) {
+                        if (item != '') {
+                            items.push({ Url: item, FileName: getFileName(item), isImage: isImage(item) });
+                        }
+                    });
+                    self.data = ko.observableArray(items);
+                    self.data.sort();
+                    self.removeItem = function () {
+                        self.data.remove(this);
+                    };
+                    self.addItem = function (url, fileName) {
+                        if (_.findWhere(self.data(), { Url: url }) == undefined) {
+                            self.data.push({ Url: url, FileName: fileName, isImage: isImage(url) });
+                            self.data.sort();
+                        }
+                    };
+                    self.fieldValue = ko.computed(function () {
+                        var urls = [];
+                        _.each(this.data(), function (item) {
+                            urls.push(item.Url);
+                        });
+                        return urls.join('|');
+                    }, this);
+                }
+                var mediaFileViewModel = new MediaFile_ViewModel('@(Model.Attachment)');
+                var mediaFileTemplate = $('#Attachment_Container');
+                ko.applyBindings(mediaFileViewModel, mediaFileTemplate[0]);
+
+                mediaFileTemplate.find('a.add').click(function (e) {
+                    e.preventDefault();
+                    var $mediaLink = $(this);
+
+                    $mediaLink.pop({
+                        popupOnTop: true,
+                        width: 700,
+                        height: 500,
+                        onclose: function () {
+                            setTimeout(function () {
+                                if ($.popContext.getCurrent() != null) {
+                                    $.popContext.getCurrent().find('iframe').height('100%');
+                                }
+                            }, 16);
+                        },
+                        onload: function (currentHandle, pop, config) {
+                            var iframe = pop.children('iframe'),
+                            iframeSrc = iframe[0].contentWindow.document.location.href;
+                            if (iframeSrc == 'about:blank') {
+                                return false;
+                            }
+                            top.onFileSelected = function (src, text, option) {
+                                mediaFileViewModel.addItem(src, text);
+                            };
+                        }
+                    }).click();
+                });
+            });
+        </script>
+    </td>
+
+</tr>
+<tr>
+            <th>
+            <label for="Answer">Answer</label>
+            </th>
+            <td>
+            <textarea name="Answer" id="Answer" class="Answer tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.Answer ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Answer"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}

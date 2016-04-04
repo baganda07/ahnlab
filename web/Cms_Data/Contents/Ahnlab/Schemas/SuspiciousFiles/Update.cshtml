@@ -1,0 +1,114 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{
+    var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var workflowItem  = Model._WorkflowItem_;
+    var hasWorkflowItem = workflowItem!=null;
+    var availableEdit = hasWorkflowItem || (!hasWorkflowItem && allowedEdit);
+}
+    @using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+            , ViewContext.RequestContext.AllRouteValues()
+            , FormMethod.Post, new RouteValueDictionary(new { enctype = "multipart/form-data" })))
+{
+    <table><tr>
+            <th>
+            <label for="Subject">Subject</label>
+            </th>
+            <td>
+            <input class='long' id="Subject" name="Subject" type="text" value="@(Model.Subject ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Subject"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ProductUUID">ProductUUID</label>
+            </th>
+            <td>
+            <input class='long' id="ProductUUID" name="ProductUUID" type="text" value="@(Model.ProductUUID ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductUUID"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ProductName">Product Name</label>
+            </th>
+            <td>
+            <input class='long' id="ProductName" name="ProductName" type="text" value="@(Model.ProductName ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ProductName"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Name">Name</label>
+            </th>
+            <td>
+            <input class='long' id="Name" name="Name" type="text" value="@(Model.Name ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Name"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Email">E-mail</label>
+            </th>
+            <td>
+            <input class='long' id="Email" name="Email" type="text" value="@(Model.Email ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Email"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ContactNumber">Contact Number</label>
+            </th>
+            <td>
+            <input class='long' id="ContactNumber" name="ContactNumber" type="text" value="@(Model.ContactNumber ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ContactNumber"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="SymptomDetails">Symptom Details</label>
+            </th>
+            <td>
+            <textarea name="SymptomDetails" id="SymptomDetails" class="SymptomDetails tinymce" media_library_url="@Url.Action("Selection","MediaContent",ViewContext.RequestContext.AllRouteValues()))" media_library_title ="@("Selected Files".Localize())" rows="10" cols="100">@( Model.SymptomDetails ?? "")</textarea>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["SymptomDetails"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Attachment">AhnReport Result File Attachment</label>
+            </th>
+            <td>
+            <input id="Attachment" name="Attachment" type="file" data-value="@(Model.Attachment ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Attachment"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Screenshot">Suspicious File or Screenshot Attachment</label>
+            </th>
+            <td>
+            <input id="Screenshot" name="Screenshot" type="file" data-value="@(Model.Screenshot ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Screenshot"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    </table>   
+}

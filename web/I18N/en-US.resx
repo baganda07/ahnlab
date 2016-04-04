@@ -1835,4 +1835,193 @@ Are you sure you want to use this size?</value>
   <data name="XLIFF" xml:space="preserve">
     <value>XLIFF</value>
   </data>
+  <data name="Submission settings" xml:space="preserve">
+    <value>Submission settings</value>
+  </data>
+  <data name="Create submission setting" xml:space="preserve">
+    <value>Create submission setting</value>
+  </data>
+  <data name="PluginType" xml:space="preserve">
+    <value>PluginType</value>
+  </data>
+  <data name="The parameter settings for the plugin. e.g: FolderName : News" xml:space="preserve">
+    <value>The parameter settings for the plugin. e.g: FolderName : News</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Provider type" xml:space="preserve">
+    <value>Provider type</value>
+  </data>
+  <data name="Create date" xml:space="preserve">
+    <value>Create date</value>
+  </data>
+  <data name="Is approved" xml:space="preserve">
+    <value>Is approved</value>
+  </data>
+  <data name="Is locked out" xml:space="preserve">
+    <value>Is locked out</value>
+  </data>
+  <data name="Login date" xml:space="preserve">
+    <value>Login date</value>
+  </data>
+  <data name="Create member" xml:space="preserve">
+    <value>Create member</value>
+  </data>
+  <data name="'User name' is invalid." xml:space="preserve">
+    <value>'User name' is invalid.</value>
+  </data>
+  <data name="The logon name of the membership user." xml:space="preserve">
+    <value>The logon name of the membership user.</value>
+  </data>
+  <data name="'Email' is invalid." xml:space="preserve">
+    <value>'Email' is invalid.</value>
+  </data>
+  <data name="Invalid email address" xml:space="preserve">
+    <value>Invalid email address</value>
+  </data>
+  <data name="The e-mail address for the membership user." xml:space="preserve">
+    <value>The e-mail address for the membership user.</value>
+  </data>
+  <data name="'Confirm password' and 'Password' do not match." xml:space="preserve">
+    <value>'Confirm password' and 'Password' do not match.</value>
+  </data>
+  <data name="Confirm password" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="The password question for the membership user." xml:space="preserve">
+    <value>The password question for the membership user.</value>
+  </data>
+  <data name="Password question" xml:space="preserve">
+    <value>Password question</value>
+  </data>
+  <data name="The password question answer for the membership user." xml:space="preserve">
+    <value>The password question answer for the membership user.</value>
+  </data>
+  <data name="Password answer" xml:space="preserve">
+    <value>Password answer</value>
+  </data>
+  <data name="The Is approved field is required." xml:space="preserve">
+    <value>The Is approved field is required.</value>
+  </data>
+  <data name="The value indicating whether the membership user can be authenticated." xml:space="preserve">
+    <value>The value indicating whether the membership user can be authenticated.</value>
+  </data>
+  <data name="The Is lockedout field is required." xml:space="preserve">
+    <value>The Is lockedout field is required.</value>
+  </data>
+  <data name="Is lockedout" xml:space="preserve">
+    <value>Is lockedout</value>
+  </data>
+  <data name="The value indicating whether the membership user is locked out and unable to be validated." xml:space="preserve">
+    <value>The value indicating whether the membership user is locked out and unable to be validated.</value>
+  </data>
+  <data name="Group can be used for access control of site pages or others." xml:space="preserve">
+    <value>Group can be used for access control of site pages or others.</value>
+  </data>
+  <data name="Membership groups" xml:space="preserve">
+    <value>Membership groups</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="The UserName field is required." xml:space="preserve">
+    <value>The UserName field is required.</value>
+  </data>
+  <data name="Edit submission setting" xml:space="preserve">
+    <value>Edit submission setting</value>
+  </data>
+  <data name="Edit member" xml:space="preserve">
+    <value>Edit member</value>
+  </data>
+  <data name="Are you sure you want to publish this page?" xml:space="preserve">
+    <value>Are you sure you want to publish this page?</value>
+  </data>
+  <data name="'ConfirmPassword' and 'NewPassword' do not match." xml:space="preserve">
+    <value>'ConfirmPassword' and 'NewPassword' do not match.</value>
+  </data>
+  <data name="Copy a new site" xml:space="preserve">
+    <value>Copy a new site</value>
+  </data>
+  <data name="The repository is offline, please remove this file to take it online." xml:space="preserve">
+    <value>The repository is offline, please remove this file to take it online.</value>
+  </data>
+  <data name="Are you sure you want to localize this item?" xml:space="preserve">
+    <value>Are you sure you want to localize this item?</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="The &lt;strong&gt;{0}&lt;/strong&gt; will be permanently deleted and cannot be recovered. Are you sure?" xml:space="preserve">
+    <value>The &lt;strong&gt;{0}&lt;/strong&gt; will be permanently deleted and cannot be recovered. Are you sure?</value>
+  </data>
+  <data name="Would you like to delete the associated content database &lt;/br&gt; when it does not used by any other website any more?" xml:space="preserve">
+    <value>Would you like to delete the associated content database &lt;/br&gt; when it does not used by any other website any more?</value>
+  </data>
+  <data name="This site will be permanently deleted and cannot be recovered. Are you sure?" xml:space="preserve">
+    <value>This site will be permanently deleted and cannot be recovered. Are you sure?</value>
+  </data>
+  <data name="The site is offline, please remove this file to take it online." xml:space="preserve">
+    <value>The site is offline, please remove this file to take it online.</value>
+  </data>
+  <data name="Inherited" xml:space="preserve">
+    <value>Inherited</value>
+  </data>
+  <data name="Content databases" xml:space="preserve">
+    <value>Content databases</value>
+  </data>
+  <data name="Are you sure you want to delete the content database?" xml:space="preserve">
+    <value>Are you sure you want to delete the content database?</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Not avaliable" xml:space="preserve">
+    <value>Not avaliable</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="1. Database" xml:space="preserve">
+    <value>1. Database</value>
+  </data>
+  <data name="Create a database to store your content" xml:space="preserve">
+    <value>Create a database to store your content</value>
+  </data>
+  <data name="2. Setting" xml:space="preserve">
+    <value>2. Setting</value>
+  </data>
+  <data name="Create folders or content types with custom fields" xml:space="preserve">
+    <value>Create folders or content types with custom fields</value>
+  </data>
+  <data name="3. Content " xml:space="preserve">
+    <value>3. Content </value>
+  </data>
+  <data name="Create text content &lt;br /&gt; or upload media files" xml:space="preserve">
+    <value>Create text content &lt;br /&gt; or upload media files</value>
+  </data>
+  <data name="Create a database" xml:space="preserve">
+    <value>Create a database</value>
+  </data>
+  <data name="Add content type" xml:space="preserve">
+    <value>Add content type</value>
+  </data>
+  <data name="Add text folder" xml:space="preserve">
+    <value>Add text folder</value>
+  </data>
+  <data name="Add text content" xml:space="preserve">
+    <value>Add text content</value>
+  </data>
+  <data name="Add media files" xml:space="preserve">
+    <value>Add media files</value>
+  </data>
+  <data name="Unlocalize" xml:space="preserve">
+    <value>Unlocalize</value>
+  </data>
 </root>

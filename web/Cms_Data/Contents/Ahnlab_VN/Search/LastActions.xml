@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>An ninh mạng</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T15:50:40.7114344Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Dịch vụ</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T15:50:22.2835093Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Bản dùng thử</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T15:50:17.7052261Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Tải Engine/Patch </ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T15:50:00.7272701Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Công cụ</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T15:49:13.9148298Z</UtcActionDate>
+	</LastAction>
+</ArrayOfLastAction>

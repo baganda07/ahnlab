@@ -1,0 +1,59 @@
+﻿<div class="loginWrap">
+    <p class="welcome">
+        @("Welcome to <a href='http://ahnlab.com.vn' title='ahnlab.com.vn'>ahnlab.com.vn</a>".Label())
+    </p>
+    <div class="boxLogin">
+        <form class="ajaxForm" method="POST" action="@Url.FrontUrl().SubmissionUrl("Login")" id="loginForm">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="RedirectUrl" value="@(Request["returnUrl"] ?? Url.FrontUrl().PageUrl("home").ToString() )"/>
+            <p class="txt">@("Sign in with your username.".Label())</p>
+            <input type="text" onkeyup="javascript:if(event.keyCode == 13){ login(); }" placeholder="Username" title="Username" value="" class="txtBox inEm" id="custId" name="username">
+            <input type="password" onkeyup="javascript:if(event.keyCode == 13){ login(); }" autocomplete="off" placeholder="Password" title="Password" value="" class="txtBox inEm" id="password" name="password">
+            <div class="btn"><a class="btnBlue siteLoginBtn" href="javascript:;">@("Login".Label())</a></div>
+            @*<div id="aos_off" class="ar">
+                <a title="File Download" class="linkTxt linkTLine aosPopupOpenLink" href="#">Launch Online Security</a>
+            </div>*@
+            @*<div style="display:none;" id="aos_on" class="ar">
+                <span class="fcBlue">Online Security Active</span>
+            </div>*@
+        </form>
+    </div>
+    <p class="mt20"><a class="linkArr" href="@Url.FrontUrl().PageUrl("member/forgot-password")">Forgot your Password?</a></p>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (Common.isValue($("#custId").val())) {
+            $("#password").focus();
+        } else {
+            $("#custId").focus();
+        }
+        $(".siteLoginBtn").click(function () {
+            login();
+        });
+        $("#loginForm").ajaxForm({
+            success: function(res) {
+                if (res.Success) {
+                    location.href = res.RedirectUrl;
+                } else {
+                    alert('Username or Password is wrong.');
+                }
+            }
+        });
+    });
+
+    function login() {
+
+        if (!Common.isValue($("#custId").val())) {
+            alert('Please input your Email/ID.');
+            $("#custId").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#password").val())) {
+            alert('Please enter your password.');
+            $("#password").focus();
+            return;
+        }
+        $("#loginForm").submit();
+    }
+</script>

@@ -1,0 +1,96 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "multipart/form-data" })))
+{
+    <table><tr>
+            <th>
+            <label for="Title">Title</label>
+            </th>
+            <td>
+            <input class='long' id="Title" name="Title" type="text" value="@(Model.Title ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Title"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="SubTitle">SubTitle</label>
+            </th>
+            <td>
+            <input class='long' id="SubTitle" name="SubTitle" type="text" value="@(Model.SubTitle ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["SubTitle"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Order">Order</label>
+            </th>
+            <td>
+            <input class="long" id="Order" name="Order" type="text" value="@(Model.Order ?? "")"  data-val-number="The field Order must be a number." data-val="true"/>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Order"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="ImageOfText">Image Of Text</label>
+            </th>
+            <td>
+            <input id="ImageOfText" name="ImageOfText" type="file" data-value="@(Model.ImageOfText ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["ImageOfText"], null)
+            <em class='tip'>Image of Text</em>
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="BgImage">Background Image</label>
+            </th>
+            <td>
+            <input id="BgImage" name="BgImage" type="file" data-value="@(Model.BgImage ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["BgImage"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="BgColor">Background Color</label>
+            </th>
+            <td>
+            <input class='long' id="BgColor" name="BgColor" type="text" value="@(Model.BgColor ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["BgColor"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Link">Link</label>
+            </th>
+            <td>
+            <input class='long' id="Link" name="Link" type="text" value="@(Model.Link ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Link"], null)
+            
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}

@@ -1,0 +1,139 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+}
+
+<ul class="tabUtill col3">
+    <li class="on"><a href="#"><span class="blind">Current page</span>@("Account Information".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/my-product")">@("My Product List".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/qna")">@("My Q&A / Report History".Label())</a></li>
+</ul>
+<div class="subTab">
+    <ul>
+        <li><a class="row1" href="@Url.FrontUrl().PageUrl("member/profile")">@("Edit My Information".Label())</a></li>
+        <li class="on"><a class="row1" href="#"><span class="blind">Current page</span>@("Change Password".Label())</a></li>
+    </ul>
+</div>
+<h1 class="cTit">@("Change Password".Label())</h1>
+<div class="boxTBlue mt15">
+    <div class="my2col clfix">
+        <div class="col1 modify">
+            <dl>
+                <dt>@("Change Password".Label())</dt>
+                <dd>@("To change your password, <br>please provide your current password and new password.".Label())</dd>
+            </dl>
+        </div>
+        <div class="col2">
+            <div class="multiInpt">
+                <form action="@Url.FrontUrl().SubmissionUrl("ChangePassword")" method="POST" id="changePwdForm">
+                    @Html.AntiForgeryToken()
+
+                    <ul>
+                        <li>
+                            <span class="label">Email</span>
+                            <div class="formInput">
+                                <p class="txt">@member.Email</p>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="oldPassword">@("Current Password".Label())</label>
+                            <div class="formInput">
+                                <input type="password" placeholder="Current Password" onkeypress="javascript:if(event.keyCode == 13){ changePwdUpdate(); return false;}" style="width:228px;" maxlength="16" name="oldPassword" id="oldPassword" class="txtBox">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="newPassword">@("New Password".Label())</label>
+                            <div class="formInput">
+                                <input type="password" placeholder="New Password" onkeypress="javascript:if(event.keyCode == 13){ changePwdUpdate(); return false;}" style="width:228px;" name="NewPassword" id="newPassword" class="txtBox">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="confPassword">@("Confirm New Password".Label())</label>
+                            <div class="formInput">
+                                <input type="password" placeholder="Confirm New Password" onkeypress="javascript:if(event.keyCode == 13){ changePwdUpdate(); return false;}" style="width:228px;" name="ConfirmPassword" id="confPassword" class="txtBox">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btnCenter">
+                        <a class="btnCm" href="@Url.FrontUrl().PageUrl("member/my-account")">@("Cancel".Label())</a>
+                        <a onclick="changePwdUpdate();" class="btnCmDb" href="#">@("Submit".Label())</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#oldPassword").focus();
+    });
+
+    // Change Password
+    function changePwdUpdate() {
+
+        if (!Common.isValue($("#oldPassword").val())) {
+            alert("Please enter your Current Password.");
+            $("#oldPassword").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#newPassword").val())) {
+            alert("Please enter your New Password.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if ($("#newPassword").val().length < 10 || $("#newPassword").val().length > 16) {
+            alert("The password must be alphanumeric and at least 10-16 characters long.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if (!Common.chkPasswdContinue($("#newPassword").val())) {
+            alert("The password must avoid consecutive numbers.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if (!Common.chkPasswdDanger($("#newPassword").val())) {
+            alert("The password is too easy-to-guess. Please try another combination.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if (!Common.checkMix($("#newPassword").val())) {
+            alert("The password is too easy-to-guess. The password must be alphanumeric and at least 10-16 characters long.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if ($("#oldPassword").val() == $("#newPassword").val()) {
+            alert("Current password and new password are the same.");
+            $("#newPassword").focus();
+            return;
+        }
+
+        if ($("#newPassword").val() != $("#confPassword").val()) {
+            alert("Password does not match.");
+            $("#confPassword").focus();
+            return;
+        }
+        $.ajax({
+            url: $("#changePwdForm").attr("action"),
+            dataType: 'json',
+            data: $("#changePwdForm").serialize(),
+            method: 'POST',
+            success: function (json) {
+                if (json.Success) {
+                    alert("Your password has been changed.");
+                } else {
+                    alert(json.FieldErrors[0].ErrorMessage);
+                }
+            },
+            error: function (x, o, e) {
+                alert("Network Error!");
+            }
+        });
+
+    }
+</script>

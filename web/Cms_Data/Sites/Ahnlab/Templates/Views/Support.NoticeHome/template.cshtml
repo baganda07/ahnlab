@@ -6,10 +6,10 @@
         @foreach (var item in ViewBag.Notice)
         {
         <li>
-                <a href="@Url.FrontUrl().PageUrl("support/notice/detail",new {userkey = item.UserKey})">@("[Notice]".Label()) @item.Title</a>
+                <a href="@Url.FrontUrl().PageUrl("support/notice/detail",new {userkey = item.UserKey})">@item.Title</a>
                 <span class="date">@item.UtcCreationDate.ToShortDateString()</span>
             </li>
         }
     </ul>
-    <a href="@Url.FrontUrl().PageUrl("support/notice")" class="moreLh" title="Notice">More</a>
+    <a href="@Url.FrontUrl().PageUrl("support/notice")" class="moreLh" title="Notice">@("More".Label())</a>
 </div>

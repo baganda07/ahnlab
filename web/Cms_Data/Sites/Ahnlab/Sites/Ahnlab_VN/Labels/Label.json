@@ -1,0 +1,380 @@
+﻿[
+  {
+    "UUID": "6AJKMYU2RB",
+    "Name": "Log in",
+    "Value": "Đăng nhập",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:31:46.8131501Z",
+    "UtcLastestModificationDate": "2016-04-03T15:53:16.5973829Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "L84D33Y5Y9",
+    "Name": "My Account",
+    "Value": "Tài khoản của tôi<br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:31:46.8851986Z",
+    "UtcLastestModificationDate": "2016-04-03T15:54:02.9913381Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "GE8XQGDDBT",
+    "Name": "Partner",
+    "Value": "Đối tác<br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:31:46.9042108Z",
+    "UtcLastestModificationDate": "2016-04-03T15:54:08.2747779Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "GJ63WT6A69",
+    "Name": "How to Use",
+    "Value": "Hướng dẫn sử dụng",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:31:52.9762811Z",
+    "UtcLastestModificationDate": "2016-04-03T16:02:05.346563Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "AB2AW4V6UV",
+    "Name": "Submit Suspicious Files",
+    "Value": "Gửi tập tin đáng ngờ",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:31:52.9902921Z",
+    "UtcLastestModificationDate": "2016-04-03T16:02:17.8318949Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "4DAJ9CXFZ6",
+    "Name": "Security Risk<br />Level",
+    "Value": "Cấp độ<br> Rủi ro <br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.8012264Z",
+    "UtcLastestModificationDate": "2016-04-03T16:15:14.8198648Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "689WMGWETY",
+    "Name": "New Virus &amp; Spyware",
+    "Value": "Virus &amp; Spyware mới",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.8182363Z",
+    "UtcLastestModificationDate": "2016-04-03T16:02:52.5151712Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "H3BUXAF27U",
+    "Name": "Notice",
+    "Value": "Chú ý",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.8492564Z",
+    "UtcLastestModificationDate": "2016-04-03T16:03:39.1493376Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "T2ESHGZX6Q",
+    "Name": "[Notice]",
+    "Value": "[Chú ý]",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.8612644Z",
+    "UtcLastestModificationDate": "2016-04-03T16:03:45.3473105Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "LUWYYTHQCF",
+    "Name": "Press Releases",
+    "Value": "Thông báo",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.8942862Z",
+    "UtcLastestModificationDate": "2016-04-03T16:03:53.0895925Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "B3V7Z6F569",
+    "Name": "More",
+    "Value": "Xem thêm",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.9183021Z",
+    "UtcLastestModificationDate": "2016-04-03T16:03:13.5201565Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "74ARKF45J4",
+    "Name": "Security Insight",
+    "Value": "Security Insight",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.9753416Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "PYPYJM6KNS",
+    "Name": "Tech<br />Report",
+    "Value": "Báo cáo<br />Công nghệ",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:01.9993562Z",
+    "UtcLastestModificationDate": "2016-04-03T16:04:07.1642213Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "2TA3JGYCGA",
+    "Name": "Weekly Security News",
+    "Value": "Tin tức bảo mật hàng tuần",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:02.0093633Z",
+    "UtcLastestModificationDate": "2016-04-03T16:04:23.0110537Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "VEL2UQC7ML",
+    "Name": "ASEC<br />Report",
+    "Value": "Báo cáo <br />ASEC",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:02.0198728Z",
+    "UtcLastestModificationDate": "2016-04-03T16:04:36.2542527Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "Y73Q23R666",
+    "Name": "Technology Trends in One Sight",
+    "Value": "Technology Trends in One Sight",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:02.0318807Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "C53PUBHDAK",
+    "Name": "Latest Threats",
+    "Value": "Threats mới nhất",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:02.0549533Z",
+    "UtcLastestModificationDate": "2016-04-03T16:05:13.2089262Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "HYQVGV9RVQ",
+    "Name": "Date",
+    "Value": "Ngày",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:25.6802997Z",
+    "UtcLastestModificationDate": "2016-04-03T16:05:25.1466871Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "3BMEGY7JNS",
+    "Name": "Hit",
+    "Value": "Lượt xem",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:25.6943094Z",
+    "UtcLastestModificationDate": "2016-04-03T16:05:41.3908547Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "WS5QRAKQEJ",
+    "Name": "Back to the List",
+    "Value": "Trở về",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:32:25.71032Z",
+    "UtcLastestModificationDate": "2016-04-03T16:05:50.0763397Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "7E5J3SP5A5",
+    "Name": "Privacy &amp; Security",
+    "Value": "Chính sách bảo mật<br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:57:23.69396Z",
+    "UtcLastestModificationDate": "2016-04-03T16:00:30.3148788Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "949U5S3AH2",
+    "Name": "Terms of Use",
+    "Value": "Hướng dẫn sử dụng<br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:57:23.7079706Z",
+    "UtcLastestModificationDate": "2016-04-03T16:00:22.6327627Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "Z9SB9W9PPV",
+    "Name": "Contact Us",
+    "Value": "Liên hệ<br>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T15:57:23.7199773Z",
+    "UtcLastestModificationDate": "2016-04-03T15:59:56.221156Z",
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "CJVJSUSWPN",
+    "Name": "Articles List",
+    "Value": "Articles List",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:35.0771009Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "EE99PFT7K3",
+    "Name": "No.",
+    "Value": "No.",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:35.0891088Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "C4FTPFQHYU",
+    "Name": "Article",
+    "Value": "Article",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:35.1041187Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "75W22YVK5G",
+    "Name": "Enter a question",
+    "Value": "Enter a question",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:48.9525158Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "Z2XYP2ZVA2",
+    "Name": "Search",
+    "Value": "Search",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:48.9645259Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "WJZW2354R5",
+    "Name": "Total",
+    "Value": "Total",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:06:48.9755285Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "6D7UYJFGN8",
+    "Name": "Account Information",
+    "Value": "Account Information",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.3997824Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "JLBULEGMG9",
+    "Name": "My Product List",
+    "Value": "My Product List",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4227959Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "YLMW6LEEBG",
+    "Name": "My Q&A / Report History",
+    "Value": "My Q&A / Report History",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4318045Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "86HKNK4U8L",
+    "Name": "My Q&A",
+    "Value": "My Q&A",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4398098Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "23PZ8L7GSC",
+    "Name": "My Report History",
+    "Value": "My Report History",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4508149Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "HWRMUZY5UB",
+    "Name": "You have ",
+    "Value": "You have ",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4588194Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "L39FNZAVBU",
+    "Name": " question(s).",
+    "Value": " question(s).",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4678275Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "DFH9QCDGNB",
+    "Name": "My Q&A Details",
+    "Value": "My Q&A Details",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4758315Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "AJMCGF3L5F",
+    "Name": "In progress",
+    "Value": "In progress",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.4918421Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "UDGSHLDYVG",
+    "Name": "New Question",
+    "Value": "New Question",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:20:55.5118557Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "38SBHACTN9",
+    "Name": "Welcome to <a href='http://ahnlab.com.vn' title='ahnlab.com.vn'>ahnlab.com.vn</a>",
+    "Value": "Welcome to <a href='http://ahnlab.com.vn' title='ahnlab.com.vn'>ahnlab.com.vn</a>",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:24:33.334514Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "TTX5LKNCBG",
+    "Name": "Sign in with your username.",
+    "Value": "Sign in with your username.",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:24:33.3835464Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  },
+  {
+    "UUID": "X3UKAHX5VJ",
+    "Name": "Login",
+    "Value": "Login",
+    "Category": "",
+    "UtcCreationDate": "2016-04-03T16:24:33.3925524Z",
+    "UtcLastestModificationDate": null,
+    "LastestEditor": "admin"
+  }
+]

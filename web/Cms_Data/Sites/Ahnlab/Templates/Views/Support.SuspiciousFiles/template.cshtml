@@ -1,0 +1,182 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+}
+
+
+
+@Html.FrontHtml().RenderHtmlBlock("Support.SuspiciousFiles")
+<div class="contTit mt25">
+    <h2 class="cTit">@("Form".Label())</h2>
+    <div class="infoR requ">@("required fields".Label())</div>
+</div>
+<form id="frmSuspiciousFiles" method="POST" action="@Url.FrontUrl().SubmissionUrl("SubmitSuspiciousFiles")">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="ReturnUrl" value="@Url.FrontUrl().PageUrl("support/virusreport")" />
+    <div class="tForm">
+        <table>
+            <caption>@("Enter details for the virus report".Label())</caption>
+            <colgroup>
+                <col style="width:20%;">
+                <col style="width:80%;">
+            </colgroup>
+            <tbody>
+                <tr class="first">
+                    <th scope="row">
+                        <label class="requ" for="ahn_prdt">@("Product Name".Label())</label>
+                    </th>
+                    <td>
+                        <span class="select">
+                            <select title="Select Product" name="productUUID" id="productUUID">
+                                <option value="">@("========= Select Product =========".Label())</option>
+                                @foreach (var item in ViewBag.Products)
+                                {
+                                    <option value="@item.UUID">@item.Name</option>
+                                }
+                                <option value="0">@("Other Product".Label())</option>
+                                }
+                            </select>
+                            <input type="hidden" name="productName" id="productName" />
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="sendName">@("Name".Label())</label>
+                    </th>
+                    <td>
+                        <span class="fcDgray ml10">@member.UserName</span>
+                        <input type="hidden" value="@member.UserName" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="label">@("E-mail".Label())</span>
+                    </th>
+                    <td>
+                        <span class="fcDgray ml10">@member.Email</span>
+                        <input type="hidden" value="@member.Email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="contactNumber">@("Contact Number".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" style="width:343px;" value="@member.GetProfile("ContactNumber")" class="txtBox" id="contactNumber" name="contactNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="subject">@("Subject".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" style="width:738px;" value="" class="txtBox" id="subject" name="subject">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="detail">@("Symptom Details".Label())</label>
+                    </th>
+                    <td>
+                        <textarea style="width:738px;" placeholder="Enter Description." cols="50" rows="5" name="SymptomDetails" id="detail"></textarea>
+                        </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="ahnReportFile">@("AhnReport Result <br>File Attachment ".Label())</label>
+                    </th>
+                    <td>
+                        <input type="file" style="width:738px;" title="Suspicious attachments" class="file" id="ahnReportFile" name="Attachment">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="ahnReportFile">@("Suspicious File or Screenshot Attachment".Label())</label>
+                    </th>
+                    <td>
+                        <input type="file" style="width:738px;" title="Suspicious attachments" class="file" id="fileAttach_0" name="Screenshot">
+                        <p>@("※ Attachment maximum size is 500MB. Please attach ZIP compressed file only.".Label())</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="btnCenter">
+        <a onclick="javascript:resetForm(); return false;" class="btnCm" href="javascript:;">@("Delete entered information.".Label())</a>
+        <a onclick="javascript:send(); return false;" class="btnCmDb" href="javascript:;">@("Submit".Label())</a>
+    </div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#frmSuspiciousFiles").ajaxForm({
+            success: function (res) {
+                alert("Submit successful");
+                location.reload(false);
+            },
+            fail: function () {
+                alert("Submit unsuccessful. Please try again late.");
+                location.reload(false);
+            }
+
+        });
+    });
+    function resetForm() {
+        $("#frmSuspiciousFiles").trigger("reset");
+    }
+
+    function send() {
+
+        if (!$("#productUUID").val()) {
+            alert('Please select the product.');
+            $("#productUUID").focus();
+            return;
+        }
+        $("#productName").val($("#productUUID option:selected").text());
+        if (!Common.isValue($("#sendName").val())) {
+            alert("Please enter your name.");
+            $("#sendName").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#email").val())) {
+            alert("Please enter your email address.");
+            $("#email").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#subject").val())) {
+            alert("Please fill out subject field");
+            $("#subject").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#detail").val().replace(/\s+/, ""))) {
+            alert("Please describe your Symptom Details");
+            $("#detail").focus();
+            return;
+        }
+        if ($("#detail").val() == "Enter Description.") {
+            alert("Please describe your Symptom Details");
+            $("#detail").focus();
+            return;
+        }
+        if (!Common.isValue($("#ahnReportFile").val()) && !Common.isValue($("#fileAttach_0").val())) {
+            alert("Please attach AhnReport results or suspicious files.");
+            $("#ahnReportFile").focus();
+            return;
+        }
+
+        if (!Common.checkExt($("#ahnReportFile").val(), "arc|cab")) {
+            alert("Please attach ARC or CAB type(format) file only.");
+            $("#ahnReportFile").focus();
+            return;
+        }
+
+        if (!Common.checkExt($("#fileAttach_0").val(), "zip")) {
+            alert("Please attach ZIP compressed file only.");
+            $("#fileAttach_0").focus();
+            return;
+        }
+        $("#frmSuspiciousFiles").submit();
+    }
+</script>

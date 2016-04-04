@@ -1,0 +1,103 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+    var pageParam = Request["page"];
+    var page = 1;
+    if (string.IsNullOrEmpty(pageParam) && !int.TryParse(pageParam, out page))
+    {
+        page = 1;
+    }
+    var qnas = ContentHelper.NewTextFolderObject("Support~QnA").CreateQuery().WhereEquals("UserName", member.UserName);
+    var total = qnas.Count();
+    var pagedList = qnas.ToPagedList(page,10);
+}
+
+
+<ul class="tabUtill col3">
+    <li><a href="@Url.FrontUrl().PageUrl("member/profile")">@("Account Information".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/my-product")">@("My Product List".Label())</a></li>
+    <li class="on">
+        <a href="#"><span class="blind">Current page</span>@("My Q&A / Report History".Label())</a>
+    </li>
+</ul>
+<div class="subTab">
+    <ul>
+        <li class="on"><a class="row1" href="#"><span class="blind">Current page</span>@("My Q&A".Label())</a></li>
+        <li><a class="row1" href="@Url.FrontUrl().PageUrl("member/my-report")">@("My Report History".Label())</a></li>
+    </ul>
+</div>
+
+<h1 class="cTit">@("My Q&A".Label())</h1>
+
+<div class="tblInfo">
+
+    <p>@("You have ".Label())<strong class="fcBlue">@total</strong>@(" question(s).".Label())</p>
+</div>
+<div class="bbsList consult">
+    <table>
+        <caption>@("My Q&A Details".Label())</caption>
+        <colgroup>
+            <col style="width:10%;">
+            <col style="width:60%;">
+            <col style="width:15%;">
+            <col style="width:15%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Question</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (total > 0)
+            {
+                var i = 0;
+                foreach (var item in pagedList)
+                {
+                    <tr>
+                        <td>@(total - i- (page - 1)* 10)</td>
+                        <td class="al">
+                            <a href="@Url.FrontUrl().PageUrl("member/qna/detail", new {userkey = item.UserKey})">@item["Question"]</a>
+                        </td>
+                        <td>
+                            @item.UtcCreationDate.ToShortDateString()
+                        </td>
+                        <td class="prog">
+                            @(!string.IsNullOrEmpty(item["Answer"].ToString()) ? "Done".Label() : "In progress".Label())
+
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+            else
+            {
+
+                <tr class="first">
+                    <td class="first ac" colspan="4">@("No Data".Label())</td>
+                </tr>
+                }
+        </tbody>
+    </table>
+</div>
+@{var pageOption = new PagerOptions
+        {
+          ShowFirstLast = false,
+          ShowPrevNext = false,
+          StatisticsTextFormatString = "",
+          NumericPagerItemCount = 5,
+          CssClass = "paging",
+          CurrentPagerItemWrapperFormatString = "<span><a class='on'>{0}</a></span>",
+          //NavigationPagerItemWrapperFormatString = "<span class=''>{0}</span>",
+          PagerItemWrapperFormatString = "<span>{0}</span>",
+        };
+}
+@Html.FrontHtml().Pager(pagedList, pageOption)
+
+
+<div class="btnWrap clfix">
+    <div class="fr">
+        <a class="btnCmDb" href="@Url.FrontUrl().PageUrl("support/qna")">@("New Question".Label())</a>
+    </div>
+</div>

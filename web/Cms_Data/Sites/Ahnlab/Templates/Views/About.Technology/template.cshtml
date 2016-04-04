@@ -1,1 +1,22 @@
-﻿ 
+﻿@{
+    var article = ViewBag.Technology[0];
+}
+
+<div class="tabComm">
+    <ul>
+        @foreach (var item in ViewBag.Technologies)
+        {
+            if (article.UUID == item.UUID)
+            {
+                <li class="on"><a href="#"><span class="blind">Current page</span>@item.Title</a></li>
+            }
+            else
+            {
+
+                <li><a href="@Url.FrontUrl().PageUrl("about/technology", new {userkey = item.UserKey})">@item.Title</a></li>
+            }
+        }
+    </ul>
+</div>
+@Html.Raw(article.Content)
+

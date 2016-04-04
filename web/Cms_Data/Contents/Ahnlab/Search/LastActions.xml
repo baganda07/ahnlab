@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastAction xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Kooboo.CMS.Search.Models">
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Contact Us</ContentSummary>
+		<FolderName>About~Technology</FolderName>
+		<ContentSummary>Security Strategy</ContentSummary>
 		<Action>Update</Action>
-		<UtcActionDate>2016-03-17T08:56:19.1735764Z</UtcActionDate>
+		<UtcActionDate>2016-04-03T15:27:28.3993928Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Technology</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-17T08:55:50.3605908Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>Catalog</FolderName>
-		<ContentSummary>Certificates</ContentSummary>
-		<Action>Update</Action>
-		<UtcActionDate>2016-03-17T08:55:04.0374163Z</UtcActionDate>
-	</LastAction>
-	<LastAction>
-		<FolderName>About~PressReleases</FolderName>
-		<ContentSummary>AhnLab V3 Received ‘2015 EIST’ Award By ICSA Labs</ContentSummary>
+		<FolderName>About~Technology</FolderName>
+		<ContentSummary>Core Technology</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-17T08:24:41.2874152Z</UtcActionDate>
+		<UtcActionDate>2016-04-03T14:45:03.2425287Z</UtcActionDate>
 	</LastAction>
 	<LastAction>
-		<FolderName>About~PressReleases</FolderName>
-		<ContentSummary>Frost &amp; Sullivan Recognizes AhnLab with the 2015 South Korea Technology Innovation Award in APT Solutions</ContentSummary>
+		<FolderName>About~Technology</FolderName>
+		<ContentSummary>Security Strategy</ContentSummary>
 		<Action>Add</Action>
-		<UtcActionDate>2016-03-17T08:24:15.9988946Z</UtcActionDate>
+		<UtcActionDate>2016-04-03T14:44:03.7252213Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Catalog</FolderName>
+		<ContentSummary>Event</ContentSummary>
+		<Action>Update</Action>
+		<UtcActionDate>2016-04-03T11:41:44.9571911Z</UtcActionDate>
+	</LastAction>
+	<LastAction>
+		<FolderName>Support~QnA</FolderName>
+		<ContentSummary>test</ContentSummary>
+		<Action>Add</Action>
+		<UtcActionDate>2016-04-03T10:37:38.7118103Z</UtcActionDate>
 	</LastAction>
 </ArrayOfLastAction>

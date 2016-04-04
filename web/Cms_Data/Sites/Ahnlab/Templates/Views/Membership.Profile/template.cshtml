@@ -1,0 +1,173 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+}
+
+<ul class="tabUtill col3">
+    <li class="on"><a href="#"><span class="blind">Current page</span>@("Account Information".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/my-product")">@("My Product List".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/qna")">@("My Q&A / Report History".Label())</a></li>
+</ul>
+<div class="subTab">
+    <ul>
+        <li class="on"><a class="row1" href="#"><span class="blind">Current page</span>@("Edit My Information".Label())</a></li>
+        <li><a class="row1" href="@Url.FrontUrl().PageUrl("member/change-password")">@("Change Password".Label())</a></li>
+    </ul>
+</div>
+<div class="contTit">
+    <h1 class="csTit">@("Edit My Information".Label())</h1>
+    <h3 class="blind">@("Form".Label())</h3>
+
+    <div class="infoR fcWarn">
+        @("All Fields marked with an asterisk ".Label())(<img src="@Url.FrontUrl().ThemeFileUrl("image/ico_required.gif")" alt="A Must Enter Icon" class="vm">)@(" are required".Label()).
+    </div>
+</div>
+<form id="customerForm" action="@Url.FrontUrl().SubmissionUrl("EditProfile")" method="POST">
+    @Html.AntiForgeryToken()
+    <div class="tForm">
+        <table>
+            <caption>@("Enter My Information".Label())</caption>
+            <colgroup>
+                <col style="width:20%;">
+                <col style="width:80%;">
+            </colgroup>
+            <tbody>
+                <tr class="first">
+                    <th scope="row">
+                        <span class="label">@("Email".Label())</span>
+                    </th>
+                    <td>
+                        <span class="fcDgray ml6">@member.Email</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="custName" class="requ">@("First Name".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" value="@member.GetProfile("FirstName")" style="width:188px;" class="txtBox" name="FirstName" id="custName">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="lastName" class="requ">@("Last Name".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" value="@member.GetProfile("LastName")" style="width:188px;" class="txtBox" name="LastName" id="lastName">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="lastName" class="requ">@("Contact Number".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" numberonly="true" maxlength="20" value="@member.GetProfile("ContactNumber")" style="width:188px;" class="txtBox" name="ContactNumber" id="reqPhone">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="hintType" class="requ">@("Security Question".Label())</label>
+                    </th>
+                    <td>
+                        <span class="select">
+                            <select name="PasswordQuestion" id="hintType">
+                                <option value="">Choose</option>
+                                <option value="01">What is my mother's name?</option>
+                                <option value="02">What is my father's name?</option>
+                                <option value="03">What is my nick name?</option>
+                                <option value="04">What is my pet's name?</option>
+                                <option value="05">What is my lover's name?</option>
+                                <option value="06">What is my favorite book?</option>
+                                <option value="07">What is my favorite food?</option>
+                            </select>
+                        </span>
+                        <p class="mt10">
+                            @("Select a security question. This question will help us verify you if you forget your password.".Label())
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="hintAnswer" class="requ">@("Security Answer".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" maxlength="100" style="width:738px;" class="txtBox" name="PasswordAnswer" id="hintAnswer">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    @*<h3 class="csTit mt35">Mail Service</h3>
+
+
+        <p class="mtM10">Product Expiration notification email will be sent by default.</p>
+
+        <p class="mt10"><input type="checkbox" value="Y" name="emailYn" id="emailYn"><label class="fcDgray" for="emailYn">Receive important notices and virus information.</label></p>
+        <p><input type="checkbox" value="Y" name="addYn" id="addYn"><label class="fcDgray" for="addYn">Receive news about special offers and products.</label></p>*@
+    <div class="btnCenter">
+        <a class="btnCm" href="@Url.FrontUrl().PageUrl("member/my-account")">@("Cancel".Label())</a>
+        <a onclick="updCustomerInfo();" class="btnCmDb" href="#">@("Submit".Label())</a>
+    </div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#customerForm").ajaxForm({
+            success: function (res) {
+                if (res.Success) {
+                    alert("Change profile successful");
+                }
+                else { alert("Change profile unsuccessful. Please try again later."); }
+            }
+        });
+    });
+    function updCustomerInfo() {
+
+        if (!Common.isValue($("#custName").val())) {
+            alert("Please enter your first name.");
+            $("#custName").focus();
+            return;
+        }
+
+
+        if (!Common.isValue($("#lastName").val())) {
+            alert("Please enter your last name.");
+            $("#lastName").focus();
+            return;
+        }
+        if (!Common.isValue($("#reqPhone").val())) {
+            alert("Please Input your Contact Number");
+            $("#reqPhone").focus();
+            return;
+        }
+        if (!Common.isValue($("#hintType").val())) {
+            alert("Please select your Security Question.");
+            $("#hintType").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#hintAnswer").val())) {
+            alert("Please enter the Security Answer.");
+            $("#hintAnswer").focus();
+            return;
+        }
+
+        if (!confirm("Do you want to edit?"))
+            return;
+        $("#customerForm").submit();
+    }
+
+    //function setValidEmail(email){
+
+    //    var _html='&lt;input type="text" id="custId" name="custId" class="txtBox" value="kimjh@ksystem.vn" style="width:188px;" onchange="emailchange();"/&gt;';
+    //    $('#idDiv').html(_html);
+    //    $('#custId').val(email);
+    //    $('#setDiv').val('1');
+    //    $('#setCheck').val('1');
+    //}
+
+    //function emailchange(){
+    //    $('#setCheck').val('0');
+    //    $('#setDiv').val('1');
+    //}
+
+</script>

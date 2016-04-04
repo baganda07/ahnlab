@@ -1,0 +1,41 @@
+﻿@if (ViewBag.QnA != null)
+{
+
+    <ul class="tabUtill col3">
+        <li><a href="@Url.FrontUrl().PageUrl("member/profile")">@("Account Information".Label())</a></li>
+        <li><a href="@Url.FrontUrl().PageUrl("member/my-product")">@("My Product List".Label())</a></li>
+        <li class="on">
+            <a href="#"><span class="blind">Current page</span>@("My Q&A / Report History".Label())</a>
+        </li>
+    </ul>
+    <div class="subTab">
+        <ul>
+            <li class="on"><a class="row1" href="#"><span class="blind">Current page</span>@("My Q&A".Label())</a></li>
+            <li><a class="row1" href="@Url.FrontUrl().PageUrl("member/my-report")">@("My Report History".Label())</a></li>
+        </ul>
+    </div>
+
+    <h1 class="cTit">@("My Q&A".Label())</h1>
+    <div class="bbsView QnA">
+        <div class="titWrap que">
+            <p class="tit"><span class="blind">@("Question content".Label())</span>@ViewBag.QnA.Question</p>
+            <ul class="viewInfo">
+                <li class="stat">
+                    <span>@("Status".Label())</span>
+                    @(!string.IsNullOrEmpty(ViewBag.QnA.Answer) ? "Done".Label() : "In progress".Label())
+                </li>
+                <li><span>@("Date".Label())</span>@ViewBag.QnA.UtcCreationDate.ToShortDateString()</li>
+            </ul>
+
+        </div>
+        <div class="view">
+            @Html.Raw(ViewBag.QnA.Details)
+        </div>
+
+    </div>
+    <div class="btnWrap clfix">
+        <div class="fr">
+            <a class="btnCm" href="@Url.FrontUrl().PageUrl("member/qna")">@("Back to the List".Label())</a>
+        </div>
+    </div>
+}

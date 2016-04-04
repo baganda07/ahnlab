@@ -1,0 +1,26 @@
+﻿@if (Model != null)
+{ 
+<div>
+	<h3 class="title" @ViewHelper.Edit(Model,"Name")>@Html.Raw(Model.Name ?? "")</h3>
+	<div class="content">
+		<div @ViewHelper.Edit(Model,"Risk")>@Html.Raw(Model.Risk ?? "")</div>
+		<div @ViewHelper.Edit(Model,"DetailInfo")>@Html.Raw(Model.DetailInfo ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Protection")>@Html.Raw(Model.Protection ?? "")</div>
+		<div @ViewHelper.Edit(Model,"OtherInfo")>@Html.Raw(Model.OtherInfo ?? "")</div>
+		<div @ViewHelper.Edit(Model,"SystemRisk")>@Html.Raw(Model.SystemRisk ?? "")</div>
+		<div @ViewHelper.Edit(Model,"NetworkRisk")>@Html.Raw(Model.NetworkRisk ?? "")</div>
+		<div @ViewHelper.Edit(Model,"SpreadRisk")>@Html.Raw(Model.SpreadRisk ?? "")</div>
+		<div @ViewHelper.Edit(Model,"CurrentSpreadLevel")>@Html.Raw(Model.CurrentSpreadLevel ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Aliases")>@Html.Raw(Model.Aliases ?? "")</div>
+		<div @ViewHelper.Edit(Model,"CreatedFile")>@Html.Raw(Model.CreatedFile ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Activity")>@Html.Raw(Model.Activity ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Platform")>@Html.Raw(Model.Platform ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Origin")>@Html.Raw(Model.Origin ?? "")</div>
+		<div @ViewHelper.Edit(Model,"InfectionRoute")>@Html.Raw(Model.InfectionRoute ?? "")</div>
+		<div @ViewHelper.Edit(Model,"InfectionMethod")>@Html.Raw(Model.InfectionMethod ?? "")</div>
+		<div @ViewHelper.Edit(Model,"DateDiscovered")>@Html.Raw(Model.DateDiscovered ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Instructions")>@Html.Raw(Model.Instructions ?? "")</div>
+		<div @ViewHelper.Edit(Model,"Summary")>@Html.Raw(Model.Summary ?? "")</div>
+	</div>
+</div>
+}

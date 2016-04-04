@@ -1,0 +1,88 @@
+﻿
+@using Kooboo.CMS.Content.Models;
+@using Kooboo.CMS.Content.Query;
+@{ var schema = (Kooboo.CMS.Content.Models.Schema)ViewData["Schema"];
+    var allowedEdit = (bool)ViewData["AllowedEdit"];
+    var allowedView = (bool)ViewData["AllowedView"];
+    var parentUUID = ViewContext.RequestContext.AllRouteValues()["parentUUID"];
+    var parentFolder=ViewContext.RequestContext.AllRouteValues()["parentFolder"];
+}
+@using(Html.BeginForm(ViewContext.RequestContext.AllRouteValues()["action"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()["controller"].ToString()
+    , ViewContext.RequestContext.AllRouteValues()
+    , FormMethod.Post
+    , new RouteValueDictionary(new { enctype = "multipart/form-data" })))
+{
+    <table><tr>
+            <th>
+            <label for="Level">Level</label>
+            </th>
+            <td>
+            <input class="long" id="Level" name="Level" type="text" value="@(Model.Level ?? "")"  data-val-number="The field Level must be a number." data-val="true"/>            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Level"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Type">Type</label>
+            </th>
+            <td>
+            <input class='long' id="Type" name="Type" type="text" value="@(Model.Type ?? "")" />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Type"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Description">Description</label>
+            </th>
+            <td>
+            <textarea class="extra-large" name="Description" >@(Model.Description ?? "")</textarea>             
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Description"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Action">Action</label>
+            </th>
+            <td>
+            <textarea class="extra-large" name="Action" >@(Model.Action ?? "")</textarea>             
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Action"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+            <label for="Thumbnail">Thumbnail</label>
+            </th>
+            <td>
+            <input id="Thumbnail" name="Thumbnail" type="file" data-value="@(Model.Thumbnail ?? "")" class='filestyle' />            
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Thumbnail"], null)
+            
+            </td>          
+            </tr><tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='IsCurrent' name="IsCurrent" type="checkbox" @(Convert.ToBoolean(Model.IsCurrent)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="IsCurrent"/>
+            <label class="inline" for="IsCurrent">IsCurrent</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["IsCurrent"], null)
+            </td>          
+            </tr>
+            @if (allowedEdit) {
+                <tr>
+            <th>
+           
+            </th>
+            <td>
+            <input id='Published' name="Published" type="checkbox" @(Convert.ToBoolean(Model.Published)?"checked":"") value="true"/>
+                                    <input type="hidden" value="false" name="Published"/>
+            <label class="inline" for="Published">Published</label>
+            @Html.ValidationMessageForColumn(((ISchema)ViewData["Schema"])["Published"], null)
+            </td>          
+            </tr>
+            }
+    @Html.Action("Categories", ViewContext.RequestContext.AllRouteValues())
+    
+    </table>
+}

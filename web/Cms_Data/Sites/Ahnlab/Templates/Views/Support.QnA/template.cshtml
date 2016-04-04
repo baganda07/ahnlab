@@ -1,0 +1,201 @@
+﻿@{
+    var member = ViewContext.HttpContext.Membership().GetMembershipUser();
+}
+@Html.FrontHtml().RenderHtmlBlock("Support.QnA")
+<div class="contTit mt35">
+    <h2 class="cTit">@("Form".Label())</h2>
+    <div class="infoR requ">@("All fields marked with an asterisk (*) are required.".Label())</div>
+</div>
+<form action="@Url.FrontUrl().SubmissionUrl("SubmitQnA")" method="POST" id="QnaForm" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <div class="tForm">
+        <table>
+            <caption>@("Q&A Entered Description".Label())</caption>
+            <colgroup>
+                <col style="width:20%;">
+                <col style="width:80%;">
+            </colgroup>
+            <tbody>
+                <tr class="first">
+                    <th scope="row">
+                        <label class="requ" for="reqName">@("Name".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" readonly="readonly" maxlength="80" style="width:258px;" value="@member.UserName" class="txtBox" id="reqName" name="userName">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="reqEmail">@("Email".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" maxlength="200" style="width:258px;" value="@member.Email" class="txtBox" id="reqEmail" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="reqPhone">Contact Number</label>
+                    </th>
+                    <td>
+                        <input type="text" numberonly="true" maxlength="20" style="width:258px;" value="@member.GetProfile("ContactNumber")" class="txtBox" id="reqPhone" name="ContactNumber">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        <span class="label">@("Product".Label())</span>
+                    </th>
+                    <td>
+                        <span class="select">
+                            <select title="Select Product" name="ProductUUID" id="ProductUUID">
+                                <option value="">Select Product</option>
+                                @foreach (var item in ViewBag.Products)
+                                {
+                                    <option value="@item.UUID">@item.Name</option>
+                                }
+                            </select>
+                            <input type="hidden" id="ProductName" name="ProductName" />
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="label requ">@("Category".Label())</span>
+                    </th>
+                    <td>
+                        <span class="select">
+                            <input type="hidden" name="Categories[0].FolderName" value="Support~QnA~QnACategories" />
+                            <select style="width:258px;" title="Select Category" name="Categories[0].UUID" id="category">
+                                <option value="">Select Category</option>
+                                @foreach (var item in ViewBag.Categories)
+                                {
+                                    <option value="@item.UUID">@item.Name</option>
+                                }
+                            </select>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="reqTitle">@("Question".Label())</label>
+                    </th>
+                    <td>
+                        <input type="text" maxlength="200" style="width:738px;" value="" class="txtBox" id="reqTitle" name="Question">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label class="requ" for="reqContents">@("Details".Label())</label>
+                    </th>
+                    <td>
+                        <textarea style="width:738px;" rows="5" cols="1" id="reqContents" name="Details"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <span class="label">@("File Attachment".Label())</span>
+                    </th>
+                    <td>
+                        <div>
+                            <input type="file" style="width:738px;" title="File Attachment" class="file" id="upload1" name="Attachment">
+                        </div>
+                        <div class="mt10">
+                            <input type="file" style="width:738px;" title="File Attachment" class="file" id="upload2" name="Attachment">
+                        </div>
+                        <div class="mt10">
+                            <input type="file" style="width:738px;" title="File Attachment" class="file" id="upload3" name="Attachment">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="btnCenter">
+        <a onclick="javascript:resetForm(); return false;" class="btnCm" href="#">@("Delete entered information.".Label())</a>
+        <a onclick="javascript:insQna(); return false;" class="btnCmDb" href="#">@("Submit".Label())</a>
+    </div>
+</form>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //$("#QnaForm").ajaxForm({
+        //    success: function() {
+        //        alert("Submit succesfull");
+        //        location.reload(false);
+        //    },
+        //    fail: function() {
+        //        alert("Submit unsuccesfull. Please try again later.");
+        //        location.reload(false);
+        //    }
+        //});
+    
+    });
+    function resetForm() {
+        $("#QnaForm").trigger("reset");
+    }
+    function insQna() {
+        if ($("#ProductUUID").val() != ""){
+            $("#ProductName").val($("#ProductUUID option:selected").text());
+        }
+        if (!Common.isValue($("#reqName").val())) {
+            alert("Please Input your Name");
+            $("#reqName").focus();
+            return;
+        }
+        if (!Common.isValue($("#reqEmail").val())) {
+            alert("Please Input your Email");
+            $("#reqEmail").focus();
+            return;
+        }
+        if (!Check.email($("#reqEmail").val())) {
+            alert("Please enter the correct email address.");
+            $("#reqEmail").focus();
+            return;
+        }
+        if (!Common.isValue($("#reqPhone").val())) {
+            alert("Please Input your Contact Number");
+            $("#reqPhone").focus();
+            return;
+        }
+        if (!Common.isValue($("#category").val())) {
+            alert("Please Select Category");
+            $("#category").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#reqTitle").val())) {
+            alert("Please Input Question Title");
+            $("#reqTitle").focus();
+            return;
+        }
+
+        if (!Common.isValue($("#reqContents").val())) {
+            alert("Please Input Details");
+            $("#reqContents").focus();
+            return;
+        }
+
+        if (Common.isValue($("#upload1").val())) {
+            if (!Common.checkExt($("#upload1").val(), "cab|jpg|gif|png|arc")) {
+                alert("You can attach image files or AhnReport files only.");
+                $("#upload1").focus();
+                return;
+            }
+        }
+        if (Common.isValue($("#upload2").val())) {
+            if (!Common.checkExt($("#upload2").val(), "cab|jpg|gif|png|arc")) {
+                alert("You can attach image files or AhnReport files only.");
+                $("#upload2").focus();
+                return;
+            }
+        }
+        if (Common.isValue($("#upload3").val())) {
+            if (!Common.checkExt($("#upload3").val(), "cab|jpg|gif|png|arc")) {
+                alert("You can attach image files or AhnReport files only.");
+                $("#upload3").focus();
+                return;
+            }
+        }
+        $("#QnaForm").submit();
+    }
+
+</script>

@@ -1,0 +1,44 @@
+﻿<nav id="naviUtill">
+    <ul>
+        <li class="locSite">
+            <a href="javascript:;" class="link" title="Change Country">Tiếng Việt</a>
+            <!-- layer -->
+            <div class="lyUtill">
+                <div class="lyWrap">
+                    <p ><a href="/" target="_blank" rel="nofollow" title="New Window">Global (English)</a></p>
+                    <p class="selected"><a href="#" target="_blank" rel="nofollow" title="New Window">Tiếng Việt</a></p>
+                </div>
+            </div>
+            <!-- //layer -->
+        </li>
+        @if (ViewContext.HttpContext.Membership().IsAuthenticated())
+        {
+            <li><a href="javascript:;" class="link" id="logout">@("Log out".Label())</a></li>
+        }
+        else
+        {
+            <li><a href="@Url.FrontUrl().PageUrl("member/login")" class="link">@("Log in".Label())</a></li>
+        }
+        <li><a href="@Url.FrontUrl().PageUrl("member/my-accout")" class="link">@("My Account".Label())</a></li>
+
+        <li><a href="@Url.FrontUrl().PageUrl("our-partner")" class="link">@("Partner".Label())</a></li>
+    </ul>
+</nav>
+@if (ViewContext.HttpContext.Membership().IsAuthenticated())
+{
+    <form class="hide" action="@Url.FrontUrl().SubmissionUrl("Logout")" method="POST" id="frmLogout">
+        @Html.AntiForgeryToken()
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#logout").click(function () {
+                $("#frmLogout").submit();
+            });
+            $("#frmLogout").ajaxForm({
+                success: function (res) {
+                    location.href = '@Url.FrontUrl().PageUrl("home")';
+                }
+            });
+        })
+    </script>
+}

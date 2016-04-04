@@ -1,0 +1,67 @@
+﻿<ul class="tabUtill col3">
+    <li><a href="@Url.FrontUrl().PageUrl("member/profile")">@("Account Information".Label())</a></li>
+    <li><a href="@Url.FrontUrl().PageUrl("member/my-product")">@("My Product List".Label())</a></li>
+    <li class="on">
+        <a href="#"><span class="blind">Current page</span>@("My Q&A / Report History".Label())</a>
+    </li>
+</ul>>
+<div class="subTab">
+    <ul>
+        <li><a class="row1" href="@Url.FrontUrl().PageUrl("member/qna")">@("My Q&A".Label())</a></li>
+<li class="on"><a class="row1" href="#"><span class="blind">Current page</span>@("My Report History".Label())</a></li>
+    </ul>
+</div>
+<h1 class="cTit">@("My Report History".Label())</h1>
+<div class="inqWrap clfix">
+    <div class="fl">
+        <a class="btnSm period" onclick="fn_schDate('1');return false;" href="#">1 month</a>
+        <a class="btnSm period" onclick="fn_schDate('3');return false;" href="#">3 month</a>
+        <a class="btnSm period" onclick="fn_schDate('6');return false;" href="#">6 month</a>
+        <a class="btnSm period" onclick="fn_schDate('12');return false;" href="#">1 year</a>
+        <span class="calendar"><input type="text" style="width:73px;" title="Enter the search start date" class="calendar txtBox ml6" value="" onkeypress="javascript:if(event.keyCode == 13){ getListSearch(); return false;}" id="schStartDate" name="schStartDate"><a onclick="showLayCal2(this, form.schStartDate);" id="cal1" class="iconC" title="Select the search start date" href="#"></a></span>
+        -
+        <span class="calendar"><input type="text" style="width:73px;" title="Enter the search finish date" class="calendar txtBox" value="" onkeypress="javascript:if(event.keyCode == 13){ getListSearch(); return false;}" id="schEndDate" name="schEndDate"><a onclick="showLayCal2(this, form.schEndDate);" id="cal1" class="iconC" title="Select the search finish date" href="#"></a></span>
+        <a class="btnSmDb" onclick="getListSearch();return false;" href="#">Search</a>
+    </div>
+    <div class="fr">
+        <span class="select">
+
+            <select style="width:82px;" name="schType" id="schType">
+                <option value="">ALL</option>
+                <option value="seq">Report ID</option>
+                <option value="subject">Subject</option>
+            </select>
+        </span>
+        <input type="text" value="" onkeypress="javascript:if(event.keyCode == 13){ getListSearch(); return false;}" style="width:100px" title="Keyword" placeholder="Enter Keyword" class="txtBox" name="schText" id="schText">
+        <a class="btnSmDb period" onclick="getListSearch();return false;" href="#">Search</a>
+    </div>
+    <div class="calBox" id="popCal"></div>
+</div>
+<!-- 내역이 있는 경우 -->
+<div class="tList01 mt20">
+    <table>
+        <caption>My Report History Details</caption>
+        <colgroup>
+            <col style="width:14%;">
+            <col style="width:54%;">
+            <col style="width:16%;">
+            <col style="width:16%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="first" scope="col">Report ID</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr class="first">
+                <td class="first ac" colspan="4">No Data</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
